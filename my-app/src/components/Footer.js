@@ -1,0 +1,54 @@
+import '../style/App.css';
+import '../style/grid.css';
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+function Footer() {
+  return (
+    <footer >
+        <div className="footer-grid-container">
+            <div className="footer-cell footer-email-wrapper">
+                <p>Get in touch</p>
+                <a className="secondary-cta" href="mailto:danielxshi@hotmail.com">email</a>
+            </div>
+
+            <div className="footer-cell footer-frequent-links-wrapper">
+                <p>Work Documents</p>
+                <ul>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="resume.pdf">Resume</a>
+                    </li>
+                    <li>
+                        <a href="style.html">Style Guide</a>
+                    </li>
+                    <li>
+                        <a href="citations.html">Citations</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="footer-cell footer-social-media-wrapper">
+                <p>Social Media</p>
+                {/* <ul>
+                    <li>
+                        <a href="https://github.com/danielxshi">
+                            <img height="30" width="30" src="images/icons/github-brands.png" alt="Github Icon">
+                        </a>
+                        <a href="https://www.instagram.com/danielxshi/">
+                            <img height="30" width="30"src="images/icons/instagram-brands.png" alt="Instagram Icon">
+                        </a>
+                    </li>
+                </ul> */}
+            </div>
+            <div className="footer-cell footer-copyright">
+                <p className="copyright">Xiang Daniel Shi © 2020</p>
+            </div>
+        </div>
+    </footer>
+  );
+}
+
+export default Footer;

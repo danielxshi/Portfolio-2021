@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
+
+$white: #ECEBEC;
+$black: #0f110c;
+$grey: #8b8b8b;
+$bg-color: #e20001;
+$accent: #ff7676;
+$description-tab: #181818;
+
+.highlight-text{
+    color: $accent;
+}
+
+body{
+    color: $black;
+    background-color: $white;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main{
+    min-height: 70vh;
+}
+
+::-webkit-scrollbar{
+    background: $white; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: $grey; 
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+// Nav
+
+header{
+    height: 100px;
+}
+
+.desktop-nav-container{
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    background-color: $black;
+    height: 3.5rem;
+    z-index: 10;
+}
+
+nav{
+    position: fixed;
+    max-width: 1240px;
+    height: auto;
+    ul{
+        list-style-type: none;
+        margin: auto 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: $grey;
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+        text-decoration: none;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    } 
+}
+
+a:hover{
+    color: #f0f0f1;
+}
+
+.nav-logo{
+    display: flex;
+    width:fit-content;
+    font-weight: 700;
+    font-size: 1rem;
+    a{
+        margin: auto;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $grey;
+    transition: 0.3s ease-in-out;
+}
+
+
+// End of nav
+
+// Footer
+
+footer{
+    margin-top: 5rem;
+    min-height: 15rem;
+    height: 15rem;
+    padding: 2.5rem 0 2.5rem 0;
+    background:$black;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    .footer-cell{
+        height: 12rem;
+    }
+    .footer-grid-container > div {
+        margin: auto;
+    }
+    .footer-email-wrapper{
+        grid-column-start: 2;
+    }
+    .footer-frequent-links-wrapper{
+        grid-column-start: 5;
+    }
+    .footer-social-media-wrapper{
+        grid-column-start: 8;
+    }
+    .footer-copyright{
+        grid-column-start: 11;
+        .copyright{
+            font-size: 1rem;
+            color: #898989;
+        
+        }
+    }
+}
+
+// End of footer
+
+// Home page
+
+// === Intro banner
+
+.intro-wrapper{
+    height: 15vh;
+}
+
+// ===== end of Intro banner
+
+// === About section
+
+@mixin box-shadow($params) {
+    -webkit-box-shadow: $params;
+    -moz-box-shadow: $params;
+    box-shadow: $params;
+  }
+
+  $shadows: 35px 15px 75px rgba(222, 222, 222, .75) inset, 7px 20px 30px rgba(46, 45, 48, 0.25) inset;
+
+.about-section {
+    background: $white;
+    @include box-shadow($shadows);
+    padding: 7vh 0;
+}
+
+.about-row-1-col-1{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.about-row-1-col-2{
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
+.about-row-1-col-3{
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}
+
+.about-row-2-col-2{
+    grid-row-start: 1;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+
+
+
+
+// ===== End of about section
+
+// === Project section
+
+.section-header{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    margin-top: 7.5vh;
+    margin-bottom: 4vh;
+}
+
+.project-img-wrapper img{
+    display: block;
+    width: 100%;
+}
+
+.project-description{
+    background-color: $description-tab;
+    color: $white;
+    padding: 1rem 2rem;
+    h2{
+        margin-top: 0;
+    }
+}
+
+// ===== end of Project section
+
+// ======= end of home page

@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
+.highlight-text {
+  color: #ff7676;
+}
+
+body {
+  color: #0f110c;
+  background-color: #ECEBEC;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  min-height: 70vh;
+}
+
+::-webkit-scrollbar {
+  background: #ECEBEC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+header {
+  height: 100px;
+}
+
+.desktop-nav-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  background-color: #0f110c;
+  height: 3.5rem;
+  z-index: 10;
+}
+
+nav {
+  position: fixed;
+  max-width: 1240px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #8b8b8b;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a:hover {
+  color: #f0f0f1;
+}
+
+.nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.nav-logo a {
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #8b8b8b;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  margin-top: 5rem;
+  min-height: 15rem;
+  height: 15rem;
+  padding: 2.5rem 0 2.5rem 0;
+  background: #0f110c;
+  color: #ECEBEC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-cell {
+  height: 12rem;
+}
+
+footer .footer-grid-container > div {
+  margin: auto;
+}
+
+footer .footer-email-wrapper {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+footer .footer-frequent-links-wrapper {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+}
+
+footer .footer-social-media-wrapper {
+  -ms-grid-column: 8;
+      grid-column-start: 8;
+}
+
+footer .footer-copyright {
+  -ms-grid-column: 11;
+      grid-column-start: 11;
+}
+
+footer .footer-copyright .copyright {
+  font-size: 1rem;
+  color: #898989;
+}
+
+.intro-wrapper {
+  height: 15vh;
+}
+
+.about-section {
+  background: #ECEBEC;
+  -webkit-box-shadow: 35px 15px 75px rgba(222, 222, 222, 0.75) inset, 7px 20px 30px rgba(46, 45, 48, 0.25) inset;
+  box-shadow: 35px 15px 75px rgba(222, 222, 222, 0.75) inset, 7px 20px 30px rgba(46, 45, 48, 0.25) inset;
+  padding: 7vh 0;
+}
+
+.about-row-1-col-1 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.about-row-1-col-2 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 8;
+}
+
+.about-row-1-col-3 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 8;
+}
+
+.about-row-2-col-2 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 9;
+      grid-column-start: 9;
+  grid-column-end: 12;
+}
+
+.section-header {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 12;
+  margin-top: 7.5vh;
+  margin-bottom: 4vh;
+}
+
+.project-img-wrapper img {
+  display: block;
+  width: 100%;
+}
+
+.project-description {
+  background-color: #181818;
+  color: #ECEBEC;
+  padding: 1rem 2rem;
+}
+
+.project-description h2 {
+  margin-top: 0;
+}
+/*# sourceMappingURL=App.css.map */

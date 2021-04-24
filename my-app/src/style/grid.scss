@@ -1,0 +1,36 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5em;
+    width: 100%;
+    margin: 0 auto;
+    height: inherit;
+    max-width: 1240px;
+}
+
+.col-10{
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
+
+.footer-grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5em;
+    width: 100%;
+    margin: 0 auto;
+    height: inherit;
+    max-width: 1240px;
+}
+
+
+.nav-logo{
+    height: inherit;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.nav-grid {
+    grid-column-start: 7;
+    grid-column-end: 12;
+}
