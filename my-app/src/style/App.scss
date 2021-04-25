@@ -1,21 +1,110 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 $white: #ECEBEC;
 $black: #0f110c;
 $grey: #8b8b8b;
-$bg-color: #e20001;
-$accent: #ff7676;
-$description-tab: #181818;
+$bg-color: #0f110c;
+// $accent: #ff7676;
+$accent: #4d9735;
+$dark-accent: #417f2c;
+$description-tab: #e7e7e7;
+$sprite-text: #313131;
+$color-bg: #cccfda;
 
 .highlight-text{
     color: $accent;
 }
 
+.highlight-text-dark{
+    color: $dark-accent;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+p{
+    font-size: 1.4rem;
+}
+
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+
+header{
+    height: 3rem;
+}
+
 body{
-    color: $black;
-    background-color: $white;
+    background-repeat: repeat;
+    color: $sprite-text;
+    background-color: $color-bg;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+.primary-btn{
+    padding: 12px 48px;
+    letter-spacing: 6px;
+    transition: 0.6s ease-out;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    border: 2px solid $white;
+    height: fit-content;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: crosshair;
+    width: fit-content;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    // background: #fff;
+}
+
+.primary-btn:hover{
+    color: $black;
+    cursor: crosshair;
+}
+
+.primary-btn:before{
+    background: #fff;
+    content: "";
+    position: absolute;
+    cursor: crosshair;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: top 0.6s ease-out;
+}
+
+.primary-btn:hover:before {
+    top: 0;
+}
+
+.white-border-btn{
+    border: 2px solid $white;
+}
+
+.black-border-btn{
+    border: 2px solid $black;
+}
+
+// Placement has to be after primary-btn
+.static-btn{
+    // width: 5.5rem;
 }
 
 main{
@@ -34,10 +123,6 @@ main{
 }
 
 // Nav
-
-header{
-    height: 100px;
-}
 
 .desktop-nav-container{
     justify-content: center;
@@ -92,6 +177,8 @@ a:hover{
     font-size: 1rem;
     a{
         margin: auto;
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     }
 }
 
@@ -119,19 +206,26 @@ footer{
         height: 12rem;
     }
     .footer-grid-container > div {
-        margin: auto;
+        margin: auto 0;
     }
     .footer-email-wrapper{
         grid-column-start: 2;
+        grid-column-end: 4;
     }
     .footer-frequent-links-wrapper{
         grid-column-start: 5;
+        grid-column-end: 7;
     }
     .footer-social-media-wrapper{
         grid-column-start: 8;
+        grid-column-end: 10;
+        img:first-child{
+            margin-right: 1rem;
+        }
     }
     .footer-copyright{
         grid-column-start: 11;
+        grid-column-end: 12;
         .copyright{
             font-size: 1rem;
             color: #898989;
@@ -147,7 +241,31 @@ footer{
 // === Intro banner
 
 .intro-wrapper{
-    height: 15vh;
+    height: 92.5vh;
+    h1{
+        margin-bottom: 0;        
+        font-size: 7rem;
+        // letter-spacing: .25rem;
+    }
+    p{
+        font-weight: 600;
+        font-size: 1.5rem;
+        // letter-spacing: .1rem;
+    }
+    .intro-text-banner{
+        display: flex;
+        grid-row-start: 2;
+        flex-direction: column-reverse;
+    }
+    .media-links{
+        grid-row-start: 3;
+        grid-column-end: 12;
+        grid-column-start: 2;
+        display: flex;
+        .static-btn:first-child{
+            margin-right: 2rem;
+        }
+    }
 }
 
 // ===== end of Intro banner
@@ -159,37 +277,49 @@ footer{
     -moz-box-shadow: $params;
     box-shadow: $params;
   }
-
-  $shadows: 35px 15px 75px rgba(222, 222, 222, .75) inset, 7px 20px 30px rgba(46, 45, 48, 0.25) inset;
+//   2px 3px 8px rgb(0 0 0 / 87%) inset, 7px 20px 30px rgb(35 34 36 / 62%) inset
+//   2px ​3px 8px rgb(52 52 52 / 65%) inset, 7px 20px 30px rgb(55 55 55 / 51%) inse
+// inset 47.3769px 14.3769px 75.1126px rgb(222 222 222 / 74%), inset 13.6231px 52.6231px 61.7538px rgb(62 58 70 / 36%)
+  $shadows: 45px 15px 75px rgba(222, 222, 222, .67) inset, 7px 20px 30px rgba(35, 34, 36, 0.62) inset;
 
 .about-section {
     background: $white;
     @include box-shadow($shadows);
     padding: 7vh 0;
+    color: $black;
+    font-size: 1.4rem;
+    p{
+        font-weight: 400;
+        margin-top: 0;
+    }
 }
 
 .about-row-1-col-1{
     grid-row-start: 1;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 5;
+    h2{
+        margin-top: 0;
+    }
 }
 
 .about-row-1-col-2{
     grid-row-start: 1;
     grid-column-start: 5;
-    grid-column-end: 8;
+    grid-column-end: 9;
 }
 
 .about-row-1-col-3{
     grid-row-start: 2;
     grid-column-start: 5;
-    grid-column-end: 8;
+    grid-column-end: 9;
 }
 
 .about-row-2-col-2{
     grid-row-start: 1;
     grid-column-start: 9;
     grid-column-end: 12;
+    // border-right: 2px solid #7b7b7b;
 }
 
 
@@ -198,6 +328,23 @@ footer{
 // ===== End of about section
 
 // === Project section
+
+$shadows-project: 35px 10px 50px rgba(222, 222, 222, .54), 7px 10px 20px rgb(167, 169, 179);
+
+@mixin shadows-project($params2) {
+    -webkit-box-shadow: $params2;
+    -moz-box-shadow: $params2;
+    box-shadow: $params2;
+  }
+
+.project-size-contain {
+    //!Difficult to maintain YuGiOh
+    width: 57.5%;
+    // width: 63.5%;
+    padding: 1rem;
+    @include shadows-project($shadows-project);
+    background-color: $white;
+}
 
 .section-header{
     grid-column-start: 2;
@@ -213,13 +360,102 @@ footer{
 
 .project-description{
     background-color: $description-tab;
-    color: $white;
-    padding: 1rem 2rem;
+    color: $black;
+    padding: 2.5rem 2rem;
+    font-size: 1.3rem;
     h2{
         margin-top: 0;
+    }
+    .sub-container{
+        .title-wrapper{
+            grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 9;
+            h2{
+                margin-bottom: 0;
+            }
+            p{
+                margin-top: 0;
+            }
+        }
+        .contribution-wrapper-r{
+            grid-row-start: 1;
+            grid-column-start: 9;
+            grid-column-end: 13;
+            h3{
+                margin-top: 1rem;
+            }
+        }
+        .primary-btn{
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
     }
 }
 
 // ===== end of Project section
 
 // ======= end of home page
+
+// Project details apge
+.details-container {
+    .grid-container .col-10{
+        .project-description-container{
+            grid-column-start: 1;
+            grid-column-end: 7;
+        }
+    }
+    .project-text-wrapper{
+        margin-top: 2rem;
+        grid-column-end: 8;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        transition-duration: .4s;
+        position: relative;
+        overflow: hidden;
+        vertical-align: top;
+        max-height: 30rem;
+    }
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        margin-top: 0;
+    }
+    .details-wrapper{
+        grid-column-start: 9;
+        grid-column-end: 13;
+        h3{
+            margin-top: 0;
+        }
+        .sub-details-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 100em) {
+    .project-description .sub-container .primary-btn {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }.project-description .sub-container .contribution-wrapper-r {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }.project-description .sub-container .title-wrapper {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+}

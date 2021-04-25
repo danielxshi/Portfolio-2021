@@ -1,5 +1,7 @@
 import '../style/App.css';
 import '../style/grid.css';
+import GIT from '../images/icons/github-brands.png';
+import IG from '../images/icons/instagram-brands.png';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -13,7 +15,7 @@ function Footer() {
             </div>
 
             <div className="footer-cell footer-frequent-links-wrapper">
-                <p>Work Documents</p>
+                <p>Documents</p>
                 <ul>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -32,16 +34,16 @@ function Footer() {
 
             <div className="footer-cell footer-social-media-wrapper">
                 <p>Social Media</p>
-                {/* <ul>
+                <ul>
                     <li>
                         <a href="https://github.com/danielxshi">
-                            <img height="30" width="30" src="images/icons/github-brands.png" alt="Github Icon">
+                            <img height="30" width="30" src={GIT} alt="Github Icon"/>
                         </a>
                         <a href="https://www.instagram.com/danielxshi/">
-                            <img height="30" width="30"src="images/icons/instagram-brands.png" alt="Instagram Icon">
+                            <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
                         </a>
                     </li>
-                </ul> */}
+                </ul>
             </div>
             <div className="footer-cell footer-copyright">
                 <p className="copyright">Xiang Daniel Shi © 2020</p>

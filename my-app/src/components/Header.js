@@ -2,14 +2,6 @@ import '../style/App.css';
 import '../style/grid.css';
 import { Link } from "react-router-dom";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-{/* <a href="" className="secondary-btn">
-<Link to='/bosstep'>
-    View Process
-</Link>
-</a>
- */}
 
 function Header() {
   return (
