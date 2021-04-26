@@ -17,7 +17,20 @@
     height: inherit;
 }
 
+.color-block-container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: 100%;
+}
+
+.max-col{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
 .col-10{
+    grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 12;
 }
@@ -46,7 +59,7 @@
 
 @media only screen and (min-width: 80em) {
     .grid-container, .footer-grid-container{
-        max-width: 75vw;
+        max-width: 90vw;
     }
 
 }

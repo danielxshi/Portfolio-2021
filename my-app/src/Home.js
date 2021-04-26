@@ -12,17 +12,9 @@ import ReactDom from "react-dom";
 
 
 function Home() {
-    // const scrollRef = React.createRef();
-
-    // useEffect(() => {
-    //     const scroll = new locomotiveScroll({
-    //         el: scrollRef.current,
-    //         smooth: true
-    //     });
-    // })
     return (
 
-      <main >
+      <main class="landing-pg">
         <div className="intro-wrapper">
             <div className="grid-container">
                 <div className="col-10 intro-text-banner">
@@ -55,34 +47,43 @@ function Home() {
                 </div>
             </div>
         </section>
+        
         <section className="project">
-            <div className="grid-container">
-                <div className="col-10">
-                    <h2 className="section-header highlight-text-dark">01</h2>
-                    <div className="project-size-contain">
-                        <div className="project-img-wrapper">
-                            <Link to='/bosstep'>
-                                <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/>                            
-                            </Link>
-                        </div>
-                        <div className="project-description">
-                            <div className="sub-container">
-                                <div className="title-wrapper desktop-project-header">
-                                    <h2>{projectMessages.bosstep.title}</h2>
-                                    <p>{projectMessages.bosstep.description}</p>
+            <div className="sub-container">
+                <div className="color-stripe-container-1">
+                    <div className="color-stripe color-stripe-1"></div>
+                </div>
+                <div className="color-stripe-container-2">
+                    <div className="color-stripe color-stripe-1"></div>
+                </div>
+                <div className="max-col grid-container">
+                    <div className="col-10">
+                        <h2 className="section-header highlight-text-dark">01</h2>
+                        <div className="project-size-contain">
+                            <div className="project-img-wrapper">
+                                <Link to='/bosstep'>
+                                    <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/>                            
+                                </Link>
+                            </div>
+                            <div className="project-description">
+                                <div className="sub-container">
+                                    <div className="title-wrapper desktop-project-header">
+                                        <h2>{projectMessages.bosstep.title}</h2>
+                                        <p>{projectMessages.bosstep.description}</p>
+                                    </div>
+                                    <div className="contribution-wrapper-r">
+                                        <h3>Role:</h3>
+                                        <p>{projectMessages.bosstep.role}</p>
+                                    </div>
+                                    <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
                                 </div>
-                                <div className="contribution-wrapper-r">
-                                    <h3>Role:</h3>
-                                    <p>{projectMessages.bosstep.role}</p>
-                                </div>
-                                <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </section>
+
         <section className="project">
             <div className="grid-container">
                 <div className="col-10">
@@ -113,33 +114,41 @@ function Home() {
         </section>
 
         <section className="project">
-            <div className="grid-container">
-                <div className="col-10">
-                    <h2 className="section-header highlight-text-dark">03</h2>
-                    <div className="project-size-contain">
-                        <div className="project-img-wrapper">
-                            <Link to='/bosstep'>
-                                <img alt="BOSSTEP Project Graphic" src={TRACK}/>                            
-                            </Link>
-                        </div>
-                        <div className="project-description">
-                            <div className="sub-container">
-                                <div className="title-wrapper desktop-project-header">
-                                    <h2>{projectMessages.track.title}</h2>
-                                    <p>{projectMessages.track.description}</p>
+            <div className="sub-container">
+                <div className="color-stripe-container-1">
+                    <div className="color-stripe color-stripe-1"></div>
+                </div>
+                <div className="color-stripe-container-2">
+                    <div className="color-stripe color-stripe-1"></div>
+                </div>
+                <div className="max-col grid-container">
+                    <div className="col-10">
+                        <h2 className="section-header highlight-text-dark">03</h2>
+                        <div className="project-size-contain">
+                            <div className="project-img-wrapper">
+                                <Link to='/bosstep'>
+                                    <img alt="TRACK Project Graphic" src={TRACK}/>                            
+                                </Link>
+                            </div>
+                            <div className="project-description">
+                                <div className="sub-container">
+                                    <div className="title-wrapper desktop-project-header">
+                                        <h2>{projectMessages.track.title}</h2>
+                                        <p>{projectMessages.track.description}</p>
+                                    </div>
+                                    <div className="contribution-wrapper-r">
+                                        <h3>Role:</h3>
+                                        <p>{projectMessages.track.role}</p>
+                                    </div>
+                                    <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
                                 </div>
-                                <div className="contribution-wrapper-r">
-                                    <h3>Role:</h3>
-                                    <p>{projectMessages.track.role}</p>
-                                </div>
-                                <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </section>
+        
       </main>
   );
 }
