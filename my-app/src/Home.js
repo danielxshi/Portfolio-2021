@@ -1,5 +1,5 @@
-import './style/App.css';
-import './style/grid.css';
+import './style/App.scss';
+import './style/grid.scss';
 import BOSSTEP from './images/boss-1000x600.png';
 import CLIQ from './images/cliq-1000x600.png';
 import TRACK from './images/track-1000x600.png';

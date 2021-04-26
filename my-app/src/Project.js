@@ -1,5 +1,5 @@
-import './style/App.css';
-import './style/grid.css';
+import './style/App.scss';
+import './style/grid.scss';
 import { Link } from "react-router-dom";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

@@ -7,29 +7,43 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./Home";
 import Project from "./Project";
+import{
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
 
 import React, {useRef, useEffect} from 'react';
-
-// import locomotiveScroll from "locomotive-scroll";
-// import '../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  // const scrollRef = React.createRef();
-
-  // useEffect(() => {
-  //     const scroll = new locomotiveScroll({
-  //         el: scrollRef.current,
-  //         smooth: true
-  //     });
-  // });
 
   return (
     <Router>
       <div className="App">
         <Header/>
-        <Switch>
+        <Route render={({location}) => (
+          <TransitionGroup>
+            <CSSTransition
+            key={location.key}
+            timeout={450}
+            classNames="fade"
+            >
+              <Switch location={location}>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/bosstep" >
+                  <Project messages={projectMessages.bosstep} banner={bosstepBanner} />
+                </Route>
+                <Route exact path="/cliq" >
+                  <Project messages={projectMessages.cliq} banner={cliqBanner} />
+                </Route>
+              </Switch> 
+            </CSSTransition>
+          </TransitionGroup>
+        )}/>
+
+
+        {/* <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/bosstep" >
               <Project messages={projectMessages.bosstep} banner={bosstepBanner} />
@@ -37,7 +51,8 @@ function App() {
             <Route exact path="/cliq" >
               <Project messages={projectMessages.cliq} banner={cliqBanner} />
             </Route>
-        </Switch>
+        </Switch> */}
+
         <Footer/>
       </div>
     </Router>
