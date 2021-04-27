@@ -3,15 +3,28 @@ import './style/grid.scss';
 import BOSSTEP from './images/boss-1000x600.png';
 import CLIQ from './images/cliq-1000x600.png';
 import TRACK from './images/track-1000x600.png';
-import { Link } from "react-router-dom";
 import projectMessages from './components/ProjectMessages.js'
-// import locomotiveScroll from "locomotive-scroll";
-import React, { useEffect } from 'react';
-import ReactDom from "react-dom";
-// import '../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
+
+import { gsap } from "gsap";
+
+import { Link } from "react-router-dom";
+import React, { useEffect, useRef} from 'react';
 
 
-function Home() {
+const Home = () => {
+    let line1 = useRef(null);
+    let line2 = useRef(null);
+
+    useEffect(() => {
+        gsap.from([line1, line2], 0.8, {
+            delay: 0.3,
+            ease: "power3.out",
+            y: 115,
+            stagger: {
+                amount: 0.15
+            }
+        })
+    }, [line1, line2]);
     return (
 
       <main class="landing-pg">
@@ -19,8 +32,12 @@ function Home() {
             <div className="grid-container">
                 <div className="col-10 intro-text-banner">
                     <div class="p-identity">
-                        <h1><strong class="highlight-text-dark">X</strong>iang<strong class="highlight-text-dark">D</strong>aniel<strong class="highlight-text-dark">S</strong>hi</h1>
-                        <p>Aspiring UX/UI web developer and photographer from Vancouver, BC</p>
+                        <div className="line-wrap-1">
+                            <h1 ref={el => line1 = el}><strong class="highlight-text-dark">X</strong>iang<strong class="highlight-text-dark">D</strong>aniel<strong class="highlight-text-dark">S</strong>hi</h1>
+                        </div>
+                        <div className="line-wrap-2">
+                            <p className="line-wrap" ref={el => line2 = el}>Aspiring UX/UI web developer and photographer from Vancouver, BC</p>
+                        </div>
                     </div>
                 </div>
                 <div className="media-links">
@@ -48,7 +65,33 @@ function Home() {
             </div>
         </section>
         
-        <section className="project">
+        <section className="project project-1">
+            <div className="sub-container">
+                <div className="color-stripe-container-1">
+                    <div className="color-stripe color-stripe-1"></div>
+                </div>
+                <div className="max-col grid-container">
+                    <div className="test-img-contain">
+                        <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/> 
+                    </div>
+                    <div className="project-description test-desc">
+                        <div className="sub-container">
+                            <div className="title-wrapper desktop-project-header">
+                                <h2>{projectMessages.bosstep.title}</h2>
+                                <p>{projectMessages.bosstep.description}</p>
+                            </div>
+                            <div className="contribution-wrapper-r">
+                                <h3>Role:</h3>
+                                <p>{projectMessages.bosstep.role}</p>
+                            </div>
+                            <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        {/* <section className="project">
             <div className="sub-container">
                 <div className="color-stripe-container-1">
                     <div className="color-stripe color-stripe-1"></div>
@@ -57,8 +100,7 @@ function Home() {
                     <div className="color-stripe color-stripe-1"></div>
                 </div>
                 <div className="max-col grid-container">
-                    <div className="col-10">
-                        <h2 className="section-header highlight-text-dark">01</h2>
+                    <div className="col-10 glass-border-padding">
                         <div className="project-size-contain">
                             <div className="project-img-wrapper">
                                 <Link to='/bosstep'>
@@ -82,12 +124,11 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
-        <section className="project">
+        {/* <section className="project">
             <div className="grid-container">
                 <div className="col-10">
-                    <h2 className="section-header highlight-text-dark">02</h2>
                     <div className="project-size-contain">
                         <div className="project-img-wrapper">
                             <Link to='/bosstep'>
@@ -123,7 +164,6 @@ function Home() {
                 </div>
                 <div className="max-col grid-container">
                     <div className="col-10">
-                        <h2 className="section-header highlight-text-dark">03</h2>
                         <div className="project-size-contain">
                             <div className="project-img-wrapper">
                                 <Link to='/bosstep'>
@@ -147,7 +187,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         
       </main>
   );

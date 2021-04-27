@@ -11,10 +11,17 @@
 .sub-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1.5em;
+    grid-gap: .75em;
     width: 100%;
     margin: 0 auto;
     height: inherit;
+}
+
+.glass-border-padding{
+    display: flex;
+    .project-size-contain{
+        padding: 1rem;
+    }
 }
 
 .color-block-container{
@@ -58,7 +65,7 @@
 
 @media only screen and (min-width: 80em) {
     .grid-container, .footer-grid-container{
-        max-width: 90vw;
+        max-width: 75vw;
     }
 
 }

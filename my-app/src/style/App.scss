@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
 $white: #ECEBEC;
 $black: #0f110c;
 $grey: #8b8b8b;
 $bg-color: #0f110c;
-// $accent: #ff7676;
 $accent: #4d9735;
 $dark-accent: #417f2c;
 $description-tab: #e7e7e7;
 $sprite-text: #313131;
 $color-bg: #cccfda;
-$stripe: #fffb81;
+$stripe: #4C5269;
+
+// !testing
+$testing-bg-color: #262935;
+$new-white: #FBFCFC;
 
 .highlight-text{
     color: $accent;
@@ -29,7 +30,7 @@ h1, h2 {
     font-family: 'Lora', serif;
 }
 p{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 h1{
@@ -53,7 +54,7 @@ body{
 }
 
 .landing-pg{
-    background-color: $color-bg;
+    background-color: $white;
 }
 
 .primary-btn{
@@ -106,11 +107,6 @@ body{
     border: 2px solid $black;
 }
 
-// Placement has to be after primary-btn
-.static-btn{
-    // width: 5.5rem;
-}
-
 main{
     min-height: 70vh;
 }
@@ -127,6 +123,7 @@ main{
 }
 
 // Nav
+
 
 .desktop-nav-container{
     justify-content: center;
@@ -193,6 +190,10 @@ a{
 }
 
 
+a.active {
+    color: $white;
+}
+
 // End of nav
 
 // Footer
@@ -248,12 +249,10 @@ footer{
     h1{
         margin-bottom: 0;        
         font-size: 7rem;
-        // letter-spacing: .25rem;
     }
     p{
         font-weight: 600;
         font-size: 1.5rem;
-        // letter-spacing: .1rem;
     }
     .intro-text-banner{
         display: flex;
@@ -280,9 +279,6 @@ footer{
     -moz-box-shadow: $params;
     box-shadow: $params;
   }
-//   2px 3px 8px rgb(0 0 0 / 87%) inset, 7px 20px 30px rgb(35 34 36 / 62%) inset
-//   2px ​3px 8px rgb(52 52 52 / 65%) inset, 7px 20px 30px rgb(55 55 55 / 51%) inse
-// inset 47.3769px 14.3769px 75.1126px rgb(222 222 222 / 74%), inset 13.6231px 52.6231px 61.7538px rgb(62 58 70 / 36%)
   $shadows: 45px 15px 75px rgba(222, 222, 222, .67) inset, 7px 20px 30px rgba(35, 34, 36, 0.62) inset;
 
 .about-section {
@@ -322,7 +318,6 @@ footer{
     grid-row-start: 1;
     grid-column-start: 9;
     grid-column-end: 12;
-    // border-right: 2px solid #7b7b7b;
 }
 
 
@@ -332,11 +327,7 @@ footer{
 
 // === Project section
 
-// $shadows-project: 35px 10px 50px rgba(222, 222, 222, .54), 7px 10px 20px rgb(167, 169, 179);
-
-
-$shadows-project: 5px 2px 8px rgba(179, 179, 179, .2), 5px 3px 6px #9f9d9d40;
-
+$shadows-project: 5px 2px 8px rgba(189, 189, 189, .06), 1px 9px 29px #9f9d9d40;
 
 
 @mixin shadows-project($params2) {
@@ -349,13 +340,42 @@ $shadows-project: 5px 2px 8px rgba(179, 179, 179, .2), 5px 3px 6px #9f9d9d40;
     padding-bottom: 5rem;
 }
 
+.project-1{
+    margin-top: 10vh;
+}
+
+.test-img-contain{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+}
+
+.test-desc{
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-column-start: 8;
+}
+
+.test-img-contain img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition-duration: .4s;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+}
+
 .project-size-contain {
-    //!Difficult to maintain YuGiOh
-    width: 57.5%;
-    // width: 63.5%;
-    padding: 1rem;
+    // !testing
+    border-radius: 7px;
+    backdrop-filter: blur(9px);
+    background: none;
+    color: white;
+
+
+    width: 100%;
     @include shadows-project($shadows-project);
-    background-color: $white;
 }
 
 .section-header{
@@ -365,15 +385,27 @@ $shadows-project: 5px 2px 8px rgba(179, 179, 179, .2), 5px 3px 6px #9f9d9d40;
     margin-bottom: 4vh;
 }
 
+.project-img-wrapper{
+    height: 23rem;
+}
+
 .project-img-wrapper img{
+    
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition-duration: .4s;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
     display: block;
     width: 100%;
 }
 
+
+// TODO Clean
 .project-description{
-    background-color: $description-tab;
     color: $black;
-    padding: 2.5rem 2rem;
     font-size: 1.3rem;
     h2{
         margin-top: 0;
@@ -383,7 +415,7 @@ $shadows-project: 5px 2px 8px rgba(179, 179, 179, .2), 5px 3px 6px #9f9d9d40;
             grid-row-start: 1;
             grid-row-end: 1;
             grid-column-start: 1;
-            grid-column-end: 9;
+            grid-column-end: 13;
             h2{
                 margin-bottom: 0;
             }
@@ -392,15 +424,19 @@ $shadows-project: 5px 2px 8px rgba(179, 179, 179, .2), 5px 3px 6px #9f9d9d40;
             }
         }
         .contribution-wrapper-r{
-            grid-row-start: 1;
-            grid-column-start: 9;
+            grid-row-start: 2;
+            grid-column-start: 1;
             grid-column-end: 13;
             h3{
+                margin-bottom: 0;
                 margin-top: 1rem;
+            }
+            p{
+                margin-top: 0;
             }
         }
         .primary-btn{
-            grid-row-start: 2;
+            grid-row-start: 3;
             grid-column-start: 1;
             grid-column-end: 13;
         }
@@ -413,8 +449,7 @@ $shadows-project: 5px 2px 8px rgba(179, 179, 179, .2), 5px 3px 6px #9f9d9d40;
 
 // Project details apge
 .color-stripe{
-    background: $dark-accent;
-    // background: $stripe;
+    background: $stripe;
 }
 
 .color-stripe-container-1{
@@ -434,7 +469,7 @@ $shadows-project: 5px 2px 8px rgba(179, 179, 179, .2), 5px 3px 6px #9f9d9d40;
 }
 
 
-$shadows-green-stripe: 45px 15px 75px rgba(109, 197, 120, .43) inset, 7px 20px 30px rgba(29, 29, 29, .62) inset;
+$shadows-green-stripe: 45px 15px 75px rgba(86, 86, 86, .43) inset, 7px 20px 30px rgba(29, 29, 29, .62) inset;
 
 
 @mixin shadows-green-stripe($params3) {
@@ -520,78 +555,118 @@ $shadows-green-stripe: 45px 15px 75px rgba(109, 197, 120, .43) inset, 7px 20px 3
     }
 }
 
+
+@media only screen and (max-width: 70em) {
+
+}
+
+
+// CSSTransition Group - Page Swipe animation
+.line-wrap-1{
+    overflow: hidden;
+}
+
+.line-wrap-2{
+    overflow: hidden;
+}
+// //enter
+// .page-enter{
+//     opacity: 0;
+// }
+
+
+// //entering
+// .page-enter-active{
+//     opacity: 1;
+//     transition: opacity 400ms;
+//     transition-delay: 300ms;
+// }
+
+// //exit
+// .page-exit{
+//     opacity: 1;
+// }
+
+// //exiting
+// .page-exit-active{
+//     opacity: 0;
+//     transition: opacity 400ms;
+// }
+
+
+
 /* simple - enter transition 300ms, exit 150ms */
-.fade-appear,
-.fade-enter {
-    opacity: 0;
-    z-index: 1;
-}
-.fade-appear-active,
-.fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms linear 150ms;
-}
+// .fade-appear,
+// .fade-enter {
+//     opacity: 0;
+//     z-index: 1;
+// }
+// .fade-appear-active,
+// .fade-enter.fade-enter-active {
+//     opacity: 1;
+//     transition: opacity 300ms linear 150ms;
+// }
 
-.fade-exit {
-    opacity: 1;
-}
+// .fade-exit {
+//     opacity: 1;
+// }
 
-.fade-exit.fade-exit-active {
-    opacity: 0;
-    transition: opacity 150ms linear;
-}
-
-
+// .fade-exit.fade-exit-active {
+//     opacity: 0;
+//     transition: opacity 150ms linear;
+// }
 
 
 
 
 
 
-/* advanced - enter transition 800ms, exit 150ms */
-.fade-appear,
-.fade-enter {
-    opacity: 0;
-    z-index: 1;
-    transform: translateY(-10px);
-}
-.fade-appear p,
-.fade-enter p {
-  transform: translateY(-5px);
-  opacity: 0;
-}
 
-.fade-appear-active,
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
-}
-.fade-appear-active p,
-.fade-enter.fade-enter-active p {
-  transform: translateY(0);
-  opacity: 1;
-}
-.fade-appear-active p:nth-child(2),
-.fade-enter.fade-enter-active p:nth-child(2) {
-  transition: opacity 300ms linear 300ms, transform 300ms ease-out 300ms;
-}
-.fade-appear-active p:nth-child(3),
-.fade-enter.fade-enter-active p:nth-child(3) {
-  transition: opacity 300ms linear 400ms, transform 300ms ease-out 400ms;
-}
-.fade-appear-active p:nth-child(4),
-.fade-enter.fade-enter-active p:nth-child(4) {
-  transition: opacity 300ms linear 500ms, transform 300ms ease-out 500ms;
-}
 
-.fade-exit {
-    opacity: 1;
-    transform: translateY(0);
-}
+// /* advanced - enter transition 800ms, exit 150ms */
+// .fade-appear,
+// .fade-enter {
+//     opacity: 0.5;
+//     z-index: 1;
+//     transform: translateY(-10px);
+// }
+// .fade-appear p,
+// .fade-enter p {
+//   transform: translateY(-5px);
+//   opacity: 0;
+// }
 
-.fade-exit.fade-exit-active {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 150ms linear, transform 400ms ease-in;
-}
+// .fade-appear-active,
+// .fade-enter.fade-enter-active {
+//   opacity: 1;
+//   transform: translateY(0);
+//   transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
+// }
+// .fade-appear-active p,
+// .fade-enter.fade-enter-active p {
+//   transform: translateY(0);
+//   opacity: 1;
+// }
+// .fade-appear-active p:nth-child(2),
+// .fade-enter.fade-enter-active p:nth-child(2) {
+//   transition: opacity 300ms linear 300ms, transform 300ms ease-out 300ms;
+// }
+// .fade-appear-active p:nth-child(3),
+// .fade-enter.fade-enter-active p:nth-child(3) {
+//   transition: opacity 300ms linear 400ms, transform 300ms ease-out 400ms;
+// }
+// .fade-appear-active p:nth-child(4),
+// .fade-enter.fade-enter-active p:nth-child(4) {
+//   transition: opacity 300ms linear 500ms, transform 300ms ease-out 500ms;
+// }
+
+// .fade-exit {
+//     opacity: 1;
+//     transform: translateY(0);
+// }
+
+// .fade-exit.fade-exit-active {
+//     opacity: .50;
+//     transform: translateY(-10px);
+//     transition: opacity 150ms linear, transform 400ms ease-in;
+// }

@@ -1,6 +1,6 @@
 import '../style/App.css';
 import '../style/grid.css';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 function Header() {
@@ -9,26 +9,26 @@ function Header() {
         <div className="desktop-nav-container">
             <nav className="grid-container">
                 <div className="nav-logo">
-                    <Link to="/">
+                    <Link to="/" exact>
                         XIANG SHI
                     </Link>
                 </div>
                 
                 <ul className="cover nav-grid">
                     <li>
-                        <Link to="/">
+                        <NavLink activeClassName="active" to="/" exact>
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link>
+                        <NavLink activeClassName="active" to="/contact">
                             Contact
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link>
+                        <NavLink activeClassName="active" to="/photo">
                             Photo/Video
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

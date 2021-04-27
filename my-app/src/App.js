@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./Home";
 import Project from "./Project";
+import ScrollToTop from "./components/ScrollToTop";
 import{
   CSSTransition,
   TransitionGroup,
@@ -16,18 +17,20 @@ import React, {useRef, useEffect} from 'react';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
 
+function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop/>
         <Header/>
         <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition
             key={location.key}
-            timeout={450}
+            timeout={800}
             classNames="fade"
+            unmountOnExit
             >
               <Switch location={location}>
                 <Route exact path="/" component={Home}/>
@@ -41,20 +44,8 @@ function App() {
             </CSSTransition>
           </TransitionGroup>
         )}/>
-
-
-        {/* <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/bosstep" >
-              <Project messages={projectMessages.bosstep} banner={bosstepBanner} />
-            </Route>
-            <Route exact path="/cliq" >
-              <Project messages={projectMessages.cliq} banner={cliqBanner} />
-            </Route>
-        </Switch> */}
-
-        <Footer/>
       </div>
+      <Footer/>
     </Router>
   );
 }

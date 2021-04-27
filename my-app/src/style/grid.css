@@ -15,10 +15,20 @@
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1.5em;
+  grid-gap: .75em;
   width: 100%;
   margin: 0 auto;
   height: inherit;
+}
+
+.glass-border-padding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.glass-border-padding .project-size-contain {
+  padding: 1rem;
 }
 
 .color-block-container {
@@ -70,7 +80,7 @@
 
 @media only screen and (min-width: 80em) {
   .grid-container, .footer-grid-container {
-    max-width: 90vw;
+    max-width: 75vw;
   }
 }
 /*# sourceMappingURL=grid.css.map */
