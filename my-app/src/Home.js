@@ -70,124 +70,48 @@ const Home = () => {
                 <div className="color-stripe-container-1">
                     <div className="color-stripe color-stripe-1"></div>
                 </div>
-                <div className="max-col grid-container">
-                    <div className="test-img-contain">
-                        <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/> 
-                    </div>
-                    <div className="project-description test-desc">
-                        <div className="sub-container">
-                            <div className="title-wrapper desktop-project-header">
-                                <h2>{projectMessages.bosstep.title}</h2>
-                                <p>{projectMessages.bosstep.description}</p>
-                            </div>
-                            <div className="contribution-wrapper-r">
-                                <h3>Role:</h3>
-                                <p>{projectMessages.bosstep.role}</p>
-                            </div>
-                            <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        {/* <section className="project">
-            <div className="sub-container">
-                <div className="color-stripe-container-1">
-                    <div className="color-stripe color-stripe-1"></div>
-                </div>
                 <div className="color-stripe-container-2">
-                    <div className="color-stripe color-stripe-1"></div>
+                    <div className="color-stripe color-stripe-2"></div>
                 </div>
-                <div className="max-col grid-container">
-                    <div className="col-10 glass-border-padding">
-                        <div className="project-size-contain">
-                            <div className="project-img-wrapper">
-                                <Link to='/bosstep'>
-                                    <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/>                            
-                                </Link>
-                            </div>
-                            <div className="project-description">
-                                <div className="sub-container">
-                                    <div className="title-wrapper desktop-project-header">
-                                        <h2>{projectMessages.bosstep.title}</h2>
-                                        <p>{projectMessages.bosstep.description}</p>
-                                    </div>
-                                    <div className="contribution-wrapper-r">
-                                        <h3>Role:</h3>
-                                        <p>{projectMessages.bosstep.role}</p>
-                                    </div>
-                                    <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-
-        {/* <section className="project">
-            <div className="grid-container">
-                <div className="col-10">
-                    <div className="project-size-contain">
-                        <div className="project-img-wrapper">
-                            <Link to='/bosstep'>
-                                <img alt="BOSSTEP Project Graphic" src={CLIQ}/>                            
+                <div className="max-col">
+                    <div className="grid-container">
+                        <div className="img-contain">
+                            <Link to='/bosstep' exact>
+                                <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/> 
                             </Link>
                         </div>
-                        <div className="project-description">
+                        <div className="project-description test-desc">
                             <div className="sub-container">
                                 <div className="title-wrapper desktop-project-header">
-                                    <h2>{projectMessages.cliq.title}</h2>
-                                    <p>{projectMessages.cliq.description}</p>
+                                    <h2>{projectMessages.bosstep.title}</h2>
+                                    <p>{projectMessages.bosstep.description}</p>
                                 </div>
                                 <div className="contribution-wrapper-r">
                                     <h3>Role:</h3>
-                                    <p>{projectMessages.cliq.role}</p>
+                                    <p>{projectMessages.bosstep.role}</p>
                                 </div>
                                 <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-            
         </section>
 
-        <section className="project">
-            <div className="sub-container">
-                <div className="color-stripe-container-1">
-                    <div className="color-stripe color-stripe-1"></div>
-                </div>
-                <div className="color-stripe-container-2">
-                    <div className="color-stripe color-stripe-1"></div>
-                </div>
-                <div className="max-col grid-container">
-                    <div className="col-10">
-                        <div className="project-size-contain">
-                            <div className="project-img-wrapper">
-                                <Link to='/bosstep'>
-                                    <img alt="TRACK Project Graphic" src={TRACK}/>                            
-                                </Link>
-                            </div>
-                            <div className="project-description">
-                                <div className="sub-container">
-                                    <div className="title-wrapper desktop-project-header">
-                                        <h2>{projectMessages.track.title}</h2>
-                                        <p>{projectMessages.track.description}</p>
-                                    </div>
-                                    <div className="contribution-wrapper-r">
-                                        <h3>Role:</h3>
-                                        <p>{projectMessages.track.role}</p>
-                                    </div>
-                                    <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
-                                </div>
-                            </div>
-                        </div>
+        <section>
+            <div className="grid-container">
+                <div className="col-10">
+                    <h2>Other Projects<strong class="highlight-text">_</strong></h2>
+                    <div className="sub-container">
+                        <div className="otr-proj-1"></div>
+                        <div className="otr-proj-2"></div>
+                        <div className="otr-proj-3"></div>
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
+        
         
       </main>
   );

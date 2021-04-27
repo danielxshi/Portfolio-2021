@@ -17,7 +17,7 @@ function Header() {
                 <ul className="cover nav-grid">
                     <li>
                         <NavLink activeClassName="active" to="/" exact>
-                            Home
+                            Design
                         </NavLink>
                     </li>
                     <li>
