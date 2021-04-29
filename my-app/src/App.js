@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-import './style/App.css';
+import './style/App.scss';
+import './style/global.scss';
 import projectMessages from './components/ProjectMessages.js'
 import bosstepBanner from './images/bosstep-banner-2048x768.jpg';
 import cliqBanner from './images/cliq/cliq-banner-2048x768.png';

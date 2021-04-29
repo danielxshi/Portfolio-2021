@@ -1,5 +1,5 @@
-import '../style/App.css';
-import '../style/grid.css';
+import '../style/App.scss';
+import '../style/grid.scss';
 import GIT from '../images/icons/github-brands.png';
 import IG from '../images/icons/instagram-brands.png';
 

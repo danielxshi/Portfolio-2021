@@ -1,5 +1,5 @@
-import '../style/App.css';
-import '../style/grid.css';
+import '../style/App.scss';
+import '../style/grid.scss';
 import { Link, NavLink } from "react-router-dom";
 
 

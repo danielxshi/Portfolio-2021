@@ -1,8 +1,7 @@
-import './style/App.scss';
-import './style/grid.scss';
 import BOSSTEP from './images/boss-1000x600.png';
 import CLIQ from './images/cliq-1000x600.png';
 import TRACK from './images/track-1000x600.png';
+// import IndexImages from './components/IndexImages.js';
 import projectMessages from './components/ProjectMessages.js'
 
 import { gsap } from "gsap";
@@ -80,7 +79,7 @@ const Home = () => {
                                 <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/> 
                             </Link>
                         </div>
-                        <div className="project-description test-desc">
+                        <div className="project-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae. Tempore possimus perferendis fuga ad veritatis. Harum quo explicabo dolores, nostrum, quas ipsa maxime itaque laboriosam deserunt magni mollitia aspernatur?-desc">
                             <div className="sub-container">
                                 <div className="title-wrapper desktop-project-header">
                                     <h2>{projectMessages.bosstep.title}</h2>
@@ -94,19 +93,102 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
+        </section>
+        
+        <section className="project project-1">
+            <div className="sub-container">
+                <div className="color-stripe-container-1">
+                    <div className="color-stripe color-stripe-1"></div>
+                </div>
+                <div className="color-stripe-container-2">
+                    <div className="color-stripe color-stripe-2"></div>
+                </div>
+                <div className="max-col">
+                    <div className="grid-container">
+                        <div className="img-contain">
+                            <Link to='/cliq' exact>
+                                <img alt="CLIQ Project Graphic" src={CLIQ}/> 
+                            </Link>
+                        </div>
+                        <div className="project-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae. Tempore possimus perferendis fuga ad veritatis. Harum quo explicabo dolores, nostrum, quas ipsa maxime itaque laboriosam deserunt magni mollitia aspernatur?-desc">
+                            <div className="sub-container">
+                                <div className="title-wrapper desktop-project-header">
+                                    <h2>{projectMessages.cliq.title}</h2>
+                                    <p>{projectMessages.cliq.description}</p>
+                                </div>
+                                <div className="contribution-wrapper-r">
+                                    <h3>Role:</h3>
+                                    <p>{projectMessages.cliq.role}</p>
+                                </div>
+                                <Link class="black-border-btn primary-btn" to='/cliq'>View Process</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section className="project project-1">
+            <div className="sub-container">
+                <div className="color-stripe-container-1">
+                    <div className="color-stripe color-stripe-1"></div>
+                </div>
+                <div className="color-stripe-container-2">
+                    <div className="color-stripe color-stripe-2"></div>
+                </div>
+                <div className="max-col">
+                    <div className="grid-container">
+                        <div className="img-contain">
+                            <Link to='/track' exact>
+                                <img alt="Track Project Graphic" src={TRACK}/> 
+                            </Link>
+                        </div>
+                        <div className="project-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae. Tempore possimus perferendis fuga ad veritatis. Harum quo explicabo dolores, nostrum, quas ipsa maxime itaque laboriosam deserunt magni mollitia aspernatur?-desc">
+                            <div className="sub-container">
+                                <div className="title-wrapper desktop-project-header">
+                                    <h2>{projectMessages.track.title}</h2>
+                                    <p>{projectMessages.track.description}</p>
+                                </div>
+                                <div className="contribution-wrapper-r">
+                                    <h3>Role:</h3>
+                                    <p>{projectMessages.track.role}</p>
+                                </div>
+                                <Link class="black-border-btn primary-btn" to='/track'>View Process</Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="otr-proj-sect">
             <div className="grid-container">
                 <div className="col-10">
                     <h2>Other Projects<strong class="highlight-text">_</strong></h2>
-                    <div className="sub-container">
-                        <div className="otr-proj-1"></div>
-                        <div className="otr-proj-2"></div>
-                        <div className="otr-proj-3"></div>
+                    <div className="sub-container otr-proj-container">
+                        <div className="otr-proj-spec-wrapper">
+                            <div className="otr-proj-1 otr-proj img-contain-maintain-w">
+                                <img src={BOSSTEP} alt=""/>
+                            </div>
+                            <h3>Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae.</p>
+                        </div>
+                        <div className="otr-proj-spec-wrapper">
+                            <div className="otr-proj-1 otr-proj img-contain-maintain-w">
+                                <img src={BOSSTEP} alt=""/>
+                            </div>
+                            <h3>Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed ipsa commodi odio, </p>
+                        </div>
+                        <div className="otr-proj-spec-wrapper">
+                            <div className="otr-proj-1 otr-proj img-contain-maintain-w">
+                                <img src={BOSSTEP} alt=""/>
+                            </div>
+                            <h3>Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae. </p>
+                        </div>
                     </div>
                 </div>
             </div>

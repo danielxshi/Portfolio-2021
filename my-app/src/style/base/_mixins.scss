@@ -1,0 +1,8 @@
+// !Export to mixins
+$shadows-description: 0px 0px 7vw rgba(0, 0, 0, .50);
+
+@mixin shadows-description ($params-desc) {
+    -webkit-box-shadow: $params-desc;
+    -moz-box-shadow: $params-desc;
+    box-shadow: $params-desc;
+  }
