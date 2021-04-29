@@ -3,21 +3,166 @@
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    .project-description {
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .img-contain {
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 1;
+    }
+    .otr-proj-1{
+        grid-row-start:1;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }.otr-proj-2{
+        grid-row-start:2;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }.otr-proj-3{
+        grid-row-start:3;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    
+        
+    footer{
+        .footer-email-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+        .footer-frequent-links-wrapper{
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 12;
+        }
+        .footer-social-media-wrapper{
+            margin-top: 0;
+            grid-row-start: 1;
+            grid-column-start: 7;
+            grid-column-end: 12;
+            img:first-child{
+                margin-right: 1rem;
+            }
+        }
+        .footer-copyright{
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-column-end: 12;
+        }
+        .footer-cell{
+            margin-top: 0;
+        }
+
+    }
+}
 
 /* Larger than phablet */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    .project-description {
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .img-contain {
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 1;
+    }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    .otr-proj-1{
+        grid-row-start:1;
+        grid-column-start: 1;
+    }.otr-proj-2{
+        grid-row-start:1;
+        grid-column-start: 5;
+    }.otr-proj-3{
+        grid-row-start:1;
+        grid-column-start: 9;
+    }
+    .otr-proj-sect{
+        .sub-container{
+            gap: 2em;
+        }
+    }
+    .otr-proj-spec-wrapper{
+        grid-column-end: span 4;
+    }
+        
+    footer{
+        min-height: 15rem;
+        height: 15rem;
+        .footer-email-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .footer-frequent-links-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+        .footer-social-media-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 8;
+            grid-column-end: 10;
+            img:first-child{
+                margin-right: 1rem;
+            }
+        }
+        .footer-cell{
+            height: 12rem;
+        }
+        .footer-copyright{
+            grid-row-start: 1;
+            grid-column-start: 11;
+            grid-column-end: 12;
+        }
+        .footer-grid-container > div {
+            margin: auto 0;
+        }
+    }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+        
+    .project-description{
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-column-start: 7;
+    }
+
+    .img-contain{
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 1;
+    }
+
+    
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    
+    .project{
+        .grid-container{
+            padding: 5rem;
+        }
+    }
+    .grid-container, .footer-grid-container{
+        max-width: 75vw;
+    }
+}
 
-
+// !Remake
 @media only screen and (max-width: 80em){
     h2{
         font-size: 2rem;
@@ -37,22 +182,4 @@
         margin-bottom: 0;
         font-size: 3.5rem;
     }
-    .project-description {
-        grid-column-end: 13;
-        grid-row-start: 2;
-        grid-column-start: 1;
-    }
-    .img-contain {
-        grid-column-start: 1;
-        grid-column-end: 13;
-        grid-row-start: 1;
-    }
-}
-
-
-@media only screen and (min-width: 80em) {
-    .grid-container, .footer-grid-container{
-        max-width: 75vw;
-    }
-
 }

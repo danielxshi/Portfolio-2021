@@ -1,7 +1,4 @@
-import '../style/App.scss';
-import '../style/grid.scss';
 import { Link, NavLink } from "react-router-dom";
-
 
 function Header() {
   return (
@@ -13,7 +10,6 @@ function Header() {
                         XIANG SHI
                     </Link>
                 </div>
-                
                 <ul className="cover nav-grid">
                     <li>
                         <NavLink activeClassName="active" to="/" exact>

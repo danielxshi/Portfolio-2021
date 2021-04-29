@@ -98,9 +98,16 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
     margin-bottom: 15vh;
     padding-bottom: 5rem;
     .grid-container{
-        background: #262935;
-        padding: 5rem;
         @include shadows-project($shadows-project);
+    }
+    .blue-tab{
+        background: #262935;
+    }
+    .red-tab{
+        background: #352633;
+    }
+    .green-tab{
+        background: #263527;
     }
     .max-col{
         display: flex;
@@ -112,12 +119,13 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
     margin-top: 20vh;
 }
 
-// !Rename
-.img-contain{
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 1;
+
+.project{
+    .grid-container{
+        padding: 2rem 0;
+    }
 }
+
 
 .img-contain img{
     object-fit: cover;
@@ -143,9 +151,6 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
 
 
 .project-description{
-    grid-column-end: 12;
-    grid-row-start: 1;
-    grid-column-start: 7;
     display: flex;
     z-index: 1;
     color: $white;
@@ -198,16 +203,12 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
 .otr-proj-sect{
     .sub-container{
         margin-top: 5vh;
-        gap: 4em;
     }
     h3{
         margin-top: 2rem;
     }
     .otr-proj-container{
-        .otr-proj-spec-wrapper{
-            grid-column-end: span 4;
-            margin-bottom: 10vh;
-        }
+        margin-bottom: 10vh;
         .otr-proj{
             display: flex;
             flex-direction: column;
@@ -224,8 +225,14 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
 
 
 // Project details pg
-.color-stripe{
-    background: $stripe;
+.color-stripe-blue{
+    background: $stripe-blue;
+}
+.color-stripe-green{
+    background: $stripe-green;
+}
+.color-stripe-red{
+    background: $stripe-red;
 }
 
 .color-stripe-container-1{

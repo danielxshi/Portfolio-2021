@@ -1,21 +1,28 @@
-import logo from './logo.svg';
+// Import styles
 import './style/App.scss';
 import './style/global.scss';
+
+// Import Messages
 import projectMessages from './components/ProjectMessages.js'
+
+// Import images
 import bosstepBanner from './images/bosstep-banner-2048x768.jpg';
 import cliqBanner from './images/cliq/cliq-banner-2048x768.png';
+
+// Import components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./Home";
 import Project from "./Project";
 import ScrollToTop from "./components/ScrollToTop";
+
+// Import Animation
 import{
   CSSTransition,
   TransitionGroup,
 } from 'react-transition-group';
 
 import React, {useRef, useEffect} from 'react';
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 

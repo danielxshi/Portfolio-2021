@@ -1,8 +1,6 @@
 // Footer
 
 footer{
-    min-height: 15rem;
-    height: 15rem;
     padding: 2.5rem 0 2.5rem 0;
     background:$black;
     color: $white;
@@ -12,34 +10,8 @@ footer{
         margin-top: 0;
         margin-bottom: .5rem;
     }
-    .footer-cell{
-        height: 12rem;
-    }
-    .footer-grid-container > div {
-        margin: auto 0;
-    }
-    .footer-email-wrapper{
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-    .footer-frequent-links-wrapper{
-        grid-column-start: 5;
-        grid-column-end: 7;
-    }
-    .footer-social-media-wrapper{
-        grid-column-start: 8;
-        grid-column-end: 10;
-        img:first-child{
-            margin-right: 1rem;
-        }
-    }
-    .footer-copyright{
-        grid-column-start: 11;
-        grid-column-end: 12;
-        .copyright{
-            font-size: 1rem;
-            color: #898989;
-        
-        }
+    .copyright{
+        font-size: 1rem;
+        color: #898989;
     }
 }

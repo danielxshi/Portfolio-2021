@@ -15,7 +15,7 @@ const bosstepMessages = {
 
 const cliqMessages = {
     title: "CLIQ",
-    category: "lol",
+    category: "E-Commerce",
     description: "An e-commerce website curated for enthusiasts of mechanical keyboards",
     role: "Sketch, Wireframe, Website Development",
     date: ""
@@ -23,7 +23,7 @@ const cliqMessages = {
 
 const trackMessages = {
     title: "Moment Track",
-    category: "lol",
+    category: "Mobile App",
     description: "A battery monitoring application for users off-grid",
     role: "Wireframe, UX/UI design, User Research, Ethnography Study, Journey Mapping",
     date: ""

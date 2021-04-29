@@ -1,7 +1,4 @@
-import './style/App.scss';
-import './style/grid.scss';
 import { Link } from "react-router-dom";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function Project(props) {
     return (

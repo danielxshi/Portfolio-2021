@@ -1,5 +1,4 @@
 import '../style/App.scss';
-import '../style/grid.scss';
 import GIT from '../images/icons/github-brands.png';
 import IG from '../images/icons/instagram-brands.png';
 
@@ -36,10 +35,10 @@ function Footer() {
                 <p>Social Media</p>
                 <ul>
                     <li>
-                        <a href="https://github.com/danielxshi">
+                        <a target="_blank" href="https://github.com/danielxshi">
                             <img height="30" width="30" src={GIT} alt="Github Icon"/>
                         </a>
-                        <a href="https://www.instagram.com/danielxshi/">
+                        <a target="_blank" href="https://www.instagram.com/danielxshi/">
                             <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
                         </a>
                     </li>

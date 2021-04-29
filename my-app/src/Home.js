@@ -1,14 +1,10 @@
 import BOSSTEP from './images/boss-1000x600.png';
 import CLIQ from './images/cliq-1000x600.png';
 import TRACK from './images/track-1000x600.png';
-// import IndexImages from './components/IndexImages.js';
 import projectMessages from './components/ProjectMessages.js'
-
 import { gsap } from "gsap";
-
 import { Link } from "react-router-dom";
 import React, { useEffect, useRef} from 'react';
-
 
 const Home = () => {
     let line1 = useRef(null);
@@ -26,7 +22,7 @@ const Home = () => {
     }, [line1, line2]);
     return (
 
-      <main class="landing-pg">
+    <main class="landing-pg">
         <div className="intro-wrapper">
             <div className="grid-container">
                 <div className="col-10 intro-text-banner">
@@ -67,13 +63,13 @@ const Home = () => {
         <section className="project project-1">
             <div className="sub-container">
                 <div className="color-stripe-container-1">
-                    <div className="color-stripe color-stripe-1"></div>
+                    <div className="color-stripe-red color-stripe-1"></div>
                 </div>
                 <div className="color-stripe-container-2">
-                    <div className="color-stripe color-stripe-2"></div>
+                    <div className="color-stripe-red color-stripe-2"></div>
                 </div>
                 <div className="max-col">
-                    <div className="grid-container">
+                    <div className="grid-container red-tab">
                         <div className="img-contain">
                             <Link to='/bosstep' exact>
                                 <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/> 
@@ -100,13 +96,13 @@ const Home = () => {
         <section className="project project-1">
             <div className="sub-container">
                 <div className="color-stripe-container-1">
-                    <div className="color-stripe color-stripe-1"></div>
+                    <div className="color-stripe-green color-stripe-1"></div>
                 </div>
                 <div className="color-stripe-container-2">
-                    <div className="color-stripe color-stripe-2"></div>
+                    <div className="color-stripe-green color-stripe-2"></div>
                 </div>
                 <div className="max-col">
-                    <div className="grid-container">
+                    <div className="grid-container green-tab">
                         <div className="img-contain">
                             <Link to='/cliq' exact>
                                 <img alt="CLIQ Project Graphic" src={CLIQ}/> 
@@ -133,13 +129,13 @@ const Home = () => {
         <section className="project project-1">
             <div className="sub-container">
                 <div className="color-stripe-container-1">
-                    <div className="color-stripe color-stripe-1"></div>
+                    <div className="color-stripe-blue color-stripe-1"></div>
                 </div>
                 <div className="color-stripe-container-2">
-                    <div className="color-stripe color-stripe-2"></div>
+                    <div className="color-stripe-blue color-stripe-2"></div>
                 </div>
                 <div className="max-col">
-                    <div className="grid-container">
+                    <div className="grid-container blue-tab">
                         <div className="img-contain">
                             <Link to='/track' exact>
                                 <img alt="Track Project Graphic" src={TRACK}/> 
@@ -166,23 +162,23 @@ const Home = () => {
         <section class="otr-proj-sect">
             <div className="grid-container">
                 <div className="col-10">
-                    <h2>Other Projects<strong class="highlight-text">_</strong></h2>
+                    <h2>More projects<strong class="highlight-text">_</strong></h2>
                     <div className="sub-container otr-proj-container">
-                        <div className="otr-proj-spec-wrapper">
+                        <div className="otr-proj-spec-wrapper otr-proj-1">
                             <div className="otr-proj-1 otr-proj img-contain-maintain-w">
                                 <img src={BOSSTEP} alt=""/>
                             </div>
                             <h3>Title</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae.</p>
                         </div>
-                        <div className="otr-proj-spec-wrapper">
+                        <div className="otr-proj-spec-wrapper otr-proj-2">
                             <div className="otr-proj-1 otr-proj img-contain-maintain-w">
                                 <img src={BOSSTEP} alt=""/>
                             </div>
                             <h3>Title</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed ipsa commodi odio, </p>
                         </div>
-                        <div className="otr-proj-spec-wrapper">
+                        <div className="otr-proj-spec-wrapper otr-proj-3">
                             <div className="otr-proj-1 otr-proj img-contain-maintain-w">
                                 <img src={BOSSTEP} alt=""/>
                             </div>
@@ -193,9 +189,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        
-        
-      </main>
+    </main>
   );
 }
 
