@@ -4,6 +4,9 @@
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+    .otr-proj-spec-wrapper{
+        margin-bottom: 4rem;
+    }
     .project-description {
         grid-column-end: 12;
         grid-row-start: 2;
@@ -26,9 +29,8 @@
         grid-row-start:3;
         grid-column-start: 1;
         grid-column-end: -1;
-    }
-    
-        
+        margin-bottom: 0;
+    }   
     footer{
         .footer-email-wrapper{
             grid-row-start: 1;
@@ -77,6 +79,11 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    // .nav-menu {
+    //     grid-column-start: 6;
+    //     grid-column-end: 12;
+    //     justify-content: flex-end;
+    // }
     .otr-proj-1{
         grid-row-start:1;
         grid-column-start: 1;

@@ -243,10 +243,11 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
     display: flex;
 }
 
-.color-stripe-container-2{
+.color-stripe-container-2 {
     grid-row-start: 1;
-    grid-column-start: 7;
-    grid-column-end: 12;
+    grid-column-start: 6;
+    grid-column-end: 13;
+    margin-right: -5rem;
     height: 100%;
     display: flex;
     z-index: 1;

@@ -10,11 +10,12 @@ import bosstepBanner from './images/bosstep-banner-2048x768.jpg';
 import cliqBanner from './images/cliq/cliq-banner-2048x768.png';
 
 // Import components
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./Home";
 import Project from "./Project";
 import ScrollToTop from "./components/ScrollToTop";
+import Navbar from "./components/Navbar/Navbar.js";
+
 
 // Import Animation
 import{
@@ -31,7 +32,7 @@ function App() {
     <Router>
       <div className="App">
         <ScrollToTop/>
-        <Header/>
+        <Navbar/>
         <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition

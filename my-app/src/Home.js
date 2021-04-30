@@ -65,8 +65,12 @@ const Home = () => {
                 <div className="color-stripe-container-1">
                     <div className="color-stripe-red color-stripe-1"></div>
                 </div>
-                <div className="color-stripe-container-2">
-                    <div className="color-stripe-red color-stripe-2"></div>
+                <div className="max-col">
+                    <div className="grid-container">
+                        <div className="color-stripe-container-2">
+                            <div className="color-stripe-red color-stripe-2"></div>
+                        </div>
+                    </div>
                 </div>
                 <div className="max-col">
                     <div className="grid-container red-tab">
@@ -98,8 +102,12 @@ const Home = () => {
                 <div className="color-stripe-container-1">
                     <div className="color-stripe-green color-stripe-1"></div>
                 </div>
-                <div className="color-stripe-container-2">
-                    <div className="color-stripe-green color-stripe-2"></div>
+                <div className="max-col">
+                    <div className="grid-container">
+                        <div className="color-stripe-container-2">
+                            <div className="color-stripe-green color-stripe-2"></div>
+                        </div>
+                    </div>
                 </div>
                 <div className="max-col">
                     <div className="grid-container green-tab">
@@ -131,9 +139,16 @@ const Home = () => {
                 <div className="color-stripe-container-1">
                     <div className="color-stripe-blue color-stripe-1"></div>
                 </div>
-                <div className="color-stripe-container-2">
-                    <div className="color-stripe-blue color-stripe-2"></div>
+                <div className="max-col">
+                    <div className="grid-container">
+                        <div className="color-stripe-container-2">
+                            <div className="color-stripe-blue color-stripe-2"></div>
+                        </div>
+                    </div>
                 </div>
+                {/* <div className="color-stripe-container-2">
+                    <div className="color-stripe-blue color-stripe-2"></div>
+                </div> */}
                 <div className="max-col">
                     <div className="grid-container blue-tab">
                         <div className="img-contain">
@@ -165,7 +180,7 @@ const Home = () => {
                     <h2>More projects<strong class="highlight-text">_</strong></h2>
                     <div className="sub-container otr-proj-container">
                         <div className="otr-proj-spec-wrapper otr-proj-1">
-                            <div className="otr-proj-1 otr-proj img-contain-maintain-w">
+                            <div className="otr-proj img-contain-maintain-w">
                                 <img src={BOSSTEP} alt=""/>
                             </div>
                             <h3>Title</h3>
