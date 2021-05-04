@@ -1,8 +1,37 @@
-// !Export to mixins
+// TODO comments
+/* location and use case */
+
 $shadows-description: 0px 0px 7vw rgba(0, 0, 0, .50);
 
 @mixin shadows-description ($params-desc) {
     -webkit-box-shadow: $params-desc;
     -moz-box-shadow: $params-desc;
     box-shadow: $params-desc;
-  }
+}
+
+  
+$shadows: 45px 15px 75px rgba(222, 222, 222, .67) inset, 7px 20px 30px rgba(35, 34, 36, 0.62) inset;
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+
+$shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rgba(35, 34, 36, 0.62);
+
+@mixin shadows-project ($params2) {
+    -webkit-box-shadow: $params2;
+    -moz-box-shadow: $params2;
+    box-shadow: $params2;
+}
+
+
+$shadows-green-stripe: 45px 15px 75px rgba(86, 86, 86, .43) inset, 7px 20px 30px rgba(29, 29, 29, .62) inset;
+
+@mixin shadows-green-stripe($params3) {
+    -webkit-box-shadow: $params3;
+    -moz-box-shadow: $params3;
+    box-shadow: $params3;
+}

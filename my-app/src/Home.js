@@ -97,7 +97,7 @@ const Home = () => {
             </div>
         </section>
         
-        <section className="project project-1">
+        <section className="project">
             <div className="sub-container">
                 <div className="color-stripe-container-1">
                     <div className="color-stripe-green color-stripe-1"></div>
@@ -134,7 +134,7 @@ const Home = () => {
             </div>
         </section>
         
-        <section className="project project-1">
+        <section className="project">
             <div className="sub-container">
                 <div className="color-stripe-container-1">
                     <div className="color-stripe-blue color-stripe-1"></div>

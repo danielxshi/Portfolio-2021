@@ -7,8 +7,7 @@
 .intro-wrapper{
     height: 92.5vh;
     h1{
-        margin-bottom: 0;        
-        font-size: 7rem;
+        margin-bottom: 0;       
     }
     p{
         font-weight: 600;
@@ -30,15 +29,6 @@
 }
 
 // === About section
-
-// !Export to mixins
-
-@mixin box-shadow($params) {
-    -webkit-box-shadow: $params;
-    -moz-box-shadow: $params;
-    box-shadow: $params;
-  }
-  $shadows: 45px 15px 75px rgba(222, 222, 222, .67) inset, 7px 20px 30px rgba(35, 34, 36, 0.62) inset;
 
 .about-section {
     background: $white;
@@ -83,20 +73,11 @@
 }
 
 // === Project section
-
-// !Export to mixins
-$shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rgba(35, 34, 36, 0.62);
-
-
-@mixin shadows-project ($params2) {
-    -webkit-box-shadow: $params2;
-    -moz-box-shadow: $params2;
-    box-shadow: $params2;
-  }
+.hero-banner{
+    height: 90vh;
+}
 
 .project{
-    margin-bottom: 15vh;
-    padding-bottom: 5rem;
     .grid-container{
         @include shadows-project($shadows-project);
     }
@@ -113,12 +94,6 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
         display: flex;
     }
 }
-
-// TODO look for better solution
-.project-1{
-    margin-top: 20vh;
-}
-
 
 .project{
     .grid-container{
@@ -199,7 +174,6 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
 
 
 // Other projects
-// TODO media query 
 .otr-proj-sect{
     .sub-container{
         margin-top: 5vh;
@@ -247,23 +221,12 @@ $shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rg
     grid-row-start: 1;
     grid-column-start: 6;
     grid-column-end: 13;
-    margin-right: -5rem;
     height: 100%;
     display: flex;
     z-index: 1;
 }
 
-// !Export to mixins
-
-$shadows-green-stripe: 45px 15px 75px rgba(86, 86, 86, .43) inset, 7px 20px 30px rgba(29, 29, 29, .62) inset;
-
-
-@mixin shadows-green-stripe($params3) {
-    -webkit-box-shadow: $params3;
-    -moz-box-shadow: $params3;
-    box-shadow: $params3;
-  }
-
+// home page color stripes
 .color-stripe-1{
     @include shadows-green-stripe($shadows-green-stripe);
     height: 100px;
@@ -289,7 +252,6 @@ $shadows-green-stripe: 45px 15px 75px rgba(86, 86, 86, .43) inset, 7px 20px 30px
         }
     }
     .project-text-wrapper{
-        margin-top: 2rem;
         grid-column-end: 8;
     }
     img{
@@ -300,7 +262,8 @@ $shadows-green-stripe: 45px 15px 75px rgba(86, 86, 86, .43) inset, 7px 20px 30px
         position: relative;
         overflow: hidden;
         vertical-align: top;
-        max-height: 30rem;
+        // max-height: 30rem;
+        height: 100%;
     }
     h1{
         margin: 0;

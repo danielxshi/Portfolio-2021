@@ -4,18 +4,48 @@
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-    .otr-proj-spec-wrapper{
-        margin-bottom: 4rem;
+    .proj-info-wrapper .grid-container{
+        padding: 20vh 0;
+        .project-description-container {
+            p {
+                margin-bottom: 2rem;
+            } 
+        }
+        .sub-details-wrapper{
+            margin-bottom: 1rem;
+        }
     }
+    
+    .project{
+        margin-bottom: 7vh;
+    }
+
+    .project-1{
+        margin-top: 10vh;
+    }
+
+    .intro-wrapper{
+        h1{      
+            font-size: 4rem;
+        }
+    }
+
     .project-description {
         grid-column-end: 12;
         grid-row-start: 2;
         grid-column-start: 2;
     }
+
     .img-contain {
         grid-column-start: 2;
         grid-column-end: 12;
         grid-row-start: 1;
+    }
+
+
+    // Other project section - homepage
+    .otr-proj-spec-wrapper{
+        margin-bottom: 4rem;
     }
     .otr-proj-1{
         grid-row-start:1;
@@ -30,7 +60,10 @@
         grid-column-start: 1;
         grid-column-end: -1;
         margin-bottom: 0;
-    }   
+    }  
+    
+
+    // footer - all pages 
     footer{
         .footer-email-wrapper{
             grid-row-start: 1;
@@ -59,12 +92,18 @@
         .footer-cell{
             margin-top: 0;
         }
-
     }
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+
+    //Intro - homepage
+    .intro-wrapper{
+        h1{      
+            font-size: 4rem;
+        }
+    }
     .project-description {
         grid-column-end: 12;
         grid-row-start: 2;
@@ -79,30 +118,8 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-    // .nav-menu {
-    //     grid-column-start: 6;
-    //     grid-column-end: 12;
-    //     justify-content: flex-end;
-    // }
-    .otr-proj-1{
-        grid-row-start:1;
-        grid-column-start: 1;
-    }.otr-proj-2{
-        grid-row-start:1;
-        grid-column-start: 5;
-    }.otr-proj-3{
-        grid-row-start:1;
-        grid-column-start: 9;
-    }
-    .otr-proj-sect{
-        .sub-container{
-            gap: 2em;
-        }
-    }
-    .otr-proj-spec-wrapper{
-        grid-column-end: span 4;
-    }
-        
+
+    // footer - all pages
     footer{
         min-height: 15rem;
         height: 15rem;
@@ -140,6 +157,31 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+    // Other project section - homepage
+    .otr-proj-1{
+        grid-row-start:1;
+        grid-column-start: 1;
+    }.otr-proj-2{
+        grid-row-start:1;
+        grid-column-start: 5;
+    }.otr-proj-3{
+        grid-row-start:1;
+        grid-column-start: 9;
+    }
+    .otr-proj-sect{
+        .sub-container{
+            gap: 2em;
+        }
+    }
+    .otr-proj-spec-wrapper{
+        grid-column-end: span 4;
+    }
+    .intro-wrapper{
+        h1{      
+            font-size: 6rem;
+        }
+    }
         
     .project-description{
         grid-column-end: 12;
@@ -158,35 +200,47 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    
+    .project{
+        margin-bottom: 15vh;
+    }
+
+    .project-1{
+        margin-top: 20vh;
+    }
+
+    .intro-wrapper{
+        h1{      
+            font-size: 6.5rem;
+        }
+    }
+
+
+    // Color stripe - homepage
+    .color-stripe-container-1{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 100%;
+        display: flex;
+    }
+    .color-stripe-container-2 {
+        grid-row-start: 1;
+        grid-column-start: 6;
+        grid-column-end: 13;
+        margin-right: -5rem;
+        height: 100%;
+        display: flex;
+        z-index: 1;
+    }
+
+
     .project{
         .grid-container{
             padding: 5rem;
         }
     }
+
     .grid-container, .footer-grid-container{
         max-width: 75vw;
-    }
-}
-
-// !Remake
-@media only screen and (max-width: 80em){
-    h2{
-        font-size: 2rem;
-    }
-    p{
-        font-size: 1.1rem;
-    }
-    nav ul a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: .8rem;
-        color: #8b8b8b;
-        transition: 0.3s ease-in-out;
-    }.intro-wrapper p {
-        font-weight: 600;
-    }.intro-wrapper h1 {
-        margin-bottom: 0;
-        font-size: 3.5rem;
     }
 }

@@ -16,7 +16,7 @@ const bosstepMessages = {
 const cliqMessages = {
     title: "CLIQ",
     category: "E-Commerce",
-    description: "An e-commerce website curated for enthusiasts of mechanical keyboards",
+    description: "An e-commerce website curated for mechanical keyboard newcomers and enthusiasts",
     role: "Sketch, Wireframe, Website Development",
     date: ""
 };
