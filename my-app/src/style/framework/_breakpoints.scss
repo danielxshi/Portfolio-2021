@@ -126,6 +126,9 @@
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+    .grid-container{
+        width: 80vw;
+    }
 
     //Intro - homepage
     .intro-wrapper{
