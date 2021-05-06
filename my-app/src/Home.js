@@ -65,16 +65,16 @@ const Home = () => {
                 <div className="color-stripe-container-1">
                     <div className="color-stripe-red color-stripe-1"></div>
                 </div>
-                <div className="max-col">
+                <div className="max-col row-start-1">
                     <div className="grid-container">
                         <div className="color-stripe-container-2">
                             <div className="color-stripe-red color-stripe-2"></div>
                         </div>
                     </div>
                 </div>
-                <div className="max-col">
+                <div className="max-col row-start-1">
                     <div className="grid-container red-tab">
-                        <div className="img-contain">
+                        <div className="img-contain proj-home-grid-def">
                             <Link to='/bosstep' exact>
                                 <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/> 
                             </Link>
@@ -102,16 +102,16 @@ const Home = () => {
                 <div className="color-stripe-container-1">
                     <div className="color-stripe-green color-stripe-1"></div>
                 </div>
-                <div className="max-col">
+                <div className="max-col row-start-1">
                     <div className="grid-container">
                         <div className="color-stripe-container-2">
                             <div className="color-stripe-green color-stripe-2"></div>
                         </div>
                     </div>
                 </div>
-                <div className="max-col">
+                <div className="max-col row-start-1">
                     <div className="grid-container green-tab">
-                        <div className="img-contain">
+                        <div className="img-contain proj-home-grid-def">
                             <Link to='/cliq' exact>
                                 <img alt="CLIQ Project Graphic" src={CLIQ}/> 
                             </Link>
@@ -139,7 +139,7 @@ const Home = () => {
                 <div className="color-stripe-container-1">
                     <div className="color-stripe-blue color-stripe-1"></div>
                 </div>
-                <div className="max-col">
+                <div className="max-col row-start-1">
                     <div className="grid-container">
                         <div className="color-stripe-container-2">
                             <div className="color-stripe-blue color-stripe-2"></div>
@@ -149,9 +149,9 @@ const Home = () => {
                 {/* <div className="color-stripe-container-2">
                     <div className="color-stripe-blue color-stripe-2"></div>
                 </div> */}
-                <div className="max-col">
+                <div className="max-col row-start-1">
                     <div className="grid-container blue-tab">
-                        <div className="img-contain">
+                        <div className="img-contain proj-home-grid-def">
                             <Link to='/track' exact>
                                 <img alt="Track Project Graphic" src={TRACK}/> 
                             </Link>
@@ -180,21 +180,21 @@ const Home = () => {
                     <h2>More projects<strong class="highlight-text">_</strong></h2>
                     <div className="sub-container otr-proj-container">
                         <div className="otr-proj-spec-wrapper otr-proj-1">
-                            <div className="otr-proj img-contain-maintain-w">
+                            <div className="otr-proj img-contain proj-home-grid-def-maintain-w">
                                 <img src={BOSSTEP} alt=""/>
                             </div>
                             <h3>Title</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae.</p>
                         </div>
                         <div className="otr-proj-spec-wrapper otr-proj-2">
-                            <div className="otr-proj-1 otr-proj img-contain-maintain-w">
+                            <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
                                 <img src={BOSSTEP} alt=""/>
                             </div>
                             <h3>Title</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed ipsa commodi odio, </p>
                         </div>
                         <div className="otr-proj-spec-wrapper otr-proj-3">
-                            <div className="otr-proj-1 otr-proj img-contain-maintain-w">
+                            <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
                                 <img src={BOSSTEP} alt=""/>
                             </div>
                             <h3>Title</h3>

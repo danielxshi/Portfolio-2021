@@ -1,3 +1,6 @@
+// Imports
+@import '../base/variables.scss';
+
 *{
     margin: 0;
     padding: 0;
@@ -7,19 +10,31 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1.5em;
+    grid-column-gap: $column-gap;
     width: 100%;
     margin: 0 auto;
     height: inherit;
 }
 
+.grid-row-space{
+    row-gap: $sect-spacer;
+}
 
-// TODO check if margin 0 auto is necessary
-// !margin 0 auto on other projects overrides margin-bottom: 10vh on the wrapper
+.grid-col-space{
+    column-gap: $column-gap;
+}
+
+.row-start-1{
+    grid-row-start: 1;
+}
+
+.span-50{
+    grid-column: span 6;
+}
+
 .sub-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    // grid-gap: 2em;
     width: 100%;
     margin: 0 auto;
     height: inherit;
@@ -39,7 +54,6 @@
 }
 
 .max-col{
-    grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: -1;
 }
@@ -52,17 +66,10 @@
 .footer-grid-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1.5em;
+    grid-gap: $column-gap;
     margin: 0 auto;
     height: inherit;
 }
-
-
-// .nav-logo{
-//     height: inherit;
-//     grid-column-start: 2;
-//     grid-column-end: 6;
-// }
 
 .nav-grid {
     grid-column-start: 8;

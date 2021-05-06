@@ -10,19 +10,21 @@ $stripe-blue: #4C5269;
 $stripe-red: #221921;
 $stripe-green: #1c241c;
 
-// Font sizes
-
+// text
 $h1-font-sz: 7rem;
 $h2-font-sz: 2rem;
 $p-font-sz: 1.3rem;
 $link-button-sz: 1rem;
+$para-line-height: 1.5;
+$para-text-space: 1px;
 
 // max width
 $max-width: 80vw;
 
 // header height
-
 $nav-height: 3.5rem;
 
 // page spacing
-$sect-spaceer: 15vh;
+$sect-spacer: 15vh;
+$column-gap: 3em;
+$rel-margin-bot: 2em;
