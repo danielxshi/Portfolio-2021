@@ -12,9 +12,12 @@ import cliqBanner from './images/cliq/cliq-banner-2048x768.png';
 // Import components
 import Footer from "./components/Footer";
 import Home from "./Home";
-import Project from "./Project";
+import Project from "./components/Project";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar/Navbar.js";
+
+// Import Pages
+import CLIQ from "./Cliq.js";
 
 
 // Import Animation
@@ -25,6 +28,7 @@ import{
 
 import React, {useRef, useEffect} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Cliq from './Cliq.js';
 
 
 function App() {
@@ -48,6 +52,7 @@ function App() {
                 </Route>
                 <Route exact path="/cliq" >
                   <Project messages={projectMessages.cliq} banner={cliqBanner} />
+                  <Cliq/>
                 </Route>
               </Switch> 
             </CSSTransition>

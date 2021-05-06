@@ -1,3 +1,6 @@
+// Imports
+@import '../base/variables.scss';
+
 // Media Queries
 
 /* Mobile first queries */
@@ -28,10 +31,10 @@
         grid-column-end: 12;
     }
     .grid-container{
-        width: 80vw;
+        width: $max-width;
     }
     .footer-grid-container{
-        width: 80vw;
+        width: $max-width;
     }
     .proj-info-wrapper .grid-container{
         padding: 20vh 0;
@@ -41,12 +44,12 @@
             } 
         }
         .sub-details-wrapper{
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
         }
     }
     
     .project{
-        margin-bottom: 7vh;
+        margin-bottom: $sect-spaceer;
     }
 
     .project-1{
@@ -230,7 +233,7 @@
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
     .project{
-        margin-bottom: 15vh;
+        margin-bottom: $sect-spaceer;
     }
 
     .project-1{
