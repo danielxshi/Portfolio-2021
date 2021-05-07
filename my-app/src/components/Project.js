@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 
+// Stylesheets
+import '../style/pages/_projects.scss';
+
+
 function Project(props) {
     return (
         <section className="details-container">

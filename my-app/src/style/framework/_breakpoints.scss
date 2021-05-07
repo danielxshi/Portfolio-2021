@@ -12,23 +12,23 @@
     }
     .about-row-1-col-1{
         grid-row-start: 1;
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 12;
     }
     .about-row-1-col-2{
         grid-row-start: 2;
-        grid-column-start: 2;
-        grid-column-end: 12;
+        grid-column-start: 3;
+        grid-column-end: 11;
     }
     .about-row-1-col-3{
         grid-row-start: 3;
-        grid-column-start: 2;
-        grid-column-end: 12;
+        grid-column-start: 3;
+        grid-column-end: 11;
     }
     .about-row-2-col-2{
         grid-row-start: 4;
-        grid-column-start: 2;
-        grid-column-end: 12;
+        grid-column-start: 3;
+        grid-column-end: 11;
     }
     .grid-container{
         width: $max-width;
@@ -63,15 +63,15 @@
     }
 
     .project-description {
-        grid-column-end: 12;
         grid-row-start: 2;
-        grid-column-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 13;
     }
 
     .proj-home-grid-def {
-        grid-column-start: 2;
-        grid-column-end: 12;
         grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 13;
     }
 
 
@@ -137,14 +137,14 @@
         }
     }
     .project-description {
-        grid-column-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 13;
         grid-row-start: 2;
-        grid-column-start: 2;
     }
     .proj-home-grid-def {
-        grid-column-start: 2;
-        grid-column-end: 12;
         grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 13;
     }
 }
 
@@ -161,18 +161,15 @@
         height: 15rem;
         .footer-email-wrapper{
             grid-row-start: 1;
-            grid-column-start: 2;
-            grid-column-end: 4;
+            grid-column: span 3;
         }
         .footer-frequent-links-wrapper{
             grid-row-start: 1;
-            grid-column-start: 5;
-            grid-column-end: 7;
+            grid-column: span 3;
         }
         .footer-social-media-wrapper{
             grid-row-start: 1;
-            grid-column-start: 8;
-            grid-column-end: 10;
+            grid-column: span 3;
             img:first-child{
                 margin-right: 1rem;
             }
@@ -182,8 +179,7 @@
         }
         .footer-copyright{
             grid-row-start: 1;
-            grid-column-start: 11;
-            grid-column-end: 12;
+            grid-column: span 3;
         }
         .footer-grid-container > div {
             margin: auto 0;
@@ -216,13 +212,13 @@
     }
         
     .project-description{
-        grid-column-end: 12;
+        grid-column-end: 13;
         grid-row-start: 1;
         grid-column-start: 7;
     }
 
     .proj-home-grid-def{
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 7;
         grid-row-start: 1;
     }
@@ -267,7 +263,7 @@
 
     .project{
         .grid-container{
-            padding: 3rem 0;
+            padding: 2rem 3rem;
         }
     }
 

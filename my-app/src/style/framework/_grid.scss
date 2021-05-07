@@ -10,7 +10,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: $column-gap;
+    gap: $grid-gap;
     width: 100%;
     margin: 0 auto;
     height: inherit;
@@ -28,6 +28,15 @@
     grid-row-start: 1;
 }
 
+.row-start-2{
+    grid-row-start: 2;
+}
+
+.row-start-3{
+    grid-row-start: 3;
+}
+
+
 .span-50{
     grid-column: span 6;
 }
@@ -38,6 +47,7 @@
     width: 100%;
     margin: 0 auto;
     height: inherit;
+    gap: $grid-gap;
 }
 
 .glass-border-padding{

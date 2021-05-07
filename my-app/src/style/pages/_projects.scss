@@ -1,0 +1,91 @@
+
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+/* Project details pg 
+========================================================================== */ 
+
+.rel-margin-bot{
+    margin-bottom: $rel-margin-bot;
+}
+
+.sect-1{
+    padding-top: $sect-spacer;
+}
+
+.sect-last{
+    margin-bottom: $sect-spacer;
+}
+
+
+.details-container {
+    .grid-container{
+        row-gap: $sect-spacer;
+    }
+    .proj-info-wrapper{
+        @include box-shadow($shadows);
+    }
+    .project-description-wrapper{
+        grid-row-start: 1;
+        grid-column-start: 8;
+        grid-column-end: 12;
+    }
+    .project-title-wrapper{
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 6;
+
+        h1{
+            margin-top: -2rem;
+        }
+    }
+    .project-text-wrapper{
+        grid-column-end: 8;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        transition-duration: .4s;
+        position: relative;
+        overflow: hidden;
+        vertical-align: top;
+        height: 100%;
+    }
+    .details-wrapper{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        h3{
+            margin-top: 0;
+        }
+    }
+    .primary-btn{
+        grid-column-start: 8;
+        grid-column-end: 12;
+    }
+}
+
+.paragraph-anchor-left{
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+.h2-anchor-right{
+    grid-column-start: 9;
+    grid-column-end: -1;
+}
+
+.span-3{
+    grid-column: span 3;
+}
+
+.span-4{
+    grid-column-start: span 4;
+}
+
+.span-6{
+    grid-column-start: span 6;
+}
+
+// .style-sect-1 .sub-container * img{
+//     margin-bottom: $grid-gap;
+// }
