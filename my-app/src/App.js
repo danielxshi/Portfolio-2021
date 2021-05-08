@@ -18,6 +18,7 @@ import Navbar from "./components/Navbar/Navbar.js";
 
 // Import Pages
 import CLIQ from "./Cliq.js";
+import Bosstep from "./Bosstep.js";
 
 
 // Import Animation
@@ -49,6 +50,7 @@ function App() {
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/bosstep" >
                   <Project messages={projectMessages.bosstep} banner={bosstepBanner} />
+                  <Bosstep/>
                 </Route>
                 <Route exact path="/cliq" >
                   <Project messages={projectMessages.cliq} banner={cliqBanner} />
