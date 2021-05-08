@@ -19,8 +19,8 @@
     }
     .media-links{
         grid-row-start: 3;
-        grid-column-end: 12;
-        grid-column-start: 2;
+        grid-column-end: 13;
+        grid-column-start: 1;
         display: flex;
         .static-btn:first-child{
             margin-right: 2rem;
@@ -70,7 +70,7 @@
 
 .project{
     .grid-container{
-        padding: 2rem 0;
+        padding: 2rem;
     }
 }
 
@@ -101,7 +101,7 @@
     color: $white;
     border-radius: .5rem;
     @include shadows-description($shadows-description);
-    padding: 3rem;
+    padding: 3rem 0;
     backdrop-filter: blur(13px);
     -webkit-backdrop-filter: blur(13px);
     background: none;
@@ -110,21 +110,21 @@
         .title-wrapper{
             grid-row-start: 1;
             grid-row-end: 1;
-            grid-column-start: 1;
-            grid-column-end: 13;
+            grid-column-start: 2;
+            grid-column-end: 12;
         }
         .contribution-wrapper-r{
             grid-row-start: 2;
-            grid-column-start: 1;
-            grid-column-end: 13;
+            grid-column-start: 2;
+            grid-column-end: 12;
             h3{
                 margin-top: 1rem;
             }
         }
         .primary-btn{
             grid-row-start: 3;
-            grid-column-start: 1;
-            grid-column-end: 13;
+            grid-column-start: 2;
+            grid-column-end: 12;
         }
     }
 }

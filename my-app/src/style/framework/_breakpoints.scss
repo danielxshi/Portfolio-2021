@@ -7,6 +7,9 @@
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+    .color-stripe-container-2{
+        display:none;
+    }
     .subheading{
         margin-bottom: 2rem;
     }
@@ -154,6 +157,9 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    .color-stripe-container-2{
+        display: grid;
+    }
 
     // footer - all pages
     footer{

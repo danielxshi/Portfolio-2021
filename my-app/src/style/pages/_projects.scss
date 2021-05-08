@@ -28,11 +28,11 @@
     .project-description-wrapper{
         grid-row-start: 1;
         grid-column-start: 8;
-        grid-column-end: 12;
+        grid-column-end: 13;
     }
     .project-title-wrapper{
         grid-row-start: 1;
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 6;
 
         h1{
@@ -53,7 +53,7 @@
         height: 100%;
     }
     .details-wrapper{
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 6;
         h3{
             margin-top: 0;
@@ -61,7 +61,7 @@
     }
     .primary-btn{
         grid-column-start: 8;
-        grid-column-end: 12;
+        grid-column-end: 13;
     }
 }
 
