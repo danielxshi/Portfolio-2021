@@ -44,7 +44,7 @@ const Home = () => {
 
     <section className="about-section">
         <div className="grid-container">
-            <div className="about-row-1-col-1">
+            {/* <div className="about-row-1-col-1">
                 <h2 className="subheading">I am <strong className="highlight-text">_</strong></h2>
             </div>
             <div className="about-row-1-col-2">
@@ -55,6 +55,19 @@ const Home = () => {
             </div>
             <div className="about-row-2-col-2">
                 <p>My goal is to find a career in building interactive web applications</p>
+            </div> */}
+            
+            <div className="max-col">
+                <h2>I am<strong className="highlight-text">_</strong></h2>
+            </div>
+            <div className="anchor-80-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+            </div>
+            <div className="anchor-80-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+            </div>
+            <div className="anchor-80-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
             </div>
         </div>
     </section>
@@ -164,6 +177,33 @@ const Home = () => {
                                 <p>{projectMessages.track.role}</p>
                             </div>
                             <Link class="black-border-btn primary-btn" to='/track'>View Process</Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* What i'm working on atm */}
+    <section className="project">
+        <div className="grid-container">
+            <div className="max-col">
+                <h2 className="rel-margin-bot">what i'm working on<strong className="highlight-text">_</strong></h2>
+            </div>
+            <div className="max-col">
+                <div className="sub-container">
+                    <div className="anchor-80-right ">
+                        <div className="anchor-80-left rel-margin-bot">
+                            <p>test - date</p>
+                            <p>m quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                        </div>
+                        <div className="anchor-80-left rel-margin-bot">
+                            <p>test - date</p>
+                            <p>m quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                        </div>
+                        <div className="anchor-80-left rel-margin-bot">
+                            <p>test - date</p>
+                            <p>m quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
                         </div>
                     </div>
                 </div>
