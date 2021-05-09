@@ -124,3 +124,8 @@
     grid-column-start: 1;
     grid-column-end: 9;
 }
+
+.gcs-9-4{
+    grid-column-start: 9;
+    grid-column-end: span 4;
+}

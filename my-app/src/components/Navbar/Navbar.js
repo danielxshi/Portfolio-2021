@@ -10,6 +10,7 @@ class Navbar extends Component {
     }
 
     render() {
+        const menuClass = this.state.clicked ? 'nav-menu active' : 'nav-menu';
         return(
             <header>
                 <div className="desktop-nav-container">
@@ -20,7 +21,7 @@ class Navbar extends Component {
                         <div className="menu-icon" onClick={this.handleClick}>
                             <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                         </div>
-                        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                        <ul className={menuClass}>
                             {MenuItems.map((item, index) => {
                                 return(
                                     <li key={index}>
