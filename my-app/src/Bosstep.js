@@ -17,7 +17,7 @@ function Bosstep(props) {
         <main>
 
         {/* Persona */}
-        <section className="personas-sect sect-1">
+        <section className="personas-sect sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col">
                     <div className="sub-container grid-col-space">
