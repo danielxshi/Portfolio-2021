@@ -19,7 +19,7 @@ function Cliq(props) {
         {/* Persona */}
         <section className="personas-sect sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <div className="img-contain span-50">
                             <img src={img43} alt=""/>
@@ -29,7 +29,7 @@ function Cliq(props) {
                         </div>
                     </div>
                 </div>
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Designing for<strong class="highlight-text">_</strong></h2>
@@ -41,7 +41,7 @@ function Cliq(props) {
         {/* Sketches */}
         <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <div className="span-3 img-contain">
                             <img src={img34} alt=""/>
@@ -57,7 +57,7 @@ function Cliq(props) {
                         </div>
                     </div>
                 </div>
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
@@ -69,14 +69,14 @@ function Cliq(props) {
         {/* neumorphic style */}
         <section className="style-sect-1 sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
                     <div className="sub-container grid-col-space">
                         <div className="span-6 img-contain">
                             <img src={img34} alt=""/>
                         </div>
                         <div className="span-4">
-                            <div className="img-contain max-col rel-margin-bot">
+                            <div className="img-contain max-col-proj-details rel-margin-bot">
                                 <img src={img43} alt=""/>
                             </div>
                             <div className="img-contain">
@@ -85,13 +85,13 @@ function Cliq(props) {
                         </div>
                     </div>
                 </div>
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Pt1 design idea<strong class="highlight-text">_</strong></h2>
                     </div>
                 </div>
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Pt2 challenge caveat<strong class="highlight-text">_</strong></h2>
@@ -103,7 +103,7 @@ function Cliq(props) {
         {/* style guide */}
         <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space rel-margin-bot">
                         <div className="span-4 img-contain">
                             <img src={img34} alt=""/>
@@ -117,7 +117,7 @@ function Cliq(props) {
                     </div>
                     <p>01/05</p>
                 </div>
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
@@ -128,7 +128,7 @@ function Cliq(props) {
         
         <section className="team-section sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <h2 className="h2-anchor-left">working in a team <strong className="highlight-text">_</strong></h2>
                     </div>
@@ -154,22 +154,26 @@ function Cliq(props) {
         {/* guides design ph */}
         <section className="design-sect-1 sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="span-50">
-                    <div className="img-contain">
-                        <img src={imgVid} alt="" />
+                <div className="max-col-proj-details">
+                    <div className="sub-container grid-col-space">
+                        <div className="span-50">
+                            <div className="img-contain">
+                                <img src={imgVid} alt="" />
+                            </div>
+                        </div>
+                        <div className="span-2">
+                            <div className="img-contain">
+                                <img src={imgVid1x1} alt="" />
+                            </div>
+                        </div>
+                        <div className="span-2">
+                            <div className="img-contain">
+                                <img src={imgVid1x1} alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="span-2">
-                    <div className="img-contain">
-                        <img src={imgVid1x1} alt="" />
-                    </div>
-                </div>
-                <div className="span-2">
-                    <div className="img-contain">
-                        <img src={imgVid1x1} alt="" />
-                    </div>
-                </div>
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">lorem checkout<strong class="highlight-text">_</strong></h2>
@@ -180,30 +184,34 @@ function Cliq(props) {
 
         <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="span-50">
-                    <div className="img-contain">
-                        <img src={img34} alt="" />
+                <div className="max-col-proj-details">
+                    <div className="sub-container grid-col-space">
+                        <div className="span-50">
+                            <div className="img-contain">
+                                <img src={img34} alt="" />
+                            </div>
+                        </div>
+                        <div className="span-50 sub-container">
+                            <div className="span-50">
+                                <div className="img-contain rel-margin-bot">
+                                    <img src={imgVid1x1} alt="" />
+                                </div>
+                                <div className="img-contain">
+                                    <img src={imgVid1x1} alt="" />
+                                </div>
+                            </div>
+                            <div className="span-50">
+                                <div className="img-contain rel-margin-bot">
+                                    <img src={imgVid1x1} alt="" />
+                                </div>
+                                <div className="img-contain">
+                                    <img src={imgVid1x1} alt="" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="span-50 sub-container">
-                    <div className="span-50">
-                        <div className="img-contain rel-margin-bot">
-                            <img src={imgVid1x1} alt="" />
-                        </div>
-                        <div className="img-contain">
-                            <img src={imgVid1x1} alt="" />
-                        </div>
-                    </div>
-                    <div className="span-50">
-                        <div className="img-contain rel-margin-bot">
-                            <img src={imgVid1x1} alt="" />
-                        </div>
-                        <div className="img-contain">
-                            <img src={imgVid1x1} alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">lorem checkout<strong class="highlight-text">_</strong></h2>
@@ -214,12 +222,12 @@ function Cliq(props) {
         
         <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="img-contain">
                         <img src={imgVid} alt="" />
                     </div>
                 </div>
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">lorem checkout<strong class="highlight-text">_</strong></h2>
@@ -228,17 +236,14 @@ function Cliq(props) {
             </div>
         </section>
         
+        
         <section className="team-section sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <h2 className="h2-anchor-left">working in a team <strong className="highlight-text">_</strong></h2>
-                    </div>
-                </div>
                 <div className="center-module ">
+                    <h2 className="h2-anchor-left rel-margin-bot">working in a team <strong className="highlight-text">_</strong></h2>
                     <p className="rel-margin-bot">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis.</p>
                     <p className="rel-margin-bot"><strong>SFU IAT339 Project</strong></p>
-                    <div className="primary-btn">
+                    <div className="primary-btn black-border-btn">
                         VIEW WEBSITE
                     </div>
                 </div>
@@ -248,13 +253,13 @@ function Cliq(props) {
         {/* abstract to component */}
         <section className="next-proj sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <h2 className="h2-anchor-left">working in a team <strong className="highlight-text">_</strong></h2>
                     </div>
                 </div>
-                <div className="anchor-80-right">
-                    <div className="img-contain">
+                <div className="gcs-8-5">
+                    <div className="img-fit">
                         <img src={img2x1} alt="" />
                     </div>
                 </div>

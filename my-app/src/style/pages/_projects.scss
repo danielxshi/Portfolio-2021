@@ -91,13 +91,17 @@
     grid-column-start: span 4;
 }
 
+.span-5{
+    grid-column-start: span 5;
+}
+
 .span-6{
     grid-column-start: span 6;
 }
 
 .center-module{
     grid-column-start: 5;
-    grid-column-end: 9;
+    grid-column-end: -1;
     flex-direction: column;
     display: flex;
 
@@ -128,4 +132,49 @@
 .gcs-9-4{
     grid-column-start: 9;
     grid-column-end: span 4;
+}
+
+.gcs-8-5{
+    grid-column-start: 8;
+    grid-column-end: span 5;
+}
+
+.span-50r-3p1{
+    grid-column-start: 7;
+    grid-column-end: span 3;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container > * {
+    margin: auto;
+}
+
+.neu-container{
+    @include box-shadow($shadows);
+    padding: 4rem 0;
+}
+
+.flex-25{
+    width: 25%;
+}
+
+.sect-helper{
+    background-color: $black;
+    padding-bottom: $sect-spacer;
+    color: $white;
+    margin-top: 30vh;
+}
+
+.img-fit img{
+    object-fit: contain;
+    width: 100%;
+    transition-duration: .4s;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    z-index: 1;
 }

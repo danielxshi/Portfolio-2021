@@ -7,6 +7,10 @@
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+    .max-col-proj-details{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
     .color-stripe-container-2{
         display:none;
     }
@@ -235,6 +239,10 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+    .max-col-proj-details{
+        grid-column-start: 5;
+        grid-column-end: -1;
+    }
     .project{
         margin-bottom: $sect-spacer;
     }
