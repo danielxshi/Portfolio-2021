@@ -43,31 +43,16 @@ const Home = () => {
     </div>
 
     <section className="about-section">
-        <div className="grid-container">
-            {/* <div className="about-row-1-col-1">
-                <h2 className="subheading">I am <strong className="highlight-text">_</strong></h2>
-            </div>
-            <div className="about-row-1-col-2">
-                <p>Currently a student from the Science and Interactive Arts and Technology department at Simon Fraser University</p>
-            </div>
-            <div className="about-row-1-col-3">
-                <p>I first started web development in 2016 at RED Academy and I am currently purusing a Bachelors of Science with a focus in Design </p>
-            </div>
-            <div className="about-row-2-col-2">
-                <p>My goal is to find a career in building interactive web applications</p>
-            </div> */}
+        <div className="grid-container grid-row-space">
             
-            <div className="max-col">
+            {/* <div className="max-col">
                 <h2>I am<strong className="highlight-text">_</strong></h2>
-            </div>
+            </div> */}
+            <h2>I am<strong className="highlight-text">_</strong></h2>
             <div className="anchor-80-right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
-            </div>
-            <div className="anchor-80-right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
-            </div>
-            <div className="anchor-80-right">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                <p className="rel-margin-bot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                <p className="rel-margin-bot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                <p className="rel-margin-bot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
             </div>
         </div>
     </section>

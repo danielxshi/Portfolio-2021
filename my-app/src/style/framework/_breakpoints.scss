@@ -17,26 +17,6 @@
     .subheading{
         margin-bottom: 2rem;
     }
-    .about-row-1-col-1{
-        grid-row-start: 1;
-        grid-column-start: 1;
-        grid-column-end: 12;
-    }
-    .about-row-1-col-2{
-        grid-row-start: 2;
-        grid-column-start: 3;
-        grid-column-end: 11;
-    }
-    .about-row-1-col-3{
-        grid-row-start: 3;
-        grid-column-start: 3;
-        grid-column-end: 11;
-    }
-    .about-row-2-col-2{
-        grid-row-start: 4;
-        grid-column-start: 3;
-        grid-column-end: 11;
-    }
     .grid-container{
         width: $max-width;
     }
@@ -161,6 +141,10 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    .max-col-proj-details{
+        grid-column-start: $max-col-r-heavy;
+        grid-column-end: -1;
+    }
     .color-stripe-container-2{
         margin-right: -3rem;
         display: grid;
@@ -239,10 +223,6 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    .max-col-proj-details{
-        grid-column-start: 5;
-        grid-column-end: -1;
-    }
     .project{
         margin-bottom: $sect-spacer;
     }

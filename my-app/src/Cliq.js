@@ -4,13 +4,18 @@ import { Link } from "react-router-dom";
 // Stylesheets
 import './style/pages/_projects.scss';
 
-// Import images
+// Import placeholders
 import img34 from './images/placeholder/placeholder-3x4.png';
 import img43 from './images/placeholder/placeholder-4x3.png';
 import img2x1 from './images/placeholder/placeholder-2x1.png';
 import imgProf from './images/placeholder/placeholder-prof-1x1.png';
 import imgVid from './images/placeholder/video-placeholder.png';
 import imgVid1x1 from './images/placeholder/vid-1x1.png';
+
+// Import images
+import nextProj from './images/boss-1000x600.png'
+
+
 
 function Cliq(props) {
     return (
@@ -251,16 +256,19 @@ function Cliq(props) {
         </section>
 
         {/* abstract to component */}
+        {/* !Substitute for 2x1 aspect ratio */}
+
         <section className="next-proj sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
-                        <h2 className="h2-anchor-left">working in a team <strong className="highlight-text">_</strong></h2>
+                        <h2 className="h2-anchor-left">Next project <strong className="highlight-text">_</strong></h2>
                     </div>
                 </div>
-                <div className="gcs-8-5">
+                <div className="anchor-80-right">
                     <div className="img-fit">
-                        <img src={img2x1} alt="" />
+                        {/* <img src={img2x1} alt="" /> */}
+                        <img src={nextProj} alt="" />
                     </div>
                 </div>
             </div>
