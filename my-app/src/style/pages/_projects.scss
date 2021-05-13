@@ -124,6 +124,16 @@
     grid-column-end: -1;
 }
 
+.anchor-right-sect-helper{
+    grid-column-start: 5;
+    grid-column-end: -1;
+}
+
+.end-col-text{
+    grid-column-end: -1;
+    text-align: right;
+}
+
 .anchor-80-left{
     grid-column-start: 1;
     grid-column-end: 9;
@@ -177,4 +187,12 @@
     overflow: hidden;
     vertical-align: top;
     z-index: 1;
+}
+
+.bosstepHighlightPrimary{
+    color: $bosstep-primary-color;
+}
+
+.bosstepHighlightSecondary{
+    color: $bosstep-secondary-color;
 }

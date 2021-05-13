@@ -8,7 +8,7 @@ function Project(props) {
     return (
         <section className="details-container">
             <div className="hero-banner">
-                <img src={props.banner} alt="BOSSTEP Banner"/>
+                <img src={props.banner} alt="Project Banner"/>
             </div>
             <div className="proj-info-wrapper">
                 <div className="grid-container">
