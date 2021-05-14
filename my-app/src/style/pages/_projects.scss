@@ -196,3 +196,10 @@
 .bosstepHighlightSecondary{
     color: $bosstep-secondary-color;
 }
+
+.citation{
+    text-align: center;
+    letter-spacing: $citation-spacing;
+    color: $grey;
+    font-family: 'Lora', serif;
+}

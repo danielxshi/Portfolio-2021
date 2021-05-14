@@ -89,7 +89,8 @@ function Bosstep(props) {
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <div className="img-fit span-50">
-                            <img src={sketchOverview} alt=""/>
+                            <img className="rel-margin-bot" src={sketchOverview} alt=""/>
+                            <p className="citation">test</p>
                         </div>
                         <div className="gcs-8-5">
                             <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
@@ -114,22 +115,26 @@ function Bosstep(props) {
                             <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         </div>
                         <div className="img-fit span-4 gcs-9-4">
-                            <img src={persona} alt=""/>
+                            <img className="rel-margin-bot" src={persona} alt=""/>
+                            <p className="citation">test</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        {/* Prototype overview */}
         <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <div className="span-3 img-fit">
-                            <img src={minigameM} alt=""/>
+                            <img className="rel-margin-bot" src={minigameM} alt=""/>
+                            <p className="citation">test</p>
                         </div>
                         <div className="span-3 img-fit">
-                            <img src={minigameD} alt=""/>
+                            <img className="rel-margin-bot" src={minigameD} alt=""/>
+                            <p className="citation">test</p>
                         </div>
                         <div className="gcs-8-5">
                             <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
@@ -145,10 +150,12 @@ function Bosstep(props) {
                             <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         </div>
                         <div className="span-50r-3p1 img-fit">
-                            <img src={protoHome} alt=""/>
+                            <img className="rel-margin-bot" src={protoHome} alt=""/>
+                            <p className="citation">test</p>
                         </div>
                         <div className="span-3 img-fit">
-                            <img src={protoAddFriend} alt=""/>
+                            <img className="rel-margin-bot" src={protoAddFriend} alt=""/>
+                            <p className="citation">test</p>
                         </div>
                     </div>
                 </div>
@@ -161,7 +168,7 @@ function Bosstep(props) {
         <section className="sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
+                    <div className="rel-margin-bot sub-container grid-col-space">
                         <div className="span-50 img-fit">
                             <img src={primaryResearch} alt=""/>
                         </div>
@@ -169,6 +176,7 @@ function Bosstep(props) {
                             <img src={secondaryResearch} alt=""/>
                         </div>
                     </div>
+                    <p className="citation">test</p>
                 </div>
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -183,7 +191,7 @@ function Bosstep(props) {
         <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
+                    <div className="rel-margin-bot sub-container grid-col-space">
                         <div className="span-3 img-fit">
                             <img src={wireHome} alt=""/>
                         </div>
@@ -197,6 +205,7 @@ function Bosstep(props) {
                             <img src={wireRewardDetail} alt=""/>
                         </div>
                     </div>
+                    <p className="citation">test</p>
                 </div>
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -211,7 +220,7 @@ function Bosstep(props) {
         <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
+                    <div className="rel-margin-bot sub-container grid-col-space">
                         <div className="span-3 img-fit">
                             <img src={wireFriendMenu} alt=""/>
                         </div>
@@ -225,6 +234,7 @@ function Bosstep(props) {
                             <img src={wireFriendSecurityPin} alt=""/>
                         </div>
                     </div>
+                    <p className="citation">test</p>
                 </div>
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -241,7 +251,8 @@ function Bosstep(props) {
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <div className="img-fit span-50">
-                            <img src={sketchMinigameMLrg} alt=""/>
+                            <img className="rel-margin-bot" src={sketchMinigameMLrg} alt=""/>
+                            <p className="citation">test</p>
                         </div>
                         <div className="gcs-8-5">
                             <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
@@ -268,7 +279,8 @@ function Bosstep(props) {
                             <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         </div>
                         <div className="img-fit span-4 gcs-9-4">
-                            <img src={researchLoc} alt=""/>
+                            <img className="rel-margin-bot" src={researchLoc} alt=""/>
+                            <p className="citation">test</p>
                         </div>
                     </div>
                 </div>
@@ -301,7 +313,7 @@ function Bosstep(props) {
         <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
+                    <div className="rel-margin-bot sub-container grid-col-space">
                         <div className="span-3 img-fit">
                             <img src={critNotes1} alt=""/>
                         </div>
@@ -315,6 +327,7 @@ function Bosstep(props) {
                             <img src={critNotes4} alt=""/>
                         </div>
                     </div>
+                    <p className="citation">test</p>
                 </div>
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -350,6 +363,7 @@ function Bosstep(props) {
         {/* Center module */}
         <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
+        {/* Next project */}
         <NextProject img={nextProj}/>
         </main>
     );
