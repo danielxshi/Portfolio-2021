@@ -8,6 +8,9 @@ import projectMessages from './components/ProjectMessages.js'
 // Import images
 import bosstepBanner from './images/bosstep-banner-2048x768.jpg';
 import cliqBanner from './images/cliq/cliq-banner-2048x768.png';
+// Import mobile images - hero banner - bosstep
+import mobileBannerBG from './images/bosstep/mobile-banner-bosstep.png';
+import mobileBannerDemo from './images/bosstep/mobile-banner-demo.png';
 
 // Import components
 import Footer from "./components/Footer";
@@ -49,7 +52,7 @@ function App() {
               <Switch location={location}>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/bosstep" >
-                  <Project messages={projectMessages.bosstep} banner={bosstepBanner} />
+                  <Project messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} bannerMobile={mobileBannerBG} banner={bosstepBanner} />
                   <Bosstep/>
                 </Route>
                 <Route exact path="/cliq" >

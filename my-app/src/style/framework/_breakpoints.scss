@@ -7,6 +7,21 @@
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+    .project-details-h1{
+        font-size: 5rem;
+        letter-spacing: 5px;
+        margin-top: $rel-margin;
+    }
+    p{
+        font-size: $mobile-paragraph-sz;
+        line-height: $mobile-line-height;
+    }
+    .project-details-hero-desktop{
+        display: none;
+    }
+    .project-details-hero-mobile{
+        display: block;
+    }
     .max-col-proj-details{
         grid-column-start: 1;
         grid-column-end: -1;
@@ -137,10 +152,24 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    .project-details-hero-desktop{
+        display: block;
+    }
+    .project-details-hero-mobile{
+        display: none;
+    }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    nav ul a {
+        margin: 0 1rem;
+    }
+    p{
+        font-size: $p-font-sz;
+        line-height: $para-line-height;
+        letter-spacing: $para-text-space;
+    }
     .max-col-proj-details{
         grid-column-start: $max-col-r-heavy;
         grid-column-end: -1;

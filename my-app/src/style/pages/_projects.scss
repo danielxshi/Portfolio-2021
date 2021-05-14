@@ -203,3 +203,47 @@
     color: $grey;
     font-family: 'Lora', serif;
 }
+
+.hero-banner-mobile{    
+    background-image: url("../../images/bosstep/mobile-banner-bosstep.png");
+    height: 90vh;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Centered text */
+.centered {    
+    text-align: center;
+}
+
+.test2{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    margin-top: 25vh;
+}
+
+.project-details-hero-mobile{
+    .text-wrapper{
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        margin-top: 17vh;
+        display: flex;
+        flex-direction: column;
+        .title-wrapper{
+            text-align: center;
+        }
+    }
+    .mobileBannerBG{
+        grid-row-start: 1;
+    }
+}
+
+.hero-banner-mobile{
+    padding-bottom: $sect-spacer;
+}

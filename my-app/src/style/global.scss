@@ -33,11 +33,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 
-
 // Font sizes
 
 h1, h2 {
-    font-family: 'Lora', serif;
+  font-family: 'Lora', serif;
 }
 
 h1{
@@ -46,12 +45,6 @@ h1{
 
 h2{
     font-size: $h2-font-sz;
-}
-
-p{
-    font-size: $p-font-sz;
-    line-height: $para-line-height;
-    letter-spacing: $para-text-space;
 }
 
 body{
@@ -119,4 +112,8 @@ body{
     opacity: 0;
     // transform: translateY(-10px);
     transition: opacity 150ms linear, transform 400ms ease-in;
+}
+
+.active{
+  color: $white;
 }
