@@ -28,14 +28,21 @@ const Home = () => {
             <div className="max-col intro-text-banner">
                 <div class="p-identity">
                     <div className="line-wrap-1">
-                        <h1 ref={el => line1 = el}><strong class="highlight-text-dark">X</strong>iang<strong class="highlight-text-dark">D</strong>aniel<strong class="highlight-text-dark">S</strong>hi</h1>
+
+                        {/* Desktop */}
+
+                        <h1 ref={el => line1 = el} className="text-banner">
+                            <span><strong class="highlight-text-dark">X</strong>iang</span>
+                            <span className="text-banner-desktop"><strong className="highlight-text-dark">D</strong>aniel</span>
+                            <span className="text-banner-desktop"><strong class="highlight-text-dark">S</strong>hi</span>
+                        </h1>
                     </div>
                     <div className="line-wrap-2">
                         <p className="line-wrap" ref={el => line2 = el}>Aspiring UX/UI web developer and photographer from Vancouver, BC</p>
                     </div>
                 </div>
             </div>
-            <div className="media-links">
+            <div className="max-col media-links">
                 <Link class="black-border-btn primary-btn static-btn" to='/bosstep'>Resume</Link>
                 <Link class="black-border-btn primary-btn static-btn" to='/bosstep'>Email</Link>
             </div>
@@ -82,7 +89,7 @@ const Home = () => {
                                 <h2>{projectMessages.bosstep.title}</h2>
                                 <p>{projectMessages.bosstep.description}</p>
                             </div>
-                            <div className="contribution-wrapper-r">
+                            <div className="contribution-wrapper-r rel-margin-bot">
                                 <h3>Role:</h3>
                                 <p>{projectMessages.bosstep.role}</p>
                             </div>
@@ -120,7 +127,7 @@ const Home = () => {
                                 <h2>{projectMessages.cliq.title}</h2>
                                 <p>{projectMessages.cliq.description}</p>
                             </div>
-                            <div className="contribution-wrapper-r">
+                            <div className="contribution-wrapper-r rel-margin-bot">
                                 <h3>Role:</h3>
                                 <p>{projectMessages.cliq.role}</p>
                             </div>
@@ -157,7 +164,7 @@ const Home = () => {
                                 <h2>{projectMessages.track.title}</h2>
                                 <p>{projectMessages.track.description}</p>
                             </div>
-                            <div className="contribution-wrapper-r">
+                            <div className="contribution-wrapper-r rel-margin-bot">
                                 <h3>Role:</h3>
                                 <p>{projectMessages.track.role}</p>
                             </div>

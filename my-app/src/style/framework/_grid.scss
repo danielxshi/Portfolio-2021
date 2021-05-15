@@ -58,23 +58,15 @@
     width: 100%;
 }
 
-.max-col{
-    grid-column-start: 1;
-    grid-column-end: -1;
-}
+// .max-col{
+//     grid-column-start: 1;
+//     grid-column-end: -1;
+// }
 
 .col-10{
     grid-column-start: 2;
     grid-column-end: 12;
 }
-
-// .footer-grid-container{
-//     display: grid;
-//     grid-template-columns: repeat(12, 1fr);
-//     grid-gap: $column-gap;
-//     margin: 0 auto;
-//     height: inherit;
-// }
 
 .nav-grid {
     grid-column-start: 8;

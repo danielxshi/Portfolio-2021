@@ -43,7 +43,7 @@ function Project(props) {
             {/* Mobile */}
             <section className="project-details-hero-mobile">
                 <div className="sub-container">
-                    <div className="max-col mobileBannerBG">
+                    <div className="mobileBannerBG">
                         <div className="hero-banner-mobile"></div>
                     </div>
                     <div className="text-wrapper">
@@ -66,7 +66,7 @@ function Project(props) {
                 
                 {/* neumorphic section */}
                 <div className="sub-container details-container">
-                    <div className="max-col proj-info-wrapper">
+                    <div className="proj-info-wrapper">
                         <div className="grid-container">
                             <div className="max-col">
                                 <h2 className="rel-margin-bot">Project Details<strong className="highlight-text">_</strong></h2>

@@ -24,6 +24,7 @@
     }
     .proj-info-wrapper{
         @include box-shadow($shadows);
+        padding: $sect-spacer 0;
     }
     .project-description-wrapper{
         grid-row-start: 1;
@@ -205,7 +206,7 @@
 
 .hero-banner-mobile{    
     background-image: url("../../images/bosstep/mobile-banner-bosstep.png");
-    height: 90vh;
+    height: 100%;
     background-repeat: no-repeat;
     object-fit: contain;
     width: 100%;
@@ -226,11 +227,15 @@
     margin-top: 25vh;
 }
 
+.mobileBannerContainer{
+    position: relative;
+}
+
 .project-details-hero-mobile{
     .text-wrapper{
         grid-row-start: 1;
-        grid-column-start: 2;
-        grid-column-end: 12;
+        // grid-column-start: 3;
+        // grid-column-end: 11;
         margin-top: 17vh;
         display: flex;
         flex-direction: column;
@@ -245,4 +250,14 @@
 
 .hero-banner-mobile{
     height: 100%;
+}
+
+.mobileBannerBG{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.sect-helper-max-col{
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
