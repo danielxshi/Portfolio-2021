@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function Footer() {
   return (
     <footer >
-        <div className="footer-grid-container">
+        <div className="grid-container">
             <div className="footer-cell footer-email-wrapper">
                 <p>Get in touch</p>
                 <a className="secondary-cta" href="mailto:danielxshi@hotmail.com">email</a>

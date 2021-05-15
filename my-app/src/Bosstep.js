@@ -82,9 +82,9 @@ import nextProj from './images/cliq-1000x600.png'
 
 function Bosstep(props) {
     return (
-        <main>
+        <main className="bosstep-page">
         {/* Sketch overview */}
-        <section className="personas-sect sect-1 sect-last">
+        <section className="bosstep-sketch-section personas-sect sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -103,10 +103,10 @@ function Bosstep(props) {
         </section>
         
         {/* SectHelper1 */}
-        <SectionHelperText title={"A/B Testing"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* <SectionHelperText title={"A/B Testing"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
 
         {/* Persona */}
-        <section className="personas-sect sect-1 sect-last">
+        {/* <section className="bosstep-persona-section sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -121,12 +121,12 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* Prototype overview */}
-        <section className="sect-1 sect-last">
+        {/* <section className="bosstep-protoview-section sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
+                <div className="max-col-proj-details protoview-1">
                     <div className="sub-container grid-col-space">
                         <div className="span-3 img-fit">
                             <img className="rel-margin-bot" src={minigameM} alt=""/>
@@ -143,7 +143,7 @@ function Bosstep(props) {
                         </div>
                     </div>
                 </div>
-                <div className="max-col-proj-details">
+                <div className="max-col-proj-details protoview-2">
                     <div className="sub-container grid-col-space">
                         <div className="span-5">
                             <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
@@ -160,10 +160,10 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={blob} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* <SectionHelperGraphic graphic={blob} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         <section className="sect-last sect-1">
             <div className="grid-row-space grid-container">
@@ -185,10 +185,10 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* Wireframe 1 */}
-        <section className="sketch-sect sect-last sect-1">
+        {/* <section className="bosstep-wireframe-section sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="rel-margin-bot sub-container grid-col-space">
@@ -214,10 +214,10 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* Wireframe 2 */}
-        <section className="sketch-sect sect-last sect-1">
+        {/* <section className="bosstep-wireframe-section sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="rel-margin-bot sub-container grid-col-space">
@@ -243,10 +243,10 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* Sketch lrg */}
-        <section className="personas-sect sect-1 sect-last">
+        {/* <section className="bosstep-minigame-sketch-section sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -262,14 +262,14 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* sect helper graphic */}
-        <SectionHelperGraphic graphic={personaGraphic} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* <SectionHelperGraphic graphic={personaGraphic} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
 
 
         {/* Erma */}
-        <section className="personas-sect sect-1 sect-last">
+        {/* <section className="personas-sect sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -285,10 +285,10 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* Pie Graph */}
-        <section className="personas-sect sect-1 sect-last">
+        {/* <section className="personas-sect sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -303,14 +303,14 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* sect helper */}
-        <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
 
 
         {/* Critique Notes */}
-        <section className="sketch-sect sect-last sect-1">
+        {/* <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="rel-margin-bot sub-container grid-col-space">
@@ -336,12 +336,12 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* sect helper */}
-        <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
 
-        <section className="sect-1 sect-last">
+        {/* <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -352,19 +352,19 @@ function Bosstep(props) {
                 </div>
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
-                        <h2>Lorem<strong className="highlight-text">_</strong></h2>
+                        <h2 className="span-4">Lorem<strong className="highlight-text">_</strong></h2>
                         <p className="anchor-80-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis amet quibusdam natus magnam nesciunt! Facilis natus facere ad rem modi aliquam reprehenderit, aliquid odit velit impedit reiciendis quo perferendis.</p>
                         <p className="anchor-80-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis amet quibusdam natus magnam nesciunt! Facilis natus facere ad rem modi aliquam reprehenderit, aliquid odit velit impedit reiciendis quo perferendis.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         
         {/* Center module */}
-        <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
+        {/* <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/> */}
 
         {/* Next project */}
-        <NextProject img={nextProj}/>
+        {/* <NextProject img={nextProj}/> */}
         </main>
     );
 }

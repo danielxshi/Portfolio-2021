@@ -1,6 +1,6 @@
 function SectionHelperGraphic(props) {
     return (
-        <section className="sect-helper sect-1 sect-last">
+        <section className="sect-helper sect-helper-graphic sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">

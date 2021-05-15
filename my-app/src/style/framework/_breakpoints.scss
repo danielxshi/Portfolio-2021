@@ -4,9 +4,148 @@
 // Media Queries
 
 /* Mobile first queries */
-
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media (min-width: 350px){
+    // home.js
+    .about-section{
+        h2{
+            // grid-column: span 13;
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+    }
+    .anchor-80-right{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .span-2{
+        // grid-column: span 13;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .span-4{
+        grid-column-start: span 13;
+    }
+
+    .span-5{
+        grid-column-start: span 13;
+    }
+
+    .span-6{
+        grid-column-start: span 13;
+    }
+    .h2-anchor-right{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .paragraph-anchor-left{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    // Bosstep.js
+    .bosstep-page{
+        .span-50{
+            grid-column-start: 1;
+            grid-column-end: 13;
+            
+        }
+        .span-5{
+            grid-column-start: span 13;
+        }
+        .gcs-8-5{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        .bosstep-wireframe-section{
+            .span-3{
+                grid-column: span 3;
+            }
+        }
+        // Protoview
+        .bosstep-protoview-section{
+            .span-3{
+                grid-column: span 6;
+            }
+            .protoview-1{
+                .img-fit{
+                    grid-row-start: 2;
+                }
+                .gcs-8-5{
+                    grid-row-start: 1;
+                }
+            }
+            .protoview-2{
+                .img-fit{
+                    grid-row-start: 2;
+                }
+                .span-50r-3p1 {
+                    grid-column-start: 7;
+                    grid-column-end: span 6;
+                }
+                
+            }
+        }
+        // Sketch
+        .bosstep-sketch-section{
+            .span-50{
+                grid-column-start: 1;
+                grid-column-end: 13;
+                margin-bottom: $sect-spacer;
+                grid-row-start: inherit;
+            }
+            .gcs-8-5{
+                grid-row-start: inherit;
+                grid-column-start: 1;
+                grid-column-end: 13;
+            }
+        }
+
+
+        // Persona
+        .bosstep-persona-section{
+            .gcs-9-4 {
+                grid-column-start: 1;
+                grid-column-end: 13;
+            }
+            .span-5{
+                grid-column-start: span 13;
+            }
+        }
+    }
+
+
+    // End of Bosstep.js
+    .sect-helper-graphic{
+        .anchor-right-sect-helper{
+            grid-column-start: 5;
+            grid-column-end: span 8;
+        }
+        
+    }
+    .sect-helper-text{
+        .span-3{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        h2.span-2{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        .anchor-right-sect-helper {
+            grid-column-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        .end-col-text {
+            grid-row-start: 3;
+            grid-column-end: 13;
+            text-align: right;
+        }
+
+    } 
     .project-details-h1{
         font-size: 5rem;
         letter-spacing: 5px;
@@ -35,9 +174,9 @@
     .grid-container{
         width: $max-width;
     }
-    .footer-grid-container{
-        width: $max-width;
-    }
+    // .footer-grid-container{
+    //     width: $max-width;
+    // }
     .proj-info-wrapper .grid-container{
         padding: 20vh 0;
         .project-description-container {
@@ -152,18 +291,168 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    nav ul a {
+        margin: 0 1rem;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .about-section{
+        h2{
+            grid-column: span 3;
+        }
+    }
+    .anchor-80-right{
+        grid-column-start: 4;
+        grid-column-end: -1;
+    }
+    .paragraph-anchor-left{
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+    .h2-anchor-right{
+        grid-column-start: 9;
+        grid-column-end: -1;
+    }
+    .h2-anchor-left{
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
     .project-details-hero-desktop{
         display: block;
     }
     .project-details-hero-mobile{
         display: none;
     }
-}
 
-/* Larger than desktop */
-@media (min-width: 1000px) {
-    nav ul a {
-        margin: 0 1rem;
+    .sect-helper-graphic{
+        .anchor-right-sect-helper{
+            grid-column-start: 5;
+            grid-column-end: -1;
+            .span-3{
+                grid-column: span 3;
+            }
+        }
+        
+    }
+    .sect-helper-text{
+        .span-3{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        h2.span-2{
+            grid-column-start: 1;
+            grid-column: span 3;
+        }
+        .anchor-right-sect-helper{
+            grid-column-start: 5;
+            grid-column-end: -1;
+        }
+        .end-col-text {
+            grid-row-start: 3;
+            grid-column-end: 13;
+            text-align: right;
+        }
+
+    } 
+    .span-2{
+        grid-column: span 2;
+    }
+
+    .span-3{
+        grid-column: span 3;
+    }
+
+    .span-4{
+        grid-column-start: span 4;
+    }
+
+    .span-5{
+        grid-column-start: span 5;
+    }
+
+    .span-6{
+        grid-column-start: span 6;
+    }
+
+    // Bosstep.js
+    .bosstep-page{
+        .gcs-8-5 {
+            grid-column-start: 8;
+            grid-column-end: span 5;
+        }
+        .span-5{
+            grid-column: span 5;
+        }
+        .span-50{
+            grid-column: span 6;
+        }
+        // wireframe section
+        .bosstep-wireframe-section{
+            .span-3{
+                grid-column: span 3;
+            }
+        }
+        // Minigame sketch lrg
+        .bosstep-minigame-sketch-section{
+            .span-50{
+                grid-column: span 6;
+            }
+        }
+        // Protoview
+        .bosstep-protoview-section{
+            .span-3{
+                grid-column: span 3;
+            }
+            .protoview-1{
+                .img-fit{
+                    grid-row-start: 1;
+                }
+                .gcs-8-5{
+                    grid-column-start: 8;
+                    grid-column-end: span 5;
+                    grid-row-start: 1;
+                }
+            }
+            .protoview-2{
+                .img-fit{
+                    grid-row-start: inherit;
+                }
+                .span-50r-3p1 {
+                    grid-column-start: 7;
+                    grid-column-end: span 3;
+                }
+                
+            }
+        }
+        // Sketch
+        .bosstep-sketch-section{
+            .span-50{
+                grid-column: span 6;
+                margin-bottom: $sect-spacer;
+            }
+            .gcs-8-5{
+                grid-column-start: 8;
+                grid-column-end: span 5;
+            }
+        }
+
+
+        // Persona
+        .bosstep-persona-section{
+            .gcs-9-4{
+                grid-column-start: 9;
+                grid-column-end: span 4;
+            }
+            .span-5{
+                grid-column-start: span 5;
+            }
+        }
+    }
+    
+    .span-50{
+        grid-column: span 6;
     }
     p{
         font-size: $p-font-sz;
@@ -205,9 +494,9 @@
             grid-row-start: 1;
             grid-column: span 3;
         }
-        .footer-grid-container > div {
-            margin: auto 0;
-        }
+        // .footer-grid-container > div {
+        //     margin: auto 0;
+        // }
     }
 
     // Other project section - homepage
@@ -295,3 +584,4 @@
         max-width: 75vw;
     }
 }
+

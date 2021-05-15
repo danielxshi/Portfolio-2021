@@ -65,39 +65,39 @@
     }
 }
 
-.paragraph-anchor-left{
-    grid-column-start: 1;
-    grid-column-end: 8;
-}
-.h2-anchor-right{
-    grid-column-start: 9;
-    grid-column-end: -1;
-}
+// .paragraph-anchor-left{
+//     grid-column-start: 1;
+//     grid-column-end: 8;
+// }
+// .h2-anchor-right{
+//     grid-column-start: 9;
+//     grid-column-end: -1;
+// }
 
-.h2-anchor-left{
-    grid-column-start: 1;
-    grid-column-end: 6;
-}
+// .h2-anchor-left{
+//     grid-column-start: 1;
+//     grid-column-end: 6;
+// }
 
-.span-2{
-    grid-column: span 2;
-}
+// .span-2{
+//     grid-column: span 2;
+// }
 
 .span-3{
     grid-column: span 3;
 }
 
-.span-4{
-    grid-column-start: span 4;
-}
+// .span-4{
+//     grid-column-start: span 4;
+// }
 
-.span-5{
-    grid-column-start: span 5;
-}
+// .span-5{
+//     grid-column-start: span 5;
+// }
 
-.span-6{
-    grid-column-start: span 6;
-}
+// .span-6{
+//     grid-column-start: span 6;
+// }
 
 .center-module{
     grid-column-start: 4;
@@ -119,15 +119,15 @@
     margin-bottom: 0;
 }
 
-.anchor-80-right{
-    grid-column-start: 4;
-    grid-column-end: -1;
-}
+// .anchor-80-right{
+//     grid-column-start: 4;
+//     grid-column-end: -1;
+// }
 
-.anchor-right-sect-helper{
-    grid-column-start: 5;
-    grid-column-end: -1;
-}
+// .anchor-right-sect-helper{
+//     grid-column-start: 5;
+//     grid-column-end: -1;
+// }
 
 .end-col-text{
     grid-column-end: -1;
@@ -139,15 +139,15 @@
     grid-column-end: 9;
 }
 
-.gcs-9-4{
-    grid-column-start: 9;
-    grid-column-end: span 4;
-}
+// .gcs-9-4{
+//     grid-column-start: 9;
+//     grid-column-end: span 4;
+// }
 
-.gcs-8-5{
-    grid-column-start: 8;
-    grid-column-end: span 5;
-}
+// .gcs-8-5{
+//     grid-column-start: 8;
+//     grid-column-end: span 5;
+// }
 
 .span-50r-3p1{
     grid-column-start: 7;
@@ -176,7 +176,6 @@
     background-color: $black;
     padding-bottom: $sect-spacer;
     color: $white;
-    margin-top: 30vh;
 }
 
 .img-fit img{
@@ -209,7 +208,7 @@
     height: 90vh;
     background-repeat: no-repeat;
     object-fit: contain;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -245,5 +244,5 @@
 }
 
 .hero-banner-mobile{
-    padding-bottom: $sect-spacer;
+    height: 100%;
 }
