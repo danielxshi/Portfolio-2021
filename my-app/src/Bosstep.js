@@ -108,17 +108,13 @@ function Bosstep(props) {
         {/* Persona */}
         <section className="bosstep-persona-section sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <div className="span-50">
-                            <h2 className="h2-anchor-right rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
-                            <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        </div>
-                        <div className="img-fit span-4 gcs-9-4">
-                            <img className="rel-margin-bot" src={persona} alt=""/>
-                            <p className="citation">test</p>
-                        </div>
-                    </div>
+                <div className="span-50">
+                    <h2 className="h2-anchor-right rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
+                    <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
+                </div>
+                <div className="img-fit span-4 gcs-9-4">
+                    <img className="rel-margin-bot" src={persona} alt=""/>
+                    <p className="citation">test</p>
                 </div>
             </div>
         </section>
@@ -163,7 +159,7 @@ function Bosstep(props) {
         </section>
 
         {/* Sect helper graphic */}
-        {/* <SectionHelperGraphic graphic={blob} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <SectionHelperGraphic graphic={blob} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         <section className="sect-last sect-1">
             <div className="grid-row-space grid-container">
@@ -185,10 +181,10 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
 
         {/* Wireframe 1 */}
-        {/* <section className="bosstep-wireframe-section sect-last sect-1">
+        <section className="bosstep-wireframe-section sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="rel-margin-bot sub-container grid-col-space">
@@ -214,10 +210,10 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
 
         {/* Wireframe 2 */}
-        {/* <section className="bosstep-wireframe-section sect-last sect-1">
+        <section className="bosstep-wireframe-section sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="rel-margin-bot sub-container grid-col-space">
@@ -243,10 +239,10 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
 
         {/* Sketch lrg */}
-        {/* <section className="bosstep-minigame-sketch-section sect-1 sect-last">
+        <section className="bosstep-minigame-sketch-section sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -262,7 +258,7 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
 
         {/* sect helper graphic */}
         {/* <SectionHelperGraphic graphic={personaGraphic} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}

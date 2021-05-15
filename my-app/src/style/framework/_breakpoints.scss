@@ -169,12 +169,12 @@
 
         // Persona
         .bosstep-persona-section{
-            .gcs-9-4 {
-                grid-column-start: 1;
-                grid-column-end: 13;
+            .gcs-9-4, .span-50 {
+                grid-column-start: 2;
+                grid-column-end: 12;
             }
             .span-5{
-                grid-column-start: span 13;
+                grid-column-start: span 12;
             }
         }
     }
@@ -183,8 +183,15 @@
     // End of Bosstep.js
     .sect-helper-graphic{
         .anchor-right-sect-helper{
-            grid-column-start: 5;
-            grid-column-end: span 8;
+            grid-column-start: 2;
+            grid-column-end: 12;
+            grid-row-start: 1;
+        }
+        .span-3{
+            // grid-row-start: 1;
+            // grid-column-start: 10;
+            // grid-column-end: span 2;
+            display: none;
         }
         
     }
@@ -354,6 +361,7 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    
     .nav-menu{    
         grid-column-end: 13;
     }
@@ -409,9 +417,10 @@
         .anchor-right-sect-helper{
             grid-column-start: 5;
             grid-column-end: -1;
-            .span-3{
-                grid-column: span 3;
-            }
+        }
+        .span-3{
+            display: block;
+            grid-column: span 3;
         }
         
     }
