@@ -8,6 +8,7 @@ import projectMessages from './components/ProjectMessages.js'
 // Import images
 import bosstepBanner from './images/bosstep-banner-2048x768.jpg';
 import cliqBanner from './images/cliq/cliq-banner-2048x768.png';
+import momentBanner from './images/track/moment-banner-2048x768.png';
 // Import mobile images - hero banner - bosstep
 import mobileBannerBG from './images/bosstep/mobile-banner-bosstep.png';
 import mobileBannerDemo from './images/bosstep/mobile-banner-demo.png';
@@ -22,6 +23,7 @@ import Navbar from "./components/Navbar/Navbar.js";
 // Import Pages
 import Bosstep from "./Bosstep.js";
 import Cliq from './Cliq.js';
+import MomentTrack from './MomentTrack.js';
 
 
 // Import Animation
@@ -56,6 +58,10 @@ function App() {
                 <Route exact path="/cliq" >
                   <Project messages={projectMessages.cliq} banner={cliqBanner} />
                   <Cliq/>
+                </Route>
+                <Route exact path="/track" >
+                  <Project messages={projectMessages.cliq} banner={momentBanner} />
+                  <MomentTrack/>
                 </Route>
               </Switch> 
             </CSSTransition>

@@ -8,8 +8,12 @@
             grid-column-end: 3;
         }
         .anchor-80-right{
-            grid-column-start: 4;
+            grid-column-start: 7;
             grid-column-end: 13;
+        }
+        .center-module{
+            grid-column-start: 4;
+            grid-column-end: 10;
         }
     }
     .center-module{
@@ -105,25 +109,6 @@
         }
 
     } 
-    .span-2{
-        grid-column: span 2;
-    }
-
-    .span-3{
-        grid-column: span 3;
-    }
-
-    .span-4{
-        grid-column: span 4;
-    }
-
-    .span-5{
-        grid-column-start: span 5;
-    }
-
-    .span-6{
-        grid-column-start: span 6;
-    }
 
     // Bosstep.js
     .bosstep-page{
@@ -277,6 +262,25 @@
             font-size: 6rem;
         }
     }
-        
+    .span-2{
+        grid-column: span 2;
+    }
+
+    .span-3{
+        grid-column: span 3;
+    }
+
+    .span-4{
+        grid-column: span 4;
+    }
+
+    .span-5{
+        grid-column-start: span 5;
+    }
+
+    .span-6{
+        grid-column-start: span 6;
+    }
+
     
 }
