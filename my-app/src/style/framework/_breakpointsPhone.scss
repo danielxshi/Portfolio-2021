@@ -1,0 +1,390 @@
+// Imports
+@import '../base/variables.scss';
+
+
+/* Mobile first queries */
+/* Larger than mobile */
+@media (min-width: 300px){
+    .next-proj{
+        .center-module{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        .anchor-80-right{
+            grid-column-start: 5;
+            grid-column-end: 12;
+            .img-fit{
+                grid-column-end: -1;
+            }
+        }
+    }
+
+
+    .center-module{
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    .anchor-left-subheader{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .anchor-80-right{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .field-study-sect{
+        .gcs-9-4{
+            margin-top: $sect-spacer;
+        }
+    }
+    .gcs-9-4{
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+
+    .project-details-hero-mobile{
+        .text-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-column-end: 12;
+            margin-top: 17vh;
+            display: flex;
+            flex-direction: column;
+            .title-wrapper{
+                text-align: center;
+            }
+        }
+        .mobileBannerBG{
+            grid-row-start: 1;
+        }
+    }
+    .sub-container{
+        gap: 0.5em;
+    }
+    .project-description {
+        grid-column-start: 2;
+        grid-column-end: 12;
+        grid-row-start: 2;
+    }
+    .proj-home-grid-def {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    // !important
+    .project-details-hero-desktop{
+        display: none;
+    }
+    .project-details-hero-mobile{
+        display: block;
+    }
+    .text-banner-desktop{
+        display: none;
+    }
+    .nav-menu{
+        grid-column-end: 12;
+    }
+    .primary-btn{
+        padding: .55rem 1rem;
+        font-size: .8rem;
+    }
+    .menu-icon{
+        grid-column-end: 12;
+    }
+    .nav-logo{
+        grid-column-start: 2;
+    }
+    .btn-span{
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    .max-col{
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+
+    // home.js
+    .about-section{
+        h2{
+            // grid-column: span 13;
+            grid-column-start: 2;
+            grid-column-end: 12;
+        }
+    }
+    .span-2{
+        // grid-column: span 13;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .span-4{
+        grid-column-start: span 13;
+    }
+
+    .span-5{
+        grid-column-start: span 13;
+    }
+
+    .span-6{
+        grid-column-start: span 13;
+    }
+    .h2-anchor-right{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .paragraph-anchor-left{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    // Bosstep.js
+    .bosstep-page{
+        .span-50{
+            grid-column-start: 2;
+            grid-column-end: 12;
+            
+        }
+        .span-5{
+            grid-column-start: span 13;
+        }
+        .gcs-8-5{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        .bosstep-wireframe-section{
+            .span-3{
+                grid-column: span 3;
+            }
+        }
+        // Protoview
+        .bosstep-protoview-section{
+            .span-3{
+                grid-column: span 6;
+            }
+            .protoview-1{
+                .img-fit{
+                    grid-row-start: 2;
+                }
+                .gcs-8-5{
+                    grid-row-start: 1;
+                }
+            }
+            .protoview-2{
+                .img-fit{
+                    grid-row-start: 2;
+                }
+                .span-50r-3p1 {
+                    grid-column-start: 7;
+                    grid-column-end: span 6;
+                }
+                
+            }
+        }
+        // Sketch
+        .bosstep-sketch-section{
+            .span-50{
+                grid-column-start: 1;
+                grid-column-end: 13;
+                margin-bottom: $sect-spacer;
+                grid-row-start: inherit;
+            }
+            .gcs-8-5{
+                grid-row-start: inherit;
+                grid-column-start: 1;
+                grid-column-end: 13;
+            }
+        }
+
+        .bosstep-minigame-sketch-section{
+            .gcs-8-5{
+                grid-column-start: 2;
+                grid-column-end: 12;
+            }
+        }
+
+
+        // Persona
+        .bosstep-persona-section{
+            .gcs-9-4, .span-50 {
+                grid-column-start: 2;
+                grid-column-end: 12;
+            }
+            .span-5{
+                grid-column-start: span 12;
+            }
+        }
+    }
+
+
+    // End of Bosstep.js
+    .sect-helper-graphic{
+        .anchor-right-sect-helper{
+            grid-column-start: 2;
+            grid-column-end: 12;
+            grid-row-start: 1;
+        }
+        .span-3{
+            // grid-row-start: 1;
+            // grid-column-start: 10;
+            // grid-column-end: span 2;
+            display: none;
+        }
+        
+    }
+    .sect-helper-text{
+        .span-3{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        h2.span-2{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        .anchor-right-sect-helper {
+            grid-column-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        .end-col-text {
+            grid-row-start: 3;
+            grid-column-end: 13;
+            text-align: right;
+        }
+
+    } 
+    .project-details-h1{
+        font-size: 5rem;
+        letter-spacing: 5px;
+        margin-top: $rel-margin;
+    }
+    p{
+        font-size: $mobile-paragraph-sz;
+        line-height: $mobile-line-height;
+    }
+    .max-col-proj-details{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .color-stripe-container-2{
+        display:none;
+    }
+    .subheading{
+        margin-bottom: 2rem;
+    }
+    // .footer-grid-container{
+    //     width: $max-width;
+    // }
+    .proj-info-wrapper {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        .grid-container{
+            padding: $sect-spacer 0;
+            .project-description-container {
+                p {
+                    margin-bottom: 2rem;
+                } 
+            }
+            .sub-details-wrapper{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    
+    .project{
+        margin-bottom: $sect-spacer;
+    }
+
+    .project-1{
+        margin-top: 10vh;
+    }
+
+    .intro-wrapper{
+        h1{      
+            font-size: 4rem;
+        }
+    }
+
+
+    // Other project section - homepage
+    .otr-proj-spec-wrapper{
+        margin-bottom: 4rem;
+    }
+    .otr-proj-1{
+        grid-row-start:1;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }.otr-proj-2{
+        grid-row-start:2;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }.otr-proj-3{
+        grid-row-start:3;
+        grid-column-start: 1;
+        grid-column-end: -1;
+        margin-bottom: 0;
+    }  
+    
+
+    // footer - all pages 
+    footer{
+        .footer-email-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+        .footer-frequent-links-wrapper{
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 12;
+        }
+        .footer-social-media-wrapper{
+            margin-top: 0;
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-column-end: 12;
+            img:first-child{
+                margin-right: 1rem;
+            }
+        }
+        .footer-copyright{
+            grid-row-start: 4;
+            grid-column-start: 2;
+            grid-column-end: 12;
+        }
+        .footer-cell{
+            margin-top: 0;
+        }
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+
+    .project-details-hero-mobile{
+        .text-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 3;
+            grid-column-end: 11;
+            margin-top: 17vh;
+            display: flex;
+            flex-direction: column;
+            .title-wrapper{
+                text-align: center;
+            }
+        }
+        .mobileBannerBG{
+            grid-row-start: 1;
+        }
+    }
+    .grid-container{
+        width: 80vw;
+    }
+
+    //Intro - homepage
+    .intro-wrapper{
+        h1{      
+            font-size: 4rem;
+        }
+    }
+}

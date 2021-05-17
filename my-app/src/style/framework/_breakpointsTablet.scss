@@ -1,0 +1,10 @@
+// Imports
+@import '../base/variables.scss';
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    
+    nav ul a {
+        margin: 0 1rem;
+    }
+}

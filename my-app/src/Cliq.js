@@ -1,5 +1,5 @@
 // Router
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // Stylesheets
 import './style/pages/_projects.scss';
@@ -7,7 +7,7 @@ import './style/pages/_projects.scss';
 // Import placeholders
 import img34 from './images/placeholder/placeholder-3x4.png';
 import img43 from './images/placeholder/placeholder-4x3.png';
-import img2x1 from './images/placeholder/placeholder-2x1.png';
+// import img2x1 from './images/placeholder/placeholder-2x1.png';
 import imgProf from './images/placeholder/placeholder-prof-1x1.png';
 import imgVid from './images/placeholder/video-placeholder.png';
 import imgVid1x1 from './images/placeholder/vid-1x1.png';

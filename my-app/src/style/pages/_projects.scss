@@ -26,20 +26,6 @@
         @include box-shadow($shadows);
         padding: $sect-spacer 0;
     }
-    .project-description-wrapper{
-        grid-row-start: 1;
-        grid-column-start: 8;
-        grid-column-end: 13;
-    }
-    .project-title-wrapper{
-        grid-row-start: 1;
-        grid-column-start: 1;
-        grid-column-end: 6;
-
-        h1{
-            margin-top: -2rem;
-        }
-    }
     .project-text-wrapper{
         grid-column-end: 8;
     }
@@ -54,8 +40,6 @@
         height: 100%;
     }
     .details-wrapper{
-        grid-column-start: 1;
-        grid-column-end: 6;
         h3{
             margin-top: 0;
         }
@@ -65,44 +49,13 @@
         grid-column-end: 13;
     }
 }
-
-// .paragraph-anchor-left{
-//     grid-column-start: 1;
-//     grid-column-end: 8;
-// }
-// .h2-anchor-right{
-//     grid-column-start: 9;
-//     grid-column-end: -1;
-// }
-
-// .h2-anchor-left{
-//     grid-column-start: 1;
-//     grid-column-end: 6;
-// }
-
-// .span-2{
-//     grid-column: span 2;
-// }
-
 .span-3{
     grid-column: span 3;
 }
 
-// .span-4{
-//     grid-column-start: span 4;
-// }
-
-// .span-5{
-//     grid-column-start: span 5;
-// }
-
-// .span-6{
-//     grid-column-start: span 6;
-// }
-
 .center-module{
-    grid-column-start: 4;
-    grid-column-end: 10;
+    // grid-column-start: 4;
+    // grid-column-end: 10;
     flex-direction: column;
     display: flex;
 
@@ -120,16 +73,6 @@
     margin-bottom: 0;
 }
 
-// .anchor-80-right{
-//     grid-column-start: 4;
-//     grid-column-end: -1;
-// }
-
-// .anchor-right-sect-helper{
-//     grid-column-start: 5;
-//     grid-column-end: -1;
-// }
-
 .end-col-text{
     grid-column-end: -1;
     text-align: right;
@@ -140,15 +83,6 @@
     grid-column-end: 9;
 }
 
-// .gcs-9-4{
-//     grid-column-start: 9;
-//     grid-column-end: span 4;
-// }
-
-// .gcs-8-5{
-//     grid-column-start: 8;
-//     grid-column-end: span 5;
-// }
 
 .span-50r-3p1{
     grid-column-start: 7;
@@ -234,8 +168,6 @@
 .project-details-hero-mobile{
     .text-wrapper{
         grid-row-start: 1;
-        // grid-column-start: 3;
-        // grid-column-end: 11;
         margin-top: 17vh;
         display: flex;
         flex-direction: column;

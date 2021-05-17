@@ -1,0 +1,162 @@
+// Imports
+@import '../base/variables.scss';
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .max-col-proj-details{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .bosstep-page .bosstep-persona-section .span-50 {
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+    .bosstep-page .bosstep-persona-section .gcs-9-4 {
+        grid-column-start: 9;
+        grid-column-end: 13;
+    }
+
+    // footer - all pages
+    footer{
+        height: auto;
+        .footer-email-wrapper{
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-column-end: span 3;
+        }
+        .footer-frequent-links-wrapper{
+            grid-row-start: 1;
+            grid-column-start: inherit;
+            grid-column-end: span 3;
+        }
+        .footer-social-media-wrapper{
+            grid-row-start: 1;
+            grid-column-start: inherit;
+            grid-column-end: span 3;
+            img:first-child{
+                margin-right: 1rem;
+            }
+        }
+        .footer-cell{
+            height: 12rem;
+        }
+        .footer-copyright{
+            grid-row-start: 1;
+            grid-column-end: span 3;
+            grid-column-start: inherit;
+        }
+    }
+
+    .details-container {
+        .project-description-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 8;
+            grid-column-end: 13;
+        }
+        .details-wrapper{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .project-title-wrapper {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            h1{
+                font-size: 3rem;
+                margin-top: -0.75rem;
+            }
+        }
+
+    }
+    .project-description{
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-column-start: 7;
+    }
+
+    .proj-home-grid-def{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+    }
+
+
+    .nav-menu{    
+        grid-column-end: 13;
+    }
+    .max-col{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .primary-btn{
+        padding: 12px 48px;
+        font-size: .9rem;
+    }
+    .nav-logo{
+        grid-column-start: 1;
+    }
+    .about-section{
+        h2{
+            grid-column: span 3;
+        }
+    }
+    .anchor-80-right{
+        grid-column-start: 4;
+        grid-column-end: -1;
+    }
+    .paragraph-anchor-left{
+        grid-column-start: 1;
+        grid-column-end: 8;
+    }
+    .h2-anchor-right{
+        grid-column-start: 9;
+        grid-column-end: -1;
+    }
+    .h2-anchor-left{
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+    .project{
+        margin-bottom: $sect-spacer;
+    }
+
+    .project-1{
+        margin-top: 20vh;
+    }
+
+    .intro-wrapper{
+        h1{      
+            font-size: 6.5rem;
+        }
+    }
+
+
+    // Color stripe - homepage
+    .color-stripe-container-1{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 100%;
+        display: flex;
+    }
+    .color-stripe-container-2 {
+        grid-row-start: 1;
+        grid-column-start: 6;
+        grid-column-end: 13;
+        height: 100%;
+        display: flex;
+        z-index: 1;
+    }
+
+
+    .project{
+        .grid-container{
+            padding: 2rem 3rem;
+        }
+    }
+
+    .grid-container, .footer-grid-container{
+        max-width: 75vw;
+    }
+}
+

@@ -20,8 +20,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar/Navbar.js";
 
 // Import Pages
-import CLIQ from "./Cliq.js";
 import Bosstep from "./Bosstep.js";
+import Cliq from './Cliq.js';
 
 
 // Import Animation
@@ -30,9 +30,7 @@ import{
   TransitionGroup,
 } from 'react-transition-group';
 
-import React, {useRef, useEffect} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Cliq from './Cliq.js';
 
 
 function App() {

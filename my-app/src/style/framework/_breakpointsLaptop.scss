@@ -1,0 +1,282 @@
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+    .next-proj{
+        h2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .anchor-80-right{
+            grid-column-start: 4;
+            grid-column-end: 13;
+        }
+    }
+    .center-module{
+        grid-column-start: 4;
+        grid-column-end: 10;
+    }
+    .anchor-left-subheader{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .anchor-80-right{
+        grid-column-start: 4;
+        grid-column-end: -1;
+    }
+    .max-col-proj-details{
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    .field-study-sect{
+        .gcs-9-4{
+            margin-top: 0;
+        }
+    }
+    .gcs-9-4{
+        grid-column-start: 9;
+        grid-column-end: span 4;
+    }
+    .details-container {
+        .project-description-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 8;
+            grid-column-end: 12;
+        }
+        .details-wrapper{
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+        .project-title-wrapper {
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-column-end: 6;
+            h1{
+                font-size: 3rem;
+                margin-top: -0.75rem;
+            }
+        }
+
+    }
+
+    // Alternation Mobile & Desktop
+    .project-details-hero-desktop{
+        display: block;
+    }
+    .project-details-hero-mobile{
+        display: none;
+    }
+    .text-banner-mobile{
+        display: none;
+    }
+    .text-banner-desktop{
+        display: block;
+    }
+
+
+    .sect-helper-graphic{
+        .anchor-right-sect-helper{
+            grid-column-start: 5;
+            grid-column-end: -1;
+        }
+        .span-3{
+            display: block;
+            grid-column: span 3;
+        }
+        
+    }
+    .sect-helper-text{
+        .span-3{
+            grid-column-start: 1;
+            grid-column-end: 13;
+        }
+        h2.span-2{
+            grid-column-start: 1;
+            grid-column: span 3;
+        }
+        .anchor-right-sect-helper{
+            grid-column-start: 5;
+            grid-column-end: -1;
+        }
+        .end-col-text {
+            grid-row-start: 3;
+            grid-column-end: 13;
+            text-align: right;
+        }
+
+    } 
+    .span-2{
+        grid-column: span 2;
+    }
+
+    .span-3{
+        grid-column: span 3;
+    }
+
+    .span-4{
+        grid-column: span 4;
+    }
+
+    .span-5{
+        grid-column-start: span 5;
+    }
+
+    .span-6{
+        grid-column-start: span 6;
+    }
+
+    // Bosstep.js
+    .bosstep-page{
+
+
+        .bosstep-minigame-sketch-section{
+            .gcs-8-5{
+                grid-column-start: 8;
+                grid-column-end: span 5;
+            }
+        }
+        .gcs-8-5 {
+            grid-column-start: 8;
+            grid-column-end: span 5;
+        }
+        .span-5{
+            grid-column: span 5;
+        }
+        .span-50{
+            grid-column: span 6;
+        }
+        // wireframe section
+        .bosstep-wireframe-section{
+            .span-3{
+                grid-column: span 3;
+            }
+        }
+        // Minigame sketch lrg
+        .bosstep-minigame-sketch-section{
+            .span-50{
+                grid-column: span 6;
+            }
+        }
+        // Protoview
+        .bosstep-protoview-section{
+            .span-3{
+                grid-column: span 3;
+            }
+            .protoview-1{
+                .img-fit{
+                    grid-row-start: 1;
+                }
+                .gcs-8-5{
+                    grid-column-start: 8;
+                    grid-column-end: span 5;
+                    grid-row-start: 1;
+                }
+            }
+            .protoview-2{
+                .img-fit{
+                    grid-row-start: inherit;
+                }
+                .span-50r-3p1 {
+                    grid-column-start: 7;
+                    grid-column-end: span 3;
+                }
+                
+            }
+        }
+        // Sketch
+        .bosstep-sketch-section{
+            .span-50{
+                grid-column: span 6;
+                margin-bottom: $sect-spacer;
+            }
+            .gcs-8-5{
+                grid-column-start: 8;
+                grid-column-end: span 5;
+            }
+        }
+
+
+        // Persona
+        .bosstep-persona-section{
+            .gcs-9-4{
+                grid-column-start: 9;
+                grid-column-end: 12;
+            }
+            .span-5{
+                grid-column-start: span 5;
+            }
+            .span-50{
+                grid-column-start: 2;
+                grid-column-end: 8;
+            }
+        }
+    }
+    
+    .span-50{
+        grid-column: span 6;
+    }
+    // .max-col-proj-details{
+    //     grid-column-start: $max-col-r-heavy;
+    //     grid-column-end: -1;
+    // }
+    .color-stripe-container-2{
+        display: grid;
+    }
+
+    // footer - all pages
+    footer{
+        height: auto;
+        .footer-email-wrapper{
+            grid-column-start: 2;
+            grid-row-start: 1;
+            grid-column-end: span 3;
+        }
+        .footer-frequent-links-wrapper{
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: span 3;
+        }
+        .footer-social-media-wrapper{
+            grid-row-start: 1;
+            grid-column-start: 8;
+            img:first-child{
+                margin-right: 1rem;
+            }
+        }
+        .footer-cell{
+            height: 12rem;
+        }
+        .footer-copyright{
+            grid-row-start: 2;
+            grid-column-end: 12;
+            grid-column-start: 8;
+        }
+    }
+
+    // Other project section - homepage
+    .otr-proj-1{
+        grid-row-start:1;
+        grid-column-start: 1;
+    }.otr-proj-2{
+        grid-row-start:1;
+        grid-column-start: 5;
+    }.otr-proj-3{
+        grid-row-start:1;
+        grid-column-start: 9;
+    }
+    .otr-proj-sect{
+        .sub-container{
+            gap: 2em;
+        }
+    }
+    .otr-proj-spec-wrapper{
+        grid-column-end: span 4;
+    }
+    .intro-wrapper{
+        h1{      
+            font-size: 6rem;
+        }
+    }
+        
+    
+}

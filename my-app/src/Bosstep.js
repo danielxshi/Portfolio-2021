@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 // Stylesheets
 import './style/pages/_projects.scss';
 
@@ -12,13 +10,6 @@ import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraph
 import CenterMod from "./components/ProjectDetails/CenterModule";
 import NextProject from "./components/ProjectDetails/NextProj";
 
-// Import image placeholders
-import img34 from './images/placeholder/placeholder-3x4.png';
-import img43 from './images/placeholder/placeholder-4x3.png';
-import img2x1 from './images/placeholder/placeholder-2x1.png';
-import imgProf from './images/placeholder/placeholder-prof-1x1.png';
-import imgVid from './images/placeholder/video-placeholder.png';
-import imgVid1x1 from './images/placeholder/vid-1x1.png';
 
 // Import images
 
@@ -29,15 +20,6 @@ import critNotes3 from './images/bosstep/crit-notes-3.jpg';
 import critNotes4 from './images/bosstep/crit-notes-4.jpg';
 
 // Sketches
-
-// sketch-home
-import sketchHomeMaster from './images/bosstep/sketch-home.jpg'
-import sketchHomeIter1 from './images/bosstep/sketch-home-card-ver.jpg'
-import sketchHomeIter2 from './images/bosstep/sketch-home-triplet-ver.jpg'
-// sketch-games
-import sketchMinigameMaster from './images/bosstep/sketch-minigame.jpg'
-import sketchMinigameIter1 from './images/bosstep/sketch-minigame-iter1.jpg'
-import sketchMinigameIter2 from './images/bosstep/sketch-minigame-iter2.jpg'
 // lrg sketch
 import sketchMinigameMLrg from './images/bosstep/sketch-minigame-m-lrg.jpg'
 // sketch overview
@@ -73,8 +55,6 @@ import persona from './images/bosstep/persona-bstep.jpg'
 // Graphics
 import pie from './images/bosstep/pie-graph-graphic.png'
 import blob from './images/bosstep/blob-neu.png'
-import gradientCircle from './images/bosstep/gradient-diagonal-group.png'
-import gradientLine from './images/bosstep/gradient-line-group.png'
 import personaGraphic from './images/bosstep/persona-graphic.png'
 
 // Next project
@@ -112,7 +92,7 @@ function Bosstep(props) {
                     <h2 className="h2-anchor-right rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
                     <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                 </div>
-                <div className="img-fit span-4 gcs-9-4">
+                <div className="img-fit gcs-9-4">
                     <img className="rel-margin-bot" src={persona} alt=""/>
                     <p className="citation">test</p>
                 </div>
@@ -174,7 +154,7 @@ function Bosstep(props) {
                     </div>
                     <p className="citation">test</p>
                 </div>
-                <div className="max-col-proj-details">
+                <div className="max-col">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
@@ -186,7 +166,7 @@ function Bosstep(props) {
         {/* Wireframe 1 */}
         <section className="bosstep-wireframe-section sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
+                <div className="max-col">
                     <div className="rel-margin-bot sub-container grid-col-space">
                         <div className="span-3 img-fit">
                             <img src={wireHome} alt=""/>
@@ -203,7 +183,7 @@ function Bosstep(props) {
                     </div>
                     <p className="citation">test</p>
                 </div>
-                <div className="max-col-proj-details">
+                <div className="max-col">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
@@ -215,7 +195,7 @@ function Bosstep(props) {
         {/* Wireframe 2 */}
         <section className="bosstep-wireframe-section sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
+                <div className="max-col">
                     <div className="rel-margin-bot sub-container grid-col-space">
                         <div className="span-3 img-fit">
                             <img src={wireFriendMenu} alt=""/>
@@ -232,7 +212,7 @@ function Bosstep(props) {
                     </div>
                     <p className="citation">test</p>
                 </div>
-                <div className="max-col-proj-details">
+                <div className="max-col">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
@@ -261,11 +241,11 @@ function Bosstep(props) {
         </section>
 
         {/* sect helper graphic */}
-        {/* <SectionHelperGraphic graphic={personaGraphic} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
+        <SectionHelperGraphic graphic={personaGraphic} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
 
         {/* Erma */}
-        {/* <section className="personas-sect sect-1 sect-last">
+        <section className="field-study-sect sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -274,17 +254,17 @@ function Bosstep(props) {
                             <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                             <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         </div>
-                        <div className="img-fit span-4 gcs-9-4">
+                        <div className="img-fit gcs-9-4">
                             <img className="rel-margin-bot" src={researchLoc} alt=""/>
                             <p className="citation">test</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
 
         {/* Pie Graph */}
-        {/* <section className="personas-sect sect-1 sect-last">
+        <section className="personas-sect sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -293,22 +273,22 @@ function Bosstep(props) {
                             <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                             <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         </div>
-                        <div className="img-fit span-4 gcs-9-4">
+                        <div className="img-fit gcs-9-4">
                             <img src={pie} alt=""/>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
 
         {/* sect helper */}
-        {/* <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
+        <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
 
         {/* Critique Notes */}
-        {/* <section className="sketch-sect sect-last sect-1">
+        <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
+                <div className="max-col">
                     <div className="rel-margin-bot sub-container grid-col-space">
                         <div className="span-3 img-fit">
                             <img src={critNotes1} alt=""/>
@@ -325,42 +305,40 @@ function Bosstep(props) {
                     </div>
                     <p className="citation">test</p>
                 </div>
-                <div className="max-col-proj-details">
+                <div className="max-col">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
 
         {/* sect helper */}
-        {/* <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
+        <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        {/* <section className="sect-1 sect-last">
+        <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
+                <div className="max-col img-fit">
+                    <img src={finale} alt="" />
+                </div>
+                <div className="max-col">
                     <div className="sub-container grid-col-space">
-                        <div className="max-col img-fit">
-                            <img src={finale} alt="" />
+                        <h2 className="anchor-left-subheader">Lorem<strong className="highlight-text">_</strong></h2>
+                        <div className="anchor-80-right">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae.</p>
                         </div>
                     </div>
                 </div>
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <h2 className="span-4">Lorem<strong className="highlight-text">_</strong></h2>
-                        <p className="anchor-80-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis amet quibusdam natus magnam nesciunt! Facilis natus facere ad rem modi aliquam reprehenderit, aliquid odit velit impedit reiciendis quo perferendis.</p>
-                        <p className="anchor-80-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis amet quibusdam natus magnam nesciunt! Facilis natus facere ad rem modi aliquam reprehenderit, aliquid odit velit impedit reiciendis quo perferendis.</p>
-                    </div>
-                </div>
             </div>
-        </section> */}
+        </section>
         
         {/* Center module */}
-        {/* <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/> */}
+        <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
         {/* Next project */}
-        {/* <NextProject img={nextProj}/> */}
+        <NextProject img={nextProj}/>
         </main>
     );
 }
