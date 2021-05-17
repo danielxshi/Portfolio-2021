@@ -1,6 +1,15 @@
 // Stylesheets
 import './style/pages/_projects.scss';
 
+
+// Import components
+import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
+import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic";
+import CenterMod from "./components/ProjectDetails/CenterModule";
+import NextProject from "./components/ProjectDetails/NextProj";
+import FiftyModule from "./components/ProjectDetails/ModuleFiftySplit"
+import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
+
 // Import placeholders
 import img34 from './images/placeholder/placeholder-3x4.png';
 import img43 from './images/placeholder/placeholder-4x3.png';
@@ -14,18 +23,19 @@ import nextProj from './images/boss-1000x600.png'
 
 function MomentTrack(props) {
     return (
-        <section className="team-section sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="center-module ">
-                    <h2 className="rel-margin-bot">{props.title} <strong className="highlight-text">_</strong></h2>
-                    <p className="rel-margin-bot">{props.text}</p>
-                    <p className="rel-margin-bot"><strong>{props.org}</strong></p>
-                    <a href={props.href} className="primary-btn black-border-btn">
-                        {props.btnTitle}
-                    </a>
-                </div>
-            </div>
-        </section>
+        <main>
+            {/* Eighty Module */}
+            <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={img34} citation={"citation"}/>
+
+            {/* Fifty Module */}
+            <FiftyModule img={img34} title={"lorem"} p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
+
+            {/* Center module */}
+            <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
+
+            {/* Next project */}
+            <NextProject img={nextProj}/>
+        </main>
     );
 }
 

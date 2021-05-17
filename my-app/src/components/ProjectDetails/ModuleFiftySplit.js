@@ -1,17 +1,17 @@
-function FiftySplit(props) {
+function ModuleFiftySplit(props) {
     return (
-        <section className="sect-1 sect-last">
+        <section className="mod-50 sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col">
                     <div className="sub-container grid-col-space">
                         <div className="img-fit span-50">
-                            <img className="rel-margin-bot" src={props.img} alt={props.alt}/>
+                            <img src={props.img} alt={props.alt}/>
                             <p className="citation">{props.citation}</p>
                         </div>
                         <div className="gcs-8-5">
-                            <h2 className="rel-margin-bot">{props.heading}<strong class="highlight-text">_</strong></h2>
-                            <p className="paragraph-anchor-left rel-margin-bot">{props.paragraphOne}</p>
-                            <p className="paragraph-anchor-left">{props.paragraphTwo}</p>
+                            <h2>{props.title}<strong class="highlight-text">_</strong></h2>
+                            <p className="paragraph-anchor-left rel-margin-bot">{props.p1}</p>
+                            <p className="paragraph-anchor-left">{props.p2}</p>
                         </div>
                     </div>
                 </div>
@@ -20,4 +20,4 @@ function FiftySplit(props) {
     );
 }
 
-export default FiftySplit;
+export default ModuleFiftySplit;

@@ -3,17 +3,20 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+    .anch-80{
+        // !Rename, span-50 is not implied here
+        .span-50{
+            grid-column-start: 1;
+            grid-column-end: 8;
+        }
+        .gcs-9-4{
+            grid-column-start: 9;
+            grid-column-end: 13;
+        }
+    }
     .max-col-proj-details{
         grid-column-start: 1;
         grid-column-end: -1;
-    }
-    .bosstep-page .bosstep-persona-section .span-50 {
-        grid-column-start: 1;
-        grid-column-end: 8;
-    }
-    .bosstep-page .bosstep-persona-section .gcs-9-4 {
-        grid-column-start: 9;
-        grid-column-end: 13;
     }
 
     // footer - all pages

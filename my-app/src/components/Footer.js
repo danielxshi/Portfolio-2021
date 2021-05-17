@@ -10,7 +10,7 @@ function Footer() {
         <div className="grid-container">
             <div className="footer-cell footer-email-wrapper">
                 <p>Get in touch</p>
-                <a className="secondary-cta" href="mailto:danielxshi@hotmail.com">email</a>
+                <a className="secondary-cta" href="mailto:danielxshi@hotmail.com">danielxshi@hotmail.com</a>
             </div>
 
             <div className="footer-cell footer-frequent-links-wrapper">

@@ -57,9 +57,8 @@ const Home = () => {
             </div> */}
             <h2>I am<strong className="highlight-text">_</strong></h2>
             <div className="anchor-80-right">
-                <p className="rel-margin-bot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
-                <p className="rel-margin-bot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
-                <p className="rel-margin-bot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque, temporibus at quam possimus quia. Optio minima facere, rerum nulla aliquam quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University I am pursing a Bachelors of Science with a focus in <strong class="highlight-text">Design</strong>.</p>
+                <p className="rel-margin-bot">I am currently learning REACT and Framer Motion through online tutorials and in my freetime I <strong class="highlight-text">freelance </strong> photo/video in the Vancouver Dance Community.</p>
             </div>
         </div>
     </section>
@@ -176,26 +175,26 @@ const Home = () => {
         </div>
     </section>
 
-    {/* What i'm working on atm */}
+    {/* Recent Achievements */}
     <section className="project">
         <div className="grid-container">
             <div className="max-col">
-                <h2 className="rel-margin-bot">what i'm working on<strong className="highlight-text">_</strong></h2>
+                <h2 className="rel-margin-bot">Noteable Achievements<strong className="highlight-text">_</strong></h2>
             </div>
             <div className="max-col">
                 <div className="sub-container">
                     <div className="anchor-80-right ">
                         <div className="anchor-80-left rel-margin-bot">
-                            <p>test - date</p>
-                            <p>m quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                            <p><strong>President's Honour Roll SFU</strong> - date</p>
+                            <p>Received a minimum TGPA of 4.00 in my third year in School of Interactive Arts and Technology at Simon Fraser University.</p>
                         </div>
                         <div className="anchor-80-left rel-margin-bot">
-                            <p>test - date</p>
-                            <p>m quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                            <p><strong>SFU Undergraduate Conference Presenter</strong> - date</p>
+                            <p>Showcased a renewable battery monitor mobile application. Designed in IAT333 Interactions Design, along with my team members (Cassandra, Keith and Nisha).</p>
                         </div>
                         <div className="anchor-80-left rel-margin-bot">
-                            <p>test - date</p>
-                            <p>m quasi aperiam eveniet alias error nihil architecto molestias vitae!</p>
+                            <p><strong>Web Development Instrutor @EmergeSFU</strong> - date</p>
+                            <p>Instructed a cohort of 10-15 students from SFU, UCBerkley, and several high school students in the basics of HTML and CSS.</p>
                         </div>
                     </div>
                 </div>
@@ -212,21 +211,27 @@ const Home = () => {
                         <div className="otr-proj img-contain proj-home-grid-def-maintain-w">
                             <img src={BOSSTEP} alt=""/>
                         </div>
-                        <h3>Title</h3>
+                        <h3>TTA</h3>
+                        <p>date</p>
+                        <p>Create cover image</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae.</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
                             <img src={BOSSTEP} alt=""/>
                         </div>
-                        <h3>Title</h3>
+                        <h3>IAT233</h3>
+                        <p>date</p>
+                        <p>Make a gif</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed ipsa commodi odio, </p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-3">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
                             <img src={BOSSTEP} alt=""/>
                         </div>
-                        <h3>Title</h3>
+                        <h3>Team Phantom</h3>
+                        <p>date</p>
+                        <p>Make a gif</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae. </p>
                     </div>
                 </div>

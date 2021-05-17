@@ -2,18 +2,34 @@
 /* Larger than desktop */
 @media (min-width: 1000px) {
 
-    .next-proj{
-        h2{
-            grid-column-start: 1;
-            grid-column-end: 3;
+    // Modules ============
+    .anch-80{
+        .gcs-9-4{
+            grid-column-start: 9;
+            grid-column-end: 12;
         }
+        .span-5{
+            grid-column-start: span 5;
+        }
+        .span-50{
+            grid-column-start: 2;
+            grid-column-end: 8;
+        }
+    }
+    .mod-50{
+        .span-50{
+            grid-column: span 6;
+            margin-bottom: $sect-spacer;
+        }
+        .gcs-8-5{
+            grid-column-start: 8;
+            grid-column-end: span 5;
+        }
+    }
+    .next-proj{
         .anchor-80-right{
             grid-column-start: 7;
             grid-column-end: 13;
-        }
-        .center-module{
-            grid-column-start: 4;
-            grid-column-end: 10;
         }
     }
     .center-module{
@@ -112,37 +128,10 @@
 
     // Bosstep.js
     .bosstep-page{
-
-
-        .bosstep-minigame-sketch-section{
-            .gcs-8-5{
-                grid-column-start: 8;
-                grid-column-end: span 5;
-            }
-        }
-        .gcs-8-5 {
-            grid-column-start: 8;
-            grid-column-end: span 5;
-        }
-        .span-5{
-            grid-column: span 5;
-        }
+        // Protoview
         .span-50{
             grid-column: span 6;
         }
-        // wireframe section
-        .bosstep-wireframe-section{
-            .span-3{
-                grid-column: span 3;
-            }
-        }
-        // Minigame sketch lrg
-        .bosstep-minigame-sketch-section{
-            .span-50{
-                grid-column: span 6;
-            }
-        }
-        // Protoview
         .bosstep-protoview-section{
             .span-3{
                 grid-column: span 3;
@@ -164,48 +153,9 @@
                 .span-50r-3p1 {
                     grid-column-start: 7;
                     grid-column-end: span 3;
-                }
-                
+                }           
             }
         }
-        // Sketch
-        .bosstep-sketch-section{
-            .span-50{
-                grid-column: span 6;
-                margin-bottom: $sect-spacer;
-            }
-            .gcs-8-5{
-                grid-column-start: 8;
-                grid-column-end: span 5;
-            }
-        }
-
-
-        // Persona
-        .bosstep-persona-section{
-            .gcs-9-4{
-                grid-column-start: 9;
-                grid-column-end: 12;
-            }
-            .span-5{
-                grid-column-start: span 5;
-            }
-            .span-50{
-                grid-column-start: 2;
-                grid-column-end: 8;
-            }
-        }
-    }
-    
-    .span-50{
-        grid-column: span 6;
-    }
-    // .max-col-proj-details{
-    //     grid-column-start: $max-col-r-heavy;
-    //     grid-column-end: -1;
-    // }
-    .color-stripe-container-2{
-        display: grid;
     }
 
     // footer - all pages
@@ -281,6 +231,11 @@
     .span-6{
         grid-column-start: span 6;
     }
-
+    .span-50{
+        grid-column: span 6;
+    }
+    .color-stripe-container-2{
+        display: grid;
+    }
     
 }

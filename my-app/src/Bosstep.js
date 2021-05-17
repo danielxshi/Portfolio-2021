@@ -9,6 +9,9 @@ import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
 import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic";
 import CenterMod from "./components/ProjectDetails/CenterModule";
 import NextProject from "./components/ProjectDetails/NextProj";
+import FiftyModule from "./components/ProjectDetails/ModuleFiftySplit"
+import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
+import FourColumnNotesModule from "./components/ProjectDetails/FourColumnNotes"
 
 
 // Import images
@@ -63,41 +66,14 @@ import nextProj from './images/cliq-1000x600.png'
 function Bosstep(props) {
     return (
         <main className="bosstep-page">
-        {/* Sketch overview */}
-        <section className="bosstep-sketch-section personas-sect sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <div className="img-fit span-50">
-                            <img className="rel-margin-bot" src={sketchOverview} alt=""/>
-                            <p className="citation">test</p>
-                        </div>
-                        <div className="gcs-8-5">
-                            <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
-                            <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                            <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/* Fifty Module/Sketch Overview*/}
+        <FiftyModule img={sketchOverview} citation={"Sketch Overview"} title={"lorem"} p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
         
         {/* SectHelper1 */}
         <SectionHelperText title={"A/B Testing"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        {/* Persona */}
-        <section className="bosstep-persona-section sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="span-50">
-                    <h2 className="h2-anchor-right rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
-                    <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                </div>
-                <div className="img-fit gcs-9-4">
-                    <img className="rel-margin-bot" src={persona} alt=""/>
-                    <p className="citation">test</p>
-                </div>
-            </div>
-        </section>
+        {/* Eighty Module/Persona */}
+        <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={persona} citation={"citation"}/>
 
         {/* Prototype overview */}
         <section className="bosstep-protoview-section sect-1 sect-last">
@@ -141,7 +117,8 @@ function Bosstep(props) {
         {/* Sect helper graphic */}
         <SectionHelperGraphic graphic={blob} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        <section className="sect-last sect-1">
+        {/* Primary and Secondary Research */}
+        {/* <section className="sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="rel-margin-bot sub-container grid-col-space">
@@ -161,162 +138,37 @@ function Bosstep(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* Wireframe 1 */}
-        <section className="bosstep-wireframe-section sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="max-col">
-                    <div className="rel-margin-bot sub-container grid-col-space">
-                        <div className="span-3 img-fit">
-                            <img src={wireHome} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={wireMiniGame} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={wireRewardList} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={wireRewardDetail} alt=""/>
-                        </div>
-                    </div>
-                    <p className="citation">test</p>
-                </div>
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <FourColumnNotesModule img1={wireHome} img2={wireMiniGame} img3={wireRewardList} img4={wireRewardDetail} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* Wireframe 2 */}
-        <section className="bosstep-wireframe-section sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="max-col">
-                    <div className="rel-margin-bot sub-container grid-col-space">
-                        <div className="span-3 img-fit">
-                            <img src={wireFriendMenu} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={wireFriendList} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={wireFriendDetail} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={wireFriendSecurityPin} alt=""/>
-                        </div>
-                    </div>
-                    <p className="citation">test</p>
-                </div>
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <FourColumnNotesModule img1={wireFriendMenu} img2={wireFriendList} img3={wireFriendDetail} img4={wireFriendSecurityPin} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        {/* Sketch lrg */}
-        <section className="bosstep-minigame-sketch-section sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <div className="img-fit span-50">
-                            <img className="rel-margin-bot" src={sketchMinigameMLrg} alt=""/>
-                            <p className="citation">test</p>
-                        </div>
-                        <div className="gcs-8-5">
-                            <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
-                            <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                            <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/* Fifty Module/Sketch Lrg Overview*/}
+        <FiftyModule img={sketchMinigameMLrg} citation={"Sketch Overview"} title={"lorem"} p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
+
 
         {/* sect helper graphic */}
         <SectionHelperGraphic graphic={personaGraphic} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
+        {/* Eighty Module/Field Study */}
+        {/* <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={researchLoc} citation={"citation"}/> */}
 
-        {/* Erma */}
-        <section className="field-study-sect sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <div className="span-50">
-                            <h2 className="h2-anchor-right rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
-                            <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                            <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        </div>
-                        <div className="img-fit gcs-9-4">
-                            <img className="rel-margin-bot" src={researchLoc} alt=""/>
-                            <p className="citation">test</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        {/* Pie Graph */}
-        <section className="personas-sect sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <div className="span-50">
-                            <h2 className="h2-anchor-right rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
-                            <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                            <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        </div>
-                        <div className="img-fit gcs-9-4">
-                            <img src={pie} alt=""/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/* Eighty Module/Research Results */}
+        <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={pie} citation={"citation"}/>
 
         {/* sect helper */}
         <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-
-        {/* Critique Notes */}
-        <section className="sketch-sect sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="max-col">
-                    <div className="rel-margin-bot sub-container grid-col-space">
-                        <div className="span-3 img-fit">
-                            <img src={critNotes1} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={critNotes2} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={critNotes3} alt=""/>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img src={critNotes4} alt=""/>
-                        </div>
-                    </div>
-                    <p className="citation">test</p>
-                </div>
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <FourColumnNotesModule img1={critNotes1} img2={critNotes2} img3={critNotes3} img4={critNotes4} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* sect helper */}
         <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
+        {/* Project Conclusion */}
         <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col img-fit">

@@ -54,8 +54,6 @@
 }
 
 .center-module{
-    // grid-column-start: 4;
-    // grid-column-end: 10;
     flex-direction: column;
     display: flex;
 
@@ -136,8 +134,14 @@
     letter-spacing: $citation-spacing;
     color: $grey;
     font-family: 'Lora', serif;
+    margin-top: $rel-margin;
 }
 
+.gcs-8-5 h2{
+    margin-bottom: $rel-margin;
+}
+
+// Bosstep
 .hero-banner-mobile{    
     background-image: url("../../images/bosstep/mobile-banner-bosstep.png");
     height: 100%;
@@ -192,4 +196,8 @@
 .sect-helper-max-col{
     grid-column-start: 1;
     grid-column-end: -1;
+}
+
+.project-details-center-section .center-module > * {
+    margin-bottom: $rel-margin;
 }
