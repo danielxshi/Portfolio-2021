@@ -12,6 +12,7 @@ import NextProject from "./components/ProjectDetails/NextProj";
 import FiftyModule from "./components/ProjectDetails/ModuleFiftySplit"
 import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
 import FourColumnNotesModule from "./components/ProjectDetails/FourColumnNotes"
+import TwoColNotes from "./components/ProjectDetails/TwoColNotes"
 
 
 // Import images
@@ -118,27 +119,7 @@ function Bosstep(props) {
         <SectionHelperGraphic graphic={blob} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* Primary and Secondary Research */}
-        {/* <section className="sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="rel-margin-bot sub-container grid-col-space">
-                        <div className="span-50 img-fit">
-                            <img src={primaryResearch} alt=""/>
-                        </div>
-                        <div className="span-50 img-fit">
-                            <img src={secondaryResearch} alt=""/>
-                        </div>
-                    </div>
-                    <p className="citation">test</p>
-                </div>
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-            </div>
-        </section> */}
+        <TwoColNotes img1={primaryResearch} img2={secondaryResearch} citation={"citation"} title={"Lorem"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* Wireframe 1 */}
         <FourColumnNotesModule img1={wireHome} img2={wireMiniGame} img3={wireRewardList} img4={wireRewardDetail} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>

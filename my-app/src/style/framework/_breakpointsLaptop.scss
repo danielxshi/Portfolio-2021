@@ -133,6 +133,9 @@
             grid-column: span 6;
         }
         .bosstep-protoview-section{
+            .span-5{
+                grid-column: span 5;
+            }
             .span-3{
                 grid-column: span 3;
             }

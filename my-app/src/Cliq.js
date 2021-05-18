@@ -4,6 +4,16 @@
 // Stylesheets
 import './style/pages/_projects.scss';
 
+// Import components
+import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
+import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic";
+import CenterMod from "./components/ProjectDetails/CenterModule";
+import NextProject from "./components/ProjectDetails/NextProj";
+import FiftyModule from "./components/ProjectDetails/ModuleFiftySplit"
+import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
+import FourColumnNotesModule from "./components/ProjectDetails/FourColumnNotes"
+import TwoColNotes from "./components/ProjectDetails/TwoColNotes"
+
 // Import placeholders
 import img34 from './images/placeholder/placeholder-3x4.png';
 import img43 from './images/placeholder/placeholder-4x3.png';
@@ -22,54 +32,13 @@ function Cliq(props) {
         <main>
 
         {/* Persona */}
-        <section className="personas-sect sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <div className="img-contain span-50">
-                            <img src={img43} alt=""/>
-                        </div>
-                        <div className="img-contain span-50">
-                            <img src={img43} alt=""/>
-                        </div>
-                    </div>
-                </div>
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">Designing for<strong class="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <TwoColNotes img1={img43} img2={img43} citation={"citation"} title={"Lorem"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+
+        {/* Sect helper graphic */}
+        <SectionHelperGraphic graphic={img34} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* Sketches */}
-        <section className="sketch-sect sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <div className="span-3 img-contain">
-                            <img src={img34} alt=""/>
-                        </div>
-                        <div className="span-3 img-contain">
-                            <img src={img34} alt=""/>
-                        </div>
-                        <div className="span-3 img-contain">
-                            <img src={img34} alt=""/>
-                        </div>
-                        <div className="span-3 img-contain">
-                            <img src={img34} alt=""/>
-                        </div>
-                    </div>
-                </div>
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">Ideating<strong class="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <FourColumnNotesModule img1={img34} img2={img34} img3={img34} img4={img34} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* neumorphic style */}
         <section className="style-sect-1 sect-last sect-1">
@@ -105,6 +74,9 @@ function Cliq(props) {
             </div>
         </section>
 
+        {/* Sect helper graphic */}
+        <SectionHelperGraphic graphic={img34} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+
         {/* style guide */}
         <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
@@ -131,6 +103,9 @@ function Cliq(props) {
             </div>
         </section>
         
+        {/* sect helper */}
+        <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+
         <section className="team-section sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
@@ -187,6 +162,9 @@ function Cliq(props) {
             </div>
         </section>
 
+        {/* Sect helper graphic */}
+        <SectionHelperGraphic graphic={img34} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+
         <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
@@ -241,38 +219,11 @@ function Cliq(props) {
             </div>
         </section>
         
-        
-        <section className="team-section sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="center-module ">
-                    <h2 className="h2-anchor-left rel-margin-bot">working in a team <strong className="highlight-text">_</strong></h2>
-                    <p className="rel-margin-bot">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis.</p>
-                    <p className="rel-margin-bot"><strong>SFU IAT339 Project</strong></p>
-                    <div className="primary-btn black-border-btn">
-                        VIEW WEBSITE
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/* Center module */}
+        <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
-        {/* abstract to component */}
-        {/* !Substitute for 2x1 aspect ratio */}
-
-        <section className="next-proj sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <h2 className="h2-anchor-left">Next project <strong className="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-                <div className="anchor-80-right">
-                    <div className="img-fit">
-                        {/* <img src={img2x1} alt="" /> */}
-                        <img src={nextProj} alt="" />
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/* Next project */}
+        <NextProject img={nextProj}/>
 
 
         </main>
