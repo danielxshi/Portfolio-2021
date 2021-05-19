@@ -1,6 +1,10 @@
+// Import images
 import BOSSTEP from './images/boss-1000x600.png';
 import CLIQ from './images/cliq-1000x600.png';
 import TRACK from './images/track-1000x600.png';
+import TTA from './images/TTAAnimationCover.jpg';
+
+// Import dependencies
 import projectMessages from './components/ProjectMessages.js'
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
@@ -209,7 +213,7 @@ const Home = () => {
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
                         <div className="otr-proj img-contain proj-home-grid-def-maintain-w">
-                            <img src={BOSSTEP} alt=""/>
+                            <img src={TTA} alt=""/>
                         </div>
                         <h3>TTA</h3>
                         <p>date</p>
@@ -218,7 +222,7 @@ const Home = () => {
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
-                            <img src={BOSSTEP} alt=""/>
+                            <img src={TRACK} alt=""/>
                         </div>
                         <h3>IAT233</h3>
                         <p>date</p>

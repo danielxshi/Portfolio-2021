@@ -17,6 +17,7 @@ import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
 
 // Import images
 import nextProj from './images/boss-1000x600.png'
+import neuGuidePb from './images/cliq/neumorphic-guide-pb.jpg'
 import neuGuideSb from './images/cliq/neumorphic-guide-sb.jpg'
 import persona from './images/cliq/persona-isometric.png'
 import sketchBuildGuide from './images/cliq/sketch-build-guide.png'
@@ -45,24 +46,31 @@ function Cliq(props) {
         {/* Sketches */}
         <FourColumnNotesModule img1={img34} img2={img34} img3={img34} img4={img34} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        {/* neumorphic style */}
-        <section className="style-sect-1 sect-last sect-1">
+        {/* Sketches Full bleed */}
+        <section className="style-sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
-                    <div className="sub-container grid-col-space">
-                        <div className="span-6 img-contain">
-                            <img src={img34} alt=""/>
-                        </div>
-                        <div className="span-4">
-                            <div className="img-contain max-col-proj-details rel-margin-bot">
-                                <img src={img43} alt=""/>
-                            </div>
-                            <div className="img-contain">
-                                <img src={img43} alt=""/>
-                            </div>
-                        </div>
+                <div className="span-50 grid-container">
+                    <div className="span-50">
+                        <h2 className="rel-margin-bot h2-anchor-right">Lorem<strong class="highlight-text">_</strong></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
                     </div>
+
+                </div>
+
+                <div className="sub-container">
+
+                <div className="span-bleed-right img-contain">
+                        <img src={img34} alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* neumorphic style */}
+        <section className="sect-last sect-1">
+            <div className="grid-row-space grid-container">
+                <div className="max-col img-contain">
+                    <img src={neuGuidePb} alt=""/>
                 </div>
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
@@ -71,10 +79,8 @@ function Cliq(props) {
                     </div>
                 </div>
                 <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">Pt2 challenge caveat<strong class="highlight-text">_</strong></h2>
-                    </div>
+
+                <FiftyModule img={img43} p1={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."} title={"Design Caveat"}/>
                 </div>
             </div>
         </section>

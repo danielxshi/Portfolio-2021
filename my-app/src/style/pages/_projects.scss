@@ -201,3 +201,8 @@
 .project-details-center-section .center-module > * {
     margin-bottom: $rel-margin;
 }
+
+.span-bleed-right{
+    width: 100%;
+    grid-column: 6 / 13;
+}
