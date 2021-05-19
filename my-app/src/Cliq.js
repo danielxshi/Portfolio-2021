@@ -13,6 +13,15 @@ import FiftyModule from "./components/ProjectDetails/ModuleFiftySplit"
 import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
 import FourColumnNotesModule from "./components/ProjectDetails/FourColumnNotes"
 import TwoColNotes from "./components/ProjectDetails/TwoColNotes"
+import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
+
+// Import images
+import nextProj from './images/boss-1000x600.png'
+import neuGuideSb from './images/cliq/neumorphic-guide-sb.jpg'
+import persona from './images/cliq/persona-isometric.png'
+import sketchBuildGuide from './images/cliq/sketch-build-guide.png'
+import sketchProductDetail1 from './images/cliq/sketch-product-detail.png'
+import sketchProductDetail2 from './images/cliq/sketch-product-detail2.png'
 
 // Import placeholders
 import img34 from './images/placeholder/placeholder-3x4.png';
@@ -22,17 +31,13 @@ import imgProf from './images/placeholder/placeholder-prof-1x1.png';
 import imgVid from './images/placeholder/video-placeholder.png';
 import imgVid1x1 from './images/placeholder/vid-1x1.png';
 
-// Import images
-import nextProj from './images/boss-1000x600.png'
-
-
 
 function Cliq(props) {
     return (
         <main>
 
         {/* Persona */}
-        <TwoColNotes img1={img43} img2={img43} citation={"citation"} title={"Lorem"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <ModuleFiftyGRight img={persona} citation={"citation"} title={"Lorem"} p1={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* Sect helper graphic */}
         <SectionHelperGraphic graphic={img34} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
