@@ -204,5 +204,42 @@
 
 .span-bleed-right{
     width: 100%;
-    grid-column: 6 / 13;
+    grid-column: 8 / 13;
+}
+
+.span-bleed-right-container{
+    width: 100%;
+    grid-column: 6 / 12;
+}
+
+
+.project-cheer span{
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 90s linear infinite;
+    font-size: 160px;
+    will-change: transform; 
+    /* animation-direction: normal; */
+}
+.project-cheer{
+    box-shadow: inset 5px 5px 10px #242228, inset -5px -5px 10px #3E3A46;
+    grid-column-start: 1;
+    grid-column-end: -1;    
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100vw;
+    border-bottom: 1px #5e5e5e solid;
+    border-top: 1px #5e5e5e solid;
+    margin: 20vh 0;
+    color: $black;
+    -webkit-text-stroke: .25rem $grey;
+    -webkit-text-fill-color: $black;
+}
+@keyframes marquee{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
 }

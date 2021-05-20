@@ -13,7 +13,8 @@ import FiftyModule from "./components/ProjectDetails/ModuleFiftySplit"
 import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
 import FourColumnNotesModule from "./components/ProjectDetails/FourColumnNotes"
 import TwoColNotes from "./components/ProjectDetails/TwoColNotes"
-
+import ModMaxCol from "./components/ProjectDetails/MaxColModule"
+import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
 
 // Import images
 
@@ -128,8 +129,7 @@ function Bosstep(props) {
         <FourColumnNotesModule img1={wireFriendMenu} img2={wireFriendList} img3={wireFriendDetail} img4={wireFriendSecurityPin} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* Fifty Module/Sketch Lrg Overview*/}
-        <FiftyModule img={sketchMinigameMLrg} citation={"Sketch Overview"} title={"lorem"} p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
-
+        <ModuleFiftyGRight img={sketchMinigameMLrg} citation={"Sketch Overview"} title={"lorem"} p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
         {/* sect helper graphic */}
         <SectionHelperGraphic graphic={personaGraphic} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
@@ -150,22 +150,7 @@ function Bosstep(props) {
         <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         {/* Project Conclusion */}
-        <section className="sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="max-col img-fit">
-                    <img src={finale} alt="" />
-                </div>
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <h2 className="anchor-left-subheader">Lorem<strong className="highlight-text">_</strong></h2>
-                        <div className="anchor-80-right">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <ModMaxCol img={finale} title={"title"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
         
         {/* Center module */}
         <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>

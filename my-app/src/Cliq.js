@@ -14,20 +14,35 @@ import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
 import FourColumnNotesModule from "./components/ProjectDetails/FourColumnNotes"
 import TwoColNotes from "./components/ProjectDetails/TwoColNotes"
 import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
+import ModMaxCol from "./components/ProjectDetails/MaxColModule"
 
 // Import images
 import nextProj from './images/boss-1000x600.png'
 import neuGuidePb from './images/cliq/neumorphic-guide-pb.jpg'
 import neuGuideSb from './images/cliq/neumorphic-guide-sb.jpg'
 import persona from './images/cliq/persona-isometric.png'
-import sketchBuildGuide from './images/cliq/sketch-build-guide.png'
-import sketchProductDetail1 from './images/cliq/sketch-product-detail.png'
-import sketchProductDetail2 from './images/cliq/sketch-product-detail2.png'
+import neuGuide from './images/cliq/neu-guide.png'
+import sketchGuide1 from './images/cliq/sketch-build-guide.jpg'
+import sketchGuide2 from './images/cliq/sketch-build-guide-2.jpg'
+import sketchProdDetail from './images/cliq/sketch-prod-detail.jpg'
+import sketchProdList from './images/cliq/sketch-prod-list.jpg'
+import wireframeOverview from './images/cliq/wireframe-overview.jpg'
+import wireframeProdDetailRevised from './images/cliq/wireframe-revised-prod-detail.png'
+import danielDiscord from './images/cliq/daniel-discord.png'
+import marinaDiscord from './images/cliq/marina-discord.png'
+import jasonDiscord from './images/cliq/jason-discord.png'
+import prodDetailRevP1 from './images/cliq/prod-detail-revised-p1.jpg'
+import prodDetailRevP2 from './images/cliq/prod-detail-revised-p2.jpg'
+import prodDetailRevP3 from './images/cliq/prod-detail-revised-p3.jpg'
+
+import wireProdDetailsPt2 from './images/cliq/sample/product-details-wireframe-pt2.png'
+import wireProdDetailsPt1 from './images/cliq/sample/product-details-wireframe.png'
+import patternLib from './images/cliq/pattern-lib.png'
 
 // Import placeholders
 import img34 from './images/placeholder/placeholder-3x4.png';
 import img43 from './images/placeholder/placeholder-4x3.png';
-// import img2x1 from './images/placeholder/placeholder-2x1.png';
+import img2x1 from './images/placeholder/placeholder-2x1.png';
 import imgProf from './images/placeholder/placeholder-prof-1x1.png';
 import imgVid from './images/placeholder/video-placeholder.png';
 import imgVid1x1 from './images/placeholder/vid-1x1.png';
@@ -38,41 +53,75 @@ function Cliq(props) {
         <main>
 
         {/* Persona */}
-        <ModuleFiftyGRight img={persona} citation={"citation"} title={"Lorem"} p1={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* <ModuleFiftyGRight img={persona} citation={"citation"} title={"Lorem"} p1={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
 
-        {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={img34} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* Bleed Right */}
+        <section className="sect-last sect-1">
+            <div className="sub-container">
 
-        {/* Sketches */}
-        <FourColumnNotesModule img1={img34} img2={img34} img3={img34} img4={img34} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
-
-        {/* Sketches Full bleed */}
-        <section className="style-sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="span-50 grid-container">
-                    <div className="span-50">
+            <div className="max-col row-start-1">
+                <div className="grid-row-space grid-container">
+                    <div className="max-col">
                         <h2 className="rel-margin-bot h2-anchor-right">Lorem<strong class="highlight-text">_</strong></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
-                    </div>
-
-                </div>
-
-                <div className="sub-container">
-
-                <div className="span-bleed-right img-contain">
-                        <img src={img34} alt="" />
                     </div>
                 </div>
             </div>
+
+
+            <div className="max-col row-start-2">
+                <div className="grid-row-space grid-container">
+                    <div className="span-4">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
+                    </div>
+                </div>
+            </div>
+            <div className="span-bleed-right-container img-fit row-start-2">
+                <img src={persona} alt="" />
+                <p className="citation">citation</p>
+            </div>
+
+            </div>
         </section>
 
+        {/* Sketches Full bleed */}
+        <section className="sect-1 sect-last">
+            <div className="sub-container">
+            <div className="max-col row-start-1">
+                <div className="grid-row-space grid-container">
+                        <div className="span-4">
+                            <h2 className="rel-margin-bot h2-anchor-right">Lorem<strong class="highlight-text">_</strong></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
+                        </div>
+                </div>
+            </div>
+            <div className="span-bleed-right-container img-fit row-start-1">
+                <img src={wireframeProdDetailRevised} alt="" />
+            </div>
+
+            </div>
+        </section>
+
+        <ModMaxCol img={wireframeOverview} title={"title"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
+
+        <section>
+            <div className="sub-container">
+                <h2 className="max-col project-cheer">
+                    <span>- CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ </span>
+                </h2>
+            </div>
+        </section>
+
+        <TwoColNotes img1={neuGuidePb} img2={neuGuideSb} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
         {/* neumorphic style */}
         <section className="sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col img-contain">
-                    <img src={neuGuidePb} alt=""/>
+                    <img className="rel-margin-bot" src={neuGuidePb} alt=""/>
+                    <p className="rel-margin-bot citation">Citation</p>
+                    <h3>01/03</h3>
                 </div>
-                <div className="max-col-proj-details">
+                <div className="sect-1 max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
                         <h2 className="h2-anchor-right">Pt1 design idea<strong class="highlight-text">_</strong></h2>
@@ -80,27 +129,50 @@ function Cliq(props) {
                 </div>
                 <div className="max-col-proj-details">
 
-                <FiftyModule img={img43} p1={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."} title={"Design Caveat"}/>
+                <ModuleFiftyGRight img={neuGuide} p1={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."} title={"Design Caveat"}/>
                 </div>
             </div>
         </section>
 
         {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={img34} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <SectionHelperGraphic graphic={img34} title={"Figma GIF"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        {/* style guide */}
-        <section className="sketch-sect sect-last sect-1">
+        {/* Greybox Wireframes */}
+
+
+        <ModMaxCol img={wireframeOverview} title={"title"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
+
+        {/* Sketches Full bleed */}
+        <section className="sect-1 sect-last">
+            <div className="sub-container">
+            <div className="max-col row-start-1">
+                <div className="grid-row-space grid-container">
+                        <div className="span-4">
+                            <h2 className="rel-margin-bot h2-anchor-right">Lorem<strong class="highlight-text">_</strong></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
+                        </div>
+                </div>
+            </div>
+            <div className="span-bleed-right-container img-fit row-start-1">
+                <img src={wireframeProdDetailRevised} alt="" />
+            </div>
+
+            </div>
+        </section>
+
+        {/* <section className="sketch-sect sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space rel-margin-bot">
                         <div className="span-4 img-contain">
-                            <img src={img34} alt=""/>
+                            <img src={prodDetailRevP1} alt=""/>
                         </div>
                         <div className="span-4 img-contain">
-                            <img src={img34} alt=""/>
+                            <img src={prodDetailRevP2} alt=""/>
                         </div>
                         <div className="span-4 img-contain">
-                            <img src={img34} alt=""/>
+                            <img src={prodDetailRevP3} alt=""/>
                         </div>
                     </div>
                     <p>01/05</p>
@@ -112,10 +184,10 @@ function Cliq(props) {
                     </div>
                 </div>
             </div>
-        </section>
-        
-        {/* sect helper */}
-        <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        </section> */}
+
+        {/* Sect helper graphic */}
+        <SectionHelperGraphic graphic={img34} title={"CMATRIX GIF"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         <section className="team-section sect-last sect-1">
             <div className="grid-row-space grid-container">
@@ -127,13 +199,13 @@ function Cliq(props) {
                 <div className="center-module ">
                     <div className="profile-img-contain">
                         <div className="img-contain">
-                            <img src={imgProf} alt="" />
+                            <img src={danielDiscord} alt="" />
                         </div>
                         <div className="img-contain">
-                            <img src={imgProf} alt="" />
+                            <img src={jasonDiscord} alt="" />
                         </div>
                         <div className="img-contain">
-                            <img src={imgProf} alt="" />
+                            <img src={marinaDiscord} alt="" />
                         </div>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis.</p>
@@ -149,15 +221,15 @@ function Cliq(props) {
                     <div className="sub-container grid-col-space">
                         <div className="span-50">
                             <div className="img-contain">
-                                <img src={imgVid} alt="" />
+                                <img src={imgVid1x1} alt="" />
                             </div>
                         </div>
-                        <div className="span-2">
+                        <div className="span-3">
                             <div className="img-contain">
                                 <img src={imgVid1x1} alt="" />
                             </div>
                         </div>
-                        <div className="span-2">
+                        <div className="span-3">
                             <div className="img-contain">
                                 <img src={imgVid1x1} alt="" />
                             </div>
@@ -174,15 +246,21 @@ function Cliq(props) {
         </section>
 
         {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={img34} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <SectionHelperGraphic graphic={img34} title={"BUILDING BLOCKS IMAGE"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        <section className="sect-1 sect-last">
+        {/* Pattern Library */}
+        <ModMaxCol img={patternLib} title={"Sections I managed"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
+
+
+        {/* Backup to components */}
+
+        {/* <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
                         <div className="span-50">
                             <div className="img-contain">
-                                <img src={img34} alt="" />
+                                <img src={patternLib} alt="" />
                             </div>
                         </div>
                         <div className="span-50 sub-container">
@@ -212,23 +290,10 @@ function Cliq(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         
-        <section className="sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="img-contain">
-                        <img src={imgVid} alt="" />
-                    </div>
-                </div>
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">lorem checkout<strong class="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/* Project Conclusion */}
+        <ModMaxCol img={imgVid} title={"title"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
         
         {/* Center module */}
         <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>

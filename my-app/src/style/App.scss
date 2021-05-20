@@ -3,6 +3,10 @@
 @import '../style/base/mixins.scss';
 
 // === Intro banner
+main{
+    overflow-x: hidden;
+}
+
 .text-banner{
     display: flex;
 }
