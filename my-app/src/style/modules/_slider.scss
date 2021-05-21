@@ -1,0 +1,49 @@
+@import '../base/variables.scss';
+
+.slider{
+    border: 1px solid tomato;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide{
+    border: 1px solid blue;
+    min-width: 100%;
+    height: auto;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+%btn-styles {
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: 85%;
+    background: none;
+    border: 1px solid green;
+}
+
+#goLeft{
+    left: 0;
+    @extend %btn-styles;
+}
+
+#goRight{
+    right: 0;
+    @extend %btn-styles;
+}
+
+.slide-pg-count{
+    margin-top: $rel-margin;
+}
+
+.slide-container{
+    position: relative;
+}

@@ -62,7 +62,14 @@ function Cliq(props) {
         <main>
 
         {/* Testing slider */}
-        <Slider/>
+        <section className="sect-last sect-1">
+            <div className="grid-container">
+                <div className="max-col test-slide">
+                    <Slider img1={neuGuidePb} img2={neuGuideSb}/>
+                </div>
+
+            </div>
+        </section>
 
         {/* Persona */}
         {/* Update persona, remove Marina's friend  */}
