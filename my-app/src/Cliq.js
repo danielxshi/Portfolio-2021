@@ -16,7 +16,7 @@ import TwoColNotes from "./components/ProjectDetails/TwoColNotes"
 import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
 import ModMaxCol from "./components/ProjectDetails/MaxColModule"
 import ModuleMaxContainerGraphic from "./components/ProjectDetails/ModMaxContainerGraphic"
-
+import Slider from "./components/ProjectDetails/Slider"
 
 // Import images
 import nextProj from './images/boss-1000x600.png'
@@ -60,6 +60,9 @@ import imgVid1x1 from './images/placeholder/vid-1x1.png';
 function Cliq(props) {
     return (
         <main>
+
+        {/* Testing slider */}
+        <Slider/>
 
         {/* Persona */}
         {/* Update persona, remove Marina's friend  */}
