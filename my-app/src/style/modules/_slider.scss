@@ -30,12 +30,12 @@
     border: 1px solid green;
 }
 
-#goLeft{
+#prevSlide{
     left: 0;
     @extend %btn-styles;
 }
 
-#goRight{
+#nextSlide{
     right: 0;
     @extend %btn-styles;
 }
