@@ -62,7 +62,7 @@ const Home = () => {
                 <h2>I am<strong className="highlight-text">_</strong></h2>
             </div> */}
 
-            <div className="max-col">
+            {/* <div className="max-col">
                 <h2>I am<strong className="highlight-text">_</strong></h2>
             </div>
             <div className="max-col">
@@ -76,15 +76,15 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            {/* <div className="max-col">
+            </div> */}
+            <div className="max-col">
                 <h2 className="rel-margin-bot">I am<strong className="highlight-text ">_</strong></h2>
                 <div className="anchor-80-right">
                     <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University I am pursing a Bachelors of Science with a focus in <strong class="highlight-text">Design</strong>.</p>
                     <p className="rel-margin-bot">I am currently learning REACT and Framer Motion through online tutorials and in my freetime I <strong class="highlight-text">freelance </strong> photo/video in the Vancouver Dance Community.</p>
 
                 </div>
-            </div> */}
+            </div>
         </div>
     </section>
     
@@ -210,17 +210,20 @@ const Home = () => {
                 <div className="sub-container">
                     <div className="anchor-80-right">
                         <div className="anchor-80-left rel-margin-bot">
-                            <p><strong>President's Honour Roll SFU</strong> - date</p>
+                            <p><strong>President's Honour Roll SFU</strong> - June 18, 2020</p>
                             <p>Maintained a minimum TGPA of 4.00 in Spring 2020 with at least 12 units counted towards the grade point average.</p>
                         </div>
                         <div className="anchor-80-left rel-margin-bot">
-                            <p><strong>SFU Undergraduate Conference Presenter</strong> - date</p>
+                            <p><strong>Web Development Instrutor @EmergeSFU</strong> - Janurary 27, 2021 - March 3, 2021</p>
+                            <p>Instructed a multidisciplinary cohort of 15-50 students for EmergeSFU in the basics of HTML and CSS.</p>
+                            <p>Over the course of 5 weekly sessions we worked towards developing skills to create and host a personal portfolio page on Github.</p>
+                        </div>
+                        <div className="anchor-80-left rel-margin-bot">
+                            <p><strong>Presenter at 2021 FCAT Undergraduate Conference </strong> - March 05 2021</p>
                             <p>Showcased a renewable battery monitor mobile application. Designed in IAT333 Interactions Design, along with the team  (Cassandra, Keith and Nisha).</p>
                         </div>
                         <div className="anchor-80-left rel-margin-bot">
-                            <p><strong>Web Development Instrutor @EmergeSFU</strong> - date</p>
-                            <p>Instructed a multidisciplinary cohort of 15-50 students for EmergeSFU in the basics of HTML and CSS.</p>
-                            <p>Over the course of 5 weekly sessions we worked towards developing skills to create and host a personal portfolio page on Github.</p>
+                            <p><strong>Spring 2021 Project Showcase - SCHOOL OF INTERACTIVE ARTS &amp; TECHNOLOGY</strong> - In Process... 🤓</p>
                         </div>
                     </div>
                 </div>
@@ -237,9 +240,10 @@ const Home = () => {
                         <div className="otr-proj img-contain proj-home-grid-def-maintain-w">
                             <img src={TTA} alt=""/>
                         </div>
-                        <h3>TTA</h3>
-                        <p>date</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae.</p>
+                        <h3>Maya Animation - Goku vs Frieza</h3>
+                        <p>Janurary 2021 - April 2021</p>
+                        {/* <p>Animation project created alongside the team (Jason Xu, Justin Yu and Mutte Chen)</p> */}
+                        <p>Role - Rigging, sequencing, editing and sound design.</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
@@ -247,15 +251,18 @@ const Home = () => {
                         </div>
                         <h3>Moment Track</h3>
                         <p>date</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed ipsa commodi odio, </p>
+                        <p>Role - Frontend development</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-3">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
-                            <img src={BOSSTEP} alt=""/>
+                            <a target="_blank" href="https://youtu.be/yjXwb3fFqHA">
+                                <img src={BOSSTEP} alt=""/>
+                            </a>
                         </div>
                         <h3>Team Phantom</h3>
-                        <p>date</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae. </p>
+                        <p>Janurary 2021 - April 2021</p>
+                        <p>Role - Cinematographer and colorist</p>
+                        {/* <p>Four month documentary of Team Phantom's eletric race car design journey</p> */}
                     </div>
                 </div>
             </div>

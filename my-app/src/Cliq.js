@@ -33,7 +33,7 @@ import neuGuidePb from './images/cliq/primary-btn-neu-guide.png'
 import neuGuideSb from './images/cliq/secondary-btn-neu-guide.png'
 import typography from './images/cliq/typography.jpg'
 import kerning from './images/cliq/kerning.jpg' 
-import sitemap from './images/cliq/sitemap.jpg'
+import sitemap from './images/cliq/sitemap-lite.png'
 import sitemapdrk from './images/cliq/sitemap-drk.jpg'
 import colorguide from './images/cliq/color-guide.png'
 import logo from './images/cliq/cliq-logo.png'
@@ -163,7 +163,7 @@ function Cliq(props) {
         </section>
         
         {/* Project Conclusion */}
-        <ModMaxCol img={imgVid} title={"title"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
+        {/* <ModMaxCol img={imgVid} title={"title"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/> */}
         
         {/* Center module */}
         <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
