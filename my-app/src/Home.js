@@ -13,9 +13,10 @@ import React, { useEffect, useRef} from 'react';
 const Home = () => {
     let line1 = useRef(null);
     let line2 = useRef(null);
+    let line3 = useRef(null);
 
     useEffect(() => {
-        gsap.from([line1, line2], 0.8, {
+        gsap.from([line1, line2, line3], 0.8, {
             delay: 0.3,
             ease: "power3.out",
             y: 115,
@@ -43,6 +44,7 @@ const Home = () => {
                     </div>
                     <div className="line-wrap-2">
                         <p className="line-wrap" ref={el => line2 = el}>Aspiring UX/UI web developer and photographer from Vancouver, BC</p>
+                        <p ref={el => line3 = el} >Development in progress - 🚧</p>
                     </div>
                 </div>
             </div>
@@ -59,11 +61,30 @@ const Home = () => {
             {/* <div className="max-col">
                 <h2>I am<strong className="highlight-text">_</strong></h2>
             </div> */}
-            <h2>I am<strong className="highlight-text">_</strong></h2>
-            <div className="anchor-80-right">
-                <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University I am pursing a Bachelors of Science with a focus in <strong class="highlight-text">Design</strong>.</p>
-                <p className="rel-margin-bot">I am currently learning REACT and Framer Motion through online tutorials and in my freetime I <strong class="highlight-text">freelance </strong> photo/video in the Vancouver Dance Community.</p>
+
+            <div className="max-col">
+                <h2>I am<strong className="highlight-text">_</strong></h2>
             </div>
+            <div className="max-col">
+                <div className="sub-container">
+                    <div className="anchor-80-right">
+                        <div className="anchor-80-left rel-margin-bot">
+                            <p>A student from the Science and Interactive Arts and Technology department at Simon Fraser University I am pursing a Bachelors of Science with a focus in <strong class="highlight-text">Design</strong>.</p>
+                        </div>
+                        <div className="anchor-80-left rel-margin-bot">
+                            <p>I am currently learning REACT and Framer Motion through online tutorials and in my freetime I <strong class="highlight-text">freelance </strong> photo/video in the Vancouver Dance Community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* <div className="max-col">
+                <h2 className="rel-margin-bot">I am<strong className="highlight-text ">_</strong></h2>
+                <div className="anchor-80-right">
+                    <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University I am pursing a Bachelors of Science with a focus in <strong class="highlight-text">Design</strong>.</p>
+                    <p className="rel-margin-bot">I am currently learning REACT and Framer Motion through online tutorials and in my freetime I <strong class="highlight-text">freelance </strong> photo/video in the Vancouver Dance Community.</p>
+
+                </div>
+            </div> */}
         </div>
     </section>
     
@@ -187,18 +208,19 @@ const Home = () => {
             </div>
             <div className="max-col">
                 <div className="sub-container">
-                    <div className="anchor-80-right ">
+                    <div className="anchor-80-right">
                         <div className="anchor-80-left rel-margin-bot">
                             <p><strong>President's Honour Roll SFU</strong> - date</p>
-                            <p>Received a minimum TGPA of 4.00 in my third year in School of Interactive Arts and Technology at Simon Fraser University.</p>
+                            <p>Maintained a minimum TGPA of 4.00 in Spring 2020 with at least 12 units counted towards the grade point average.</p>
                         </div>
                         <div className="anchor-80-left rel-margin-bot">
                             <p><strong>SFU Undergraduate Conference Presenter</strong> - date</p>
-                            <p>Showcased a renewable battery monitor mobile application. Designed in IAT333 Interactions Design, along with my team members (Cassandra, Keith and Nisha).</p>
+                            <p>Showcased a renewable battery monitor mobile application. Designed in IAT333 Interactions Design, along with the team  (Cassandra, Keith and Nisha).</p>
                         </div>
                         <div className="anchor-80-left rel-margin-bot">
                             <p><strong>Web Development Instrutor @EmergeSFU</strong> - date</p>
-                            <p>Instructed a cohort of 10-15 students from SFU, UCBerkley, and several high school students in the basics of HTML and CSS.</p>
+                            <p>Instructed a multidisciplinary cohort of 15-50 students for EmergeSFU in the basics of HTML and CSS.</p>
+                            <p>Over the course of 5 weekly sessions we worked towards developing skills to create and host a personal portfolio page on Github.</p>
                         </div>
                     </div>
                 </div>
@@ -209,7 +231,7 @@ const Home = () => {
     <section class="otr-proj-sect">
         <div className="grid-container">
             <div className="max-col">
-                <h2>More projects<strong class="highlight-text">_</strong></h2>
+                <h2>More projects 🥳<strong class="highlight-text">_</strong></h2>
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
                         <div className="otr-proj img-contain proj-home-grid-def-maintain-w">
@@ -217,16 +239,14 @@ const Home = () => {
                         </div>
                         <h3>TTA</h3>
                         <p>date</p>
-                        <p>Create cover image</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae.</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
                             <img src={TRACK} alt=""/>
                         </div>
-                        <h3>IAT233</h3>
+                        <h3>Moment Track</h3>
                         <p>date</p>
-                        <p>Make a gif</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed ipsa commodi odio, </p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-3">
@@ -235,7 +255,6 @@ const Home = () => {
                         </div>
                         <h3>Team Phantom</h3>
                         <p>date</p>
-                        <p>Make a gif</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae. </p>
                     </div>
                 </div>
