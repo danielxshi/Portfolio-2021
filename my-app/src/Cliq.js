@@ -1,6 +1,3 @@
-// Router
-// import { Link } from "react-router-dom";
-
 // Stylesheets
 import './style/pages/_projects.scss';
 
@@ -33,14 +30,13 @@ import marinaDiscord from './images/cliq/marina-discord.png'
 import jasonDiscord from './images/cliq/jason-discord.png'
 import patternLib from './images/cliq/pattern-lib.png'
 import neuGuidePb from './images/cliq/primary-btn-neu-guide.png' 
-import neuGuideSb from './images/cliq/secondary-btn-neu-guide.png' 
-
-// Remove
-// import prodDetailRevP1 from './images/cliq/prod-detail-revised-p1.jpg'
-// import prodDetailRevP2 from './images/cliq/prod-detail-revised-p2.jpg'
-// import prodDetailRevP3 from './images/cliq/prod-detail-revised-p3.jpg'
-// import wireProdDetailsPt2 from './images/cliq/sample/product-details-wireframe-pt2.png'
-// import wireProdDetailsPt1 from './images/cliq/sample/product-details-wireframe.png'
+import neuGuideSb from './images/cliq/secondary-btn-neu-guide.png'
+import typography from './images/cliq/typography.jpg'
+import kerning from './images/cliq/kerning.jpg' 
+import sitemap from './images/cliq/sitemap.jpg'
+import sitemapdrk from './images/cliq/sitemap-drk.jpg'
+import colorguide from './images/cliq/color-guide.png'
+import logo from './images/cliq/cliq-logo.png'
 
 // Import gif
 import cmatrix from './images/cliq/cmatrix.gif'
@@ -56,38 +52,12 @@ import imgProf from './images/placeholder/placeholder-prof-1x1.png';
 import imgVid from './images/placeholder/video-placeholder.png';
 import imgVid1x1 from './images/placeholder/vid-1x1.png';
 
-
 function Cliq(props) {
     return (
         <main>
-
-        {/* Update persona, remove Marina's friend  */}
-        <section className="sect-last sect-1">
-            <div className="sub-container">
-
-            <div className="max-col row-start-1">
-                <div className="grid-row-space grid-container">
-                    <div className="max-col">
-                        <h2 className="rel-margin-bot h2-anchor-right">Lorem<strong class="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="max-col row-start-2">
-                <div className="grid-row-space grid-container">
-                    <div className="span-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
-                    </div>
-                </div>
-            </div>
-            <div className="span-bleed-right-container img-fit row-start-2">
-                <img src={persona} alt="" />
-                <p className="citation">citation</p>
-            </div>
-
-            </div>
-        </section>
+        <div className="sect-1">
+            <ModMaxCol img={persona} title={"title"} citation={"citation"} p1={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!"} p2={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!"}/>
+        </div>
 
 
         <FourColumnNotesModule img1={sketchGuide1} img2={sketchGuide2} img3={sketchProdDetail} img4={sketchProdList} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
@@ -97,13 +67,13 @@ function Cliq(props) {
 
 
         {/* Text animation for typography*/}
-        <ModMaxContainerGraphic img={img43}/>
+        <ModMaxContainerGraphic img={typography}/>
 
         {/* Kerning */}
-        <ModMaxContainerGraphic img={imgVid}/>
+        <ModMaxContainerGraphic img={kerning}/>
 
-        {/* IMG type */}
-        <ModMaxCol img={imgVid1x1} title={"Type Animation"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
+        {/* color guide */}
+        <ModMaxContainerGraphic img={colorguide}/>
 
         <section>
             <div className="sub-container">
@@ -114,10 +84,10 @@ function Cliq(props) {
         </section>
 
         {/* Text animation for color*/}
-        <ModMaxContainerGraphic img={imgVid1x1}/>
+        <ModMaxContainerGraphic img={cliqBlackTextAnim}/>
 
         {/* Text animation for LOGO TYPOGRAPHY */}
-        <ModuleFiftyGRight img={imgVid1x1} title={"Type and Color Explained"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
+        <ModuleFiftyGRight img={logo} title={"Type and Color Explained"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
         
         {/* Sect helper graphic */}
         <SectionHelperText title={"Figma GIF"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
@@ -125,8 +95,7 @@ function Cliq(props) {
         {/* Greybox Wireframes */}
         <ModMaxCol img={wireframeOverview} title={"title"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
 
-        {/* Design process in figma */}
-        <ModMaxContainerGraphic img={img2x1} citation={"citation"}/>
+        <ModMaxContainerGraphic img={sitemap} citation={"citation"}/>
 
         {/* Sketches Full bleed */}
         <section className="sect-1 sect-last">
@@ -159,15 +128,14 @@ function Cliq(props) {
             </div>
         </section>
 
-        {/* Button animation ? color choices, orange, black, white*/}
-        <ModMaxContainerGraphic img={imgVid}/>
-
         <ModuleFiftyGRight img={neuGuide} title={"Flexibility"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
 
         {/* Sect helper graphic */}
         <SectionHelperGraphic graphic={cmatrixBG} title={"CMATRIX GIF"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
         
+        {/* Pattern Library */}
+        <ModMaxCol img={patternLib} title={"Sections I managed"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
 
         <section className="team-section sect-last sect-1">
             <div className="grid-row-space grid-container">
@@ -193,34 +161,6 @@ function Cliq(props) {
                 
             </div>
         </section>
-        
-        {/* guides design ph */}
-        <section className="design-sect-1 sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
-                    <div className="sub-container grid-col-space">
-                        <div className="span-50">
-                            <div className="img-contain">
-                                <img src={imgVid1x1} alt="" />
-                            </div>
-                        </div>
-                        <div className="span-6">
-                            <div className="img-contain">
-                                <img src={cliqBlackTextAnim} alt="" />
-                            </div>
-                        </div>
-                        <div className="span-6">
-                            <div className="img-contain">
-                                <img src={imgVid1x1} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {/* Pattern Library */}
-        <ModMaxCol img={patternLib} title={"Sections I managed"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
         
         {/* Project Conclusion */}
         <ModMaxCol img={imgVid} title={"title"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
