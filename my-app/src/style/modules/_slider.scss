@@ -1,7 +1,7 @@
 @import '../base/variables.scss';
 
 .slider{
-    border: 1px solid tomato;
+    // border: 1px solid tomato;
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -13,7 +13,7 @@
 }
 
 .slide{
-    border: 1px solid blue;
+    // border: 1px solid blue;
     min-width: 100%;
     height: auto;
     transition: 0.5s;
@@ -24,20 +24,30 @@
     position: absolute;
     top: 43%;
     transform: translateY(-50%);
-    width: 10%;
+    width: 40%;
     height: 85%;
     background: none;
-    border: 1px solid green;
+    // border: 1px solid green;
 }
 
 #prevSlide{
     left: 0;
     @extend %btn-styles;
+    cursor: pointer;
 }
 
 #nextSlide{
     right: 0;
     @extend %btn-styles;
+    // cursor: pointer;
+}
+
+#nextSlide:hover{
+    cursor: url("../../images/arrow_right_alt.png"), pointer;
+}
+
+#prevSlide:hover{
+    cursor: url("../../images/arrow_left_alt.png"), pointer;
 }
 
 .slide-pg-count{

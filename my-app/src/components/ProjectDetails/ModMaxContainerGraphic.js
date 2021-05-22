@@ -1,4 +1,4 @@
-function ModFullContainerGif(props) {
+function ModFullContainerGraphic(props) {
     return (
         <section className="sect-1 sect-last">
             <div className="grid-row-space grid-container">
@@ -11,4 +11,4 @@ function ModFullContainerGif(props) {
     );
 }
 
-export default ModFullContainerGif;
+export default ModFullContainerGraphic;

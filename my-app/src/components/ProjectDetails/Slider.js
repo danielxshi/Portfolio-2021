@@ -74,10 +74,10 @@ function Slider(props){
           );
         })}
           <button id="prevSlide" onClick={prevSlide}>
-          left
+          {/* left */}
           </button>
           <button id="nextSlide" onClick={nextSlide}>
-          right
+          {/* right */}
           </button>
       </div>
       <p className="slide-pg-count">
