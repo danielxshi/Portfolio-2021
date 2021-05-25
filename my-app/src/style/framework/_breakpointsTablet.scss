@@ -4,10 +4,13 @@
 /* Larger than tablet */
 @media (min-width: 750px) {
     
-    nav ul a {
-        margin: 0 1rem;
-    }
+    // nav ul a {
+    //     margin: 0 1rem;
+    // }
     nav ul li {
         margin: auto 1rem;
+    }
+    .contactModal{
+        margin-left: 1rem;
     }
 }

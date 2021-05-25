@@ -100,7 +100,6 @@ function App() {
           </TransitionGroup>
         )}/>
       </div>
-      <Button onClick={openModal}>I'm a modal</Button>
       <Footer/>
     </Router>
   );

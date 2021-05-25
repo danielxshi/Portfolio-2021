@@ -35,7 +35,7 @@ class Navbar extends Component {
                                 )
                             })}
 
-                        <Button onClick={this.props.onClick}>Contact</Button>
+                        <Button className="contactModal" onClick={this.props.onClick}>CONTACT</Button>
                         </ul>
 
                     </nav>

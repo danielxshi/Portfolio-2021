@@ -2,6 +2,9 @@ import React, { useRef, useEffect, useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
+import GIT from '../images/icons/github-brands.png';
+import IG from '../images/icons/instagram-brands.png';
+
 
 import camera from '../images/modal.jpg'
 
@@ -17,40 +20,45 @@ const Background = styled.div`
 `;
 
 const ModalWrapper = styled.div`
-  width: 800px;
+  width: 80vw;
   height: 500px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background: #fff;
+  background: #efefef;
   color: #000;
-  display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
   z-index: 999;
-  border-radius: 10px;
+  border-radius: 3px;
 `;
 
 const ModalImg = styled.img`
   width: 100%;
   height: 100%;
-  border-radius: 10px 0 0 10px;
   background: #000;
   z-index: 999;
 `;
 
 const ModalContent = styled.div`
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 1.8;
   color: #141414;
+  width: 100%;
+  height: 100%;
 
   p {
     margin-bottom: 1rem;
   }
 
   h1{
-      font-size: 3rem;
+      font-size: 2rem;
+      margin: auto;
+      // margin-bottom: 17%;
+      position: absolute;
+      
   }
 
   button {
@@ -59,6 +67,20 @@ const ModalContent = styled.div`
     color: #fff;
     border: none;
   }
+  ul li a{
+    margin: 0 .5rem;
+  }
+  a img{
+    transition: 0.25s ease-in-out;
+  }
+  a img:hover{
+    background-color: tomato;
+    border-radius: 100%;
+    padding: 1rem;
+  }
+  ul{
+    margin: auto;
+    margin-bottom: 3rem;
 `;
 
 const CloseModalButton = styled(MdClose)`
@@ -113,16 +135,29 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              <ModalImg src={camera} alt='camera' />
+              {/* <div className="img-contain">
+                <ModalImg src={camera} alt='camera' />
+              </div> */}
               <ModalContent>
-                <h1>Are you ready?</h1>
-                <p>Get exclusive access to our next launch.</p>
-                <button>Join Now</button>
-              </ModalContent>
+                <h1>danielxshi@hotmail.com</h1>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://github.com/danielxshi">
+                            <img height="30" width="30" src={GIT} alt="Github Icon"/>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/danielxshi/">
+                            <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/danielxshi/">
+                            <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
+                        </a>
+                    </li>
+                </ul>
               <CloseModalButton
                 aria-label='Close modal'
                 onClick={() => setShowModal(prev => !prev)}
               />
+              </ModalContent>
             </ModalWrapper>
           </animated.div>
         </Background>

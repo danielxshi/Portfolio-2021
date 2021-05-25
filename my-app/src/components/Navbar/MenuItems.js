@@ -4,14 +4,14 @@ export const MenuItems = [
         url: '/',
         cName: 'nav-links'
     },
-    {
-        title: 'Contact',
-        url: 'contact',
-        cName: 'nav-links'
-    },
     // {
-    //     title: 'Photo/Video',
-    //     url: 'photo-video',
+    //     title: 'Contact',
+    //     url: 'contact',
     //     cName: 'nav-links'
-    // }
+    // },
+    {
+        title: 'Photo/Video',
+        url: 'photo-video',
+        cName: 'nav-links'
+    }
 ]
