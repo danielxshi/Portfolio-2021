@@ -13,10 +13,10 @@ function SectionHelperGraphic(props) {
                             <h2 className="rel-margin-bot">{props.title}<strong className="highlight-text">_</strong></h2>
                             <p className="rel-margin-bot">{props.text}</p>
                             <p className="end-col-text">
-                                <strong className="bosstepHighlightPrimary">
+                                <strong className="highlight-text">
                                     {props.sectionChapterCurrent}
                                 </strong>|
-                                <strong className="bosstepHighlightSecondary">
+                                <strong>
                                     {props.sectionChapterTotal}
                                 </strong>
                             </p>

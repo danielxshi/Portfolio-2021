@@ -37,6 +37,7 @@ import sitemap from './images/cliq/sitemap-lite.png'
 import sitemapdrk from './images/cliq/sitemap-drk.jpg'
 import colorguide from './images/cliq/color-guide.png'
 import logo from './images/cliq/cliq-logo.png'
+import productDetailR2 from './images/cliq/product-detail-r2.png'
 
 // Import gif
 import cmatrix from './images/cliq/cmatrix.gif'
@@ -75,16 +76,14 @@ function Cliq(props) {
         {/* color guide */}
         <ModMaxContainerGraphic img={colorguide}/>
 
-        <section>
+        {/* <section>
             <div className="sub-container">
                 <h2 className="max-col project-cheer">
                     <span>- CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ - CLIQ </span>
                 </h2>
             </div>
-        </section>
-
-        {/* Text animation for color*/}
-        <ModMaxContainerGraphic img={cliqBlackTextAnim}/>
+        </section> */}
+|
 
         {/* Text animation for LOGO TYPOGRAPHY */}
         <ModuleFiftyGRight img={logo} title={"Type and Color Explained"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
@@ -98,7 +97,7 @@ function Cliq(props) {
         <ModMaxContainerGraphic img={sitemap} citation={"citation"}/>
 
         {/* Sketches Full bleed */}
-        <section className="sect-1 sect-last">
+        {/* <section className="sect-1 sect-last">
             <div className="sub-container">
             <div className="max-col row-start-1">
                 <div className="grid-row-space grid-container">
@@ -113,7 +112,10 @@ function Cliq(props) {
             </div>
 
             </div>
-        </section>
+        </section> */}
+
+        <ModuleFiftyGRight img={productDetailR2} title={"Type and Color Explained"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
+
 
         {/* Sect helper graphic */}
         <SectionHelperGraphic graphic={cliqWhiteTextAnim} title={"Figma GIF"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
@@ -133,7 +135,12 @@ function Cliq(props) {
         {/* Sect helper graphic */}
         <SectionHelperGraphic graphic={cmatrixBG} title={"CMATRIX GIF"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
+        <ModMaxContainerGraphic img={img43} citation={"citation"}/>
+
+        <ModuleFiftyGRight img={img34} title={"Type and Color Explained"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
         
+        <ModMaxContainerGraphic img={img43} citation={"citation"}/>
+
         {/* Pattern Library */}
         <ModMaxCol img={patternLib} title={"Sections I managed"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
 
@@ -161,6 +168,7 @@ function Cliq(props) {
                 
             </div>
         </section>
+        
         
         {/* Project Conclusion */}
         {/* <ModMaxCol img={imgVid} title={"title"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/> */}

@@ -14,9 +14,9 @@ const bosstepMessages = {
     category: "Game",
     description: "Gamified exercise app geared towards kids who can choose heroes to play",
     role: "Website Development, UX/UI design, A/B Testing",
-    date: "2077",
+    date: "Fall 2020",
     cta: "VIEW WEBSITE",
-    team: "test"
+    team: "Yuanyu Zhou, Anne Duong, Laura Reyerse, Sung Bong Kim, Seon Jeong"
 };
 
 const cliqMessages = {
@@ -25,8 +25,8 @@ const cliqMessages = {
     description: "An e-commerce website curated for mechanical keyboard newcomers and enthusiasts",
     role: "Sketch, Wireframe, Website Development",
     date: "",
-    cta: "TRY DEMO",
-    team: "test"
+    cta: "VIEW WEBSITE",
+    team: "Spring 2021"
 };
 
 const trackMessages = {
@@ -36,7 +36,7 @@ const trackMessages = {
     role: "Wireframe, UX/UI design, User Research, Ethnography Study, Journey Mapping",
     date: "",
     cta: "TRY DEMO",
-    team: "test"
+    team: "Spring 2021"
 };
 
 const projectMessages = {

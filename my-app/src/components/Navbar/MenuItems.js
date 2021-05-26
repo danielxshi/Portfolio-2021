@@ -9,9 +9,9 @@ export const MenuItems = [
     //     url: 'contact',
     //     cName: 'nav-links'
     // },
-    {
-        title: 'Photo/Video',
-        url: 'photo-video',
-        cName: 'nav-links'
-    }
+    // {
+    //     title: 'Photo/Video',
+    //     url: 'photo-video',
+    //     cName: 'nav-links'
+    // }
 ]

@@ -15,8 +15,19 @@ import FourColumnNotesModule from "./components/ProjectDetails/FourColumnNotes"
 import TwoColNotes from "./components/ProjectDetails/TwoColNotes"
 import ModMaxCol from "./components/ProjectDetails/MaxColModule"
 import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
+import ModMaxContainerGraphic from "./components/ProjectDetails/ModMaxContainerGraphic"
+import Slider from "./components/ProjectDetails/Slider"
+import ThreeColNotes from "./components/ProjectDetails/ThreeColNotes"
 
 // Import images
+
+// Import placeholders
+import img34 from './images/placeholder/placeholder-3x4.png';
+import img43 from './images/placeholder/placeholder-4x3.png';
+import img2x1 from './images/placeholder/placeholder-2x1.png';
+import imgProf from './images/placeholder/placeholder-prof-1x1.png';
+import imgVid from './images/placeholder/video-placeholder.png';
+import imgVid1x1 from './images/placeholder/vid-1x1.png';
 
 // Critique
 import critNotes1 from './images/bosstep/crit-notes-1.jpg';
@@ -28,6 +39,7 @@ import critNotes4 from './images/bosstep/crit-notes-4.jpg';
 // lrg sketch
 import sketchMinigameMLrg from './images/bosstep/sketch-minigame-m-lrg.jpg'
 // sketch overview
+import sketchNb from './images/bosstep/sketch-overview-2500x.png'
 import sketchOverview from './images/bosstep/sketch-overview-bosstep.jpg'
 
 // Prototype
@@ -35,8 +47,12 @@ import protoAddFriend from './images/bosstep/proto-add-friend.png'
 import protoHome from './images/bosstep/proto-home.png'
 import minigameM from './images/bosstep/proto-minigame-m.png'
 import minigameD from './images/bosstep/proto-minigame-d.png'
+import i1mMG1 from './images/bosstep/i1-friend-list.jpg'
+import i1MG2 from './images/bosstep/i1-mg1.jpg'
+import i1FriendList from './images/bosstep/i1-mg2.jpg'
 
 // Wireframe
+import bosstepOverview from './images/bosstep/wireframe-overview.jpg'
 // wireframe pt 1
 import wireHome from './images/bosstep/wire-home-bstep.jpg'
 import wireMiniGame from './images/bosstep/wire-minigame-bstep.jpg'
@@ -64,18 +80,22 @@ import personaGraphic from './images/bosstep/persona-graphic.png'
 
 // Next project
 import nextProj from './images/cliq-1000x600.png'
+import projectMessages from './components/ProjectMessages';
+
+import dummyText from './CommonMessages';
+import * as bosstepMessages from './BosstepMessages';
 
 function Bosstep(props) {
     return (
         <main className="bosstep-page">
         {/* Fifty Module/Sketch Overview*/}
-        <FiftyModule img={sketchOverview} citation={"Sketch Overview"} title={"lorem"} p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
+        <ModMaxCol img={sketchNb} citation={"Sketch Overview"} title={"BOSSTEP OVERVIEW"} p1={"BOSSTEP was a 6 week project designed for the childrens health sector. The project involved researching the demographic through interviews and A/B testining. The final interface design was a mobile application catered towards motivating physical activity with gamified step tracking, goals and minigames."} />
         
         {/* SectHelper1 */}
-        <SectionHelperText title={"A/B Testing"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <SectionHelperText title={"Start"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"After the initial design phase we encountered a research hurdle. I was in charge of spearheading the user testing for our initial designed of minigames and overall interface navigation. We were not able to gather participants within our target demographic from ages 6-13 due to the vulnerability of the demographic from their young age and the requirements of consent forms approved by the University."}/>
 
         {/* Eighty Module/Persona */}
-        <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={persona} citation={"citation"}/>
+        <AnchorEightyModule title={"Persona"} text={dummyText} img={persona} citation={"citation"}/>
 
         {/* Prototype overview */}
         <section className="bosstep-protoview-section sect-1 sect-last">
@@ -92,16 +112,14 @@ function Bosstep(props) {
                         </div>
                         <div className="gcs-8-5">
                             <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
-                            <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                            <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
+                            <p className="paragraph-anchor-left rel-margin-bot">{dummyText}</p>
                         </div>
                     </div>
                 </div>
                 <div className="max-col protoview-2">
                     <div className="sub-container grid-col-space">
                         <div className="rel-margin-bot span-5">
-                            <p className="paragraph-anchor-left rel-margin-bot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                            <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
+                            <p className="paragraph-anchor-left rel-margin-bot">{dummyText}</p>
                         </div>
                         <div className="span-50r-3p1 img-fit">
                             <img className="rel-margin-bot" src={protoHome} alt=""/>
@@ -117,34 +135,39 @@ function Bosstep(props) {
         </section>
 
         {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={blob} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <SectionHelperGraphic graphic={blob} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={dummyText}/>
+
+        {/* Text animation for color*/}
+        <ModMaxContainerGraphic citation={"Wireframe Overview"} img={bosstepOverview}/>
 
         {/* Primary and Secondary Research */}
-        <TwoColNotes img1={primaryResearch} img2={secondaryResearch} citation={"citation"} title={"Lorem"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
-
-        {/* Wireframe 1 */}
-        <FourColumnNotesModule img1={wireHome} img2={wireMiniGame} img3={wireRewardList} img4={wireRewardDetail} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
-
-        {/* Wireframe 2 */}
-        <FourColumnNotesModule img1={wireFriendMenu} img2={wireFriendList} img3={wireFriendDetail} img4={wireFriendSecurityPin} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* <TwoColNotes img1={primaryResearch} img2={secondaryResearch} citation={"citation"} title={"Lorem"} text={"insert quote and one sentence about what research"}/> */}
 
         {/* Fifty Module/Sketch Lrg Overview*/}
-        <ModuleFiftyGRight img={sketchMinigameMLrg} citation={"Sketch Overview"} title={"lorem"} p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
+        <ModuleFiftyGRight img={sketchMinigameMLrg} citation={"Sketch Overview"} title={"lorem"} p1={dummyText} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
         {/* sect helper graphic */}
-        <SectionHelperGraphic graphic={personaGraphic} title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <SectionHelperGraphic graphic={personaGraphic} title={"A/B Testing"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        {/* Eighty Module/Field Study */}
-        {/* <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={researchLoc} citation={"citation"}/> */}
+        <ThreeColNotes img1={i1mMG1} img2={i1MG2} img3={i1FriendList} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
+        {/* slider neumorphicPb and Sb*/}
+        <section className="sect-last sect-1">
+            <div className="grid-container">
+                <div className="max-col test-slide">
+                    <Slider img1={img43} img2={img43}/>
+                </div>
+
+            </div>
+        </section>
 
         {/* Eighty Module/Research Results */}
         <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={pie} citation={"citation"}/>
 
-        {/* sect helper */}
-        <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* <FourColumnNotesModule img1={critNotes1} img2={critNotes2} img3={critNotes3} img4={critNotes4} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
 
-        <FourColumnNotesModule img1={critNotes1} img2={critNotes2} img3={critNotes3} img4={critNotes4} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        {/* Fifty Module/Sketch Lrg Overview*/}
+        {/* <ModuleFiftyGRight img={img34} citation={"Sketch Overview"} title={"Field test summary"} p1={dummyText} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/> */}
 
         {/* sect helper */}
         <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>

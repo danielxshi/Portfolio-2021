@@ -5,8 +5,6 @@
 @import '../../style/base/variables.scss';
 
 .btn{
-    padding: 8px 20px;
-    // border-radius: 4px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -16,28 +14,12 @@
 }
 
 .btn:hover{
-    padding: 8px 20px;
     transition: all 0.3s ease-out;
-    // background: #fff;
     transition: 250ms;
     color: $white;
 }
 
 .btn--primary{
-    // background-color: var(--primary);
-    // color: $grey;
-    // padding: 8px 20px;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
-}
-
-.btn--medium{
-    padding: 8px 20px;
-    // border-radius: 4px;
-    // font-style: 18px;
-    // color: #fff;
-}
-
-.btn--large{
-    
 }
