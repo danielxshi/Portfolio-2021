@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useCallback } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated as a } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import GIT from '../images/icons/github-brands.png';
@@ -53,7 +53,6 @@ const ModalContent = styled.div`
   h1{
       font-size: 2rem;
       margin: auto;
-      // margin-bottom: 17%;
       position: absolute;
       
   }
@@ -106,6 +105,7 @@ export const Modal = ({ showModal, setShowModal }) => {
     config: {
       duration: 250
     },
+    
     opacity: showModal ? 1 : 0,
     transform: showModal ? `translateY(0%)` : `translateY(-100%)`
   });
@@ -138,7 +138,7 @@ export const Modal = ({ showModal, setShowModal }) => {
     <>
       {showModal ? (
         <Background onClick={closeModal} ref={modalRef}>
-          <animated.div style={animation}>
+          <a.div style={animation}>
             <ModalWrapper showModal={showModal}>
               <ModalContent>
                 <h1>
@@ -157,13 +157,13 @@ export const Modal = ({ showModal, setShowModal }) => {
                         </a>
                     </li>
                 </ul>
-              <CloseModalButton
-                aria-label='Close modal'
-                onClick={() => setShowModal(prev => !prev)}
-              />
+                <CloseModalButton
+                  aria-label='Close modal'
+                  onClick={() => setShowModal(prev => !prev)}
+                />
               </ModalContent>
             </ModalWrapper>
-          </animated.div>
+          </a.div>
         </Background>
       ) : null}
     </>

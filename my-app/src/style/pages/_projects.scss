@@ -57,12 +57,13 @@
     display: flex;
 
     img{
-        width: 100px;
-        height: 100px;
+        // width: 100px;
+        // height: 100px;
         margin: 0 2rem 2rem 0;
     }
     .profile-img-contain{
         display: flex;
+        flex-wrap: wrap;
     }
 }
 

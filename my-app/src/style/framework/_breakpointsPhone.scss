@@ -48,6 +48,20 @@
         grid-column-end: 12;
     }
 
+    .center-module{
+        flex-direction: column;
+        display: flex;
+    
+        img{
+            width: 4rem;
+            height: 4rem;
+            margin: 0 2rem 2rem 0;
+        }
+        .profile-img-contain{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 
 
 
@@ -152,7 +166,7 @@
     }
 
     .span-4{
-        grid-column-start: span 13;
+        grid-column-start: span 4;
     }
 
     .span-5{
@@ -344,6 +358,10 @@
         .footer-cell{
             margin-top: 0;
         }
+    }
+
+    .btn{
+        margin: 3rem auto;
     }
 }
 

@@ -97,7 +97,7 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.bosstep.role}</p>
                             </div>
-                            <Link class="black-border-btn primary-btn" to='/bosstep'>View Process</Link>
+                            <Link class="white-border-btn primary-btn" to='/bosstep'>View Process</Link>
                         </div>
 
                     </div>
@@ -135,7 +135,7 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.cliq.role}</p>
                             </div>
-                            <Link class="black-border-btn primary-btn" to='/cliq'>View Process</Link>
+                            <Link class="white-border-btn primary-btn" to='/cliq'>View Process</Link>
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.track.role}</p>
                             </div>
-                            <Link class="black-border-btn primary-btn" to='/track'>View Process</Link>
+                            <Link class="white-border-btn primary-btn" to='/track'>View Process</Link>
                         </div>
                     </div>
                 </div>

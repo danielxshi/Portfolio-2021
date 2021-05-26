@@ -146,7 +146,7 @@ function Cliq(props) {
 
         <section className="team-section sect-last sect-1">
             <div className="grid-row-space grid-container">
-                <div className="max-col-proj-details">
+                <div className="max-col">
                     <div className="sub-container grid-col-space">
                         <h2 className="h2-anchor-left">working in a team <strong className="highlight-text">_</strong></h2>
                     </div>

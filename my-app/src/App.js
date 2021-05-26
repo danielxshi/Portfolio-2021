@@ -69,7 +69,6 @@ function App() {
     <Router>
 
     <Modal showModal={showModal} setShowModal={setShowModal} />
-    {/* <GlobalStyle /> */}
       <div className="App">
         <ScrollToTop/>
         <Navbar onClick={openModal}/>
