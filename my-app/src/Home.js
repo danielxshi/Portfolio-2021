@@ -44,39 +44,19 @@ const Home = () => {
                     </div>
                     <div className="line-wrap-2">
                         <p className="line-wrap" ref={el => line2 = el}>Aspiring UX/UI web developer and photographer from Vancouver, BC</p>
-                        <p ref={el => line3 = el} >Development in progress - 🚧</p>
+                        <p ref={el => line3 = el} >Development in process - 🚧</p>
                     </div>
                 </div>
             </div>
             <div className="max-col media-links">
-                <Link class="black-border-btn primary-btn static-btn" to='/bosstep'>Resume</Link>
-                <Link class="black-border-btn primary-btn static-btn" to='/bosstep'>Email</Link>
+                <a class="black-border-btn primary-btn static-btn" href="#">Resume</a>
+                <a class="black-border-btn primary-btn static-btn" href="mailto:danielxshi@hotmail.com">Email</a>
             </div>
         </div>
     </div>
 
     <section className="about-section">
         <div className="grid-container grid-row-space">
-            
-            {/* <div className="max-col">
-                <h2>I am<strong className="highlight-text">_</strong></h2>
-            </div> */}
-
-            {/* <div className="max-col">
-                <h2>I am<strong className="highlight-text">_</strong></h2>
-            </div>
-            <div className="max-col">
-                <div className="sub-container">
-                    <div className="anchor-80-right">
-                        <div className="anchor-80-left rel-margin-bot">
-                            <p>A student from the Science and Interactive Arts and Technology department at Simon Fraser University I am pursing a Bachelors of Science with a focus in <strong class="highlight-text">Design</strong>.</p>
-                        </div>
-                        <div className="anchor-80-left rel-margin-bot">
-                            <p>I am currently learning REACT and Framer Motion through online tutorials and in my freetime I <strong class="highlight-text">freelance </strong> photo/video in the Vancouver Dance Community.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div className="max-col">
                 <h2 className="rel-margin-bot">I am<strong className="highlight-text ">_</strong></h2>
                 <div className="anchor-80-right">

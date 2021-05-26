@@ -5,9 +5,6 @@ import { MdClose } from 'react-icons/md';
 import GIT from '../images/icons/github-brands.png';
 import IG from '../images/icons/instagram-brands.png';
 
-
-import camera from '../images/modal.jpg'
-
 const Background = styled.div`
   width: 100%;
   height: 100%;
@@ -70,6 +67,14 @@ const ModalContent = styled.div`
   ul li a{
     margin: 0 .5rem;
   }
+  h1{
+    a{
+      color: black;
+    }
+    a:hover{
+      color: black;
+    }
+  }
   a img{
     transition: 0.25s ease-in-out;
   }
@@ -80,7 +85,7 @@ const ModalContent = styled.div`
   }
   ul{
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
 `;
 
 const CloseModalButton = styled(MdClose)`
@@ -135,11 +140,10 @@ export const Modal = ({ showModal, setShowModal }) => {
         <Background onClick={closeModal} ref={modalRef}>
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
-              {/* <div className="img-contain">
-                <ModalImg src={camera} alt='camera' />
-              </div> */}
               <ModalContent>
-                <h1>danielxshi@hotmail.com</h1>
+                <h1>
+                  <a className="secondary-cta" href="mailto:danielxshi@hotmail.com">danielxshi@hotmail.com</a>
+                </h1>
                 <ul>
                     <li>
                         <a target="_blank" href="https://github.com/danielxshi">
