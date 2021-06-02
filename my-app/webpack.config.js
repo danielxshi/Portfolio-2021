@@ -8,7 +8,7 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 const port = process.env.PORT || 8080;
 
 module.exports = {
-    mode: 'development',  
+    mode: 'production',  
     entry: './src/index.js',
     output: {
         // filename: 'bundle.[hash].js'
@@ -18,7 +18,7 @@ module.exports = {
         // sourceMapFilename: '[name].[hash:8].map',
         // chunkFilename: '[id].[hash:8].js'
     },
-    devtool: 'inline-source-map',
+devtool: 'inline-source-map',
     module: {
         rules: [
         {
@@ -79,6 +79,7 @@ module.exports = {
     devServer: {
         host: 'localhost',
         port: port,
+        // contentBase: path.resolve(__dirname, 'dist'),
         historyApiFallback: true,
         open: true
     }
