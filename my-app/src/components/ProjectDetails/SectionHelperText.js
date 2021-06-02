@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function SectionHelperText(props) {
     return (
         <section className="sect-helper sect-helper-text sect-1 sect-last">

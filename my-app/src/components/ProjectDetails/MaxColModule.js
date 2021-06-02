@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function MaxColModule(props) {
     return (
         <section className="sect-1 sect-last">

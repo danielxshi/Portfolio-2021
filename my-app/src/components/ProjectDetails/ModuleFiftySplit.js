@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function ModuleFiftySplit(props) {
     return (
         <section className="mod-50 sect-1 sect-last">
@@ -9,7 +12,7 @@ function ModuleFiftySplit(props) {
                             <p className="citation">{props.citation}</p>
                         </div>
                         <div className="gcs-8-5">
-                            <h2>{props.title}<strong class="highlight-text">_</strong></h2>
+                            <h2>{props.title}<strong className="highlight-text">_</strong></h2>
                             <p className="paragraph-anchor-left rel-margin-bot">{props.p1}</p>
                             <p className="paragraph-anchor-left">{props.p2}</p>
                         </div>

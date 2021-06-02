@@ -1,7 +1,7 @@
-import '../style/App.scss';
 import GIT from '../images/icons/github-brands.png';
 import IG from '../images/icons/instagram-brands.png';
-
+import ReactDOM from 'react-dom';
+import React, { useState } from 'react';
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function Footer() {

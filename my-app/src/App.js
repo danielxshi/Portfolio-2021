@@ -1,10 +1,10 @@
 // Import styles
 import './style/App.scss';
 import './style/global.scss';
-
+import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Modal } from './components/Modal';
+import { ContactModal } from './components/ContactModal';
 import { GlobalStyle } from './components/globalStyles';
 
 // Import Messages
@@ -68,7 +68,7 @@ function App() {
   return (
     <Router>
 
-    <Modal showModal={showModal} setShowModal={setShowModal} />
+    <ContactModal showModal={showModal} setShowModal={setShowModal} />
       <div className="App">
         <ScrollToTop/>
         <Navbar onClick={openModal}/>
@@ -86,7 +86,7 @@ function App() {
                   <Project messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} bannerMobile={mobileBannerBG} banner={bosstepBanner} />
                   <Bosstep/>
                 </Route>
-                <Route exact path="/cliq" >
+                <Route path="/cliq" >
                   <Project messages={projectMessages.cliq} banner={cliqBanner} />
                   <Cliq/>
                 </Route>

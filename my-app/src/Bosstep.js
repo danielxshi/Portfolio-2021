@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 // Stylesheets
 import './style/pages/_projects.scss';
 
@@ -111,7 +114,7 @@ function Bosstep(props) {
                             <p className="citation">test</p>
                         </div>
                         <div className="gcs-8-5">
-                            <h2 className="rel-margin-bot">Designing for<strong class="highlight-text">_</strong></h2>
+                            <h2 className="rel-margin-bot">Designing for<strong className="highlight-text">_</strong></h2>
                             <p className="paragraph-anchor-left rel-margin-bot">{dummyText}</p>
                         </div>
                     </div>

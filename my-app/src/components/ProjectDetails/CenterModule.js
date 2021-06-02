@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function CenterModule(props) {
     return (
         <section className="project-details-center-section sect-last sect-1">

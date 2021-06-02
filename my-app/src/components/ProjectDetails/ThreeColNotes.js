@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function ThreeColNotes(props) {
     return(
         <section className="sketch-sect sect-last sect-1">
@@ -19,7 +22,7 @@ function ThreeColNotes(props) {
             <div className="max-col">
                 <div className="sub-container grid-col-space">
                     <p className="paragraph-anchor-left">{props.text}</p>
-                    <h2 className="h2-anchor-right">{props.title}<strong class="highlight-text">_</strong></h2>
+                    <h2 className="h2-anchor-right">{props.title}<strong className="highlight-text">_</strong></h2>
                 </div>
             </div>
         </div>

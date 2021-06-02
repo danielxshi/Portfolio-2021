@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function NextProj(props) {
     return (
         <section className="next-proj sect-last sect-1">

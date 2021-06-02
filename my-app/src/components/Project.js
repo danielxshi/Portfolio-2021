@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 // Stylesheets
 import '../style/pages/_projects.scss';
@@ -35,7 +37,7 @@ function Project(props) {
                             </div>
                         </div>
                         
-                        <Link class="black-border-btn primary-btn" to='/bosstep'>{props.messages.cta}</Link>
+                        <Link className="black-border-btn primary-btn" to='/bosstep'>{props.messages.cta}</Link>
                     </div>
                 </div>
             </section>
@@ -57,7 +59,7 @@ function Project(props) {
                         </div>
                         <p className="rel-margin-bot">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis recusandae repudiandae commodi quaerat, e</p>
                         
-                        <a class="sect-last rel-margin-bot black-border-btn primary-btn" href="#">{props.messages.cta}</a>
+                        <a className="sect-last rel-margin-bot black-border-btn primary-btn" href="#">{props.messages.cta}</a>
                         {/* <div className="img-contain">
                             <img src={props.mobileBannerDemo} alt="" />
                         </div> */}

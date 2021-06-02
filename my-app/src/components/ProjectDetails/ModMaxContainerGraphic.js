@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function ModFullContainerGraphic(props) {
     return (
         <section className="sect-1 sect-last">

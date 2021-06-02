@@ -27,30 +27,30 @@ const Home = () => {
     }, [line1, line2]);
     return (
 
-    <main class="landing-pg">
+    <main className="landing-pg">
     <div className="intro-wrapper">
         <div className="grid-container">
             <div className="max-col intro-text-banner">
-                <div class="p-identity">
+                <div className="p-identity">
                     <div className="line-wrap-1">
 
                         {/* Desktop */}
 
                         <h1 ref={el => line1 = el} className="text-banner">
-                            <span><strong class="highlight-text-dark">X</strong>iang</span>
+                            <span><strong className="highlight-text-dark">X</strong>iang</span>
                             <span className="text-banner-desktop"><strong className="highlight-text-dark">D</strong>aniel</span>
-                            <span className="text-banner-desktop"><strong class="highlight-text-dark">S</strong>hi</span>
+                            <span className="text-banner-desktop"><strong className="highlight-text-dark">S</strong>hi</span>
                         </h1>
                     </div>
                     <div className="line-wrap-2">
                         <p className="line-wrap" ref={el => line2 = el}>Aspiring UX/UI web developer and photographer from Vancouver, BC</p>
-                        <p ref={el => line3 = el} >Development in process - 🚧</p>
+                        <p ref={el => line3 = el} >Development in process V1.2 - 🚧</p>
                     </div>
                 </div>
             </div>
             <div className="max-col media-links">
-                <a class="black-border-btn primary-btn static-btn" href="#">Resume</a>
-                <a class="black-border-btn primary-btn static-btn" href="mailto:danielxshi@hotmail.com">Email</a>
+                <a className="black-border-btn primary-btn static-btn" href="#">Resume</a>
+                <a className="black-border-btn primary-btn static-btn" href="mailto:danielxshi@hotmail.com">Email</a>
             </div>
         </div>
     </div>
@@ -60,8 +60,8 @@ const Home = () => {
             <div className="max-col">
                 <h2 className="rel-margin-bot">I am<strong className="highlight-text ">_</strong></h2>
                 <div className="anchor-80-right">
-                    <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University I am pursing a Bachelors of Science with a focus in <strong class="highlight-text">Design</strong>.</p>
-                    <p className="rel-margin-bot">I am currently learning REACT and Framer Motion through online tutorials and in my freetime I <strong class="highlight-text">freelance </strong> photo/video in the Vancouver Dance Community.</p>
+                    <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University I am pursing a Bachelors of Science with a focus in <strong className="highlight-text">Design</strong>.</p>
+                    <p className="rel-margin-bot">I am currently learning REACT and Framer Motion through online tutorials and in my freetime I <strong className="highlight-text">freelance </strong> photo/video in the Vancouver Dance Community.</p>
 
                 </div>
             </div>
@@ -97,7 +97,7 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.bosstep.role}</p>
                             </div>
-                            <Link class="white-border-btn primary-btn" to='/bosstep'>View Process</Link>
+                            <Link className="white-border-btn primary-btn" to='/bosstep'>View Process</Link>
                         </div>
 
                     </div>
@@ -135,7 +135,7 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.cliq.role}</p>
                             </div>
-                            <Link class="white-border-btn primary-btn" to='/cliq'>View Process</Link>
+                            <Link className="white-border-btn primary-btn" to='/cliq'>View Process</Link>
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.track.role}</p>
                             </div>
-                            <Link class="white-border-btn primary-btn" to='/track'>View Process</Link>
+                            <Link className="white-border-btn primary-btn" to='/track'>View Process</Link>
                         </div>
                     </div>
                 </div>
@@ -211,10 +211,10 @@ const Home = () => {
         </div>
     </section>
 
-    <section class="otr-proj-sect">
+    <section className="otr-proj-sect">
         <div className="grid-container">
             <div className="max-col">
-                <h2>More projects 🥳<strong class="highlight-text">_</strong></h2>
+                <h2>More projects 🥳<strong className="highlight-text">_</strong></h2>
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
                         <div className="otr-proj img-contain proj-home-grid-def-maintain-w">

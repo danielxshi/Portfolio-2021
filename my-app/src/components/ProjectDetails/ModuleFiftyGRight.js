@@ -1,12 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function ModuleFiftyGRight(props) {
     return (
         <section className="mod-50 sect-1 sect-last">
             <div className="grid-row-space grid-container">
                 <div className="max-col">
-                    <h2 className="rel-margin-bot">{props.title}<strong class="highlight-text">_</strong></h2>
+                    <h2 className="rel-margin-bot">{props.title}<strong className="highlight-text">_</strong></h2>
                     <div className="sub-container grid-col-space">
                         <div className="span-50">
-                            {/* <h2 className="rel-margin-bot">{props.title}<strong class="highlight-text">_</strong></h2> */}
                             <p className="paragraph-anchor-left rel-margin-bot">{props.p1}</p>
                             <p className="paragraph-anchor-left">{props.p2}</p>
                         </div>

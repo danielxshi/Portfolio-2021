@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
 // Stylesheets
 import './style/pages/_projects.scss';
 
@@ -95,24 +99,6 @@ function Cliq(props) {
         <ModMaxCol img={wireframeOverview} title={"title"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
 
         <ModMaxContainerGraphic img={sitemap} citation={"citation"}/>
-
-        {/* Sketches Full bleed */}
-        {/* <section className="sect-1 sect-last">
-            <div className="sub-container">
-            <div className="max-col row-start-1">
-                <div className="grid-row-space grid-container">
-                        <div className="span-5">
-                            <h2 className="rel-margin-bot h2-anchor-right">Lorem<strong class="highlight-text">_</strong></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quod porro voluptatum enim quos, sit esse ad fugit, magnam commodi repudiandae, ipsum eos consequatur ut perferendis quas in aut exercitationem!</p>
-                        </div>
-                </div>
-            </div>
-            <div className="span-bleed-right-container img-fit row-start-1">
-                <img src={wireframeProdDetailRevised} alt="" />
-            </div>
-
-            </div>
-        </section> */}
 
         <ModuleFiftyGRight img={productDetailR2} title={"Type and Color Explained"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
 

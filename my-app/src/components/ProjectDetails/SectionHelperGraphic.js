@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 function SectionHelperGraphic(props) {
     return (
         <section className="sect-helper sect-helper-graphic sect-1 sect-last">
