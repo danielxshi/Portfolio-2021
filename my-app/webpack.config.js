@@ -1,22 +1,23 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-    // template: __dirname + '/public/index.html',
-    // filename: 'index.html',
-    // inject: 'body'
+    template: __dirname + '/index.html',
+    filename: 'index.html',
+    inject: 'body'
   })
 const port = process.env.PORT || 8080;
 
 module.exports = {
     mode: 'production',  
-    entry: './src/index.js',
+    entry: {
+        home: './src/index.js',
+        bosstep: './src/Bosstep.js',
+        moment: './src/MomentTrack.js',
+        cliq: './src/Cliq.js'
+    },
     output: {
-        // filename: 'bundle.[hash].js'
-        filename: 'index.bundle.js',
+        filename: '[name].bundle.js',
         path: __dirname + '/dist'
-        // filename: '[name].[hash:8].js',
-        // sourceMapFilename: '[name].[hash:8].map',
-        // chunkFilename: '[id].[hash:8].js'
     },
 devtool: 'inline-source-map',
     module: {
@@ -33,25 +34,7 @@ devtool: 'inline-source-map',
         },
         {
             test: /\.(png|jpe?g|gif|svg)$/i,
-            /**
-             * The `type` setting replaces the need for "url-loader"
-             * and "file-loader" in Webpack 5.
-             *
-             * setting `type` to "asset" will automatically pick between
-             * outputing images to a file, or inlining them in the bundle as base64
-             * with a default max inline size of 8kb
-             */
             type: "asset",
-    
-            /**
-             * If you want to inline larger images, you can set
-             * a custom `maxSize` for inline like so:
-             */
-            // parser: {
-            //   dataUrlCondition: {
-            //     maxSize: 30 * 1024,
-            //   },
-            // },
         },
         {
             test: /\.scss$/,
@@ -77,10 +60,14 @@ devtool: 'inline-source-map',
         })
     ],
     devServer: {
-        host: 'localhost',
-        port: port,
-        // contentBase: path.resolve(__dirname, 'dist'),
+        // host: 'localhost',
+        // port: port,
+        // historyApiFallback: true,
+        // open: true
+        // contentBase: path.join(__dirname, 'public', 'dist'),
+        hot: true,
+        inline: true,
         historyApiFallback: true,
-        open: true
+        watchContentBase: true,
     }
 };
