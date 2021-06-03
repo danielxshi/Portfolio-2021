@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import './style/pages/_projects.scss';
 
 // Bottom banner
-import finale from './images/boss-1000x600.png';
+import finale from './images/boss-1000x600.webp';
 
 // Import components
 import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
@@ -32,49 +32,41 @@ import imgProf from './images/placeholder/placeholder-prof-1x1.png';
 import imgVid from './images/placeholder/video-placeholder.png';
 import imgVid1x1 from './images/placeholder/vid-1x1.png';
 
-// Critique
-import critNotes1 from './images/bosstep/crit-notes-1.jpg';
-import critNotes2 from './images/bosstep/crit-notes-2.jpg';
-import critNotes3 from './images/bosstep/crit-notes-3.jpg';
-import critNotes4 from './images/bosstep/crit-notes-4.jpg';
-
 // Sketches
 // lrg sketch
 import sketchMinigameMLrg from './images/bosstep/sketch-minigame-m-lrg.jpg'
 // sketch overview
 import sketchNb from './images/bosstep/sketch-overview-2500x.png'
-import sketchOverview from './images/bosstep/sketch-overview-bosstep.jpg'
+import sketchOverview from './images/bosstep/sketch-overview-bosstep.webp'
 
 // Prototype
 import protoAddFriend from './images/bosstep/proto-add-friend.png'
 import protoHome from './images/bosstep/proto-home.png'
 import minigameM from './images/bosstep/proto-minigame-m.png'
 import minigameD from './images/bosstep/proto-minigame-d.png'
-import i1mMG1 from './images/bosstep/i1-friend-list.jpg'
-import i1MG2 from './images/bosstep/i1-mg1.jpg'
-import i1FriendList from './images/bosstep/i1-mg2.jpg'
+import i1mMG1 from './images/bosstep/i1-friend-list.webp'
+import i1MG2 from './images/bosstep/i1-mg1.webp'
+import i1FriendList from './images/bosstep/i1-mg2.webp'
 
 // Wireframe
-import bosstepOverview from './images/bosstep/wireframe-overview.jpg'
+import bosstepOverview from './images/bosstep/wireframe-overview.webp'
 // wireframe pt 1
-import wireHome from './images/bosstep/wire-home-bstep.jpg'
-import wireMiniGame from './images/bosstep/wire-minigame-bstep.jpg'
-import wireRewardDetail from './images/bosstep/wire-reward-bstep.jpg'
-import wireRewardList from './images/bosstep/wire-weekly-reward-bstep.jpg'
+import wireHome from './images/bosstep/wire-home-bstep.webp'
+import wireMiniGame from './images/bosstep/wire-minigame-bstep.webp'
+import wireRewardDetail from './images/bosstep/wire-reward-bstep.webp'
+import wireRewardList from './images/bosstep/wire-weekly-reward-bstep.webp'
 // wireframe pt 2
-import wireFriendDetail from './images/bosstep/wire-friend-detail.jpg'
-import wireFriendList from './images/bosstep/wire-friend-list.jpg'
-import wireFriendMenu from './images/bosstep/wire-friend-menu.jpg'
-import wireFriendSecurityPin from './images/bosstep/wire-friend-pin.jpg'
+import wireFriendDetail from './images/bosstep/wire-friend-detail.webp'
+import wireFriendList from './images/bosstep/wire-friend-list.webp'
+import wireFriendMenu from './images/bosstep/wire-friend-menu.webp'
+import wireFriendSecurityPin from './images/bosstep/wire-friend-pin.webp'
 
 
 // Research
-import primaryResearch from './images/bosstep/primary-research-bstep.jpg'
-import secondaryResearch from './images/bosstep/secondary-research-bstep.jpg'
 import researchLoc from './images/bosstep/research-loc.jpg'
 
 // Persona
-import persona from './images/bosstep/persona-bstep.jpg'
+import persona from './images/bosstep/persona-bstep.webp'
 
 // Graphics
 import pie from './images/bosstep/pie-graph-graphic.png'
@@ -82,7 +74,7 @@ import blob from './images/bosstep/blob-neu.png'
 import personaGraphic from './images/bosstep/persona-graphic.png'
 
 // Next project
-import nextProj from './images/cliq-1000x600.png'
+import nextProj from './images/cliq-1000x600.webp'
 import projectMessages from './components/ProjectMessages';
 
 import dummyText from './CommonMessages';

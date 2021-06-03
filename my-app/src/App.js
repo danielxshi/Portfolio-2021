@@ -11,7 +11,7 @@ import { GlobalStyle } from './components/globalStyles';
 import projectMessages from './components/ProjectMessages.js'
 
 // Import images
-import bosstepBanner from './images/bosstep-banner-2048x768.jpg';
+import bosstepBanner from './images/bosstep-banner-2048x768.webp';
 import cliqBanner from './images/cliq/cliq-banner-2048x768.png';
 import momentBanner from './images/track/moment-banner-2048x768.png';
 // Import mobile images - hero banner - bosstep

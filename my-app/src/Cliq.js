@@ -20,7 +20,7 @@ import ModMaxContainerGraphic from "./components/ProjectDetails/ModMaxContainerG
 import Slider from "./components/ProjectDetails/Slider"
 
 // Import images
-import nextProj from './images/boss-1000x600.png'
+import nextProj from './images/boss-1000x600.webp'
 import persona from './images/cliq/persona-isometric.png'
 import neuGuide from './images/cliq/neu-guide.png'
 import sketchGuide1 from './images/cliq/sketch-build-guide.jpg'
@@ -28,7 +28,6 @@ import sketchGuide2 from './images/cliq/sketch-build-guide-2.jpg'
 import sketchProdDetail from './images/cliq/sketch-prod-detail.jpg'
 import sketchProdList from './images/cliq/sketch-prod-list.jpg'
 import wireframeOverview from './images/cliq/wireframe-overview.jpg'
-import wireframeProdDetailRevised from './images/cliq/wireframe-revised-prod-detail.png'
 import danielDiscord from './images/cliq/daniel-discord.png'
 import marinaDiscord from './images/cliq/marina-discord.png'
 import jasonDiscord from './images/cliq/jason-discord.png'
@@ -38,13 +37,11 @@ import neuGuideSb from './images/cliq/secondary-btn-neu-guide.png'
 import typography from './images/cliq/typography.jpg'
 import kerning from './images/cliq/kerning.jpg' 
 import sitemap from './images/cliq/sitemap-lite.png'
-import sitemapdrk from './images/cliq/sitemap-drk.jpg'
 import colorguide from './images/cliq/color-guide.png'
 import logo from './images/cliq/cliq-logo.png'
 import productDetailR2 from './images/cliq/product-detail-r2.png'
 
 // Import gif
-import cmatrix from './images/cliq/cmatrix.gif'
 import cmatrixBG from './images/cliq/cmatrix-blk-bg.gif'
 import cliqWhiteTextAnim from './images/cliq/cliq-white-text-anim.gif'
 import cliqBlackTextAnim from './images/cliq/cliq-black-text-anim.gif'

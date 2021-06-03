@@ -1,8 +1,8 @@
 // Import images
-import BOSSTEP from './images/boss-1000x600.png';
-import CLIQ from './images/cliq-1000x600.png';
-import TRACK from './images/track-1000x600.png';
-import TTA from './images/TTAAnimationCover.jpg';
+import BOSSTEP from './images/boss-1000x600.webp';
+import CLIQ from './images/cliq-1000x600.webp';
+import TRACK from './images/track-1000x600.webp';
+import TTA from './images/TTAAnimationCover.webp';
 
 // Import dependencies
 import projectMessages from './components/ProjectMessages.js'

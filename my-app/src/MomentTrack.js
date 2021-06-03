@@ -23,7 +23,7 @@ import imgVid from './images/placeholder/video-placeholder.png';
 import imgVid1x1 from './images/placeholder/vid-1x1.png';
 
 // Import images
-import nextProj from './images/boss-1000x600.png'
+import nextProj from './images/boss-1000x600.webp'
 
 function MomentTrack(props) {
     return (

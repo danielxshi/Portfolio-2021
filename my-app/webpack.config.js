@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: __dirname + '/index.html',
+    template: __dirname + '7b n7/index.html',
     filename: 'index.html',
     inject: 'body'
   })
@@ -33,7 +33,7 @@ devtool: 'inline-source-map',
             }
         },
         {
-            test: /\.(png|jpe?g|gif|svg)$/i,
+            test: /\.(png|jpe?g|gif|svg|webp)$/i,
             type: "asset",
         },
         {
@@ -63,7 +63,7 @@ devtool: 'inline-source-map',
         // host: 'localhost',
         // port: port,
         // historyApiFallback: true,
-        // open: true
+        // open: true,
         // contentBase: path.join(__dirname, 'public', 'dist'),
         hot: true,
         inline: true,
