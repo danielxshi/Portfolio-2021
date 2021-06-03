@@ -37,7 +37,8 @@ import{
   TransitionGroup,
 } from 'react-transition-group';
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
+import {browserHistory, IndexRoute, hashHistory } from 'react-router'
 
 
 const Container = styled.div`
@@ -66,7 +67,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <HashRouter>
 
     <ContactModal showModal={showModal} setShowModal={setShowModal} />
       <div className="App">
@@ -81,26 +82,34 @@ function App() {
             unmountOnExit
             >
               <Switch location={location}>
+
+                
+
+
                 <Route exact path="/" component={Home}/>
+
                 <Route exact path="/bosstep" >
                   <Project messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} bannerMobile={mobileBannerBG} banner={bosstepBanner} />
                   <Bosstep/>
                 </Route>
+
                 <Route path="/cliq" >
                   <Project messages={projectMessages.cliq} banner={cliqBanner} />
                   <Cliq/>
                 </Route>
+
                 <Route exact path="/track" >
                   <Project messages={projectMessages.cliq} banner={momentBanner} />
                   <MomentTrack/>
                 </Route>
+
               </Switch> 
             </CSSTransition>
           </TransitionGroup>
         )}/>
       </div>
       <Footer/>
-    </Router>
+    </HashRouter>
   );
 }
 

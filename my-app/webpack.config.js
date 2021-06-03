@@ -1,7 +1,9 @@
 const webpack = require('webpack');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: __dirname + '7b n7/index.html',
+    template: __dirname + '/index.html',
     filename: 'index.html',
     inject: 'body'
   })
@@ -38,6 +40,7 @@ devtool: 'inline-source-map',
         },
         {
             test: /\.scss$/,
+            // use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader', 'style-loader'],
             use: [
             {
                 loader: 'style-loader'
@@ -52,22 +55,32 @@ devtool: 'inline-source-map',
         },
         ]
     },
-    
+    // optimization: {
+    //     minimizer: [
+    //       // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
+    //       // `...`,
+    //       new CssMinimizerPlugin(),
+    //     ],
+    // },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'public/index.html',
             favicon: 'public/favicon.ico'
-        })
+        }),
+        
+        // new MiniCssExtractPlugin({
+        //     // Options similar to the same options in webpackOptions.output
+        //     // both options are optional
+        //     filename: '[name].css',
+        //     chunkFilename: '[id].css',
+        // }),
     ],
     devServer: {
-        // host: 'localhost',
-        // port: port,
-        // historyApiFallback: true,
-        // open: true,
-        // contentBase: path.join(__dirname, 'public', 'dist'),
+        // open: true
+        contentBase: './',
         hot: true,
-        inline: true,
+        // inline: true,
         historyApiFallback: true,
-        watchContentBase: true,
+        // watchContentBase: true,
     }
 };
