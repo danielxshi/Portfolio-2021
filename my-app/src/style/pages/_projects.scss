@@ -141,35 +141,33 @@
     margin-bottom: $rel-margin;
 }
 
-// Bosstep
-.hero-banner-mobile-bosstep{    
-    background-image: url("../../images/bosstep/mobile-banner-bosstep.png");
+
+.hero-banner-mobile{    
     height: 100%;
     background-repeat: no-repeat;
     object-fit: contain;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
+}
+
+// Bosstep
+.hero-banner-mobile-bosstep{    
+    background-image: url("../../images/bosstep/mobile-banner-bosstep.png");
 }
 
 // CLIQ
 .hero-banner-mobile-cliq{    
-    background-color: #1b791b;
-    height: 100%;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
+    // background-color: #1b791b;
 }
 
 .cliq-mobile-container{
-    .text-wrapper{
-        color: $white;
-    }
-    a{
-        color: $white;
-    }
+    // .text-wrapper{
+    //     color: $white;
+    // }
+    // a{
+    //     color: $white;
+    // }
 }
 
 // Track

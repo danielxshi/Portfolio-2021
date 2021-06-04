@@ -85,15 +85,15 @@ function App() {
               <Switch location={location}>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/bosstep" >
-                  <Project mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} bannerBG={"hero-banner-mobile-bosstep"} messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} banner={bosstepBanner} />
+                  <Project mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} bannerBG={"hero-banner-mobile-bosstep hero-banner-mobile"} messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} banner={bosstepBanner} />
                   <Bosstep/>
                 </Route>
                 <Route path="/cliq" >
-                  <Project mobileBannerContainer={"project-details-hero-mobile cliq-mobile-container"} bannerBG={"hero-banner-mobile-cliq"} messages={projectMessages.cliq} mobileBannerDemo={mobileCliqBanner} banner={cliqBanner} />
+                  <Project mobileBannerContainer={"project-details-hero-mobile cliq-mobile-container"} bannerBG={"hero-banner-mobile-cliq hero-banner-mobile"} messages={projectMessages.cliq} mobileBannerDemo={mobileCliqBanner} banner={cliqBanner} />
                   <Cliq/>
                 </Route>
                 <Route exact path="/track" >
-                  <Project mobileBannerContainer={"project-details-hero-mobile track-mobile-container"} bannerBG={"hero-banner-mobile-track"} messages={projectMessages.cliq} banner={momentBanner} />
+                  <Project mobileBannerContainer={"project-details-hero-mobile track-mobile-container"} bannerBG={"hero-banner-mobile-track hero-banner-mobile"} messages={projectMessages.cliq} banner={momentBanner} />
                   <MomentTrack/>
                 </Route>
                 <Route path="*">

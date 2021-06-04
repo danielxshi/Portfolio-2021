@@ -127,10 +127,6 @@
     .text-banner-desktop{
         display: none;
     }
-
-
-
-
     .nav-menu{
         grid-column-end: 12;
     }
@@ -363,6 +359,13 @@
     .btn{
         margin: 3rem auto;
     }
+
+
+    .modal-address{
+        a {
+        font-size: 1.3rem;
+        }
+    }
 // }
 
 /* Larger than phablet */
@@ -392,6 +395,12 @@
     .intro-wrapper{
         h1{      
             font-size: 4rem;
+        }
+    }
+
+    .modal-address{
+        a {
+        font-size: 1.3rem;
         }
     }
 }

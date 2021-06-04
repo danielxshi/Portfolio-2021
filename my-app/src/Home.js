@@ -3,6 +3,8 @@ import BOSSTEP from './images/boss-1000x600.webp';
 import CLIQ from './images/cliq-1000x600.webp';
 import TRACK from './images/track-1000x600.webp';
 import TTA from './images/TTAAnimationCover.webp';
+import MainEvent from './images/mainevent.gif';
+import TeamPhantom from './images/teamphantom.gif';
 import resume from './images/danielshi-resume.pdf';
 
 // Import dependencies
@@ -221,33 +223,50 @@ const Home = () => {
                     <div className="otr-proj-spec-wrapper otr-proj-1">
                         <div className="otr-proj img-contain proj-home-grid-def-maintain-w">
                             <a target="_blank" href="https://www.youtube.com/watch?v=rnj6hVkEDpg">
-                                <img src={TTA} alt=""/>
+                                <img src={TTA} alt="Top Ten Animation Project Graphic"/>
                             </a>
                         </div>
-                        <h3>Maya Animation - Goku vs Frieza</h3>
+                        <h3>
+                            <div className="underscore-cta">
+                                <a className="">
+                                    Maya Animation - Goku vs Frieza
+                                </a>
+                            </div>
+                        </h3>
                         <p>Janurary 2021 - April 2021</p>
-                        {/* <p>Animation project created alongside the team (Jason Xu, Justin Yu and Mutte Chen)</p> */}
-                        <p>Role - Rigging, sequencing, editing and sound design.</p>
+                        <p><strong>Role</strong> - rigging, sequencing, editing and sound design.</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=ur-RzX9fNSY">
-                                <img src={TRACK} alt=""/>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=PAtd3-VlaaU">
+                                <img src={MainEvent} alt="The Main Event GIF"/>
                             </a>
                         </div>
-                        <h3>Moment Track</h3>
-                        <p>date</p>
-                        <p>Role - Frontend development</p>
+                        <h3>
+                            <div className="underscore-cta">
+                                <a className="">
+                                    The Main Event 2019
+                                </a>
+                            </div>
+                        </h3>
+                        <p>October 2019</p>
+                        <p><strong>Role</strong> - videographer</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-3">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
                             <a target="_blank" href="https://youtu.be/yjXwb3fFqHA">
-                                <img src={BOSSTEP} alt=""/>
+                                <img src={TeamPhantom} alt="Team Phantom GIF"/>
                             </a>
                         </div>
-                        <h3>Team Phantom</h3>
+                        <h3>
+                            <div className="underscore-cta">
+                                <a className="">
+                                    Team Phantom
+                                </a>
+                            </div>
+                        </h3>
                         <p>Janurary 2021 - April 2021</p>
-                        <p>Role - Cinematographer and colorist</p>
+                        <p><strong>Role</strong> - cinematographer and colorist</p>
                         {/* <p>Four month documentary of Team Phantom's eletric race car design journey</p> */}
                     </div>
                 </div>

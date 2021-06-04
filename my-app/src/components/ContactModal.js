@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import { useSpring, animated as a } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
-import GIT from '../images/icons/github-brands.png';
-import IG from '../images/icons/instagram-brands.png';
+import GIT from '../images/icons/github-logo.svg';
+import IG from '../images/icons/instagram.svg';
+import LinkedIn from '../images/icons/linkedin.svg';
 
 const Background = styled.div`
   width: 100%;
@@ -75,13 +76,28 @@ const ModalContent = styled.div`
       color: black;
     }
   }
-  a img{
-    transition: 0.25s ease-in-out;
+  a {
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
   }
-  a img:hover{
-    background-color: tomato;
-    border-radius: 100%;
-    padding: 1rem;
+  a:after{
+    transition: 0.25s ease-in-out;       
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #4d9735;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after{
+    width: 100%; 
+    left: 0; 
   }
   ul{
     margin: auto;
@@ -142,7 +158,7 @@ export const ContactModal = ({ showModal, setShowModal }) => {
           <a.div style={animation}>
             <ModalWrapper showModal={showModal}>
               <ModalContent>
-                <h1>
+                <h1 className="modal-address">
                   <a className="secondary-cta" href="mailto:danielxshi@hotmail.com">danielxshi@hotmail.com</a>
                 </h1>
                 <ul>
@@ -153,8 +169,8 @@ export const ContactModal = ({ showModal, setShowModal }) => {
                         <a target="_blank" href="https://www.instagram.com/danielxshi/">
                             <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
                         </a>
-                        <a target="_blank" href="https://www.instagram.com/danielxshi/">
-                            <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
+                        <a target="_blank" href="https://www.linkedin.com/in/daniel-shi-0833501a0/">
+                            <img height="30" width="30"src={LinkedIn}  alt="LinkedIn Icon"/>
                         </a>
                     </li>
                 </ul>

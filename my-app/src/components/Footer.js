@@ -2,7 +2,7 @@ import GIT from '../images/icons/github-brands.png';
 import IG from '../images/icons/instagram-brands.png';
 import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import resume from '../images/danielshi-resume.pdf';
 
 function Footer() {
   return (
@@ -17,16 +17,7 @@ function Footer() {
                 <p>Documents</p>
                 <ul>
                     <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="resume.pdf">Resume</a>
-                    </li>
-                    <li>
-                        <a href="style.html">Style Guide</a>
-                    </li>
-                    <li>
-                        <a href="citations.html">Citations</a>
+                        <a href={resume}>Resume</a>
                     </li>
                 </ul>
             </div>
