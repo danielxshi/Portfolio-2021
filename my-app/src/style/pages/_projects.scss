@@ -43,7 +43,7 @@
             margin-top: 0;
         }
     }
-    .primary-btn{
+    .primary-btn, .disable-btn{
         grid-column-start: 8;
         grid-column-end: 13;
     }
@@ -142,8 +142,39 @@
 }
 
 // Bosstep
-.hero-banner-mobile{    
+.hero-banner-mobile-bosstep{    
     background-image: url("../../images/bosstep/mobile-banner-bosstep.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+// CLIQ
+.hero-banner-mobile-cliq{    
+    background-color: #1b791b;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cliq-mobile-container{
+    .text-wrapper{
+        color: $white;
+    }
+    a{
+        color: $white;
+    }
+}
+
+// Track
+.hero-banner-mobile-track{    
+    background-color: blue;
     height: 100%;
     background-repeat: no-repeat;
     object-fit: contain;

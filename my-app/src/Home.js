@@ -158,9 +158,9 @@ const Home = () => {
             <div className="max-col row-start-1">
                 <div className="grid-container blue-tab">
                     <div className="img-contain proj-home-grid-def">
-                        <Link to='/track' exact>
+                        {/* <Link to='/track' exact> */}
                             <img alt="Track Project Graphic" src={TRACK}/> 
-                        </Link>
+                        {/* </Link> */}
                     </div>
                     <div className="project-description">
                         <div className="sub-container">
@@ -172,7 +172,7 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.track.role}</p>
                             </div>
-                            <Link className="white-border-btn primary-btn" to='/track'>View Process</Link>
+                            <a className="disable-btn" to='/track'>Coming soon</a>
                         </div>
                     </div>
                 </div>

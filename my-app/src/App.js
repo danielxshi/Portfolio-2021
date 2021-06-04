@@ -10,13 +10,15 @@ import { GlobalStyle } from './components/globalStyles';
 // Import Messages
 import projectMessages from './components/ProjectMessages.js'
 
+//Import placeholder
+import img3x4 from './images/placeholder/placeholder-3x4.png'
+
 // Import images
 import bosstepBanner from './images/bosstep-banner-2048x768.webp';
 import cliqBanner from './images/cliq/cliq-banner-2048x768.png';
 import momentBanner from './images/track/moment-banner-2048x768.png';
-// Import mobile images - hero banner - bosstep
-import mobileBannerBG from './images/bosstep/mobile-banner-bosstep.png';
 import mobileBannerDemo from './images/bosstep/mobile-banner-demo.png';
+import mobileCliqBanner from './images/cliq-1000x600.webp';
 
 // Import components
 import Footer from "./components/Footer";
@@ -37,8 +39,7 @@ import{
   TransitionGroup,
 } from 'react-transition-group';
 
-import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
-import {browserHistory, IndexRoute, hashHistory } from 'react-router'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -67,7 +68,7 @@ function App() {
   };
 
   return (
-    <HashRouter>
+    <Router>
 
     <ContactModal showModal={showModal} setShowModal={setShowModal} />
       <div className="App">
@@ -82,34 +83,29 @@ function App() {
             unmountOnExit
             >
               <Switch location={location}>
-
-                
-
-
                 <Route exact path="/" component={Home}/>
-
                 <Route exact path="/bosstep" >
-                  <Project messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} bannerMobile={mobileBannerBG} banner={bosstepBanner} />
+                  <Project mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} bannerBG={"hero-banner-mobile-bosstep"} messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} banner={bosstepBanner} />
                   <Bosstep/>
                 </Route>
-
                 <Route path="/cliq" >
-                  <Project messages={projectMessages.cliq} banner={cliqBanner} />
+                  <Project mobileBannerContainer={"project-details-hero-mobile cliq-mobile-container"} bannerBG={"hero-banner-mobile-cliq"} messages={projectMessages.cliq} mobileBannerDemo={mobileCliqBanner} banner={cliqBanner} />
                   <Cliq/>
                 </Route>
-
                 <Route exact path="/track" >
-                  <Project messages={projectMessages.cliq} banner={momentBanner} />
+                  <Project mobileBannerContainer={"project-details-hero-mobile track-mobile-container"} bannerBG={"hero-banner-mobile-track"} messages={projectMessages.cliq} banner={momentBanner} />
                   <MomentTrack/>
                 </Route>
-
+                <Route path="*">
+                  <Home/>
+                </Route>
               </Switch> 
             </CSSTransition>
           </TransitionGroup>
         )}/>
       </div>
       <Footer/>
-    </HashRouter>
+    </Router>
   );
 }
 

@@ -4,7 +4,7 @@
 
 /* Mobile first queries */
 /* Larger than mobile */
-@media (min-width: 300px){
+// @media (min-width: 300px){
 
     // Modules ====================
     .span-50{
@@ -134,7 +134,7 @@
     .nav-menu{
         grid-column-end: 12;
     }
-    .primary-btn{
+    .primary-btn, .disable-btn{
         padding: .55rem 1rem;
         font-size: .8rem;
     }
@@ -363,7 +363,7 @@
     .btn{
         margin: 3rem auto;
     }
-}
+// }
 
 /* Larger than phablet */
 @media (min-width: 550px) {

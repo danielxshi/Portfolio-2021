@@ -146,23 +146,8 @@ function Bosstep(props) {
 
         <ThreeColNotes img1={i1mMG1} img2={i1MG2} img3={i1FriendList} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
 
-        {/* slider neumorphicPb and Sb*/}
-        <section className="sect-last sect-1">
-            <div className="grid-container">
-                <div className="max-col test-slide">
-                    <Slider img1={img43} img2={img43}/>
-                </div>
-
-            </div>
-        </section>
-
         {/* Eighty Module/Research Results */}
         <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={pie} citation={"citation"}/>
-
-        {/* <FourColumnNotesModule img1={critNotes1} img2={critNotes2} img3={critNotes3} img4={critNotes4} citation={"citation"} title={"title"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/> */}
-
-        {/* Fifty Module/Sketch Lrg Overview*/}
-        {/* <ModuleFiftyGRight img={img34} citation={"Sketch Overview"} title={"Field test summary"} p1={dummyText} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/> */}
 
         {/* sect helper */}
         <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={"05"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>

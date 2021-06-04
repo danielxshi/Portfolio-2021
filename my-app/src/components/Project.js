@@ -43,10 +43,10 @@ function Project(props) {
             </section>
 
             {/* Mobile */}
-            <section className="project-details-hero-mobile">
+            <section className={props.mobileBannerContainer}>
                 <div className="sub-container">
                     <div className="mobileBannerBG">
-                        <div className="hero-banner-mobile"></div>
+                        <div className={props.bannerBG}></div>
                     </div>
                     <div className="text-wrapper">
 
@@ -60,9 +60,6 @@ function Project(props) {
                         <p className="rel-margin-bot">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis recusandae repudiandae commodi quaerat, e</p>
                         
                         <a className="sect-last rel-margin-bot black-border-btn primary-btn" href="#">{props.messages.cta}</a>
-                        {/* <div className="img-contain">
-                            <img src={props.mobileBannerDemo} alt="" />
-                        </div> */}
                     </div>
                 </div>
                 

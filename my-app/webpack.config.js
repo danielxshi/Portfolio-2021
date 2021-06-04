@@ -10,12 +10,12 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 const port = process.env.PORT || 8080;
 
 module.exports = {
-    mode: 'production',  
+    mode: 'development',  
     entry: {
         home: './src/index.js',
-        bosstep: './src/Bosstep.js',
-        moment: './src/MomentTrack.js',
-        cliq: './src/Cliq.js'
+        // bosstep: './src/Bosstep.js',
+        // moment: './src/MomentTrack.js',
+        // cliq: './src/Cliq.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -76,11 +76,11 @@ devtool: 'inline-source-map',
         // }),
     ],
     devServer: {
-        // open: true
+        open: true,
         contentBase: './',
         hot: true,
         // inline: true,
         historyApiFallback: true,
-        // watchContentBase: true,
+        watchContentBase: true,
     }
 };
