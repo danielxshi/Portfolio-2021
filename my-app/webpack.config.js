@@ -35,7 +35,7 @@ devtool: 'inline-source-map',
             }
         },
         {
-            test: /\.(png|jpe?g|gif|svg|webp)$/i,
+            test: /\.(pdf|png|jpe?g|gif|svg|webp)$/i,
             type: "asset",
         },
         {

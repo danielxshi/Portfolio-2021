@@ -3,12 +3,14 @@ import BOSSTEP from './images/boss-1000x600.webp';
 import CLIQ from './images/cliq-1000x600.webp';
 import TRACK from './images/track-1000x600.webp';
 import TTA from './images/TTAAnimationCover.webp';
+import resume from './images/danielshi-resume.pdf';
 
 // Import dependencies
 import projectMessages from './components/ProjectMessages.js'
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import React, { useEffect, useRef} from 'react';
+import React, { useEffect, useRef, useState} from 'react';
+import { Document, Page } from 'react-pdf';
 
 const Home = () => {
     let line1 = useRef(null);
@@ -49,7 +51,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="max-col media-links">
-                <a className="black-border-btn primary-btn static-btn" href="#">Resume</a>
+                <a className="black-border-btn primary-btn static-btn" target="_blank" href={resume}>Resume</a>
                 <a className="black-border-btn primary-btn static-btn" href="mailto:danielxshi@hotmail.com">Email</a>
             </div>
         </div>
@@ -218,7 +220,9 @@ const Home = () => {
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
                         <div className="otr-proj img-contain proj-home-grid-def-maintain-w">
-                            <img src={TTA} alt=""/>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=rnj6hVkEDpg">
+                                <img src={TTA} alt=""/>
+                            </a>
                         </div>
                         <h3>Maya Animation - Goku vs Frieza</h3>
                         <p>Janurary 2021 - April 2021</p>
@@ -227,7 +231,9 @@ const Home = () => {
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
                         <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
-                            <img src={TRACK} alt=""/>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=ur-RzX9fNSY">
+                                <img src={TRACK} alt=""/>
+                            </a>
                         </div>
                         <h3>Moment Track</h3>
                         <p>date</p>
