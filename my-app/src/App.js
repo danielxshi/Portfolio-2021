@@ -15,7 +15,7 @@ import img3x4 from './images/placeholder/placeholder-3x4.png'
 
 // Import images
 import bosstepBanner from './images/bosstep-banner-2048x768.webp';
-import cliqBanner from './images/cliq/cliq-banner-2048x768.png';
+import cliqBanner from './images/cliq/cliq-banner-2048x768.webp';
 import momentBanner from './images/track/moment-banner-2048x768.png';
 import mobileBannerDemo from './images/bosstep/mobile-banner-demo.png';
 import mobileCliqBanner from './images/cliq-1000x600.webp';
@@ -39,7 +39,7 @@ import{
   TransitionGroup,
 } from 'react-transition-group';
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -68,7 +68,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <HashRouter>
 
     <ContactModal showModal={showModal} setShowModal={setShowModal} />
       <div className="App">
@@ -77,7 +77,7 @@ function App() {
         <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition
-            key={location.key}
+            key={location.pathname}
             timeout={800}
             classNames="fade"
             unmountOnExit
@@ -105,7 +105,7 @@ function App() {
         )}/>
       </div>
       <Footer/>
-    </Router>
+    </HashRouter>
   );
 }
 

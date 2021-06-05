@@ -10,7 +10,7 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 const port = process.env.PORT || 8080;
 
 module.exports = {
-    mode: 'development',  
+    mode: 'production',  
     entry: {
         home: './src/index.js',
         // bosstep: './src/Bosstep.js',
@@ -76,7 +76,7 @@ devtool: 'inline-source-map',
         // }),
     ],
     devServer: {
-        open: true,
+        // open: true,
         contentBase: './',
         hot: true,
         // inline: true,

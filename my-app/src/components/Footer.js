@@ -1,5 +1,6 @@
 import GIT from '../images/icons/github-brands.png';
 import IG from '../images/icons/instagram-brands.png';
+// import LinkedIn from '../images/icons/linkedin.png';
 import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
 import resume from '../images/danielshi-resume.pdf';
@@ -32,6 +33,9 @@ function Footer() {
                         <a target="_blank" href="https://www.instagram.com/danielxshi/">
                             <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
                         </a>
+                        {/* <a target="_blank" href="https://www.linkedin.com/in/daniel-shi-0833501a0/">
+                            <img height="30" width="30"src={LinkedIn}  alt="Instagram Icon"/>
+                        </a> */}
                     </li>
                 </ul>
             </div>

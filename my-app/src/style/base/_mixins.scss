@@ -1,7 +1,7 @@
 // TODO comments
 /* location and use case */
 
-$shadows-description: 0px 0px 7vw rgba(0, 0, 0, .50);
+$shadows-description: 0px 0px 2vw rgba(0, 0, 0, .50);
 
 @mixin shadows-description ($params-desc) {
     -webkit-box-shadow: $params-desc;
@@ -19,7 +19,7 @@ $shadows: 45px 15px 75px rgba(222, 222, 222, .67) inset, 7px 20px 30px rgba(35, 
 }
 
 
-$shadows-project: 2px 15px 75px rgba(222, 222, 222, .30) inset, 7px 20px 30px rgba(35, 34, 36, 0.62);
+$shadows-project: 2px 15px 75px rgba(222, 222, 222, .20) inset, 7px 20px 30px rgba(35, 34, 36, 0.62);
 
 @mixin shadows-project ($params2) {
     -webkit-box-shadow: $params2;
