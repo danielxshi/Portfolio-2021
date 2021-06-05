@@ -148,6 +148,13 @@ main{
         }
         .otr-proj-1{
             grid-column-start: 1;
+            display: flex;
+            a {
+                vertical-align: top;
+                img {
+                    height: auto;
+                }
+            }
         }
         .sub-container{
             grid-gap: 4em;

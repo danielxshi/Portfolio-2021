@@ -221,7 +221,7 @@ const Home = () => {
                 <h2>More projects 🥳<strong className="highlight-text">_</strong></h2>
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
-                        <div className="otr-proj portfolio-item img-contain proj-home-grid-def-maintain-w">
+                        <div className="otr-proj portfolio-item img-fit proj-home-grid-def-maintain-w">
                             <a target="_blank" href="https://www.youtube.com/watch?v=rnj6hVkEDpg">
                                 <img src={TTA} alt="Top Ten Animation Project Graphic"/>
                             </a>

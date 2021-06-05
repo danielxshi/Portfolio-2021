@@ -306,11 +306,13 @@
 
 
     // Other project section - homepage
-    .otr-proj-spec-wrapper{
-        margin-bottom: 4rem;
+    .otr-proj-2, .otr-proj-3{
         img{
             height: 23rem;
         }
+    }
+    .otr-proj-spec-wrapper{
+        margin-bottom: 4rem;
     }
     .otr-proj-1{
         grid-row-start:1;

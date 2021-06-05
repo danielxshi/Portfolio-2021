@@ -99,9 +99,21 @@ const ModalContent = styled.div`
     width: 100%; 
     left: 0; 
   }
+
+
+  .social-media-wrapper{
+    margin: auto;
+    margin-bottom: 0;
+    p {
+      text-align: center;
+      letter-spacing: 2.5px;
+      user-select: none; 
+    }
+  }
+
   ul{
     margin: auto;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 `;
 
 const CloseModalButton = styled(MdClose)`
@@ -161,19 +173,22 @@ export const ContactModal = ({ showModal, setShowModal }) => {
                 <h1 className="modal-address">
                   <a className="secondary-cta" href="mailto:danielxshi@hotmail.com">danielxshi@hotmail.com</a>
                 </h1>
-                <ul>
-                    <li>
-                        <a target="_blank" href="https://github.com/danielxshi">
-                            <img height="30" width="30" src={GIT} alt="Github Icon"/>
-                        </a>
-                        <a target="_blank" href="https://www.instagram.com/danielxshi/">
-                            <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/daniel-shi-0833501a0/">
-                            <img height="30" width="30"src={LinkedIn}  alt="LinkedIn Icon"/>
-                        </a>
-                    </li>
-                </ul>
+                <div className="social-media-wrapper">
+                  <p>social media</p>
+                  <ul>
+                      <li>
+                          <a target="_blank" href="https://github.com/danielxshi">
+                              <img height="30" width="30" src={GIT} alt="Github Icon"/>
+                          </a>
+                          <a target="_blank" href="https://www.instagram.com/danielxshi/">
+                              <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
+                          </a>
+                          <a target="_blank" href="https://www.linkedin.com/in/daniel-shi-0833501a0/">
+                              <img height="30" width="30"src={LinkedIn}  alt="LinkedIn Icon"/>
+                          </a>
+                      </li>
+                  </ul>
+                </div>
                 <CloseModalButton
                   aria-label='Close modal'
                   onClick={() => setShowModal(prev => !prev)}
