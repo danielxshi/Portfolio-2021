@@ -228,7 +228,7 @@ const Home = () => {
                         </div>
                         <h3>
                             <div className="underscore-cta">
-                                <a className="">
+                                <a href="https://www.youtube.com/watch?v=rnj6hVkEDpg">
                                     Maya Animation - Goku vs Frieza
                                 </a>
                             </div>
@@ -244,7 +244,7 @@ const Home = () => {
                         </div>
                         <h3>
                             <div className="underscore-cta">
-                                <a className="">
+                                <a href="https://www.youtube.com/watch?v=PAtd3-VlaaU">
                                     The Main Event 2019
                                 </a>
                             </div>
@@ -260,7 +260,7 @@ const Home = () => {
                         </div>
                         <h3>
                             <div className="underscore-cta">
-                                <a className="">
+                                <a href="https://youtu.be/yjXwb3fFqHA">
                                     Team Phantom
                                 </a>
                             </div>

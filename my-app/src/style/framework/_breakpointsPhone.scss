@@ -308,6 +308,9 @@
     // Other project section - homepage
     .otr-proj-spec-wrapper{
         margin-bottom: 4rem;
+        img{
+            height: 23rem;
+        }
     }
     .otr-proj-1{
         grid-row-start:1;
@@ -357,7 +360,7 @@
     }
 
     .btn{
-        margin: 3rem auto;
+        margin: auto 0 auto 1rem;
     }
 
 
