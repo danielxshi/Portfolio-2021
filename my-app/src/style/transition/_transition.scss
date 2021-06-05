@@ -1,0 +1,77 @@
+
+// /* advanced - enter transition 800ms, exit 150ms */
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+    // transform: translateY(-10px);
+}
+.fade-appear p,
+.fade-enter p {
+//   transform: translateY(-5px);
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
+}
+.fade-appear-active p,
+.fade-enter.fade-enter-active p {
+  transform: translateY(0);
+  opacity: 1;
+}
+.fade-appear-active p:nth-child(2),
+.fade-enter.fade-enter-active p:nth-child(2) {
+  transition: opacity 300ms linear 300ms, transform 300ms ease-out 300ms;
+}
+.fade-appear-active p:nth-child(3),
+.fade-enter.fade-enter-active p:nth-child(3) {
+  transition: opacity 300ms linear 400ms, transform 300ms ease-out 400ms;
+}
+.fade-appear-active p:nth-child(4),
+.fade-enter.fade-enter-active p:nth-child(4) {
+  transition: opacity 300ms linear 500ms, transform 300ms ease-out 500ms;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    // transform: translateY(-10px);
+    transition: opacity 150ms linear, transform 400ms ease-in;
+}
+
+.active{
+  color: $white;
+}
+
+// Portfolio transition
+
+.portfolio-item{
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.portfolio-thumb {
+    overflow: hidden;
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.portfolio-thumb img {
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.3, 1);
+    transform-origin: 90% center;
+}
+
+.portfolio-item:hover .portfolio-thumb {
+    transform: translateX(1.25rem);
+}
+
+.portfolio-item:hover .portfolio-thumb img {
+    transform: scale(1.1);
+}

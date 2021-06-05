@@ -86,8 +86,8 @@ const Home = () => {
             </div>
             <div className="max-col row-start-1">
                 <div className="grid-container red-tab">
-                    <div className="img-contain proj-home-grid-def">
-                        <Link to='/bosstep' exact>
+                    <div className="portfolio-item img-contain proj-home-grid-def">
+                        <Link className="portfolio-thumb" to='/bosstep' exact>
                             <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/> 
                         </Link>
                     </div>
@@ -124,8 +124,8 @@ const Home = () => {
             </div>
             <div className="max-col row-start-1">
                 <div className="grid-container green-tab">
-                    <div className="img-contain proj-home-grid-def">
-                        <Link to='/cliq' exact>
+                    <div className="portfolio-item img-contain proj-home-grid-def">
+                        <Link className="portfolio-thumb" to='/cliq' exact>
                             <img alt="CLIQ Project Graphic" src={CLIQ}/> 
                         </Link>
                     </div>
@@ -161,7 +161,7 @@ const Home = () => {
             </div>
             <div className="max-col row-start-1">
                 <div className="grid-container blue-tab">
-                    <div className="img-contain proj-home-grid-def">
+                    <div className="portfolio-item img-contain proj-home-grid-def">
                         {/* <Link to='/track' exact> */}
                             <img alt="Track Project Graphic" src={TRACK}/> 
                         {/* </Link> */}
@@ -221,7 +221,7 @@ const Home = () => {
                 <h2>More projects 🥳<strong className="highlight-text">_</strong></h2>
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
-                        <div className="otr-proj img-contain proj-home-grid-def-maintain-w">
+                        <div className="otr-proj portfolio-item img-contain proj-home-grid-def-maintain-w">
                             <a target="_blank" href="https://www.youtube.com/watch?v=rnj6hVkEDpg">
                                 <img src={TTA} alt="Top Ten Animation Project Graphic"/>
                             </a>
@@ -237,7 +237,7 @@ const Home = () => {
                         <p><strong>Role</strong> - rigging, sequencing, editing and sound design.</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
-                        <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
+                        <div className="otr-proj-1 otr-proj portfolio-item img-contain proj-home-grid-def-maintain-w">
                             <a target="_blank" href="https://www.youtube.com/watch?v=PAtd3-VlaaU">
                                 <img src={MainEvent} alt="The Main Event GIF"/>
                             </a>
@@ -253,7 +253,7 @@ const Home = () => {
                         <p><strong>Role</strong> - videographer</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-3">
-                        <div className="otr-proj-1 otr-proj img-contain proj-home-grid-def-maintain-w">
+                        <div className="otr-proj-1 otr-proj portfolio-item img-contain proj-home-grid-def-maintain-w">
                             <a target="_blank" href="https://youtu.be/yjXwb3fFqHA">
                                 <img src={TeamPhantom} alt="Team Phantom GIF"/>
                             </a>
