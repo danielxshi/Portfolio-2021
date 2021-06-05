@@ -76,7 +76,7 @@ devtool: 'inline-source-map',
         // }),
     ],
     devServer: {
-        open: true,
+        // open: true,
         contentBase: './',
         hot: true,
         // inline: true,
