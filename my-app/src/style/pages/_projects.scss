@@ -19,11 +19,11 @@
 
 .details-container {
     .grid-container{
-        row-gap: $sect-spacer;
+        row-gap: $rel-margin;
     }
     .proj-info-wrapper{
         @include box-shadow($shadows);
-        padding: $sect-spacer 0;
+        // padding: $sect-spacer 0;
     }
     .project-text-wrapper{
         grid-column-end: 8;

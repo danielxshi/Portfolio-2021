@@ -285,7 +285,10 @@
                 } 
             }
             .sub-details-wrapper{
-                margin-bottom: 3rem;
+                margin-bottom: $rel-margin;
+            }
+            .sub-details-wrapper:last-child{
+                margin-bottom: 0;
             }
         }
     }
