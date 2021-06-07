@@ -20,6 +20,7 @@ function Project(props) {
                             <p>{props.messages.category}</p>
                         </div>
                         <div className="project-description-wrapper">
+                            <h3>Description</h3>
                             <p>{props.messages.description}</p>
                         </div>
                         <div className="details-wrapper">
@@ -37,7 +38,7 @@ function Project(props) {
                             </div>
                         </div>
                         
-                        <Link className="black-border-btn primary-btn" to='/bosstep'>{props.messages.cta}</Link>
+                        <a className="black-border-btn primary-btn" target="_blank" href={props.demo}>{props.messages.cta}</a>
                     </div>
                 </div>
             </section>
@@ -57,13 +58,13 @@ function Project(props) {
                             <h1 className="project-details-h1">Title</h1>
                             <p>Game</p>
                         </div>
-                        <p className="rel-margin-bot">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis recusandae repudiandae commodi quaerat, e</p>
+                        <h3>Description</h3>
+                        <p className="rel-margin-bot">{props.messages.description}</p>
                         
-                        <a className="sect-last rel-margin-bot black-border-btn primary-btn" href="#">{props.messages.cta}</a>
+                        <a className="sect-last rel-margin-bot black-border-btn primary-btn" target="_blank" href={props.demo}>{props.messages.cta}</a>
                     </div>
                 </div>
                 
-                {/* neumorphic section */}
                 <div className="sub-container details-container">
                     <div className="proj-info-wrapper">
                         <div className="grid-container">

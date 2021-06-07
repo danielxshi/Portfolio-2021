@@ -12,8 +12,9 @@
 const bosstepMessages = {
     title: "Bosstep",
     category: "Game",
-    description: "Gamified exercise app geared towards kids who can choose heroes to play",
-    role: "Website Development, UX/UI design, A/B Testing",
+    description: "BOSSTEP was a 6 week concept application designed for the childrens health sector. The project aimed to inspire physical activity with gamified features of minigames unlocked through physical activity, collecting characters and unlocking achievements.",
+    overview: "Gamified exercise app geared towards kids who can choose heroes to play",
+    role: "Website Development, Mobile Application UX/UI design, User Research, Field testing",
     date: "Fall 2020",
     cta: "VIEW WEBSITE",
     team: "Yuanyu Zhou, Anne Duong, Laura Reyerse, Sung Bong Kim, Seon Jeong"
@@ -23,7 +24,7 @@ const cliqMessages = {
     title: "CLIQ",
     category: "E-Commerce",
     description: "An e-commerce website curated for mechanical keyboard newcomers and enthusiasts",
-    role: "Sketch, Wireframe, Website Development",
+    role: "Website Development, UX/UI design",
     date: "",
     cta: "VIEW WEBSITE",
     team: "Spring 2021"
@@ -33,7 +34,7 @@ const trackMessages = {
     title: "Moment Track",
     category: "Mobile App",
     description: "A battery monitoring application for users off-grid",
-    role: "Wireframe, UX/UI design, User Research, Ethnography Study, Journey Mapping",
+    role: "Mobile Application UX/UI design, User Research",
     date: "",
     cta: "TRY DEMO",
     team: "Spring 2021"

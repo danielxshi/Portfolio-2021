@@ -95,7 +95,7 @@ const Home = () => {
                         <div className="sub-container">
                             <div className="title-wrapper desktop-project-header">
                                 <h2>{projectMessages.bosstep.title}</h2>
-                                <p>{projectMessages.bosstep.description}</p>
+                                <p>{projectMessages.bosstep.overview}</p>
                             </div>
                             <div className="contribution-wrapper-r rel-margin-bot">
                                 <h3>Role:</h3>

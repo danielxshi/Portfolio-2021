@@ -85,7 +85,7 @@ function App() {
               <Switch location={location}>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/bosstep" >
-                  <Project mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} bannerBG={"hero-banner-mobile-bosstep hero-banner-mobile"} messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} banner={bosstepBanner} />
+                  <Project demo={"https://danielxshi.github.io/IAT334-Bosstep-r1/"} mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} bannerBG={"hero-banner-mobile-bosstep hero-banner-mobile"} messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} banner={bosstepBanner} />
                   <Bosstep/>
                 </Route>
                 <Route path="/cliq" >
