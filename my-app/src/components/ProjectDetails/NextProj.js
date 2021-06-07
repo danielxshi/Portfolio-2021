@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from "react-router-dom";
 
 function NextProj(props) {
     return (
@@ -9,8 +10,10 @@ function NextProj(props) {
                     <h2>Next project <strong className="highlight-text">_</strong></h2>
                 </div>
                 <div className="anchor-80-right">
-                    <div className="img-fit">
-                        <img src={props.img} alt={props.alt} />
+                    <div className="portfolio-item img-fit">
+                        <Link className="portfolio-thumb" to={props.link} exact>
+                            <img src={props.img} alt={props.alt} />
+                        </Link>
                     </div>
                 </div>
             </div>

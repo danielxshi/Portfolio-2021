@@ -171,7 +171,7 @@ function Bosstep(props) {
         <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
         {/* Next project */}
-        <NextProject img={nextProj}/>
+        <NextProject link={"/cliq"} img={nextProj}/>
         </main>
     );
 }
