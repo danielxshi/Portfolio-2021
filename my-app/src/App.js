@@ -89,7 +89,7 @@ function App() {
                   <Bosstep/>
                 </Route>
                 <Route path="/cliq" >
-                  <Project mobileBannerContainer={"project-details-hero-mobile cliq-mobile-container"} bannerBG={"hero-banner-mobile-cliq hero-banner-mobile"} messages={projectMessages.cliq} mobileBannerDemo={mobileCliqBanner} banner={cliqBanner} />
+                  <Project demo={"https://danielxshi.github.io/IAT-339-Ecommerce-Website/"} mobileBannerContainer={"project-details-hero-mobile cliq-mobile-container"} bannerBG={"hero-banner-mobile-cliq hero-banner-mobile"} messages={projectMessages.cliq} mobileBannerDemo={mobileCliqBanner} banner={cliqBanner} />
                   <Cliq/>
                 </Route>
                 <Route exact path="/track" >

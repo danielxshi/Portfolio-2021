@@ -9,7 +9,7 @@ function CenterModule(props) {
                     <h2>{props.title} <strong className="highlight-text">_</strong></h2>
                     <p>{props.text}</p>
                     <p><strong>{props.org}</strong></p>
-                    <a href={props.href} className="primary-btn black-border-btn">
+                    <a target="_blank" href={props.href} className="primary-btn black-border-btn">
                         {props.btnTitle}
                     </a>
                 </div>

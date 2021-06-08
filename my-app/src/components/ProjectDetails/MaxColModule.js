@@ -13,7 +13,7 @@ function MaxColModule(props) {
                     <div className="sub-container grid-col-space">
                         <h2 className="anchor-left-subheader">{props.title}<strong className="highlight-text">_</strong></h2>
                         <div className="anchor-80-right">
-                            <p>{props.p1}</p>
+                            <p className="rel-margin-bot">{props.p1}</p>
                             <p>{props.p2}</p>
                         </div>
                     </div>

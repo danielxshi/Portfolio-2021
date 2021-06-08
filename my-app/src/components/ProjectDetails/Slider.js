@@ -4,7 +4,7 @@ import SliderContent from "../../components/ProjectDetails/SliderContent"
 
 
 function Slider(props){
-  let sliderArr = [<SliderContent src={props.img1}></SliderContent>, <SliderContent src={props.img2}></SliderContent>,<SliderContent src={props.img1}></SliderContent>,<SliderContent src={props.img1}></SliderContent>,<SliderContent src={props.img1}></SliderContent>];
+  let sliderArr = [<SliderContent src={props.img1}></SliderContent>, <SliderContent src={props.img2}></SliderContent>];
   const [state, setState] = useState({
     activeIndex: 0
   })
