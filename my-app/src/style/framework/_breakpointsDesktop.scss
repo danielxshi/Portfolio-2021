@@ -158,15 +158,23 @@
         }
     }
 
-    .grid-container, .footer-grid-container{
-        // max-width: 75vw;
-        max-width: 1240px;
-    }
-
     .modal-address{
         a {
             font-size: 4rem;
         }
     }
+
+    .grid-container, .footer-grid-container{
+        max-width: 75vw;
+    }
 }
 
+
+@media (min-width: 1400px) {
+
+    .grid-container, .footer-grid-container{
+        // max-width: 75vw;
+        max-width: 1240px;
+    }
+
+}

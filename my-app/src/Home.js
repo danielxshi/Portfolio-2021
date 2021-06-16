@@ -6,15 +6,24 @@ import TTA from './images/TTAAnimationCover.webp';
 import MainEvent from './images/mainevent.gif';
 import TeamPhantom from './images/teamphantom.gif';
 import resume from './images/danielshi-resume.pdf';
+import smallBosstep from './images/bosstep/bosstep300w.jpg';
+import smallCliq from './images/cliq/cliq300w.jpg';
+import lrgCliq from './images/cliq/cliq1000w.jpg';
+import lrgTrack from './images/track/track1000w.jpg';
+import smallTrack from './images/track/track300w.jpg';
+
 
 // Import dependencies
 import projectMessages from './components/ProjectMessages.js'
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import React, { useEffect, useRef, useState} from 'react';
-import { Document, Page } from 'react-pdf';
+import React, { useEffect, useRef} from 'react';
+
+
+
 
 const Home = () => {
+
     let line1 = useRef(null);
     let line2 = useRef(null);
     let line3 = useRef(null);
@@ -29,7 +38,9 @@ const Home = () => {
             }
         })
     }, [line1, line2]);
+
     return (
+        
 
     <main className="landing-pg">
     <div className="intro-wrapper">
@@ -83,11 +94,15 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-col row-start-1">
+            <div className="max-bleed row-start-1">
                 <div className="grid-container red-tab">
                     <div className="portfolio-item img-contain proj-home-grid-def">
                         <Link className="portfolio-thumb" to='/bosstep' exact>
-                            <img alt="BOSSTEP Project Graphic" src={BOSSTEP}/> 
+                            <picture>
+                                <source srcset={BOSSTEP} media="(min-width: 800px)" />
+                                <source srcset={smallBosstep} media="(min-width: 400px)" />
+                                <img src={smallBosstep} />
+                            </picture>
                         </Link>
                     </div>
                     <div className="project-description">
@@ -100,9 +115,8 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.bosstep.role}</p>
                             </div>
-                            <Link className="white-border-btn primary-btn" to='/bosstep'>View Process</Link>
+                            <Link className="home-border-btn primary-btn" to='/bosstep'>View Process</Link>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -121,11 +135,15 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-col row-start-1">
+            <div className="max-bleed row-start-1">
                 <div className="grid-container green-tab">
                     <div className="portfolio-item img-contain proj-home-grid-def">
                         <Link className="portfolio-thumb" to='/cliq' exact>
-                            <img alt="CLIQ Project Graphic" src={CLIQ}/> 
+                            <picture>
+                                <source srcset={lrgCliq} media="(min-width: 800px)" />
+                                <source srcset={smallCliq} media="(min-width: 400px)" />
+                                <img src={smallCliq} />
+                            </picture>
                         </Link>
                     </div>
                     <div className="project-description">
@@ -138,7 +156,7 @@ const Home = () => {
                                 <h3>Role:</h3>
                                 <p>{projectMessages.cliq.role}</p>
                             </div>
-                            <Link className="white-border-btn primary-btn" to='/cliq'>View Process</Link>
+                            <Link className="home-border-btn primary-btn" to='/cliq'>View Process</Link>
                         </div>
                     </div>
                 </div>
@@ -158,11 +176,15 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-col row-start-1">
+            <div className="max-bleed row-start-1">
                 <div className="grid-container blue-tab">
                     <div className="portfolio-item img-contain proj-home-grid-def">
                         {/* <Link to='/track' exact> */}
-                            <img alt="Track Project Graphic" src={TRACK}/> 
+                            <picture>
+                                <source srcset={lrgTrack} media="(min-width: 800px)" />
+                                <source srcset={smallTrack} media="(min-width: 400px)" />
+                                <img src={smallTrack} />
+                            </picture>
                         {/* </Link> */}
                     </div>
                     <div className="project-description">
