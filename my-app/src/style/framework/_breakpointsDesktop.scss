@@ -72,15 +72,15 @@
 
     }
     .project-description{
-        grid-column-end: 13;
-        grid-row-start: 1;
-        grid-column-start: 7;
-    }
-
-    .proj-home-grid-def{
         grid-column-start: 1;
         grid-column-end: 7;
         grid-row-start: 1;
+    }
+
+    .proj-home-grid-def{
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-column-start: 7;
     }
 
 
@@ -129,7 +129,7 @@
 
     .intro-wrapper{
         h1{      
-            font-size: 6.5rem;
+            font-size: 5rem;
         }
     }
 
@@ -137,17 +137,17 @@
     // Color stripe - homepage
     .color-stripe-container-1{
         grid-row-start: 1;
-        grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-start: 13;
+        grid-column-end: 8;
         height: 100%;
         display: flex;
     }
     .color-stripe-container-2 {
         grid-row-start: 1;
-        grid-column-start: 6;
-        grid-column-end: 13;
         height: 100%;
         display: flex;
+        grid-column-start: 1;
+        grid-column-end: 7;
         z-index: 1;
     }
 

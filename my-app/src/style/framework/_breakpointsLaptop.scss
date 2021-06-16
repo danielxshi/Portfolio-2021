@@ -32,10 +32,10 @@
             }
         }
     }
+    .neu-shadow{
+        @include shadows-project($shadows-project);
+    }
     .project{
-        .grid-container{
-            @include shadows-project($shadows-project);
-        }
         .blue-tab{
             background: #262935;
         }

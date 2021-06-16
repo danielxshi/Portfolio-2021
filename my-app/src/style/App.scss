@@ -3,6 +3,10 @@
 @import '../style/base/mixins.scss';
 
 // === Intro banner
+.uppercase{
+    text-transform: uppercase;
+}
+
 main{
     overflow-x: hidden;
 }
@@ -50,24 +54,6 @@ main{
 .hero-banner{
     height: 60vh;
 }
-
-// .project{
-//     .grid-container{
-//         @include shadows-project($shadows-project);
-//     }
-//     .blue-tab{
-//         background: #262935;
-//     }
-//     .red-tab{
-//         background: #352633;
-//     }
-//     .green-tab{
-//         background: #263527;
-//     }
-//     .max-col{
-//         display: flex;
-//     }
-// }
 
 .project{
     .grid-container{
