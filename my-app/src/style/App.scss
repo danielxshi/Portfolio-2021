@@ -3,6 +3,11 @@
 @import '../style/base/mixins.scss';
 
 // === Intro banner
+.neumorphic-section{
+    @include box-shadow($shadows);
+    padding: 20vh 0 10vh 0;
+}
+
 .uppercase{
     text-transform: uppercase;
 }
@@ -161,7 +166,7 @@ main{
 
 .color-stripe-container-2 {
     grid-row-start: 1;
-    grid-column-start: 6;
+    grid-column-start: 4;
     grid-column-end: 13;
     height: 100%;
     display: flex;

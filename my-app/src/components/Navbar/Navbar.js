@@ -23,9 +23,6 @@ class Navbar extends Component {
                         </div>
                         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                             {MenuItems.map((item, index) => {
-                                if (item.url === URL) {
-                                    console.log(item);
-                                }
                                 return(
                                     <li key={index}>
                                         <NavLink exact path={item.url} activeClassName="active" className={item.cName} to={item.url}>

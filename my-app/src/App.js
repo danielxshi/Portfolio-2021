@@ -10,8 +10,6 @@ import { GlobalStyle } from './components/globalStyles';
 // Import Messages
 import projectMessages from './components/ProjectMessages.js'
 
-//Import placeholder
-import img3x4 from './images/placeholder/placeholder-3x4.png'
 
 // Import images
 import bosstepBanner from './images/bosstep-banner-2048x768.webp';

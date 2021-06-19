@@ -10,7 +10,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: $grid-gap;
+    // gap: $grid-gap;
     width: 100%;
     margin: 0 auto;
     height: inherit;
@@ -42,7 +42,16 @@
     width: 100%;
     margin: 0 auto;
     height: inherit;
-    gap: $grid-gap;
+}
+
+.grid-container-card{
+    width: fit-content;
+    padding: 2rem 3rem;
+    grid-gap: 2rem;
+}
+
+.grid-gap-add{
+    grid-gap: $grid-gap;
 }
 
 .glass-border-padding{
@@ -59,7 +68,7 @@
 }
 
 .max-bleed{
-    grid-column-start: 1;
+    grid-column-start: 3;
     grid-column-end: -1;
 }
 

@@ -6,7 +6,26 @@
 /* Larger than mobile */
 // @media (min-width: 300px){
 
+
+
+
+
+
     // Modules ====================
+    .project-mobile-module{
+        display: grid;
+    }
+    .project-desktop-module{
+        display: none;
+    }
+    .span-3{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .about-wrapper{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
     .color-stripe-container-1{
         display: none;
     }
@@ -101,7 +120,7 @@
         }
     }
     .sub-container{
-        gap: 0.5em;
+        // gap: 0.5em;
     }
     .project-description {
         grid-column-start: 2;
@@ -123,9 +142,6 @@
     }
     .project-details-hero-mobile{
         display: block;
-    }
-    .text-banner-desktop{
-        display: none;
     }
     .nav-menu{
         grid-column-end: 12;

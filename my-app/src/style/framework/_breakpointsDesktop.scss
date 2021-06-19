@@ -3,6 +3,34 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+    .section-title{
+        margin-bottom: 10vh;
+        font-size: 5rem;
+    }
+
+    .neu-shadow{
+        @include shadows-project($shadows-project);
+    }
+    .project{
+        .blue-tab{
+            background: #262935;
+        }
+        .red-tab{
+            background: #352633;
+        }
+        .green-tab{
+            background: #263527;
+        }
+        .max-col{
+            display: flex;
+        }
+    }
+    .project-mobile-module{
+        display: none;
+    }
+    .project-desktop-module{
+        display: grid;
+    }
     .anch-80{
         // !Rename, span-50 is not implied here
         .span-50{
@@ -129,7 +157,7 @@
 
     .intro-wrapper{
         h1{      
-            font-size: 5rem;
+            font-size: 7rem;
         }
     }
 
@@ -146,8 +174,8 @@
         grid-row-start: 1;
         height: 100%;
         display: flex;
-        grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-start: 3;
+        grid-column-end: 9;
         z-index: 1;
     }
 
@@ -167,6 +195,38 @@
     .grid-container, .footer-grid-container{
         max-width: 75vw;
     }
+
+    .project-description{
+        color: $white;
+        border-radius: .5rem;
+        @include shadows-description($shadows-description);
+        padding: 3rem 0;
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+        background: none;
+        z-index: 1;
+        .sub-container{
+            .title-wrapper{
+                grid-row-start: 1;
+                grid-row-end: 1;
+                grid-column-start: 2;
+                grid-column-end: 12;
+            }
+            .contribution-wrapper-r{
+                grid-row-start: 2;
+                grid-column-start: 2;
+                grid-column-end: 12;
+                h3{
+                    margin-top: 1rem;
+                }
+            }
+            .primary-btn, .disable-btn{
+                grid-row-start: 3;
+                grid-column-start: 2;
+                grid-column-end: 12;
+            }
+        }
+    }
 }
 
 
@@ -174,7 +234,24 @@
 
     .grid-container, .footer-grid-container{
         // max-width: 75vw;
-        max-width: 1240px;
+        // max-width: 1240px;
+    }
+    .neu-shadow{
+        @include shadows-project($shadows-project);
+    }
+    .project{
+        .blue-tab{
+            background: #262935;
+        }
+        .red-tab{
+            background: #352633;
+        }
+        .green-tab{
+            background: #263527;
+        }
+        .max-col{
+            display: flex;
+        }
     }
 
 }

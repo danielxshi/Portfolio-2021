@@ -43,7 +43,6 @@
 
 .fade-exit.fade-exit-active {
     opacity: 0;
-    // transform: translateY(-10px);
     transition: opacity 150ms linear, transform 400ms ease-in;
 }
 
