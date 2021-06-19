@@ -24,6 +24,7 @@
 .nav-logo{
     height: inherit;
     grid-column-end: 6;
+    grid-column-start: 2;
 }
 
 .fa-react{
@@ -34,6 +35,7 @@
 
 // ! Move to breakpoints
 .nav-menu{
+    grid-column-end: 12;
     grid-column-start: 6;
     justify-content: flex-end;
     li:last-child{

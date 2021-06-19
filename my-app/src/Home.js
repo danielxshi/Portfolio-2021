@@ -15,6 +15,28 @@ import About from './components/Home/AboutModule';
 import ProjectCard from './components/Home/ProjectCard';
 import DesktopProjectCard from './components/Home/DesktopProjectCard';
 
+// Import placeholders
+import img34 from './images/placeholder/placeholder-3x4.png';
+import img43 from './images/placeholder/placeholder-4x3.png';
+import img2x1 from './images/placeholder/placeholder-2x1.png';
+import imgProf from './images/placeholder/placeholder-prof-1x1.png';
+import imgVid from './images/placeholder/video-placeholder.png';
+import imgVid1x1 from './images/placeholder/vid-1x1.png';
+
+// Import test images
+import t1 from './images/TestImages/dubai.png';
+import t2 from './images/TestImages/announcer.jpg';
+import t3 from './images/TestImages/rianna.jpg';
+import t4 from './images/TestImages/yvr.JPG';
+import t5 from './images/TestImages/sfu-night.png';
+import t6 from './images/TestImages/sfu-day.jpg';
+import t7 from './images/TestImages/tunnel.jpg';
+
+
+
+
+
+
 // Import dependencies
 import projectMessages from './components/ProjectMessages.js'
 import { gsap } from "gsap";
@@ -81,22 +103,23 @@ const Home = () => {
     
 
     <section>
-        {/* <div className="grid-container section-title-wrapper">
-            <div className="max-col">
+        <div className="grid-container section-title-wrapper">
+            <div className="max-bleed">
                 <h2 className="section-title">Projects<strong className="highlight-text">_</strong></h2>
             </div>
-        </div> */}
+        </div>
         
+    
     <DesktopProjectCard 
-        lrgGraphic={smallBosstep} 
-        smGraphic={smallBosstep} 
-        alt={"BOSSTEP Graphic"} 
-        title={projectMessages.bosstep.title} 
-        overview={projectMessages.bosstep.overview} 
-        role={projectMessages.bosstep.role}
+        lrgGraphic={smallCliq} 
+        smGraphic={smallCliq} 
+        alt={"CLIQ graphic"} 
+        title={projectMessages.cliq.title} 
+        overview={projectMessages.cliq.description} 
+        role={projectMessages.cliq.role}
         color={'color-stripe-red'} 
         linkTo={'/bosstep'}
-        tabColor={"red-tab"}
+        tabColor={"red-tab"} 
     />
     
     <DesktopProjectCard 
@@ -160,6 +183,67 @@ const Home = () => {
     />
     </section>
 
+    <section className="photo-grid grid-container project-spacer">
+        <div className="max-bleed">
+            <h2 className="home-sub-heading">Photo<strong className="highlight-text">_</strong></h2>
+            <div className="sub-container grid-gap-add">
+                <div className="max-col">
+                    <div className="img-fit">
+                        <img src={t1} alt="" />
+                    </div>
+                </div>
+                <div className="span-50">
+                    <div className="img-fit">
+                        <img src={t6} alt="" />
+                    </div>
+                </div>
+                <div className="span-50">
+                    <div className="img-fit">
+                        <img src={t4} alt="" />
+                    </div>
+                </div>
+                <div className="span-50">
+                    <div className="img-fit">
+                        <img src={t5} alt="" />
+                    </div>
+                </div>
+                <div className="span-50">
+                    <div className="img-fit">
+                        <img src={t2} alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* <section className="photo-grid grid-container project-spacer">
+        <div className="max-bleed">
+            <h2 className="home-sub-heading">Photo and Video<strong className="highlight-text">_</strong></h2>
+            <div className="sub-container grid-gap-add">
+                <div className="max-col">
+                    <div className="img-fit">
+                        <img src={img43} alt="" />
+                    </div>
+                </div>
+                <div className="max-col">
+                    <div className="img-fit">
+                        <img src={img43} alt="" />
+                    </div>
+                </div>
+                <div className="span-50">
+                    <div className="img-fit">
+                        <img src={img34} alt="" />
+                    </div>
+                </div>
+                <div className="span-50">
+                    <div className="img-fit">
+                        <img src={imgProf} alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> */}
+
     <About/>
 
     <section className="project-1 otr-proj-sect">
@@ -214,7 +298,6 @@ const Home = () => {
                         </h3>
                         <p>Janurary 2021 - April 2021</p>
                         <p><strong>Role</strong> - cinematographer and colorist</p>
-                        {/* <p>Four month documentary of Team Phantom's eletric race car design journey</p> */}
                     </div>
                 </div>
             </div>

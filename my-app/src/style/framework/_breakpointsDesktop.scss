@@ -51,7 +51,7 @@
     footer{
         height: auto;
         .footer-email-wrapper{
-            grid-column-start: 1;
+            grid-column-start: 2;
             grid-row-start: 1;
             grid-column-end: span 3;
         }
@@ -174,16 +174,9 @@
         grid-row-start: 1;
         height: 100%;
         display: flex;
-        grid-column-start: 3;
+        grid-column-start: 4;
         grid-column-end: 9;
         z-index: 1;
-    }
-
-
-    .project{
-        .grid-container{
-            padding: 2rem 3rem;
-        }
     }
 
     .modal-address{
@@ -193,7 +186,7 @@
     }
 
     .grid-container, .footer-grid-container{
-        max-width: 75vw;
+        // max-width: 75vw;
     }
 
     .project-description{
