@@ -103,7 +103,7 @@ const Home = () => {
     
 
     <section>
-        <div className="grid-container section-title-wrapper">
+        <div className="grid-container section-title-wrapper grid-gap-add">
             <div className="max-bleed">
                 <h2 className="section-title">Projects<strong className="highlight-text">_</strong></h2>
             </div>
@@ -249,7 +249,7 @@ const Home = () => {
     <section className="project-1 otr-proj-sect">
         <div className="grid-container">
             <div className="max-bleed">
-                <h2 className="home-sub-heading">More projects 🥳<strong className="highlight-text">_</strong></h2>
+                <h2 className="section-title">More projects 🥳<strong className="highlight-text">_</strong></h2>
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
                         <div className="otr-proj portfolio-item img-fit proj-home-grid-def-maintain-w">

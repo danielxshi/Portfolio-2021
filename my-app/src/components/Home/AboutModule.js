@@ -12,7 +12,7 @@ function AboutModule() {
                             </div>
                         </div>
                         <div className="about-wrapper">
-                            <h2 className="home-sub-heading rel-margin-bot">I am<strong className="highlight-text ">_</strong></h2>
+                            <h2 className="section-title rel-margin-bot">I am<strong className="highlight-text ">_</strong></h2>
                             <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University, in pursuit of a Bachelors of Science with a focus in <strong className="highlight-text">Design</strong>.</p>
                             <p className="rel-margin-bot">Presently, learning REACT and Framer Motion through online tutorials and in my freetime I <strong className="highlight-text">freelance </strong> photography and videography.</p>
                         </div>
@@ -21,7 +21,7 @@ function AboutModule() {
                 <div className="max-bleed">
                     <div className="sub-container">
                         <div className="about-wrapper">
-                            <h2 className="home-sub-heading rel-margin-bot">Noteable Achievements<strong className="highlight-text">_</strong></h2>
+                            <h2 className="section-title rel-margin-bot">Noteable Achievements<strong className="highlight-text">_</strong></h2>
                             <div className="anchor-80-left rel-margin-bot">
                                 <p><strong>President's Honour Roll SFU</strong> - June 18, 2020</p>
                                 <p>Maintained a minimum TGPA of 4.00 in Spring 2020 with at least 12 units counted towards the grade point average.</p>

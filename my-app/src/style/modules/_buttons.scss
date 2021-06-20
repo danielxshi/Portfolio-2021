@@ -69,6 +69,19 @@ a{
         color: $white;
     }
     &:hover{
-        color: $white;
+        cursor: pointer;
+    }
+}
+
+
+
+footer {
+    a{
+        &:active{
+            color: $white;
+        }
+        &:hover{
+            color: $white;
+        }
     }
 }

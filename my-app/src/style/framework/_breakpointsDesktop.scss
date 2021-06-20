@@ -110,11 +110,6 @@
         grid-row-start: 1;
         grid-column-start: 7;
     }
-
-
-    .nav-menu{    
-        grid-column-end: 13;
-    }
     .max-col{
         grid-column-start: 1;
         grid-column-end: -1;
@@ -122,9 +117,6 @@
     .primary-btn, .disable-btn{
         padding: 12px 48px;
         font-size: .9rem;
-    }
-    .nav-logo{
-        grid-column-start: 1;
     }
     .about-section{
         h2{

@@ -24,6 +24,7 @@ import Home from "./Home";
 import Project from "./components/Project";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar/Navbar.js";
+import DesktopNavbar from "./components/Navbar/DesktopNav";
 
 // Import Pages
 import Bosstep from "./Bosstep.js";
@@ -71,7 +72,8 @@ function App() {
     <ContactModal showModal={showModal} setShowModal={setShowModal} />
       <div className="App">
         <ScrollToTop/>
-        <Navbar onClick={openModal}/>
+        <DesktopNavbar onClick={openModal}/>
+        {/* <Navbar onClick={openModal}/> */}
         <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition

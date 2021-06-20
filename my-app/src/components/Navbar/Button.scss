@@ -10,13 +10,12 @@
     cursor: pointer;
     background: none;
     font-size: 1rem;
-    color: $grey;
+    color: $sprite-text;
 }
 
 .btn:hover{
     transition: all 0.3s ease-out;
     transition: 250ms;
-    color: $white;
 }
 
 .btn--primary{
@@ -24,14 +23,14 @@
     transition: all 0.3s ease-out;
 }
 
-.underscore-cta{
+.underscore-cta, .contactModal{
     cursor: pointer;
-    a{
+    a, .contactModal{
         color: $sprite-text;
         display: inline-block;
         position: relative;
     }
-    a:after{
+    a:after, .contactModal:after{
         transition: 0.25s ease-in-out;       
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
@@ -44,7 +43,7 @@
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
       }
-      a:hover:after{
+      a:hover:after, .contactModal:hover:after{
         width: 100%; 
         left: 0; 
       }
