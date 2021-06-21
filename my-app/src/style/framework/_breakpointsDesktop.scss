@@ -25,12 +25,6 @@
             display: flex;
         }
     }
-    .project-mobile-module{
-        display: none;
-    }
-    .project-desktop-module{
-        display: grid;
-    }
     .anch-80{
         // !Rename, span-50 is not implied here
         .span-50{
@@ -147,12 +141,6 @@
         margin-top: 20vh;
     }
 
-    .intro-wrapper{
-        h1{      
-            font-size: 7rem;
-        }
-    }
-
 
     // Color stripe - homepage
     .color-stripe-container-1{
@@ -216,10 +204,10 @@
 
 
 @media (min-width: 1400px) {
-
-    .grid-container, .footer-grid-container{
-        // max-width: 75vw;
-        // max-width: 1240px;
+    .intro-wrapper{
+        h1{      
+            font-size: 7rem;
+        }
     }
     .neu-shadow{
         @include shadows-project($shadows-project);
@@ -237,6 +225,9 @@
         .max-col{
             display: flex;
         }
+    }
+    .project-headline{
+        font-size: 6rem;
     }
 
 }

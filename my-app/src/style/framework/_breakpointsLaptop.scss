@@ -1,6 +1,78 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+    .project-description{
+        color: $white;
+        border-radius: .5rem;
+        @include shadows-description($shadows-description);
+        padding: 3rem 0;
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+        background: none;
+        z-index: 1;
+        .sub-container{
+            .title-wrapper{
+                grid-row-start: 1;
+                grid-row-end: 1;
+                grid-column-start: 2;
+                grid-column-end: 12;
+            }
+            .contribution-wrapper-r{
+                grid-row-start: 2;
+                grid-column-start: 2;
+                grid-column-end: 12;
+                h3{
+                    margin-top: 1rem;
+                }
+            }
+            .primary-btn, .disable-btn{
+                grid-row-start: 3;
+                grid-column-start: 2;
+                grid-column-end: 12;
+            }
+        }
+    }
+
+
+    .neu-shadow{
+        @include shadows-project($shadows-project);
+    }
+    .project{
+        .blue-tab{
+            background: #262935;
+        }
+        .red-tab{
+            background: #352633;
+        }
+        .green-tab{
+            background: #263527;
+        }
+        .max-col{
+            display: flex;
+        }
+    }
+
+    .project-mobile-module{
+        display: none;
+    }
+    .project-desktop-module{
+        display: grid;
+    }
+
+
+
+    // Alternation Mobile & Desktop
+    .project-details-hero-desktop{
+        display: block;
+    }
+    .project-details-hero-mobile{
+        display: none;
+    }
+
+    .desktop-nav{
+        display: grid;
+    }
     .btn{
         margin: 0;
     }
@@ -80,14 +152,6 @@
             }
         }
 
-    }
-
-    // Alternation Mobile & Desktop
-    .project-details-hero-desktop{
-        display: block;
-    }
-    .project-details-hero-mobile{
-        display: none;
     }
 
 
@@ -209,7 +273,7 @@
     }
     .intro-wrapper{
         h1{      
-            font-size: 5rem;
+            font-size: 4rem;
         }
     }
     .span-2{
@@ -234,9 +298,6 @@
     .span-50{
         grid-column: span 6;
     }
-    .color-stripe-container-2{
-        display: grid;
-    }
     
     .center-module{
         img{
@@ -249,6 +310,14 @@
     .modal-address{
         a {
             font-size: 3.5rem;
+        }
+    }
+
+    .max-bleed{
+        grid-column-start: 4;
+        grid-column-end: 12;
+        .span-50{
+            grid-column: span 6;
         }
     }
 }

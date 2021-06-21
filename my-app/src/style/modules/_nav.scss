@@ -12,25 +12,26 @@
 }
 
 .vertical-desktop-nav-container{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
     justify-content: flex-start;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-    position: fixed;
+    /* align-items: flex-end; */
+    /* position: fixed; */
     left: 0px;
-    top: 0px;
-    width: calc(100%/6 - 1.5rem);
-    height: 75%;
-    flex-direction: column;
-    justify-content: space-around;
+    width: calc(100%/6 - 1.2rem);
+    height: 100%;
+    display: flex;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    flex-direction: column-reverse;
+    position: absolute;
+}
+
+.desktop-nav{
+    position: fixed;
+}
+
+.nav-grid-template{
+    grid-template-rows: 20vh 40vh 40vh;
 }
 
 .NavbarItems{
@@ -74,7 +75,7 @@ nav{
             font-size: $link-button-sz;
             color: $grey;
             transition: 0.3s ease-in-out;
-            font-size:1.2rem;
+            font-size:$link-button-sz;
             margin-top: 1rem;
             &:hover{
                 cursor: pointer;
@@ -103,10 +104,12 @@ ul {
 
 #nav-logo{
     display: flex;
-    width:fit-content;
+    text-align: right;
     font-weight: 700;
     font-size: $link-button-sz;
     a{
+        width: 100%;
+        margin-bottom: 1rem;
         font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         &:hover{

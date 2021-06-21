@@ -3,6 +3,18 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    .project-headline {
+        font-size: 4rem;
+    }
+    .max-bleed{
+        grid-column-start: 2;
+        grid-column-end: 12;
+        > * , .span-50 {
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+    }
+    
     .about-wrapper{
         grid-column-start: 5;
         grid-column-end: -1;

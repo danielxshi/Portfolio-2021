@@ -80,7 +80,7 @@ const Home = () => {
 
     <main className="landing-pg">
     <div className="intro-wrapper">
-        <div className="grid-container grid-gap-add">
+        <div className="grid-container nav-grid-template">
             <div className="max-bleed intro-text-banner">
                 <div className="p-identity">
                     <div className="line-wrap-1">
