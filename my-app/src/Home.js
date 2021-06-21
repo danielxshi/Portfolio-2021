@@ -49,7 +49,7 @@ const Home = () => {
 
     let line1 = useRef(null);
     let line2 = useRef(null);
-    // let line3 = useRef(null);
+    let line3 = useRef(null);
 
     useEffect(() => {
         gsap.from([line1, line2], 1.6, {
@@ -61,6 +61,19 @@ const Home = () => {
             }
         })
     }, [line1, line2]);
+
+
+    useEffect(() => {
+        gsap.from([line3], 1.6, {
+            opacity: 0,
+            delay: 1.5,
+            ease: "power3.out",
+            x: 80,
+            stagger: {
+                amount: 0.24
+            }
+        })
+    }, [line3]);
 
     return (
         
@@ -79,22 +92,11 @@ const Home = () => {
                             <div ref={el => line2 = el} className="text-banner">
                                 <span className="text-banner-desktop">and UX<strong className="highlight-text">/</strong>UI designer </span>
                             </div>
-                            
-
                         </h1>
-                        {/* <h1 ref={el => line1 = el} className="text-banner">
-                            <span className="text-banner-desktop">Aspiring front<strong className="highlight-text">-</strong>end developer</span>
-                        </h1>
-                        <h1 ref={el => line2 = el} className="text-banner">
-                            <span className="text-banner-desktop">and UX<strong className="highlight-text">/</strong>UI designer </span>
-                        </h1> */}
                     </div>
-                    {/* <div className="line-wrap-2">
-                        <p className="line-wrap" ref={el => line2 = el}>Aspiring UX/UI web developer and photographer from Vancouver, BC</p>
-                    </div> */}
                 </div>
             </div>
-            <div className="max-bleed media-links">
+            <div ref={el => line3 = el} className="button-overflow-wrap max-bleed media-links">
                 <a className="black-border-btn primary-btn static-btn" target="_blank" href={resume}>Resume</a>
                 <a className="black-border-btn primary-btn static-btn" href="mailto:danielxshi@hotmail.com">Email</a>
             </div>
@@ -111,15 +113,16 @@ const Home = () => {
         
     
     <DesktopProjectCard 
-        lrgGraphic={smallCliq} 
-        smGraphic={smallCliq} 
+        lrgGraphic={smallBosstep} 
+        smGraphic={smallBosstep} 
         alt={"CLIQ graphic"} 
-        title={projectMessages.cliq.title} 
-        overview={projectMessages.cliq.description} 
-        role={projectMessages.cliq.role}
+        title={projectMessages.bosstep.title} 
+        overview={projectMessages.bosstep.overview} 
+        role={projectMessages.bosstep.role}
         color={'color-stripe-red'} 
         linkTo={'/bosstep'}
         tabColor={"red-tab"} 
+        projectNumber={"01"}
     />
     
     <DesktopProjectCard 
@@ -131,7 +134,8 @@ const Home = () => {
         role={projectMessages.cliq.role}
         color={'color-stripe-green'} 
         linkTo={'/cliq'}
-        tabColor={"green-tab"} 
+        tabColor={"green-tab"}
+        projectNumber={"02"}
     />
     
     <DesktopProjectCard 
@@ -144,6 +148,7 @@ const Home = () => {
         color={'color-stripe-blue'} 
         linkTo={'/track'}
         tabColor={"blue-tab"} 
+        projectNumber={"03"}
     />
         
     <ProjectCard 
@@ -185,7 +190,7 @@ const Home = () => {
 
     <section className="photo-grid grid-container project-spacer">
         <div className="max-bleed">
-            <h2 className="home-sub-heading">Photo<strong className="highlight-text">_</strong></h2>
+            <h2 className="section-title">Photo<strong className="highlight-text">_</strong></h2>
             <div className="sub-container grid-gap-add">
                 <div className="max-col">
                     <div className="img-fit">
@@ -194,12 +199,12 @@ const Home = () => {
                 </div>
                 <div className="span-50">
                     <div className="img-fit">
-                        <img src={t6} alt="" />
+                        <img src={t4} alt="" />
                     </div>
                 </div>
                 <div className="span-50">
                     <div className="img-fit">
-                        <img src={t4} alt="" />
+                        <img src={t6} alt="" />
                     </div>
                 </div>
                 <div className="span-50">

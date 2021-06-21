@@ -37,6 +37,10 @@ function DesktopProjectCard(props) {
                             <div className="sub-container">
                                 <div className="title-wrapper desktop-project-header">
                                     <h2 className="home-sub-heading">{props.title}</h2>
+                                    <div className="underline-container">
+                                        <div className="underline-white"></div>
+                                        <h4>{props.projectNumber}</h4>
+                                    </div>
                                     <p>{props.overview}</p>
                                 </div>
                                 <div className="contribution-wrapper-r rel-margin-bot">

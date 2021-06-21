@@ -21,14 +21,18 @@
     order: -1;
 }
 
+.underline-white{
+    width: 90%;
+    height: 3px;
+    border-radius: 50px;
+    background-color: $white;
+    order: -1;
+}
+
 .underline-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.project-number{
-
 }
 
 .project-headline-wrapper{

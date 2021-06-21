@@ -1,9 +1,7 @@
 // Import styles
 import './style/App.scss';
 import './style/global.scss';
-import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import { ContactModal } from './components/ContactModal';
 import { GlobalStyle } from './components/globalStyles';
 
@@ -26,6 +24,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar/Navbar.js";
 import DesktopNavbar from "./components/Navbar/DesktopNav";
 
+// testing
+import HomeComplete from './HomeComplete';
+
 // Import Pages
 import Bosstep from "./Bosstep.js";
 import Cliq from './Cliq.js';
@@ -41,23 +42,6 @@ import{
 import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
 
 
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-`;
-
-const Button = styled.button`
-  min-width: 100px;
-  padding: 16px 32px;
-  border-radius: 4px;
-  border: none;
-  background: #141414;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-`;
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -72,8 +56,9 @@ function App() {
     <ContactModal showModal={showModal} setShowModal={setShowModal} />
       <div className="App">
         <ScrollToTop/>
-        <DesktopNavbar onClick={openModal}/>
-        {/* <Navbar onClick={openModal}/> */}
+        <Route exact path="/">
+          <DesktopNavbar onClick={openModal}/> 
+        </Route>
         <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition
@@ -83,7 +68,9 @@ function App() {
             unmountOnExit
             >
               <Switch location={location}>
-                <Route exact path="/" component={Home}/>
+                <Route exact path="/">
+                  <Home/>
+                </Route>
                 <Route exact path="/bosstep" >
                   <Project demo={"https://danielxshi.github.io/IAT334-Bosstep-r1/"} mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} bannerBG={"hero-banner-mobile-bosstep hero-banner-mobile"} messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} banner={bosstepBanner} />
                   <Bosstep/>

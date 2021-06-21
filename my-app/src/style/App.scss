@@ -20,7 +20,8 @@ main{
     display: flex;
 }
 .intro-wrapper{
-    height: 92.5vh;
+    // height: 92.5vh;
+    height: 100vh;
     h1{
         margin-bottom: 0;       
     }
@@ -191,6 +192,10 @@ main{
 
 
 // CSSTransition Group - Page Swipe animation
+.button-overflow-wrap{
+    overflow: hidden;
+}
+
 .line-wrap-1{
     overflow: hidden;
 }
@@ -198,3 +203,4 @@ main{
 .line-wrap-2{
     overflow: hidden;
 }
+

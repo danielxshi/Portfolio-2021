@@ -16,7 +16,7 @@
 .fade-enter.fade-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
+  transition: opacity 400ms linear 150ms, transform 400ms ease-out 250ms;
 }
 .fade-appear-active p,
 .fade-enter.fade-enter-active p {
@@ -25,15 +25,15 @@
 }
 .fade-appear-active p:nth-child(2),
 .fade-enter.fade-enter-active p:nth-child(2) {
-  transition: opacity 300ms linear 300ms, transform 300ms ease-out 300ms;
+  transition: opacity 400ms linear 400ms, transform 400ms ease-out 400ms;
 }
 .fade-appear-active p:nth-child(3),
 .fade-enter.fade-enter-active p:nth-child(3) {
-  transition: opacity 300ms linear 400ms, transform 300ms ease-out 400ms;
+  transition: opacity 400ms linear 400ms, transform 400ms ease-out 400ms;
 }
 .fade-appear-active p:nth-child(4),
 .fade-enter.fade-enter-active p:nth-child(4) {
-  transition: opacity 300ms linear 500ms, transform 300ms ease-out 500ms;
+  transition: opacity 400ms linear 500ms, transform 400ms ease-out 500ms;
 }
 
 .fade-exit {
