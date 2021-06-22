@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 
 // Stylesheets
@@ -37,15 +36,7 @@ import productDetailR2 from './images/cliq/product-detail-r2.png'
 // Import gif
 import cmatrixBG from './images/cliq/cmatrix-blk-bg.gif'
 import cliqWhiteTextAnim from './images/cliq/cliq-white-text-anim.gif'
-import cliqBlackTextAnim from './images/cliq/cliq-black-text-anim.gif'
 
-// Import placeholders
-import img34 from './images/placeholder/placeholder-3x4.png';
-import img43 from './images/placeholder/placeholder-4x3.png';
-import img2x1 from './images/placeholder/placeholder-2x1.png';
-import imgProf from './images/placeholder/placeholder-prof-1x1.png';
-import imgVid from './images/placeholder/video-placeholder.png';
-import imgVid1x1 from './images/placeholder/vid-1x1.png';
 
 const total = "03";
 

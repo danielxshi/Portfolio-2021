@@ -78,10 +78,10 @@ a{
 footer {
     a{
         &:active{
-            color: $white;
+            color: $dark-accent;
         }
         &:hover{
-            color: $white;
+            color: $dark-accent;
         }
     }
 }

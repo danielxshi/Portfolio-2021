@@ -1,13 +1,10 @@
 // Import images
-import BOSSTEP from './images/boss-1000x600.webp';
 import TTA from './images/TTAAnimationCover.webp';
 import MainEvent from './images/mainevent.gif';
 import TeamPhantom from './images/teamphantom.gif';
 import resume from './images/danielshi-resume.pdf';
 import smallBosstep from './images/bosstep/bosstep300w.jpg';
 import smallCliq from './images/cliq/cliq300w.jpg';
-import lrgCliq from './images/cliq/cliq1000w.jpg';
-import lrgTrack from './images/track/track1000w.jpg';
 import smallTrack from './images/track/track300w.jpg';
 
 // Import components
@@ -15,22 +12,13 @@ import About from './components/Home/AboutModule';
 import ProjectCard from './components/Home/ProjectCard';
 import DesktopProjectCard from './components/Home/DesktopProjectCard';
 
-// Import placeholders
-import img34 from './images/placeholder/placeholder-3x4.png';
-import img43 from './images/placeholder/placeholder-4x3.png';
-import img2x1 from './images/placeholder/placeholder-2x1.png';
-import imgProf from './images/placeholder/placeholder-prof-1x1.png';
-import imgVid from './images/placeholder/video-placeholder.png';
-import imgVid1x1 from './images/placeholder/vid-1x1.png';
 
 // Import test images
 import t1 from './images/TestImages/dubai.png';
 import t2 from './images/TestImages/announcer.jpg';
-import t3 from './images/TestImages/rianna.jpg';
 import t4 from './images/TestImages/yvr.JPG';
 import t5 from './images/TestImages/sfu-night.png';
 import t6 from './images/TestImages/sfu-day.jpg';
-import t7 from './images/TestImages/tunnel.jpg';
 
 
 
@@ -97,7 +85,7 @@ const Home = () => {
                 </div>
             </div>
             <div ref={el => line3 = el} className="button-overflow-wrap max-bleed media-links">
-                <a className="black-border-btn primary-btn static-btn" target="_blank" href={resume}>Resume</a>
+                <a className="black-border-btn primary-btn static-btn" target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
                 <a className="black-border-btn primary-btn static-btn" href="mailto:danielxshi@hotmail.com">Email</a>
             </div>
         </div>
@@ -221,34 +209,6 @@ const Home = () => {
         </div>
     </section>
 
-    {/* <section className="photo-grid grid-container project-spacer">
-        <div className="max-bleed">
-            <h2 className="home-sub-heading">Photo and Video<strong className="highlight-text">_</strong></h2>
-            <div className="sub-container grid-gap-add">
-                <div className="max-col">
-                    <div className="img-fit">
-                        <img src={img43} alt="" />
-                    </div>
-                </div>
-                <div className="max-col">
-                    <div className="img-fit">
-                        <img src={img43} alt="" />
-                    </div>
-                </div>
-                <div className="span-50">
-                    <div className="img-fit">
-                        <img src={img34} alt="" />
-                    </div>
-                </div>
-                <div className="span-50">
-                    <div className="img-fit">
-                        <img src={imgProf} alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> */}
-
     <About/>
 
     <section className="project-1 otr-proj-sect">
@@ -258,7 +218,7 @@ const Home = () => {
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
                         <div className="otr-proj portfolio-item img-fit proj-home-grid-def-maintain-w">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=rnj6hVkEDpg">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=rnj6hVkEDpg">
                                 <img src={TTA} alt="Top Ten Animation Project Graphic"/>
                             </a>
                         </div>
@@ -274,7 +234,7 @@ const Home = () => {
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
                         <div className="otr-proj-1 otr-proj portfolio-item img-contain proj-home-grid-def-maintain-w">
-                            <a target="_blank" href="https://www.youtube.com/watch?v=PAtd3-VlaaU">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=PAtd3-VlaaU">
                                 <img src={MainEvent} alt="The Main Event GIF"/>
                             </a>
                         </div>
@@ -290,7 +250,7 @@ const Home = () => {
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-3">
                         <div className="otr-proj-1 otr-proj portfolio-item img-contain proj-home-grid-def-maintain-w">
-                            <a target="_blank" href="https://youtu.be/yjXwb3fFqHA">
+                            <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/yjXwb3fFqHA">
                                 <img src={TeamPhantom} alt="Team Phantom GIF"/>
                             </a>
                         </div>

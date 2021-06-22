@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useCallback, } from 'react';
-import ReactDOM from 'react-dom';
 import { useSpring, animated as a } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
@@ -28,13 +27,6 @@ const ModalWrapper = styled.div`
   position: relative;
   z-index: 999;
   border-radius: 3px;
-`;
-
-const ModalImg = styled.img`
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: 999;
 `;
 
 const ModalContent = styled.div`
@@ -177,13 +169,13 @@ export const ContactModal = ({ showModal, setShowModal }) => {
                   <p>social media</p>
                   <ul>
                       <li>
-                          <a target="_blank" href="https://github.com/danielxshi">
+                          <a target="_blank" rel="noopener noreferrer" href="https://github.com/danielxshi">
                               <img height="30" width="30" src={GIT} alt="Github Icon"/>
                           </a>
-                          <a target="_blank" href="https://www.instagram.com/danielxshi/">
+                          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/danielxshi/">
                               <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
                           </a>
-                          <a target="_blank" href="https://www.linkedin.com/in/daniel-shi-0833501a0/">
+                          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-shi-0833501a0/">
                               <img height="30" width="30"src={LinkedIn}  alt="LinkedIn Icon"/>
                           </a>
                       </li>

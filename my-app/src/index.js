@@ -3,18 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// Import Pages
-import Bosstep from "./Bosstep.js";
-import Cliq from './Cliq.js';
-import MomentTrack from './MomentTrack.js';
 
-// Import Animation
-import{
-  CSSTransition,
-  TransitionGroup,
-} from 'react-transition-group';
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>

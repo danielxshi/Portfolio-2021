@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 // Stylesheets
 import './style/pages/_projects.scss';
@@ -12,32 +11,15 @@ import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
 import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic";
 import CenterMod from "./components/ProjectDetails/CenterModule";
 import NextProject from "./components/ProjectDetails/NextProj";
-import FiftyModule from "./components/ProjectDetails/ModuleFiftySplit"
 import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
-import FourColumnNotesModule from "./components/ProjectDetails/FourColumnNotes"
-import TwoColNotes from "./components/ProjectDetails/TwoColNotes"
 import ModMaxCol from "./components/ProjectDetails/MaxColModule"
 import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
 import ModMaxContainerGraphic from "./components/ProjectDetails/ModMaxContainerGraphic"
-import Slider from "./components/ProjectDetails/Slider"
 import ThreeColNotes from "./components/ProjectDetails/ThreeColNotes"
 
 // Import images
-
-// Import placeholders
-import img34 from './images/placeholder/placeholder-3x4.png';
-import img43 from './images/placeholder/placeholder-4x3.png';
-import img2x1 from './images/placeholder/placeholder-2x1.png';
-import imgProf from './images/placeholder/placeholder-prof-1x1.png';
-import imgVid from './images/placeholder/video-placeholder.png';
-import imgVid1x1 from './images/placeholder/vid-1x1.png';
-
-// Sketches
-// lrg sketch
 import sketchMinigameMLrg from './images/bosstep/sketch-minigame-m-lrg.jpg'
-// sketch overview
 import sketchNb from './images/bosstep/sketch-overview-2500x.png'
-import sketchOverview from './images/bosstep/sketch-overview-bosstep.webp'
 
 // Prototype
 import protoAddFriend from './images/bosstep/proto-add-friend.png'
@@ -50,21 +32,6 @@ import i1FriendList from './images/bosstep/i1-mg2.webp'
 
 // Wireframe
 import bosstepOverview from './images/bosstep/wireframe-overview.webp'
-// wireframe pt 1
-import wireHome from './images/bosstep/wire-home-bstep.webp'
-import wireMiniGame from './images/bosstep/wire-minigame-bstep.webp'
-import wireRewardDetail from './images/bosstep/wire-reward-bstep.webp'
-import wireRewardList from './images/bosstep/wire-weekly-reward-bstep.webp'
-// wireframe pt 2
-import wireFriendDetail from './images/bosstep/wire-friend-detail.webp'
-import wireFriendList from './images/bosstep/wire-friend-list.webp'
-import wireFriendMenu from './images/bosstep/wire-friend-menu.webp'
-import wireFriendSecurityPin from './images/bosstep/wire-friend-pin.webp'
-
-
-// Research
-import researchLoc from './images/bosstep/research-loc.jpg'
-
 // Persona
 import persona from './images/bosstep/persona-bstep.webp'
 
@@ -75,10 +42,8 @@ import personaGraphic from './images/bosstep/persona-graphic.png'
 
 // Next project
 import nextProj from './images/cliq-1000x600.webp'
-import projectMessages from './components/ProjectMessages';
 
 import dummyText from './CommonMessages';
-import * as bosstepMessages from './BosstepMessages';
 
 const total = "04";
 

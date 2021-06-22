@@ -9,7 +9,6 @@ function Slider(props){
     activeIndex: 0
   })
 
-  const getWidth = () => window.innerWidth
   const { activeIndex } = state
 
   const [x, setX] = useState(0)

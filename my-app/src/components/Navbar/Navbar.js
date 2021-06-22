@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {MenuItems} from "./MenuItems"
 import { NavLink, Link } from "react-router-dom";
-import {Button} from "./Button"
 
 class Navbar extends Component {
     state = {clicked: false}
@@ -32,7 +31,7 @@ class Navbar extends Component {
                                 )
                             })}
 
-                        <Button className="contactModal" onClick={this.props.onClick}>CONTACT</Button>
+                        <a className="contactModal" onClick={this.props.onClick}>CONTACT</a>
                         </ul>
 
                     </nav>

@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 // Stylesheets
 import '../style/pages/_projects.scss';
@@ -38,7 +36,7 @@ function Project(props) {
                             </div>
                         </div>
                         
-                        <a className="black-border-btn primary-btn" target="_blank" href={props.demo}>{props.messages.cta}</a>
+                        <a className="black-border-btn primary-btn" rel="noopener noreferrer" target="_blank" href={props.demo}>{props.messages.cta}</a>
                     </div>
                 </div>
             </section>
@@ -61,7 +59,7 @@ function Project(props) {
                         <h3>Description</h3>
                         <p className="rel-margin-bot">{props.messages.description}</p>
                         
-                        <a className="sect-last rel-margin-bot black-border-btn primary-btn" target="_blank" href={props.demo}>{props.messages.cta}</a>
+                        <a className="sect-last rel-margin-bot black-border-btn primary-btn" target="_blank" rel="noopener noreferrer" href={props.demo}>{props.messages.cta}</a>
                     </div>
                 </div>
                 

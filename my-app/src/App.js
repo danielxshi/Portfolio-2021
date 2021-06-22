@@ -3,7 +3,6 @@ import './style/App.scss';
 import './style/global.scss';
 import React, { useState } from 'react';
 import { ContactModal } from './components/ContactModal';
-import { GlobalStyle } from './components/globalStyles';
 
 // Import Messages
 import projectMessages from './components/ProjectMessages.js'
@@ -21,11 +20,8 @@ import Footer from "./components/Footer";
 import Home from "./Home";
 import Project from "./components/Project";
 import ScrollToTop from "./components/ScrollToTop";
-import Navbar from "./components/Navbar/Navbar.js";
 import DesktopNavbar from "./components/Navbar/DesktopNav";
 
-// testing
-import HomeComplete from './HomeComplete';
 
 // Import Pages
 import Bosstep from "./Bosstep.js";
@@ -39,7 +35,7 @@ import{
   TransitionGroup,
 } from 'react-transition-group';
 
-import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter as Switch, Route, HashRouter } from "react-router-dom";
 
 
 
@@ -57,7 +53,7 @@ function App() {
       <div className="App">
         <ScrollToTop/>
         <Route exact path="/">
-          <DesktopNavbar onClick={openModal}/> 
+          <DesktopNavbar onClick={openModal}/>
         </Route>
         <Route render={({location}) => (
           <TransitionGroup>
@@ -91,7 +87,9 @@ function App() {
           </TransitionGroup>
         )}/>
       </div>
-      <Footer/>
+      <Route exact path="/">
+          <Footer/> 
+        </Route>
     </HashRouter>
   );
 }

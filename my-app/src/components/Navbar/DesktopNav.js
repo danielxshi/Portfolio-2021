@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {MenuItems} from "./MenuItems"
 import { NavLink, Link } from "react-router-dom";
-import {Button} from "./Button"
+import './Button.scss'
 
 class DesktopNav extends Component {
     
@@ -14,7 +14,7 @@ class DesktopNav extends Component {
     render() {
         return(
             <header>
-                <nav className="grid-container desktop-nav nav-grid-template">
+                <nav className="desktop-nav nav-grid-template">
                     <div className="vertical-desktop-nav-container">
                         <div className="vertical-nav-content">
                             <div id="nav-logo">
