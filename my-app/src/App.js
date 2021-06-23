@@ -79,9 +79,6 @@ function App() {
                   <Project mobileBannerContainer={"project-details-hero-mobile track-mobile-container"} bannerBG={"hero-banner-mobile-track hero-banner-mobile"} messages={projectMessages.cliq} banner={momentBanner} />
                   <MomentTrack/>
                 </Route>
-                <Route path="*">
-                  <Home/>
-                </Route>
               </Switch> 
             </CSSTransition>
           </TransitionGroup>
@@ -89,7 +86,7 @@ function App() {
       </div>
       <Route exact path="/">
           <Footer/> 
-        </Route>
+      </Route>
     </HashRouter>
   );
 }

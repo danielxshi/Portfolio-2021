@@ -41,37 +41,6 @@
         grid-column-end: -1;
     }
 
-    // footer - all pages
-    footer{
-        height: auto;
-        .footer-email-wrapper{
-            grid-column-start: 2;
-            grid-row-start: 1;
-            grid-column-end: span 3;
-        }
-        .footer-frequent-links-wrapper{
-            grid-row-start: 1;
-            grid-column-start: inherit;
-            grid-column-end: span 3;
-        }
-        .footer-social-media-wrapper{
-            grid-row-start: 1;
-            grid-column-start: inherit;
-            grid-column-end: span 3;
-            img:first-child{
-                margin-right: 1rem;
-            }
-        }
-        .footer-cell{
-            height: 12rem;
-        }
-        .footer-copyright{
-            grid-row-start: 1;
-            grid-column-end: span 3;
-            grid-column-start: inherit;
-        }
-    }
-
     .details-container {
         .project-description-wrapper{
             grid-row-start: 1;

@@ -225,19 +225,17 @@
     // footer - all pages
     footer{
         height: auto;
-        .footer-email-wrapper{
+        &:first-child{
             grid-column-start: 2;
+            grid-column-end: span 4;
             grid-row-start: 1;
-            grid-column-end: span 3;
         }
-        .footer-frequent-links-wrapper{
-            grid-row-start: 2;
-            grid-column-start: 2;
-            grid-column-end: span 3;
+        .footer-frequent-links-wrapper, .footer-social-media-wrapper, .footer-copyright{
+            grid-row-start: 1;
+            grid-column-start: inherit;
+            grid-column-end: span 4;
         }
         .footer-social-media-wrapper{
-            grid-row-start: 1;
-            grid-column-start: 8;
             img:first-child{
                 margin-right: 1rem;
             }
@@ -247,8 +245,8 @@
         }
         .footer-copyright{
             grid-row-start: 2;
-            grid-column-end: 12;
-            grid-column-start: 8;
+            grid-column-start: 2;
+            grid-column-end: span 4;
         }
     }
 

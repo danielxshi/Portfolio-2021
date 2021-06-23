@@ -47,7 +47,7 @@ function DesktopProjectCard(props) {
                                     <h3>Role:</h3>
                                     <p>{props.role}</p>
                                 </div>
-                                <Link className="home-border-btn primary-btn" to={props.linkTo}> View Process</Link>
+                                <Link className="white-border-btn home-border-btn primary-btn" to={props.linkTo}> View Process</Link>
                             </div>
                         </div>
                     </div>

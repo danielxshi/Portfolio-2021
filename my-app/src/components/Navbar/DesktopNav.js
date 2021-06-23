@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {MenuItems} from "./MenuItems"
-import { NavLink, Link } from "react-router-dom";
+// import { NavLink, Link } from "react-router-dom";
 import './Button.scss'
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 class DesktopNav extends Component {
     
@@ -27,9 +29,9 @@ class DesktopNav extends Component {
                                 {MenuItems.map((item, index) => {
                                     return(
                                         <li className ="underscore-cta" key={index}>
-                                            <NavLink exact path={item.url} activeClassName="active" className={item.cName} to={item.url}>
+                                            <Link to={item.href} activeClassName="active" className={item.cName}>
                                                 {item.title}
-                                            </NavLink>
+                                            </Link>
                                         </li>
                                     )
                                 })}

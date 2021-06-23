@@ -92,7 +92,7 @@ const Home = () => {
     </div>
     
 
-    <section>
+    <section id="projects">
         <div className="grid-container section-title-wrapper grid-gap-add">
             <div className="max-bleed">
                 <h2 className="section-title">Projects<strong className="highlight-text">_</strong></h2>
@@ -176,7 +176,7 @@ const Home = () => {
     />
     </section>
 
-    <section className="photo-grid grid-container project-spacer">
+    <section id="photography" className="photo-grid grid-container project-spacer">
         <div className="max-bleed">
             <h2 className="section-title">Photo<strong className="highlight-text">_</strong></h2>
             <div className="sub-container grid-gap-add">
@@ -209,7 +209,7 @@ const Home = () => {
         </div>
     </section>
 
-    <About/>
+    <About id="about"/>
 
     <section className="project-1 otr-proj-sect">
         <div className="grid-container">

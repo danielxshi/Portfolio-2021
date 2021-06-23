@@ -2,7 +2,7 @@ import profilePicture from '../../images/sfu-headshot.png';
 
 function AboutModule() {
     return (
-        <section className="about-section">
+        <section id="about" className="about-section">
             <div className="grid-container">
                 <div className="max-bleed">
                     <h2 className="section-title">I am<strong className="highlight-text ">_</strong></h2>
