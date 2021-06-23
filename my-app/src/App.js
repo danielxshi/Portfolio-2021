@@ -1,12 +1,19 @@
 // Import styles
 import './style/App.scss';
 import './style/global.scss';
+import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import { ContactModal } from './components/ContactModal';
+import { GlobalStyle } from './components/globalStyles';
+
+import DesktopNav from './components/Navbar/DesktopNav'
 
 // Import Messages
 import projectMessages from './components/ProjectMessages.js'
 
+//Import placeholder
+import img3x4 from './images/placeholder/placeholder-3x4.png'
 
 // Import images
 import bosstepBanner from './images/bosstep-banner-2048x768.webp';
@@ -20,8 +27,7 @@ import Footer from "./components/Footer";
 import Home from "./Home";
 import Project from "./components/Project";
 import ScrollToTop from "./components/ScrollToTop";
-import DesktopNavbar from "./components/Navbar/DesktopNav";
-
+import Navbar from "./components/Navbar/Navbar.js";
 
 // Import Pages
 import Bosstep from "./Bosstep.js";
@@ -35,9 +41,27 @@ import{
   TransitionGroup,
 } from 'react-transition-group';
 
-import { BrowserRouter as Switch, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
+import DesktopProjectCard from './components/Home/DesktopProjectCard';
 
 
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+const Button = styled.button`
+  min-width: 100px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  background: #141414;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+`;
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -52,8 +76,14 @@ function App() {
     <ContactModal showModal={showModal} setShowModal={setShowModal} />
       <div className="App">
         <ScrollToTop/>
+        {/* 
+          Add mobile nav bar
+          - structure on github 
+          - close button for project pages
+        */}
+        {/* <Navbar/> */}
         <Route exact path="/">
-          <DesktopNavbar onClick={openModal}/>
+          <DesktopNav onClick={openModal}/>
         </Route>
         <Route render={({location}) => (
           <TransitionGroup>
@@ -64,9 +94,7 @@ function App() {
             unmountOnExit
             >
               <Switch location={location}>
-                <Route exact path="/">
-                  <Home/>
-                </Route>
+                <Route exact path="/" component={Home}/>
                 <Route exact path="/bosstep" >
                   <Project demo={"https://danielxshi.github.io/IAT334-Bosstep-r1/"} mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} bannerBG={"hero-banner-mobile-bosstep hero-banner-mobile"} messages={projectMessages.bosstep} mobileBannerDemo={mobileBannerDemo} banner={bosstepBanner} />
                   <Bosstep/>
@@ -79,13 +107,16 @@ function App() {
                   <Project mobileBannerContainer={"project-details-hero-mobile track-mobile-container"} bannerBG={"hero-banner-mobile-track hero-banner-mobile"} messages={projectMessages.cliq} banner={momentBanner} />
                   <MomentTrack/>
                 </Route>
+                <Route path="*">
+                  <Home/>
+                </Route>
               </Switch> 
             </CSSTransition>
           </TransitionGroup>
         )}/>
       </div>
       <Route exact path="/">
-          <Footer/> 
+        <Footer/>
       </Route>
     </HashRouter>
   );

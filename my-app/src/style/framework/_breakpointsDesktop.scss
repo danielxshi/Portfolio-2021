@@ -3,10 +3,6 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    .section-title{
-        margin-bottom: 10vh;
-        font-size: 5rem;
-    }
 
     .neu-shadow{
         @include shadows-project($shadows-project);

@@ -23,8 +23,6 @@ import t6 from './images/TestImages/sfu-day.jpg';
 
 
 
-
-
 // Import dependencies
 import projectMessages from './components/ProjectMessages.js'
 import { gsap } from "gsap";
@@ -92,10 +90,17 @@ const Home = () => {
     </div>
     
 
+
+
+
+    <div className="underline-container max-col">
+        <div className="underline"></div>
+    </div>
+
     <section id="projects">
         <div className="grid-container section-title-wrapper grid-gap-add">
             <div className="max-bleed">
-                <h2 className="section-title">Projects<strong className="highlight-text">_</strong></h2>
+                <h2 className="section-title section-title-space">Projects<strong className="highlight-text">_</strong></h2>
             </div>
         </div>
         
@@ -176,9 +181,16 @@ const Home = () => {
     />
     </section>
 
+
+
+
+    <div className="underline-container max-col">
+        <div className="underline"></div>
+    </div>
+
     <section id="photography" className="photo-grid grid-container project-spacer">
         <div className="max-bleed">
-            <h2 className="section-title">Photo<strong className="highlight-text">_</strong></h2>
+            <h2 className="section-title section-title-space">Photo<strong className="highlight-text">_</strong></h2>
             <div className="sub-container grid-gap-add">
                 <div className="max-col">
                     <div className="img-fit">
@@ -209,12 +221,23 @@ const Home = () => {
         </div>
     </section>
 
+
+
+
+    <div className="underline-container max-col">
+        <div className="section-divider"></div>
+    </div>
+
     <About id="about"/>
+
+    <div className="underline-container max-col">
+        <div className="section-divider"></div>
+    </div>
 
     <section className="project-1 otr-proj-sect">
         <div className="grid-container">
             <div className="max-bleed">
-                <h2 className="section-title">More projects 🥳<strong className="highlight-text">_</strong></h2>
+                <h2 className="section-title section-title-space">More projects 🥳<strong className="highlight-text">_</strong></h2>
                 <div className="sub-container otr-proj-container">
                     <div className="otr-proj-spec-wrapper otr-proj-1">
                         <div className="otr-proj portfolio-item img-fit proj-home-grid-def-maintain-w">

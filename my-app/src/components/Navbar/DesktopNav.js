@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {MenuItems} from "./MenuItems"
-// import { NavLink, Link } from "react-router-dom";
 import './Button.scss'
 import { HashLink as Link } from 'react-router-hash-link';
 
