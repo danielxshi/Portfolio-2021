@@ -4,7 +4,7 @@ function ModuleFiftyGRight(props) {
     return (
         <section className="mod-50 sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="proj-col-contain">
                     <div className="sub-container grid-col-space">
                         <div className="span-50">
                             <h2 className="rel-margin-bot">{props.title}<strong className="highlight-text">_</strong></h2>

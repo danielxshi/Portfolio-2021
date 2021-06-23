@@ -41,15 +41,15 @@
         .project-description-wrapper{
             grid-row-start: 1;
             grid-column-start: 8;
-            grid-column-end: 13;
+            grid-column-end: 10;
         }
         .details-wrapper{
-            grid-column-start: 1;
+            grid-column-start: 4;
             grid-column-end: 6;
         }
         .project-title-wrapper {
             grid-row-start: 1;
-            grid-column-start: 1;
+            grid-column-start: 4;
             grid-column-end: 6;
             h1{
                 font-size: 3rem;

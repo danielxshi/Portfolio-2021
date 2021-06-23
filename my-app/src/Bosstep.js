@@ -57,7 +57,7 @@ function Bosstep(props) {
         <SectionHelperText title={"INITIAL RESEARCH"} sectionChapterCurrent={"01"} sectionChapterTotal={total} text={"Our preliminary researched indicated a decline in physical activity amongst childrens ages A-B and and increase in accessibility of smart devices."}/>
 
         {/* Eighty Module/Persona */}
-        <AnchorEightyModule title={"MEET ERICA"} text={"Erica is 8 years old and enjoys playing video games. She does not feel motivated to go outside and exercise by herself but she enjoys playing games in PE class with her classmates."} img={persona} citation={"Persona"}/>
+        <ModuleFiftyGRight title={"MEET ERICA"} p1={"Erica is 8 years old and enjoys playing video games. She does not feel motivated to go outside and exercise by herself but she enjoys playing games in PE class with her classmates."} img={persona} citation={"Persona"}/>
 
         {/* Sect helper graphic */}
         <SectionHelperGraphic graphic={blob} title={"WIREFRAMING"} sectionChapterCurrent={"02"} sectionChapterTotal={total} text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}/>
@@ -72,9 +72,9 @@ function Bosstep(props) {
         <SectionHelperGraphic graphic={personaGraphic} title={"FIELD TESTING"} sectionChapterCurrent={"03"} sectionChapterTotal={total} text={"The research took a halt. BOSSTEP's demographic was difficult to reach because they belong to a vulnerable research group and there would need to be signed consent from their parent/guardian and approval from the University. This process would take time that we did not have."}/>
 
         {/* Eighty Module/Research Results */}
-        <AnchorEightyModule 
+        <ModuleFiftyGRight 
             title={"RESEARCH PIVOT"} 
-            text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
+            p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
             img={pie} 
             citation={"citation"}
         />
@@ -95,7 +95,7 @@ function Bosstep(props) {
         {/* Prototype overview */}
         <section className="bosstep-protoview-section sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="max-col protoview-1">
+                <div className="proj-col-contain protoview-1">
                     <div className="sub-container grid-col-space">
                         <div className="span-3 img-fit">
                             <img className="rel-margin-bot" src={minigameM} alt=""/>
@@ -111,7 +111,7 @@ function Bosstep(props) {
                         </div>
                     </div>
                 </div>
-                <div className="max-col protoview-2">
+                <div className="proj-col-contain protoview-2">
                     <div className="sub-container grid-col-space">
                         <div className="rel-margin-bot span-5">
                             <p className="paragraph-anchor-left rel-margin-bot">{dummyText}</p>

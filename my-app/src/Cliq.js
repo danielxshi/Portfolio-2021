@@ -67,7 +67,7 @@ function Cliq(props) {
         {/* slider neumorphicPb and Sb*/}
         <section className="sect-last sect-1">
             <div className="grid-container">
-                <div className="max-col test-slide">
+                <div className="proj-col-contain test-slide">
                     <Slider img1={neuGuidePb} img2={neuGuideSb}/>
                 </div>
 

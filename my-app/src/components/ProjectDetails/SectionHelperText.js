@@ -4,7 +4,7 @@ function SectionHelperText(props) {
     return (
         <section className="sect-helper sect-helper-text sect-1 sect-last">
             <div className="grid-container grid-row-space">
-                <div className="max-col">
+                <div className="proj-col-contain">
                     <div className="sub-container grid-col-space">
                         <h2 className="span-2">{props.title}<strong className="highlight-text">_</strong></h2>
                             <p className="rel-margin-bot anchor-right-sect-helper">{props.text}</p>

@@ -1,6 +1,6 @@
-import GIT from '../images/icons/github-brands.png';
-import IG from '../images/icons/instagram-brands.png';
-import LinkedIn from '../images/icons/linkedin-white.svg';
+import GIT from '../images/icons/github-brands.svg';
+import IG from '../images/icons/instagram-brands.svg';
+import LinkedIn from '../images/icons/linkedin.svg';
 import resume from '../images/danielshi-resume.pdf';
 
 function Footer() {

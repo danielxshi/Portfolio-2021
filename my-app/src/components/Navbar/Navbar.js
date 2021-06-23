@@ -12,7 +12,7 @@ class Navbar extends Component {
     render() {
         return(
             <header>
-                <div className="desktop-nav-container">
+                <div className="nav-container">
                     <nav className="grid-container">
                         <div className="nav-logo">
                             <Link to="/">XIANG</Link>
