@@ -7,6 +7,14 @@
 // @media (min-width: 300px){
 
     // Modules ====================
+    .proj-col-contain{
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    p{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
     .section-title-space{
         margin-top: 10vh;
     }
@@ -276,10 +284,6 @@
         letter-spacing: 5px;
         margin-top: $rel-margin;
     }
-    p{
-        font-size: $mobile-paragraph-sz;
-        line-height: $mobile-line-height;
-    }
     .max-col-proj-details{
         grid-column-start: 1;
         grid-column-end: -1;
@@ -302,6 +306,8 @@
             }
             .sub-details-wrapper{
                 margin-bottom: $rel-margin;
+                margin-bottom: 2rem;
+                width: 300px;
             }
             .sub-details-wrapper:last-child{
                 margin-bottom: 0;
@@ -395,8 +401,8 @@
     .project-details-hero-mobile{
         .text-wrapper{
             grid-row-start: 1;
-            grid-column-start: 3;
-            grid-column-end: 11;
+            grid-column-start: 2;
+            grid-column-end: 12;
             margin-top: 17vh;
             display: flex;
             flex-direction: column;

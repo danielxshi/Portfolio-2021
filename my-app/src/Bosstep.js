@@ -50,18 +50,12 @@ const total = "04";
 function Bosstep(props) {
     return (
         <main className="bosstep-page">
-        {/* Fifty Module/Sketch Overview*/}
-        <ModMaxCol img={sketchNb} citation={"Sketch Overview"} title={"BOSSTEP SKETCH"} p1={"The first iteration of Bosstep consisted of a sketching the home page. Considerations included: A progress tracker for the amount of steps taken and a module to showcase the characters in the users party. Along the way, our group was split into 3 divisons. The divison I belonged to was in charge of research, minigames and friends list."} />
-        
-        {/* SectHelper1 */}
-        <SectionHelperText title={"INITIAL RESEARCH"} sectionChapterCurrent={"01"} sectionChapterTotal={total} text={"Our preliminary researched indicated a decline in physical activity amongst childrens ages A-B and and increase in accessibility of smart devices."}/>
-
         {/* Eighty Module/Persona */}
         <ModuleFiftyGRight title={"MEET ERICA"} p1={"Erica is 8 years old and enjoys playing video games. She does not feel motivated to go outside and exercise by herself but she enjoys playing games in PE class with her classmates."} img={persona} citation={"Persona"}/>
 
-        {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={blob} title={"WIREFRAMING"} sectionChapterCurrent={"02"} sectionChapterTotal={total} text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}/>
-
+        {/* Fifty Module/Sketch Overview*/}
+        <ModMaxCol img={sketchNb} citation={"Sketch Overview"} title={"BOSSTEP SKETCH"} p1={"The first iteration of Bosstep consisted of a sketching the home page. Considerations included: A progress tracker for the amount of steps taken and a module to showcase the characters in the users party. Along the way, our group was split into 3 divisons. The divison I belonged to was in charge of research, minigames and friends list."} />
+        
         {/* Text animation for color*/}
         <ModMaxContainerGraphic citation={"Wireframe Overview"} img={bosstepOverview}/>
 
@@ -88,9 +82,8 @@ function Bosstep(props) {
             text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
         />
 
-        {/* sect helper */}
-        <SectionHelperText title={"temp"} sectionChapterCurrent={"01"} sectionChapterTotal={total} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
-
+        {/* Sect helper graphic */}
+        <SectionHelperGraphic graphic={blob} title={"test"} sectionChapterCurrent={"02"} sectionChapterTotal={total} text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}/>
 
         {/* Prototype overview */}
         <section className="bosstep-protoview-section sect-1 sect-last">

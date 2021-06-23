@@ -82,9 +82,10 @@ function App() {
           - close button for project pages
         */}
         {/* <Navbar/> */}
-        <Route exact path="/">
+        <DesktopNav onClick={openModal}/>
+        {/* <Route exact path="/">
           <DesktopNav onClick={openModal}/>
-        </Route>
+        </Route> */}
         <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition

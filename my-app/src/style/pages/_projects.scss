@@ -5,6 +5,16 @@
 ========================================================================== */ 
 
 // ProjectCard
+.project-title{
+    margin-bottom: 10vh;
+}
+
+.project-details-hero-container{
+    .proj-info-wrapper .grid-container{
+        row-gap: 20vh;
+    }
+}
+
 .project-mobile-module{
     .portfolio-item{
         grid-row-start: 3;

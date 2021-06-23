@@ -41,11 +41,13 @@
         .project-description-wrapper{
             grid-row-start: 1;
             grid-column-start: 8;
-            grid-column-end: 10;
+            grid-column-end: 12;
         }
         .details-wrapper{
             grid-column-start: 4;
-            grid-column-end: 6;
+            grid-column-end: 12;
+            display: flex;
+            justify-content: space-between;
         }
         .project-title-wrapper {
             grid-row-start: 1;

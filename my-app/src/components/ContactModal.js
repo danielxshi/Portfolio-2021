@@ -14,7 +14,7 @@ const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 10;
 `;
 
 const ModalWrapper = styled.div`
@@ -25,7 +25,7 @@ const ModalWrapper = styled.div`
   color: #000;
   grid-template-columns: 1fr 1fr;
   position: relative;
-  z-index: 999;
+  z-index: 10;
   border-radius: 3px;
 `;
 

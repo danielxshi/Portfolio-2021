@@ -8,14 +8,18 @@ function Project(props) {
         <div className="project-details-hero-container">
             {/* Desktop */}
             <section className="project-details-hero-desktop details-container">
-                <div className="hero-banner">
-                    <img src={props.banner} alt={props.alt}/>
-                </div>
                 <div className="proj-info-wrapper">
                     <div className="grid-container">
                         <div className="project-title-wrapper">
-                            <h1>{props.messages.title}</h1>
-                            <p>{props.messages.category}</p>
+                            <div className="project-title">
+                                <h1>{props.messages.title}</h1>
+                                <p>{props.messages.category}</p>
+                            </div>
+                            <a 
+                                className="black-border-btn primary-btn" 
+                                rel="noopener noreferrer" target="_blank" 
+                                href={props.demo}>{props.messages.cta}
+                            </a>
                         </div>
                         <div className="project-description-wrapper">
                             <h3>Description</h3>
@@ -35,8 +39,9 @@ function Project(props) {
                                 <p>{props.messages.team}</p>
                             </div>
                         </div>
-                        
-                        <a className="black-border-btn primary-btn" rel="noopener noreferrer" target="_blank" href={props.demo}>{props.messages.cta}</a>
+                    </div>
+                    <div className="hero-banner">
+                        <img src={props.banner} alt={props.alt}/>
                     </div>
                 </div>
             </section>
@@ -58,15 +63,19 @@ function Project(props) {
                         </div>
                         <h3>Description</h3>
                         <p className="rel-margin-bot">{props.messages.description}</p>
-                        
-                        <a className="sect-last rel-margin-bot black-border-btn primary-btn" target="_blank" rel="noopener noreferrer" href={props.demo}>{props.messages.cta}</a>
+                        <a 
+                            className="sect-last rel-margin-bot black-border-btn primary-btn" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            href={props.demo}>{props.messages.cta}
+                        </a>
                     </div>
                 </div>
                 
                 <div className="sub-container details-container">
                     <div className="proj-info-wrapper">
                         <div className="grid-container">
-                            <div className="max-col">
+                            <div className="proj-col-contain">
                                 <h2 className="rel-margin-bot">Project Details<strong className="highlight-text">_</strong></h2>
                                 <div className="rel-margin-bot">
                                     <h3>Role</h3>
