@@ -6,7 +6,7 @@ function NextProj(props) {
         <section className="next-proj sect-last sect-1">
             <div className="grid-row-space grid-container">
                 <div className="center-module">
-                    <h2>Next project <strong className="highlight-text">_</strong></h2>
+                    <h3>Next project <strong className="highlight-text">_</strong></h3>
                 </div>
                 <div className="anchor-80-right">
                     <div className="portfolio-item img-fit">

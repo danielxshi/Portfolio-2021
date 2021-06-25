@@ -35,7 +35,7 @@ class DesktopNav extends Component {
                                     )
                                 })}
                             <div className="contactModal">
-                                <a onClick={this.props.onClick}>CONTACT</a>
+                                <a id="contactCTA" onClick={this.props.onClick}>CONTACT</a>
                             </div>
                             </ul>
                         </div>

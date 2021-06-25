@@ -83,6 +83,9 @@
     grid-column-end: 12;
 }
 
-.vertical-nav-grid{
-    grid-template-rows: 20vh 50vh 30vh;
+.divider-col{
+    grid-column-start: 4;
+    grid-column-end: 12;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
 }

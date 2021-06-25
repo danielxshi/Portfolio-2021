@@ -21,7 +21,7 @@
     display: flex;
     grid-row-start: 2;
     grid-row-end: 3;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: absolute;
 }
 
@@ -31,7 +31,8 @@
 }
 
 .nav-grid-template{
-    grid-template-rows: 20vh 40vh 40vh;
+    grid-template-rows: 40vh 30vh 10vh;
+    grid-gap: $grid-gap
 }
 
 .NavbarItems{

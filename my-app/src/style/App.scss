@@ -17,18 +17,47 @@ main{
 }
 
 .intro-wrapper{
-    height: 100vh;
+    height: 80vh;
 }
+
 
 // === About section
 
 .about-section {
-    background: $white;
+    background: #fbfbfb;
     @include box-shadow($shadows);
     padding: 20vh 0;
     color: $black;
-    p{
+    p {
         font-weight: 400;
+        width: 40%;
+        color: #5a5a5a;
+        
+    }
+    .personal-bio p {
+        width: 100%;
+    }
+    .about-wrapper p {
+        font-weight: 400;
+        color: #5a5a5a;
+    }
+    .anchor-80-left{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-wrapper{
+        width: 25rem;
+    }
+    .achievement-title{
+        grid-column-start: 1;
+        letter-spacing: 1px;
+        strong{
+            color: #000000;
+            font-weight: 100;
+            line-height: 2rem;
+        }
     }
 }
 
@@ -98,11 +127,13 @@ main{
 
 // Other projects
 .otr-proj-sect{
+    .title-wrapper{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+    }
     .sub-container{
         margin-top: 5vh;
-    }
-    h3{
-        margin-top: 2rem;
     }
     .otr-proj-container{
         margin-bottom: 10vh;

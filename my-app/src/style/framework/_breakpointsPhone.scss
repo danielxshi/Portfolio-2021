@@ -4,6 +4,14 @@
 
 
 // Modules ====================
+.about-achievements h3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.about-wrapper{
+    grid-column-start: 5;
+    grid-column-end: -1;
+}
 .proj-col-contain{
     grid-column-start: 2;
     grid-column-end: 12;
@@ -314,9 +322,6 @@
     margin-top: 10vh;
 }
 
-.intro-wrapper{
-}
-
 
 // Other project section - homepage
 .otr-proj-spec-wrapper{
@@ -371,6 +376,26 @@ footer{
 
 .btn{
     margin: auto 0 auto 0;
+}
+
+
+
+// intro title
+.intro-text-banner{
+    grid-row-start: 2;
+    justify-content: flex-start;
+    width: 100%;
+    left: 0px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.media-links{
+    height: 60px;
+    margin-top: 1rem;
+    a {
+        margin-right: 1rem;
+    }
 }
 
 /* Larger than phablet */
