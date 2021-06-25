@@ -72,10 +72,8 @@ nav{
 
             text-decoration: none;
             text-transform: uppercase;
-            font-size: $link-button-sz;
             color: $grey;
             transition: 0.3s ease-in-out;
-            font-size:$link-button-sz;
             margin-top: 1rem;
             &:hover{
                 cursor: pointer;
@@ -106,7 +104,6 @@ ul {
     display: flex;
     text-align: right;
     font-weight: 700;
-    font-size: $link-button-sz;
     a{
         width: 100%;
         margin-bottom: 1rem;

@@ -3,7 +3,6 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-
     .neu-shadow{
         @include shadows-project($shadows-project);
     }
@@ -52,11 +51,7 @@
         .project-title-wrapper {
             grid-row-start: 1;
             grid-column-start: 4;
-            grid-column-end: 6;
-            h1{
-                font-size: 3rem;
-                margin-top: -0.75rem;
-            }
+            grid-column-end: 8;
         }
 
     }
@@ -77,7 +72,6 @@
     }
     .primary-btn, .disable-btn{
         padding: 12px 48px;
-        font-size: .9rem;
     }
     .about-section{
         h2{
@@ -126,12 +120,6 @@
         z-index: 1;
     }
 
-    .modal-address{
-        a {
-            font-size: 4rem;
-        }
-    }
-
     .grid-container, .footer-grid-container{
         // max-width: 75vw;
     }
@@ -171,11 +159,6 @@
 
 
 @media (min-width: 1400px) {
-    .intro-wrapper{
-        h1{      
-            font-size: 7rem;
-        }
-    }
     .neu-shadow{
         @include shadows-project($shadows-project);
     }
@@ -192,9 +175,6 @@
         .max-col{
             display: flex;
         }
-    }
-    .project-headline{
-        font-size: 6rem;
     }
 
 }

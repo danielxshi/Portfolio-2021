@@ -2,6 +2,10 @@
 /* Larger than desktop */
 @media (min-width: 1000px) {
 
+    .proj-col-contain{
+        grid-column-start: 4;
+        grid-column-end: 12;
+    }
     .project-description{
         color: $white;
         border-radius: .5rem;
@@ -147,7 +151,6 @@
             grid-column-start: 2;
             grid-column-end: 6;
             h1{
-                font-size: 3rem;
                 margin-top: -0.75rem;
             }
         }
@@ -241,7 +244,7 @@
             }
         }
         .footer-cell{
-            height: 12rem;
+            // height: 12rem;
         }
         .footer-copyright{
             grid-row-start: 2;
@@ -268,11 +271,6 @@
     }
     .otr-proj-spec-wrapper{
         grid-column-end: span 4;
-    }
-    .intro-wrapper{
-        h1{      
-            font-size: 4rem;
-        }
     }
     .span-2{
         grid-column: span 2;
@@ -303,14 +301,6 @@
             height: 100px;
         }
     }
-
-
-    .modal-address{
-        a {
-            font-size: 3.5rem;
-        }
-    }
-
     .max-bleed{
         grid-column-start: 4;
         grid-column-end: 12;

@@ -21,8 +21,6 @@ import t5 from './images/TestImages/sfu-night.png';
 import t6 from './images/TestImages/sfu-day.jpg';
 
 
-
-
 // Import dependencies
 import projectMessages from './components/ProjectMessages.js'
 import { gsap } from "gsap";
@@ -36,30 +34,49 @@ const Home = () => {
     let line1 = useRef(null);
     let line2 = useRef(null);
     let line3 = useRef(null);
+    let line4 = useRef(null);
+    let line5 = useRef(null);
+    let line6 = useRef(null);
 
     useEffect(() => {
-        gsap.from([line1, line2], 1.6, {
+        gsap.from([line1], 1.6, {
             delay: 0.3,
+            opacity: 0,
             ease: "power3.out",
-            y: 470,
+            // x: 470,
             stagger: {
                 amount: 0.08
             }
         })
-    }, [line1, line2]);
+    }, [line1]);
 
 
     useEffect(() => {
-        gsap.from([line3], 1.6, {
+        gsap.from([line3, line4, line5], 1.6, {
+            // opacity: 0,
+            delay: .9,
+            ease: "power3.out",
+            y: 80,
+            stagger: {
+                amount: 0.08
+            }
+        })
+    }, [line3, line4, line5]);
+
+
+
+
+    useEffect(() => {
+        gsap.from([line6], 1.6, {
             opacity: 0,
-            delay: 1.5,
+            delay: .8,
             ease: "power3.out",
             x: 80,
             stagger: {
                 amount: 0.24
             }
         })
-    }, [line3]);
+    }, [line6]);
 
     return (
         
@@ -68,24 +85,62 @@ const Home = () => {
     <div className="intro-wrapper">
         <div className="grid-container nav-grid-template">
             <div className="max-bleed intro-text-banner">
-                <div className="p-identity">
-                    <div className="line-wrap-1">
-                        {/* Desktop */}
-                        <h1>
-                            <div ref={el => line1 = el} className="text-banner">
-                                <span className="text-banner-desktop">Front<strong className="highlight-text">-</strong>end developer</span>
-                            </div>
-                            <div ref={el => line2 = el} className="text-banner">
-                                <span className="text-banner-desktop">and UX<strong className="highlight-text">/</strong>UI designer </span>
-                            </div>
-                        </h1>
-                    </div>
+                <div className="overflow-wrap text-banner-desktop-wrapper">
+                    {/* Desktop */}
+                    <h1 ref={el => line1 = el} >
+                        <div 
+                            className="text-banner text-banner-1">
+                            <span 
+                                className="no-highlight text-banner-desktop">
+                                PORT
+                            </span>
+                        </div>
+                        <div 
+                             
+                            className="text-banner text-banner-2">
+                            <span       
+                                className="no-highlight text-banner-desktop">
+                                TFOLIO
+                            </span>
+                        </div>
+                    </h1>
                 </div>
             </div>
-            <div ref={el => line3 = el} className="button-overflow-wrap max-bleed media-links">
-                <a className="black-border-btn primary-btn static-btn" target="_blank" rel="noopener noreferrer" href={resume}>Resume</a>
-                <a className="black-border-btn primary-btn static-btn" href="mailto:danielxshi@hotmail.com">Email</a>
+            <div 
+                className="overflow-wrap banner-sub-heading ">
+                    <div className="title-group rel-margin-bot">
+                        <h2 ref={el => line3 = el}>
+                            UXUI Designer
+                        </h2>
+                        <h2 ref={el => line4 = el}>
+                            Photographer
+                        </h2>
+                        <h2 ref={el => line5 = el}>
+                            Front-end developer
+                        </h2>
+                    </div>
+                    <div ref={el => line6 = el} className="media-links">
+                        <a 
+                            className="black-border-btn primary-btn static-btn" 
+                            target="_blank" rel="noopener noreferrer" 
+                            href={resume}>
+                            Resume
+                        </a>
+                        <a  
+                            className="black-border-btn primary-btn static-btn" 
+                            href="mailto:danielxshi@hotmail.com">
+                            Email
+                        </a>
+
+                    </div>
             </div>
+            {/* <div className="city-info">
+                <div className="info-wrapper">
+                    <p>
+                        Vancouver, BC
+                    </p>
+                </div>
+            </div> */}
         </div>
     </div>
     
@@ -106,8 +161,8 @@ const Home = () => {
         
     
     <DesktopProjectCard 
-        lrgGraphic={smallBosstep} 
-        smGraphic={smallBosstep} 
+        lrgGraphic={smallCliq} 
+        smGraphic={smallCliq} 
         alt={"CLIQ graphic"} 
         title={projectMessages.bosstep.title} 
         overview={projectMessages.bosstep.overview} 

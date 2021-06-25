@@ -36,7 +36,7 @@ function DesktopProjectCard(props) {
                         <div className="project-description">
                             <div className="sub-container">
                                 <div className="title-wrapper desktop-project-header">
-                                    <h2 className="home-sub-heading">{props.title}</h2>
+                                    <h3 className="home-sub-heading">{props.title}</h3>
                                     <div className="underline-container">
                                         <div className="underline-white"></div>
                                         <h4>{props.projectNumber}</h4>
@@ -44,7 +44,7 @@ function DesktopProjectCard(props) {
                                     <p>{props.overview}</p>
                                 </div>
                                 <div className="contribution-wrapper-r rel-margin-bot">
-                                    <h3>Role:</h3>
+                                    <h4>Role:</h4>
                                     <p>{props.role}</p>
                                 </div>
                                 <Link className="white-border-btn home-border-btn primary-btn" to={props.linkTo}> View Process</Link>

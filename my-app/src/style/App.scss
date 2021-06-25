@@ -16,32 +16,8 @@ main{
     overflow-x: hidden;
 }
 
-.text-banner{
-    display: flex;
-}
 .intro-wrapper{
-    // height: 92.5vh;
     height: 100vh;
-    h1{
-        margin-bottom: 0;       
-    }
-    p{
-        font-weight: 600;
-    }
-    .intro-text-banner{
-        display: flex;
-        grid-row-start: 2;
-        flex-direction: column-reverse;
-    }
-    .media-links{    
-        height: max-content;
-        overflow: hidden;
-        grid-row-start: 3;
-        display: flex;
-        .static-btn:first-child{
-            margin-right: 2rem;
-        }
-    }
 }
 
 // === About section
@@ -189,15 +165,7 @@ main{
 
 
 // CSSTransition Group - Page Swipe animation
-.button-overflow-wrap{
-    overflow: hidden;
-}
-
-.line-wrap-1{
-    overflow: hidden;
-}
-
-.line-wrap-2{
+.overflow-wrap{
     overflow: hidden;
 }
 

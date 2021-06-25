@@ -1,7 +1,7 @@
 // Footer
 
 footer{
-    padding: 2.5rem 0 2.5rem 0;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     p{
@@ -9,14 +9,10 @@ footer{
         margin-bottom: .5rem;
         color: $sprite-text;
     }
-    .copyright{
-        font-size: 1rem;
-        color: #898989;
-    }
 }
 
 .neu-footer{
     box-shadow: 45px 15px 75px rgb(222 222 222 / 67%) inset, 7px 20px 30px rgb(35 34 36 / 62%) inset;
-    padding: 20vh 0;
+    padding: 10vh 0;
     z-index: 1;
 }

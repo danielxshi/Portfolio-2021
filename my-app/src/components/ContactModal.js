@@ -14,7 +14,7 @@ const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 15;
 `;
 
 const ModalWrapper = styled.div`
@@ -25,7 +25,7 @@ const ModalWrapper = styled.div`
   color: #000;
   grid-template-columns: 1fr 1fr;
   position: relative;
-  z-index: 10;
+  z-index: 15;
   border-radius: 3px;
 `;
 
@@ -45,7 +45,6 @@ const ModalContent = styled.div`
   }
 
   h1{
-      font-size: 2rem;
       margin: auto;
       position: absolute;
       
@@ -116,7 +115,7 @@ const CloseModalButton = styled(MdClose)`
   width: 32px;
   height: 32px;
   padding: 0;
-  z-index: 10;
+  z-index: 15;
 `;
 
 export const ContactModal = ({ showModal, setShowModal }) => {

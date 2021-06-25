@@ -1,48 +1,152 @@
-h1, h2 {
-    font-family: 'Lora', serif;
-  }
-  
-  h1{
-      font-size: $h1-font-sz;
-  }
-  
-  h2{
-      font-size: $h2-font-sz;
-  }
+@font-face{
+    font-family: NewYork;
+    src: url(fonts/NewYork.otf)
+}
 
-//   p{
-//     font-size: 2rem;
-//     line-height: 3rem;
-//   }
+@font-face{
+    font-family: Manrope;
+    src: url(fonts/manrope/regular.otf)
+}
 
-  .home-sub-heading{
-      font-size: 4rem;
-  }
-  
-  body{
-      color: $sprite-text;
-      background-color: $white;
-      font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      position: relative;
-      z-index: 1;
-  }
-  
-  .highlight-text{
-      color: $accent;
-  }
-  
-  .highlight-text-dark{
-      color: $dark-accent;
-  }
+@font-face{
+    font-family: ManropeBody;
+    src: url(fonts/manrope/regular.otf)
+}
 
-  .achievement-title{
-      strong{
-          color: #898989;
-      }
-  }
+@font-face{
+    font-family: FoundersGrotesk;
+    src: url(fonts/foundersgrotesk/FoundersGroteskReg/test-founders-grotesk-regular.woff)
+}
 
-  .section-title{
-    margin-bottom: 10vh;
-    font-size: 7rem;
-  }
+@font-face{
+    font-family: Morganite;
+    src: url(fonts/Morganite/Morganite-Medium.ttf)
+}
+
+h1, h2, h3, h4, p, a, li {
+    font-family: FoundersGrotesk;
+}
+
+.intro-text-banner{
+    transform: rotate(-90deg);
+    height: max-content;
+    width: max-content;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 8;
+}
+
+.text-banner-desktop-wrapper{
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    white-space: nowrap;
+    transform-origin: right top;
+}
+
+.banner-sub-heading{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 2;
+
+}
+
+.city-info{
+    grid-row-start: 2;
+    border: 1px solid red;
+    grid-column-start: 11;
+    grid-column-end: 12;
+    .info-wrapper{
+        transform: rotate(-90deg);
+        height: max-content;
+        width: max-content;
+        transform-origin: bottom right;
+
+        transform-origin: top right;
+        margin-left: -2rem;
+    }
+}
+
+body{
+    color: $sprite-text;
+    background-color: $white;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.highlight-text{
+    color: $accent;
+}
+
+.highlight-text-dark{
+    color: $dark-accent;
+}
+
+.achievement-title{
+    strong{
+        color: #898989;
+    }
+}
+
+// Font size
+h1 {
+    font-size: $h1-font-sz;
+}
+h2 {
+    font-size: $h2-font-sz;
+}
+h3, h4, p, li, a, #nav-logo {
+    font-size: $sm-font-sz;
+}
+h4 {
+    font-size: $sm-font-sz;
+}
+p {
+    font-size: $sm-font-sz;
+}
+li {
+    font-size: $sm-font-sz;
+}
+a{
+
+}
+#nav-logo{
+    font-size: $sm-font-sz;
+}
+
+.banner-sub-heading{
+    margin-top: -1.5rem;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 2;
+}
+
+.text-banner-1{
+    text-align: right;
+}
+
+.text-banner-2{
+    margin-top: -4rem;
+    span{
+        margin-right: 15rem
+    }
+}
+
+.text-banner{
+    // position: absolute;
+}
+
+.no-highlight{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

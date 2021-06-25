@@ -11,12 +11,12 @@ function Footer() {
                 <div className="footer-container">
                     <div className="sub-container">
                         <div className="footer-cell footer-email-wrapper">
-                            <h4 className="rel-margin-bot">Get in touch</h4>
+                            <h4>Get in touch</h4>
                             <a className="secondary-cta" href="mailto:danielxshi@hotmail.com">danielxshi@hotmail.com</a>
                         </div>
 
                         <div className="footer-cell footer-frequent-links-wrapper">
-                            <h4 className="rel-margin-bot">Documents</h4>
+                            <h4>Documents</h4>
                             <ul>
                                 <li>
                                     <a href={resume}>Resume</a>
@@ -25,7 +25,7 @@ function Footer() {
                         </div>
 
                         <div className="footer-cell footer-social-media-wrapper">
-                            <h4 className="rel-margin-bot">Social Media</h4>
+                            <h4>Social Media</h4>
                             <ul>
                                 <li>
                                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/danielxshi">

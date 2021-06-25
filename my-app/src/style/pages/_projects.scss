@@ -74,15 +74,6 @@
 
 }
 
-.project-description-mobile {
-    p, li{
-        font-size: .9rem;
-        line-height: 1.7rem;
-    }
-}
-
-
-
 .rel-margin-bot{
     margin-bottom: $rel-margin-bot;
 }
@@ -318,35 +309,4 @@
 .span-bleed-right-container-hr{
     width: 100%;
     grid-column: 8 / 12;
-}
-
-
-.project-cheer span{
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 60s linear infinite;
-    font-size: 8rem;
-    will-change: transform; 
-    /* animation-direction: normal; */
-}
-.project-cheer{
-    box-shadow: inset 5px 5px 10px #a4a4a4, inset -5px -5px 10px #E3E2E67A;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100vw;
-    margin: 20vh 0;
-    color: #0f110c;
-    -webkit-text-fill-color: #0f110c;
-}
-@keyframes marquee{
-    0%{
-        transform: translate(0, 0);
-    }
-    100%{
-        transform: translate(-100%, 0);
-    }
 }
