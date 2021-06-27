@@ -58,22 +58,6 @@ body{
     }
 }
 
-// Font size
-h1, h2 {
-    font-size: $lrg-font-sz;
-}
-h4, #nav-logo, #contactCTA, .contactModal, li, footer, footer a, footer p, p {
-    font-size: $sm-font-sz;
-}
-
-.project-description p, h3 {
-    font-size: $med-font-sz;
-}
-
-p{
-    line-height: 2rem;
-}
-
 .no-highlight{
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

@@ -1,6 +1,5 @@
 @import '../base/variables.scss';
 
-
 .desktop-nav-container{
     justify-content: center;
     display: flex;
@@ -199,7 +198,7 @@ ul {
 
 
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1000px){
     .NavbarItems {
         position: relative;
     }

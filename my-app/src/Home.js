@@ -124,11 +124,10 @@ const Home = () => {
             smGraphic={smallBosstep} 
             alt={"BOSSTEP Graphic"} 
             title={projectMessages.bosstep.title} 
-            overview={projectMessages.bosstep.overview} 
             role={projectMessages.bosstep.role}
-            color={'color-stripe-red'} 
             linkTo={'/bosstep'}
-            tabColor={"red-tab"}
+            date={projectMessages.bosstep.date}
+            description={projectMessages.bosstep.role}
         />
         
         <ProjectCard 
@@ -136,11 +135,10 @@ const Home = () => {
             smGraphic={smallCliq} 
             alt={"CLIQ graphic"} 
             title={projectMessages.cliq.title} 
-            overview={projectMessages.cliq.description} 
-            role={projectMessages.cliq.role}
-            color={'color-stripe-green'} 
+            role={projectMessages.cliq.role} 
             linkTo={'/cliq'}
-            tabColor={"green-tab"} 
+            role={projectMessages.cliq.role}
+            date={projectMessages.cliq.date}
         />
         
         <ProjectCard 
@@ -148,11 +146,10 @@ const Home = () => {
             smGraphic={smallTrack} 
             alt={"Moment Track graphic"} 
             title={projectMessages.track.title} 
-            overview={projectMessages.track.description} 
             role={projectMessages.track.role}
-            color={'color-stripe-blue'} 
             linkTo={'/track'}
-            tabColor={"blue-tab"} 
+            role={projectMessages.track.role}
+            date={projectMessages.track.date}
         />
     </section>
 

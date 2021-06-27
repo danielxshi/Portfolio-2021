@@ -25,9 +25,9 @@ const cliqMessages = {
     category: "E-Commerce",
     description: "An e-commerce website curated for mechanical keyboard newcomers and enthusiasts",
     role: "Website Development, UX/UI design",
-    date: "",
+    date: "Spring 2021",
     cta: "VIEW WEBSITE",
-    team: "Spring 2021"
+    team: ""
 };
 
 const trackMessages = {
@@ -35,9 +35,9 @@ const trackMessages = {
     category: "Mobile App",
     description: "A battery monitoring application for users off-grid",
     role: "Mobile Application UX/UI design, User Research",
-    date: "",
+    date: "Spring 2021",
     cta: "TRY DEMO",
-    team: "Spring 2021"
+    team: ""
 };
 
 const projectMessages = {

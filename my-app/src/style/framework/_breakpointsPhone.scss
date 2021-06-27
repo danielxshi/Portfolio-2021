@@ -4,6 +4,36 @@
 
 
 // Modules ====================
+.project-cat-1 {
+    width: 75%;
+}
+.project-cat-2{
+    text-align: right;
+    p{
+        width: max-content;
+    }
+}
+.divider-col{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+}
+// Font size
+h1{
+    font-size: $mob-lrg-font-sz;
+}
+h2{
+    font-size: $mob-med-font-sz;
+}
+h4, #nav-logo, #contactCTA, .contactModal, li, footer, footer a, footer p, p, .project-description, h3 {
+    font-size: $mob-sm-font-sz;
+}
+
+p{
+    line-height: 2rem;
+}
+
 .about-section {
     .anchor-80-left{
         display: grid;
@@ -37,6 +67,7 @@
 .mobile-nav{
     display: flex;
 }
+
 .project-mobile-module{
     display: grid;
 }

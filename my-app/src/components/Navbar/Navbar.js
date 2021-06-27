@@ -26,7 +26,14 @@ class Navbar extends Component {
                             {MenuItems.map((item, index) => {
                                 return(
                                     <li key={index}>
-                                        <Link onClick={this.handleClick} to={"${process.env.PUBLIC_URL}" +item.href} href={item.href} smooth={true} spy={true} activeClassName="active" className={item.cName}>
+                                        <Link 
+                                            onClick={this.handleClick} 
+                                            to={"/" +item.href} 
+                                            href={item.href} 
+                                            smooth={true} 
+                                            spy={true} 
+                                            activeClassName="active" 
+                                            className={item.cName}>
                                             {item.title}
                                         </Link>
                                     </li>

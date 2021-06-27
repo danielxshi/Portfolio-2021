@@ -6,7 +6,7 @@ function ProjectCard(props) {
             <div className="project-headline-wrapper">
                 <h2 className="project-headline">{props.title}</h2>
             </div>
-            <div className="underline-container max-col">
+            <div className="underline-container max-bleed">
                 <div className="underline"></div>
                 <h4 className="project-number">{props.number}</h4>
             </div>
@@ -20,22 +20,13 @@ function ProjectCard(props) {
                 </Link>
             </div>
             <div className="project-description-mobile">
-                <div className="description-wrapper">
+                <div className="description-wrapper project-cat-1">
+                    <h3 clasName="project-category-title">Role</h3>
+                    <p>{props.role}</p>
+                </div>
+                <div className="description-wrapper project-cat-2">
                     <h3 clasName="project-category-title">Date</h3>
                     <p>{props.date}</p>
-                </div>
-                <div className="description-wrapper">
-                    <h3 clasName="project-category-title">Category</h3>
-                    <ul>
-                        <li>Test</li>
-                        <li>Test</li>
-                        <li>Test</li>
-                        <li>Test</li>
-                    </ul>
-                </div>
-                <div className="description-wrapper">
-                    <h3 clasName="project-category-title">Product</h3>
-                    <p>Test</p>
                 </div>
             </div>
         </div>
