@@ -224,6 +224,9 @@ const Home = () => {
                             </h3>
                             <p>JAN21|APR21</p>
                         </div>
+                        <div className="underline-container otr-divider-col">
+                            <div className="underline"></div>
+                        </div>
                         <p><strong>Role</strong> - rigging, sequencing, editing and sound design.</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-2">
@@ -242,6 +245,9 @@ const Home = () => {
                             </h3>
                             <p>OCT19</p>
                         </div>
+                        <div className="underline-container otr-divider-col">
+                            <div className="underline"></div>
+                        </div>
                         <p><strong>Role</strong> - videographer</p>
                     </div>
                     <div className="otr-proj-spec-wrapper otr-proj-3">
@@ -259,6 +265,10 @@ const Home = () => {
                                 </div>
                             </h3>
                             <p>JAN21|APR21</p>
+                        </div>
+
+                        <div className="underline-container otr-divider-col">
+                            <div className="underline"></div>
                         </div>
                         <p><strong>Role</strong> - cinematographer and colorist</p>
                     </div>
