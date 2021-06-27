@@ -9,13 +9,15 @@ class Navbar extends Component {
         this.setState({clicked: !this.state.clicked})
     }
 
+    // if this clicked and menu is open then set menu to false 
+
     render() {
         return(
             <header>
                 <div className="nav-container mobile-nav">
                     <nav className="grid-container">
                         <div className="nav-logo">
-                            <Link to="/">XIANG</Link>
+                            <Link>XIANG</Link>
                         </div>
                         <div className="menu-icon" onClick={this.handleClick}>
                             <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -24,7 +26,7 @@ class Navbar extends Component {
                             {MenuItems.map((item, index) => {
                                 return(
                                     <li key={index}>
-                                        <Link to={"${process.env.PUBLIC_URL}" +item.href} href={item.href} smooth={true} spy={true} activeClassName="active" className={item.cName}>
+                                        <Link onClick={this.handleClick} to={"${process.env.PUBLIC_URL}" +item.href} href={item.href} smooth={true} spy={true} activeClassName="active" className={item.cName}>
                                             {item.title}
                                         </Link>
                                     </li>

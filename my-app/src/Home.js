@@ -72,14 +72,14 @@ const Home = () => {
 
 
 
-    <div className="grid-container">
+    <div id="projects" className="grid-container">
         <div className="underline-container divider-col">
             <div className="underline"></div>
             <h2>Projects</h2>
         </div>
     </div>
 
-    <section id="projects">
+    <section>
         <DesktopProjectCard 
             lrgGraphic={smallBosstep} 
             smGraphic={smallBosstep} 
@@ -160,14 +160,14 @@ const Home = () => {
 
 
 
-    <div className="grid-container">
+    <div id="photography" className="grid-container">
         <div className="underline-container divider-col">
             <div className="underline"></div>
             <h2>Photography</h2>
         </div>
     </div>
 
-    <section id="photography" className="photo-grid grid-container project-spacer">
+    <section className="photo-grid grid-container project-spacer">
         <div className="max-bleed">
             <div className="sub-container grid-gap-add">
                 <div className="max-col">
