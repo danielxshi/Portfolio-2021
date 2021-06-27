@@ -99,7 +99,7 @@ function Bosstep(props) {
                             <p className="citation">test</p>
                         </div>
                         <div className="gcs-8-5">
-                            <h2 className="rel-margin-bot">Designing for<strong className="highlight-text">_</strong></h2>
+                            <h3 className="rel-margin-bot">Designing for<strong className="highlight-text">_</strong></h3>
                             <p className="paragraph-anchor-left rel-margin-bot">{dummyText}</p>
                         </div>
                     </div>

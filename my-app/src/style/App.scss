@@ -2,9 +2,6 @@
 @import '../style/base/variables.scss';
 @import '../style/base/mixins.scss';
 
-html{
-    scroll-behavior: smooth;
-}
 // === Intro banner
 .neumorphic-section{
     @include box-shadow($shadows);

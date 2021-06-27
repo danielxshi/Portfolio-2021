@@ -3,7 +3,6 @@ import {MenuItems} from "./MenuItems"
 import './Button.scss'
 import { HashLink as Link } from 'react-router-hash-link';
 
-
 class DesktopNav extends Component {
     
     state = {clicked: false}
@@ -28,7 +27,7 @@ class DesktopNav extends Component {
                                 {MenuItems.map((item, index) => {
                                     return(
                                         <li className ="underscore-cta" key={index}>
-                                            <Link to={item.href} activeClassName="active" className={item.cName}>
+                                            <Link to={"${process.env.PUBLIC_URL}" +item.href} href={item.href} smooth={true} spy={true} activeClassName="active" className={item.cName}>
                                                 {item.title}
                                             </Link>
                                         </li>
