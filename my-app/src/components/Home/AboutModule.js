@@ -5,7 +5,6 @@ function AboutModule() {
         <section id="about" className="about-section">
             <div className="grid-container">
                 <div className="max-bleed">
-                    {/* <h2 className="section-title">I am<strong className="highlight-text ">_</strong></h2> */}
                     <div className="sub-container">
                         <div className="span-3">
                             <div className="img-contain rel-margin-bot">
@@ -15,22 +14,6 @@ function AboutModule() {
                         <div className="about-wrapper personal-bio">
                             <h3 className="rel-margin-bot">XIANG DANIEL SHI</h3>
                             <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University, in pursuit of a Bachelors of Science with a focus in <strong className="highlight-text">Design</strong>. Presently, learning REACT and Framer Motion through online tutorials and in my freetime I <strong className="highlight-text">freelance </strong> photography and videography.</p>
-                            {/* <div className="contact-group">
-                                <h4>Phone</h4>
-                                <p>604-551-1548</p>
-                            </div>
-                            <div className="contact-group">
-                                <h4>Education</h4>
-                                <p>Simon Fraser University</p>
-                            </div>
-                            <div className="contact-group">
-                                <h4>Location</h4>
-                                <p>Vancouver, BC</p>
-                            </div>
-                            <div className="contact-group">
-                                <h4>Email</h4>
-                                <p>danielxshi@hotmail.com</p>
-                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -63,10 +46,6 @@ function AboutModule() {
                                 </div>
                                 <p>Showcased a renewable battery monitor mobile application. Designed in a team of 4 for Interactions Design course at SFU.</p>
                             </div>
-                            {/* <div className="anchor-80-left rel-margin-bot">
-                                <h4 className="achievement-title"><strong>Spring 2021 Project Showcase - SCHOOL OF INTERACTIVE ARTS &amp; TECHNOLOGY</strong></h4>
-                                <p>In Process... 🤓</p>
-                            </div> */}
                         </div>
                     </div>
                 </div>

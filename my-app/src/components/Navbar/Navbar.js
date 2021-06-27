@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {MenuItems} from "./MenuItems"
-import { NavLink, Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Navbar extends Component {
     state = {clicked: false}
@@ -12,7 +12,7 @@ class Navbar extends Component {
     render() {
         return(
             <header>
-                <div className="nav-container">
+                <div className="nav-container mobile-nav">
                     <nav className="grid-container">
                         <div className="nav-logo">
                             <Link to="/">XIANG</Link>
@@ -24,9 +24,9 @@ class Navbar extends Component {
                             {MenuItems.map((item, index) => {
                                 return(
                                     <li key={index}>
-                                        <NavLink exact path={item.url} activeClassName="active" className={item.cName} to={item.url}>
+                                        <Link to={"${process.env.PUBLIC_URL}" +item.href} href={item.href} smooth={true} spy={true} activeClassName="active" className={item.cName}>
                                             {item.title}
-                                        </NavLink>
+                                        </Link>
                                     </li>
                                 )
                             })}

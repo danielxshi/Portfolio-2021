@@ -4,13 +4,21 @@
 
 
 // Modules ====================
+.about-section {
+    .anchor-80-left{
+        display: grid;
+    }
+}
 .about-achievements h3{
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: -1;
 }
 .about-wrapper{
     grid-column-start: 5;
     grid-column-end: -1;
+    p{
+        width: 100%;
+    }
 }
 .proj-col-contain{
     grid-column-start: 2;
@@ -25,6 +33,9 @@
 }
 .desktop-nav{
     display: none;
+}
+.mobile-nav{
+    display: flex;
 }
 .project-mobile-module{
     display: grid;

@@ -66,16 +66,8 @@ function App() {
     <ContactModal showModal={showModal} setShowModal={setShowModal} />
       <div className="App">
         <ScrollToTop/>
-        {/* 
-          Add mobile nav bar
-          - structure on github 
-          - close button for project pages
-        */}
-        {/* <Navbar/> */}
+        <Navbar onClick={openModal}/>
         <DesktopNav onClick={openModal}/>
-        {/* <Route exact path="/">
-          <DesktopNav onClick={openModal}/>
-        </Route> */}
         <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition
