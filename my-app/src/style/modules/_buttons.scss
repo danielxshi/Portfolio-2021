@@ -75,8 +75,6 @@ a{
     }
 }
 
-
-
 footer {
     a{
         &:active{
@@ -86,4 +84,8 @@ footer {
             color: $dark-accent;
         }
     }
+}
+
+.active {
+    color: $black;
 }

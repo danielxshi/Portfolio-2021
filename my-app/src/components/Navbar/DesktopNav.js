@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {MenuItems} from "./MenuItems"
 import './Button.scss'
 import { HashLink as Link } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
+
 
 class DesktopNav extends Component {
     
@@ -18,7 +20,7 @@ class DesktopNav extends Component {
                     <div className="vertical-desktop-nav-container">
                         <div className="vertical-nav-content">
                             <div id="nav-logo">
-                                <Link to="/">XIANG</Link>
+                                <NavLink activeClassName="active" exact to="/">XIANG</NavLink>
                             </div>
                             <div className="menu-icon" onClick={this.handleClick}>
                                 <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -27,7 +29,11 @@ class DesktopNav extends Component {
                                 {MenuItems.map((item, index) => {
                                     return(
                                         <li className ="underscore-cta" key={index}>
-                                            <Link to={"${process.env.PUBLIC_URL}" +item.href} href={item.href} smooth={true} spy={true} activeClassName="active" className={item.cName}>
+                                            <Link 
+                                                to={"/" +item.href} 
+                                                href={item.href} smooth={true} 
+                                                spy={true}  
+                                                className={item.cName}>
                                                 {item.title}
                                             </Link>
                                         </li>

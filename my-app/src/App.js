@@ -1,19 +1,17 @@
 // Import styles
 import './style/App.scss';
 import './style/global.scss';
-import ReactDOM from 'react-dom';
+
 import React, { useState } from 'react';
 import styled from 'styled-components';
+
+
 import { ContactModal } from './components/ContactModal';
-import { GlobalStyle } from './components/globalStyles';
 
 import DesktopNav from './components/Navbar/DesktopNav'
 
 // Import Messages
 import projectMessages from './components/ProjectMessages.js'
-
-//Import placeholder
-import img3x4 from './images/placeholder/placeholder-3x4.png'
 
 // Import images
 import bosstepBanner from './images/bosstep-banner-2048x768.webp';
