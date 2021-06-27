@@ -6,7 +6,7 @@ function SectionHelperText(props) {
             <div className="grid-container grid-row-space">
                 <div className="proj-col-contain">
                     <div className="sub-container grid-col-space">
-                        <h3 className="span-2">{props.title}<strong className="highlight-text">_</strong></h3>
+                        <h3 className="span-2">{props.title}</h3>
                             <p className="rel-margin-bot anchor-right-sect-helper">{props.text}</p>
                             <p className="end-col-text"><strong className="highlight-text">
                                 {props.sectionChapterCurrent}</strong>|

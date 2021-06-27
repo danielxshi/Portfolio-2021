@@ -23,8 +23,8 @@ function FourColumnNotes(props) {
                 </div>
                 <div className="proj-col-contain">
                     <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">{props.text}</p>
-                        <h3 className="h2-anchor-right">{props.title}<strong className="highlight-text">_</strong></h3>
+                        <p className="text-grid-right">{props.text}</p>
+                        <h3 className="text-grid-left">{props.title}</h3>
                     </div>
                 </div>
             </div>

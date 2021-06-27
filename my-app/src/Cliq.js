@@ -44,10 +44,24 @@ function Cliq(props) {
     return (
         <main>
         <div className="sect-1">
-            <FourColumnNotesModule img1={sketchGuide1} img2={sketchGuide2} img3={sketchProdDetail} img4={sketchProdList} citation={"citation"} title={"SKETCHES AND FEATURE EXPLORATION"} text={"Designing the layout of CLIQ needed to incorporate some form of education on the product and an unique product details layout to highlight the components."}/>
+            <FourColumnNotesModule 
+                img1={sketchGuide1} 
+                img2={sketchGuide2} 
+                img3={sketchProdDetail} 
+                img4={sketchProdList} 
+                citation={"SKETCHES"} 
+                title={"SKETCHES AND FEATURE EXPLORATION"} 
+                text={"Designing the layout of CLIQ needed to incorporate some form of education on the product and an unique product details layout to highlight the components."}
+            />
         </div>
     
-        <ModMaxCol img={persona} title={"THE PERSONAS"} citation={"citation"} p1={"CLIQ was designed with two persona groups in mind, a novice group and an enthusiasts group. Throughout the project we gathered qualitative dath through interviews of keyboard enthusiasts and novices."} p2={"John represents the novice group. John is buying his first mechanical keyboard and does not know the technicalities of building a keyboard. Emma is an enthusiast, owns multiple keyboards, and enjoys choosing parts and building the keyboard."}/>
+        <ModMaxCol 
+            img={persona} 
+            title={"THE PERSONAS"} 
+            citation={"citation"} 
+            p1={"CLIQ was designed with two persona groups in mind, a novice group and an enthusiasts group. Throughout the project we gathered qualitative dath through interviews of keyboard enthusiasts and novices."} 
+            p2={"John represents the novice group. John is buying his first mechanical keyboard and does not know the technicalities of building a keyboard. Emma is an enthusiast, owns multiple keyboards, and enjoys choosing parts and building the keyboard."}
+        />
 
        
         {/* Sect helper graphic */}
@@ -88,36 +102,22 @@ function Cliq(props) {
 
 
         {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={cmatrixBG} title={"CMATRIX GIF"} sectionChapterCurrent={"03"} sectionChapterTotal={total} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <SectionHelperGraphic 
+            graphic={cmatrixBG} title={"Development"} 
+            sectionChapterCurrent={"03"} 
+            sectionChapterTotal={total} 
+            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
+        />
 
 
         {/* Pattern Library */}
-        <ModMaxCol img={patternLib} title={"Sections I managed"} citation={"test"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
-
-        {/* <section className="team-section sect-last sect-1">
-            <div className="grid-row-space grid-container">
-                <div className="max-col">
-                    <div className="sub-container grid-col-space">
-                        <h2 className="h2-anchor-left">working in a team <strong className="highlight-text">_</strong></h2>
-                    </div>
-                </div>
-                <div className="center-module ">
-                    <div className="profile-img-contain">
-                        <div className="img-contain">
-                            <img src={danielDiscord} alt="" />
-                        </div>
-                        <div className="img-contain">
-                            <img src={jasonDiscord} alt="" />
-                        </div>
-                        <div className="img-contain">
-                            <img src={marinaDiscord} alt="" />
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis.</p>
-                </div>
-                
-            </div>
-        </section> */}
+        <ModMaxCol 
+            img={patternLib} 
+            title={"Sections I managed"} 
+            citation={"test"} 
+            p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} 
+            p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}
+        />
         
         {/* Center module */}
         <CenterMod title={"Working in a team"} href={"https://danielxshi.github.io/IAT-339-Ecommerce-Website/"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>

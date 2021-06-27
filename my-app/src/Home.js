@@ -239,7 +239,7 @@ const Home = () => {
                             <h3>
                                 <div className="underscore-cta">
                                     <a href="https://www.youtube.com/watch?v=PAtd3-VlaaU">
-                                        The Main Event 2019
+                                        The Main Event
                                     </a>
                                 </div>
                             </h3>

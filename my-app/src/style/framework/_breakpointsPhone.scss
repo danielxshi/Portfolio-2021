@@ -10,11 +10,9 @@
 .project-cat-1 {
     width: 75%;
 }
-.otr-project-sect{
-    .title-wrapper{
-        h3{
-            margin: auto 0;
-        }
+.title-wrapper{
+    h3{
+        margin: auto 0;
     }
 }
 .project-cat-2{
@@ -248,12 +246,12 @@ p{
 .span-6{
     grid-column-start: span 13;
 }
-.h2-anchor-right{
+.text-grid-right{
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: -1;
 }
-.paragraph-anchor-left{
+.text-grid-left{
     grid-column-start: 1;
     grid-column-end: -1;
 }

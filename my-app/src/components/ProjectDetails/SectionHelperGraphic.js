@@ -12,7 +12,7 @@ function SectionHelperGraphic(props) {
                             </div>
                         </div>
                         <div className="anchor-right-sect-helper">
-                            <h3 className="rel-margin-bot">{props.title}<strong className="highlight-text">_</strong></h3>
+                            <h3 className="rel-margin-bot">{props.title}</h3>
                             <p className="rel-margin-bot">{props.text}</p>
                             <p className="end-col-text">
                                 <strong className="highlight-text">

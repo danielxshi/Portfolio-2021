@@ -10,7 +10,7 @@ function MaxColModule(props) {
                 </div>
                 <div className="proj-col-contain">
                     <div className="sub-container grid-col-space">
-                        <h3 className="anchor-left-subheader">{props.title}<strong className="highlight-text">_</strong></h3>
+                        <h3 className="anchor-left-subheader">{props.title}</h3>
                         <div className="anchor-80-right">
                             <p className="rel-margin-bot">{props.p1}</p>
                             <p>{props.p2}</p>

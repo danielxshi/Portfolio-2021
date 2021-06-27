@@ -12,8 +12,8 @@ function ModuleFiftySplit(props) {
                         </div>
                         <div className="gcs-8-5">
                             <h3>{props.title}<strong className="highlight-text">_</strong></h3>
-                            <p className="paragraph-anchor-left rel-margin-bot">{props.p1}</p>
-                            <p className="paragraph-anchor-left">{props.p2}</p>
+                            <p className="text-grid-left rel-margin-bot">{props.p1}</p>
+                            <p className="text-grid-left">{props.p2}</p>
                         </div>
                     </div>
                 </div>

@@ -32,8 +32,8 @@
                 </div>
                 <div className="max-col-proj-details">
                     <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
-                        <h2 className="h2-anchor-right">lorem checkout<strong className="highlight-text">_</strong></h2>
+                        <p className="text-grid-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus.</p>
+                        <h2 className="text-grid-right">lorem checkout<strong className="highlight-text">_</strong></h2>
                     </div>
                 </div>
             </div>

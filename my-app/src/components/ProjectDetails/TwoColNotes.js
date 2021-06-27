@@ -15,8 +15,8 @@ function TwoColNotes(props) {
                 </div>
                 <div className="max-col">
                     <div className="sub-container grid-col-space">
-                        <p className="paragraph-anchor-left">{props.text}</p>
-                        <h3 className="h2-anchor-right">{props.title}<strong className="highlight-text">_</strong></h3>
+                        <p className="text-grid-left">{props.text}</p>
+                        <h3 className="text-grid-right">{props.title}<strong className="highlight-text">_</strong></h3>
                     </div>
                 </div>
             </div>

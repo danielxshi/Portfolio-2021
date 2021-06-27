@@ -11,7 +11,6 @@ import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
 import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic";
 import CenterMod from "./components/ProjectDetails/CenterModule";
 import NextProject from "./components/ProjectDetails/NextProj";
-import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
 import ModMaxCol from "./components/ProjectDetails/MaxColModule"
 import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
 import ModMaxContainerGraphic from "./components/ProjectDetails/ModMaxContainerGraphic"
@@ -45,7 +44,7 @@ import nextProj from './images/cliq-1000x600.webp'
 
 import dummyText from './CommonMessages';
 
-const total = "04";
+const total = "03";
 
 function Bosstep(props) {
     return (
@@ -62,6 +61,11 @@ function Bosstep(props) {
         {/* Fifty Module/Sketch Lrg Overview*/}
         <ModuleFiftyGRight img={sketchMinigameMLrg} citation={"Bossfight Minigame"} title={"MINIGAME REVISION"} p1={"The initial considerations of the minigame did not include physical activity and this did not connect to our core value of encouraging healthy habits."} p2={"Introducing the minigame BossWalk. The user is prompted to take a step in a certain direction. The aim is to keep the radius of movement minimal and the path traveled to be short to be wary of surrounding environments."}/>
 
+
+        
+        {/* Sect helper graphic */}
+        <SectionHelperText title={"DESIGN"} sectionChapterCurrent={"02"} sectionChapterTotal={total} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+
         {/* sect helper graphic */}
         <SectionHelperGraphic graphic={personaGraphic} title={"FIELD TESTING"} sectionChapterCurrent={"03"} sectionChapterTotal={total} text={"The research took a halt. BOSSTEP's demographic was difficult to reach because they belong to a vulnerable research group and there would need to be signed consent from their parent/guardian and approval from the University. This process would take time that we did not have."}/>
 
@@ -70,61 +74,28 @@ function Bosstep(props) {
             title={"RESEARCH PIVOT"} 
             p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
             img={pie} 
-            citation={"citation"}
+            citation={"FIELD TEST"}
         />
 
         <ThreeColNotes 
             img1={i1mMG1} 
             img2={i1MG2} 
             img3={i1FriendList} 
-            citation={"citation"} 
+            citation={"PROTOTYPE"} 
             title={"title"} 
             text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
         />
 
         {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={blob} title={"test"} sectionChapterCurrent={"02"} sectionChapterTotal={total} text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}/>
+        <SectionHelperGraphic 
+            graphic={blob} 
+            title={"DESIGN CHANGES"} 
+            sectionChapterCurrent={"02"} 
+            sectionChapterTotal={total} 
+            text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}
+        />
 
-        {/* Prototype overview */}
-        <section className="bosstep-protoview-section sect-1 sect-last">
-            <div className="grid-row-space grid-container">
-                <div className="proj-col-contain protoview-1">
-                    <div className="sub-container grid-col-space">
-                        <div className="span-3 img-fit">
-                            <img className="rel-margin-bot" src={minigameM} alt=""/>
-                            <p className="citation">test</p>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img className="rel-margin-bot" src={minigameD} alt=""/>
-                            <p className="citation">test</p>
-                        </div>
-                        <div className="gcs-8-5">
-                            <h3 className="rel-margin-bot">Designing for<strong className="highlight-text">_</strong></h3>
-                            <p className="paragraph-anchor-left rel-margin-bot">{dummyText}</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="proj-col-contain protoview-2">
-                    <div className="sub-container grid-col-space">
-                        <div className="rel-margin-bot span-5">
-                            <p className="paragraph-anchor-left rel-margin-bot">{dummyText}</p>
-                        </div>
-                        <div className="span-50r-3p1 img-fit">
-                            <img className="rel-margin-bot" src={protoHome} alt=""/>
-                            <p className="citation">test</p>
-                        </div>
-                        <div className="span-3 img-fit">
-                            <img className="rel-margin-bot" src={protoAddFriend} alt=""/>
-                            <p className="citation">test</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        {/* Project Conclusion */}
-        <ModMaxCol img={finale} title={"title"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
-        
         {/* Center module */}
         <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
