@@ -1,6 +1,10 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    
+    .sub-details-wrapper{
+        width: 25%;
+    }
     .divider-col{
         grid-column-start: 4;
         grid-column-end: 12;
@@ -334,7 +338,7 @@
         font-size: $lrg-font-sz;
     }
     h4, #nav-logo, #contactCTA, .contactModal, li, footer, footer a, footer p, p {
-        font-size: $sm-font-sz;
+        font-size: $mob-sm-font-sz;
     }
 
     .project-description p, h3 {
@@ -343,5 +347,31 @@
 
     p{
         line-height: 2rem;
+    }
+    .project-details-hero-container{
+        .details-container {
+            .project-description-wrapper{
+                grid-row-start: 1;
+                grid-column-start: 8;
+                grid-column-end: 12;
+            }
+            .details-wrapper{
+                grid-column-start: 4;
+                grid-column-end: 12;
+                display: flex;
+                justify-content: space-between;
+            }
+            .project-title-wrapper {
+                grid-row-start: 1;
+                grid-column-start: 4;
+                grid-column-end: 8;
+            }
+
+        }
+        .project-description{
+            grid-column-start: 1;
+            grid-column-end: 7;
+            grid-row-start: 1;
+        }
     }
 }
