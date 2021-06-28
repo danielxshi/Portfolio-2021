@@ -153,10 +153,6 @@ const Home = () => {
         />
     </section>
 
-
-
-
-
     <div id="photography" className="grid-container">
         <div className="underline-container divider-col">
             <div className="underline"></div>

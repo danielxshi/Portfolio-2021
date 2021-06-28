@@ -127,6 +127,12 @@ ul {
             margin-top: 15vh;
         }
     }
+    .nav-list-wrapper{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .contactModal{
         text-align: center;
         margin-top: 0;

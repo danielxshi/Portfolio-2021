@@ -350,13 +350,12 @@ p{
         padding: $sect-spacer 0;
         .project-description-container {
             p {
-                margin-bottom: 2rem;
+                margin-bottom: $rel-margin;
             } 
         }
         .sub-details-wrapper{
             margin-bottom: $rel-margin;
-            margin-bottom: 2rem;
-            width: 300px;
+            width: 25%;
         }
         .sub-details-wrapper:last-child{
             margin-bottom: 0;

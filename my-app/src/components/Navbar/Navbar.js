@@ -23,24 +23,25 @@ class Navbar extends Component {
                             <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                         </div>
                         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                            {MenuItems.map((item, index) => {
-                                return(
-                                    <li key={index}>
-                                        <Link 
-                                            onClick={this.handleClick} 
-                                            to={"/" +item.href} 
-                                            href={item.href} 
-                                            smooth={true} 
-                                            spy={true} 
-                                            activeClassName="active" 
-                                            className={item.cName}>
-                                            {item.title}
-                                        </Link>
-                                    </li>
-                                )
-                            })}
-
-                        <a className="contactModal" onClick={this.props.onClick}>CONTACT</a>
+                            <div className="nav-list-wrapper">
+                                {MenuItems.map((item, index) => {
+                                    return(
+                                            <li key={index}>
+                                                <Link 
+                                                    onClick={this.handleClick} 
+                                                    to={"/" +item.href} 
+                                                    href={item.href} 
+                                                    smooth={true} 
+                                                    spy={true} 
+                                                    activeClassName="active" 
+                                                    className={item.cName}>
+                                                    {item.title}
+                                                </Link>
+                                            </li>
+                                    )
+                                })}
+                                <a className="contactModal" onClick={ () => {this.props.onClick(); this.handleClick();}}>CONTACT</a>
+                            </div>
                         </ul>
 
                     </nav>
