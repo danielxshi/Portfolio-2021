@@ -52,6 +52,7 @@ const Container = styled.div`
 
 
 function App() {
+  
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {

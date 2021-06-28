@@ -33,12 +33,10 @@ const Home = () => {
 
     let line1 = useRef(null);
     let line2 = useRef(null);
-    // let line3 = useRef(null);
 
     useEffect(() => {
         gsap.from([line1, line2], 1.6, {
             delay: 0.3,
-            // opacity: 0,
             ease: "power3.out",
             y: 475,
             stagger: {
