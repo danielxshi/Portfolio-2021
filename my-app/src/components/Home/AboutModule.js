@@ -1,4 +1,4 @@
-import profilePicture from '../../images/sfu-headshot.png';
+import profilePicture from '../../images/sfu-headshot.png'
 
 function AboutModule() {
     return (
@@ -37,7 +37,6 @@ function AboutModule() {
                                     <p>JAN21 | MAR21</p>
                                 </div>
                                 <p>Instructed a multidisciplinary cohort of 15-50 students for EmergeSFU in the basics of HTML and CSS.</p>
-                             
                             </div>
                             <div className="anchor-80-left rel-margin-bot">
                                 <div className="title-wrapper">
@@ -45,6 +44,23 @@ function AboutModule() {
                                     <p>MAR 21</p>
                                 </div>
                                 <p>Showcased a renewable battery monitor mobile application. Designed in a team of 4 for Interactions Design course at SFU.</p>
+                            </div>
+                        </div>
+
+                        <div className="underline-container max-col">
+                            <div className="underline"></div>
+                        </div>
+                        <div className="title-wrapper">
+                            <h3>Currently Representing</h3>
+                        </div>
+                        <div className="about-wrapper">
+                            <div className="content-group rel-margin-bot">
+                                <h4 className="achievement-title"><strong>UPhoto</strong></h4>
+                                <p>Graphic Designer</p>
+                            </div>
+                            <div className="content-group">
+                                <h4 className="achievement-title"><strong>CaseIT</strong></h4>
+                                <p>Director of Web Development</p>
                             </div>
                         </div>
                     </div>
