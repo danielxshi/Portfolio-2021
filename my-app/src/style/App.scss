@@ -3,16 +3,6 @@
 @import '../style/base/mixins.scss';
 
 // === Intro banner
-#about{
-    .sub-container .title-wrapper{
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
-    .about-wrapper{
-        grid-column-start: 5;
-        grid-column-end: -1;
-    }
-}
 .neumorphic-section{
     @include box-shadow($shadows);
     padding: 20vh 0 10vh 0;

@@ -1,6 +1,16 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    #about{
+        .sub-container .title-wrapper{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .about-wrapper{
+            grid-column-start: 5;
+            grid-column-end: -1;
+        }
+    }
     
     .sub-details-wrapper{
         width: 25%;
