@@ -47,7 +47,6 @@ function Slider(props){
   
         activeIndex: (sliderArr.length)-1
         
-        // activeIndex: 0
       })
     }
     setState({
@@ -58,10 +57,6 @@ function Slider(props){
 
   // arraySize
   var totalItems = sliderArr.length;
-
-  // console.log(sliderArr.length);
-
-  
   return(
     <div className="slide-container">
       <div className="slider">
@@ -82,10 +77,7 @@ function Slider(props){
       <p className="slide-pg-count">
         0{activeIndex + 1} /
         0{totalItems}
-      
       </p> 
-
-
     </div>
   );
 

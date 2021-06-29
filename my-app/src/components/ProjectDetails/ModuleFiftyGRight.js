@@ -12,7 +12,7 @@ function ModuleFiftyGRight(props) {
                             <p className="text-grid-left">{props.p2}</p>
                         </div>
                         <div className="img-fit gcs-8-5">
-                            <img src={props.img} alt={props.alt}/>
+                            <img loading="lazy" src={props.img} alt={props.alt}/>
                             <p className="citation">{props.citation}</p>
                         </div>
                     </div>

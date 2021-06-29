@@ -7,16 +7,16 @@ function FourColumnNotes(props) {
                 <div className="proj-col-contain">
                     <div className="rel-margin-bot sub-container grid-col-space">
                         <div className="span-3 img-fit">
-                            <img src={props.img1} alt={props.alt}/>
+                            <img loading="lazy" src={props.img1} alt={props.alt}/>
                         </div>
                         <div className="span-3 img-fit">
-                            <img src={props.img2} alt={props.alt}/>
+                            <img loading="lazy" src={props.img2} alt={props.alt}/>
                         </div>
                         <div className="span-3 img-fit">
-                            <img src={props.img3} alt={props.alt}/>
+                            <img loading="lazy" src={props.img3} alt={props.alt}/>
                         </div>
                         <div className="span-3 img-fit">
-                            <img src={props.img4} alt={props.alt}/>
+                            <img loading="lazy" src={props.img4} alt={props.alt}/>
                         </div>
                     </div>
                     <p className="citation">{props.citation}</p>

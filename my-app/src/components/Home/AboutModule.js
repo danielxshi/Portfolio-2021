@@ -8,7 +8,7 @@ function AboutModule() {
                     <div className="sub-container">
                         <div className="span-3">
                             <div className="img-contain rel-margin-bot">
-                                <img src={profilePicture} alt="" />
+                                <img loading="lazy" src={profilePicture} alt="" />
                             </div>
                         </div>
                         <div className="about-wrapper personal-bio">

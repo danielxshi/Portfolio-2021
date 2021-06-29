@@ -1,7 +1,37 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-    
+    .credits-section{
+        .title-wrapper{
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+        .content-wrapper{
+            grid-column-start: 6;
+            grid-column-end: 12;
+            display: flex;
+            justify-content: space-between;
+            > * {
+                width: 33.3%;
+            }
+        }
+        .content-wrap-1{
+            grid-row-start: 1;
+        }
+        .content-wrap-2{
+            grid-row-start: 2;
+        }
+    }
+    #about{
+        .sub-container .title-wrapper{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .about-wrapper{
+            grid-column-start: 5;
+            grid-column-end: -1;
+        }
+    }
     .sub-details-wrapper{
         width: 25%;
     }
@@ -9,7 +39,6 @@
         grid-column-start: 4;
         grid-column-end: 12;
         margin-bottom: 5vh;
-        margin-top: 10vh;
     }
     .about-achievements h3{
         grid-column-start: 1;

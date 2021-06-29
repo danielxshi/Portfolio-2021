@@ -8,7 +8,7 @@ function SectionHelperGraphic(props) {
                     <div className="sub-container grid-col-space">
                         <div className="span-3">
                             <div className="img-contain">
-                                <img src={props.graphic} alt={props.alt} />
+                                <img loading="lazy" src={props.graphic} alt={props.alt} />
                             </div>
                         </div>
                         <div className="anchor-right-sect-helper">

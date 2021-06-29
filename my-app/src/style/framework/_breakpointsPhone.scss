@@ -1,7 +1,30 @@
 // Imports
 @import '../base/variables.scss';
 
-
+.credits-section{
+    .title-wrapper{
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        margin-bottom: $rel-margin;
+    }
+    .content-wrapper{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 12;
+        display: flex;
+        justify-content: space-between;
+        > * {
+            width: 33.3%;
+        }
+    }
+    .content-wrap-1{
+        grid-row-start: 2;
+    }
+    .content-wrap-2{
+        grid-row-start: 3;
+    }
+}
 
 // Modules ====================
 .otr-divider-col{
@@ -25,7 +48,6 @@
     grid-column-start: 2;
     grid-column-end: 12;
     margin-bottom: 5vh;
-    margin-top: 10vh;
 }
 // Font size
 h1{
