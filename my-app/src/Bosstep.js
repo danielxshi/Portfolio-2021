@@ -3,15 +3,30 @@ import React from 'react';
 // Stylesheets
 import './style/pages/_projects.scss';
 
+// Import placeholders
+import img34 from './images/placeholder/placeholder-3x4.png';
+import img43 from './images/placeholder/placeholder-4x3.png';
+import img2x1 from './images/placeholder/placeholder-2x1.png';
+import imgProf from './images/placeholder/placeholder-prof-1x1.png';
+import imgVid from './images/placeholder/video-placeholder.png';
+import imgVid1x1 from './images/placeholder/vid-1x1.png';
+
 // Import components
-import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
-import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic";
-import CenterMod from "./components/ProjectDetails/CenterModule";
-import NextProject from "./components/ProjectDetails/NextProj";
+import SectionHelperText from "./components/ProjectDetails/SectionHelperText"
+import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic"
+import CenterMod from "./components/ProjectDetails/CenterModule"
+import NextProject from "./components/ProjectDetails/NextProj"
 import ModMaxCol from "./components/ProjectDetails/MaxColModule"
 import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
 import ModMaxContainerGraphic from "./components/ProjectDetails/ModMaxContainerGraphic"
 import ThreeColNotes from "./components/ProjectDetails/ThreeColNotes"
+import SectionDivider from "./components/SectionDivider"
+import Credits from "./components/ProjectDetails/Credits"
+import Slider from "./components/ProjectDetails/Slider"
+
+
+// Import Messages
+import projectMessages from './components/ProjectMessages.js'
 
 // Import images
 import sketchMinigameMLrg from './images/bosstep/sketch-minigame-m-lrg.jpg'
@@ -41,22 +56,17 @@ function Bosstep(props) {
     return (
         <main className="bosstep-page">
         <ModuleFiftyGRight 
-            title={"MEET ERICA"} 
+            title={"The Persona"} 
             p1={"Erica is 8 years old and enjoys playing video games. She does not feel motivated to go outside and exercise by herself but she enjoys playing games in PE class with her classmates."} 
             img={persona} 
-            citation={"Persona"}
+            citation={"PERSONA"}
         />
 
         <ModMaxCol 
             img={sketchNb} 
-            citation={"Sketch Overview"} 
-            title={"BOSSTEP SKETCH"} 
+            citation={"SKETCHES"} 
+            title={"Sketches"} 
             p1={"The first iteration of Bosstep consisted of a sketching the home page. Considerations included: A progress tracker for the amount of steps taken and a module to showcase the characters in the users party. Along the way, our group was split into 3 divisons. The divison I belonged to was in charge of research, minigames and friends list."} 
-        />
-        
-        <ModMaxContainerGraphic 
-            citation={"Wireframe Overview"} 
-            img={bosstepOverview}
         />
 
         <ModuleFiftyGRight 
@@ -74,19 +84,29 @@ function Bosstep(props) {
             text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
         />
 
+        <ModMaxContainerGraphic 
+            citation={"WIREFRAME"} 
+            img={bosstepOverview}
+        />
+
         <SectionHelperGraphic 
             graphic={personaGraphic} 
-            title={"FIELD TESTING"} 
+            title={"User Research"} 
             sectionChapterCurrent={"02"} 
             sectionChapterTotal={total} 
             text={"The research took a halt. BOSSTEP's demographic was difficult to reach because they belong to a vulnerable research group and there would need to be signed consent from their parent/guardian and approval from the University. This process would take time that we did not have."}
         />
 
         <ModuleFiftyGRight 
-            title={"RESEARCH PIVOT"} 
+            title={"Field Testing"} 
             p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
             img={pie} 
             citation={"FIELD TEST"}
+        />
+
+        <ModMaxContainerGraphic 
+            citation={"FIELD TEST"} 
+            img={img2x1}
         />
 
         <ThreeColNotes 
@@ -106,12 +126,51 @@ function Bosstep(props) {
             text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}
         />
 
+        <section className="sect-last sect-1">
+            <div className="grid-container">
+                <div className="proj-col-contain test-slide">
+                    <Slider img1={img2x1} img2={img2x1}/>
+                </div>
+            </div>
+        </section>
+
+        <ModuleFiftyGRight 
+            title={"Design Critique"} 
+            p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
+            img={imgProf} 
+            citation={"CRITIQUE"}
+        />
+
+        <ModMaxContainerGraphic 
+            citation={"WIREFRAME"} 
+            img={img2x1}
+        />
+
+        <SectionDivider/>
 
         <CenterMod 
-            title={"Working in a team"} 
-            org={"SFU IAT339 Project"} 
             btnTitle={"View Website"} 
             text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}
+        />
+
+        <SectionDivider/>
+            
+        <Credits
+            ch1={"Professor | Teaching Assistant"}
+            cp1={"Paul Brokenshire | Halimat Alabi"}
+            ch2={"School"}
+            cp2={"Simon Fraser University"}
+            cp21={"School of Interactive Arts and Technology"}
+            ch3={"Recognition"}
+            cp3={"First game application to be approved in the history of Interface Design class (IAT334)"}
+            ch4={"Role"}
+            cp4={"User Research"}
+            cp41={"UX/UI Design"}
+            cp42={"Website Development"}
+            ch5={"Date"}
+            cp5={projectMessages.bosstep.date}
+            ch6={"Team"}
+            cp6={projectMessages.bosstep.team}
         />
 
         <NextProject link={"/cliq"} img={nextProj}/>

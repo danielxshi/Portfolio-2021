@@ -16,6 +16,7 @@ class DesktopNav extends Component {
     
       componentDidMount(){
         // use the node ref to create the animation
+        // !Remove the delay
         this.myTween.from(this.myElements, 1, {y: -50}, 1)
         this.myTween.to(this.myElements, 0.95, {x: 0, autoAlpha: 1}, 1)
         this.myTween.from(this.myElement, 1, {y: -50}, 1)

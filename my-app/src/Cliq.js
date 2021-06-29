@@ -4,6 +4,14 @@ import React from 'react';
 // Stylesheets
 import './style/pages/_projects.scss';
 
+// Import placeholders
+import img34 from './images/placeholder/placeholder-3x4.png';
+import img43 from './images/placeholder/placeholder-4x3.png';
+import img2x1 from './images/placeholder/placeholder-2x1.png';
+import imgProf from './images/placeholder/placeholder-prof-1x1.png';
+import imgVid from './images/placeholder/video-placeholder.png';
+import imgVid1x1 from './images/placeholder/vid-1x1.png';
+
 // Import components
 import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
 import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic";
@@ -14,6 +22,11 @@ import ModuleFiftyGRight from "./components/ProjectDetails/ModuleFiftyGRight"
 import ModMaxCol from "./components/ProjectDetails/MaxColModule"
 import ModMaxContainerGraphic from "./components/ProjectDetails/ModMaxContainerGraphic"
 import Slider from "./components/ProjectDetails/Slider"
+import SectionDivider from "./components/SectionDivider"
+import Credits from "./components/ProjectDetails/Credits"
+
+// Import Messages
+import projectMessages from './components/ProjectMessages.js'
 
 // Import images
 import nextProj from './images/boss-1000x600.webp'
@@ -37,7 +50,6 @@ import productDetailR2 from './images/cliq/product-detail-r2.png'
 import cmatrixBG from './images/cliq/cmatrix-blk-bg.gif'
 import cliqWhiteTextAnim from './images/cliq/cliq-white-text-anim.gif'
 
-
 const total = "03";
 
 function Cliq(props) {
@@ -50,80 +62,136 @@ function Cliq(props) {
                 img3={sketchProdDetail} 
                 img4={sketchProdList} 
                 citation={"SKETCHES"} 
-                title={"SKETCHES AND FEATURE EXPLORATION"} 
+                title={"Sketches and Feature Exploration"} 
                 text={"Designing the layout of CLIQ needed to incorporate some form of education on the product and an unique product details layout to highlight the components."}
             />
         </div>
     
         <ModMaxCol 
             img={persona} 
-            title={"THE PERSONAS"} 
+            title={"The Personas"} 
             citation={"citation"} 
             p1={"CLIQ was designed with two persona groups in mind, a novice group and an enthusiasts group. Throughout the project we gathered qualitative dath through interviews of keyboard enthusiasts and novices."} 
             p2={"John represents the novice group. John is buying his first mechanical keyboard and does not know the technicalities of building a keyboard. Emma is an enthusiast, owns multiple keyboards, and enjoys choosing parts and building the keyboard."}
         />
 
-       
-        {/* Sect helper graphic */}
-        <SectionHelperGraphic graphic={cliqWhiteTextAnim} title={"STYLE GUIDE"} sectionChapterCurrent={"01"} sectionChapterTotal={total} text={"Exploring color, typography and neumorphism"}/>
+        <SectionHelperGraphic 
+            graphic={cliqWhiteTextAnim} 
+            title={"Style Guide"} 
+            sectionChapterCurrent={"01"} 
+            sectionChapterTotal={total} 
+            text={"Exploring color, typography and neumorphism"}
+        />
 
-
-        {/* Text animation for typography*/}
         <ModMaxContainerGraphic img={typography}/>
 
-        {/* Kerning */}
         <ModMaxContainerGraphic img={kerning}/>
 
-        {/* color guide */}
         <ModMaxContainerGraphic img={colorguide}/>
 
-
-        {/* slider neumorphicPb and Sb*/}
         <section className="sect-last sect-1">
             <div className="grid-container">
                 <div className="proj-col-contain test-slide">
                     <Slider img1={neuGuidePb} img2={neuGuideSb}/>
                 </div>
-
             </div>
         </section>
 
-        <ModuleFiftyGRight img={logo} title={"Flexibility"} p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}/>
+        <ModuleFiftyGRight 
+            img={logo} 
+            title={"Flexibility"} 
+            p1={"Neumorphism is a user interface design that uses shadows to simulate depth. The immediate challenge is accessibility while creating variety within the design. My proposal of neumorphism was well received by the team and professor. The supporting reasons were the feeling of tactility in neumorphism bridging towards the keyboard switches."} 
+            p2={"Prototyping with my team different shadows through x & y position, blur and color resulted in one final MVP looking at tactility of the neumorphism and accessibility presented in contrasting it from the our background."}
+            citation={"CLIQ LOGO"}
+        />
         
-        {/* Sect helper graphic */}
-        <SectionHelperText title={"WIREFRAME"} sectionChapterCurrent={"02"} sectionChapterTotal={total} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}/>
+        <SectionHelperText 
+            title={"Wireframe"} 
+            sectionChapterCurrent={"02"} 
+            sectionChapterTotal={total} 
+            text={"Creating grey box wireframes"}
+        />
 
-        <ModMaxContainerGraphic img={wireframeOverview} citation={"WIREFRAME"}/>
-
-        {/* Greybox Wireframes */}
-        <ModMaxCol img={sitemap} title={"GREY BOX WIREFRAME"} citation={"SITEMAP"} p1={"CLIQ contained 10 pages, designed in Figma. During the design phase my role was primarily to create the product details page and checkout funnel. Working in a team required me to maintain communication and work cohesively on components through a democratic format to ensure consistency."}/>
-
-        <ModuleFiftyGRight img={productDetailR2} title={"PAGE REDESIGN"} p1={"The main requirements of the product details page were to highlight the product. Our research showed enthusiasts enjoy mechanical keyboards for the customization factor and the ability to choose components."} p2={"The objective was to improve the buying experience through providing a more detailed and artisanal shopping experience. Changes in the new design incorporated larger sections for the main components, while including images."}/>
+        <ModMaxContainerGraphic 
+            img={wireframeOverview} 
+            citation={"WIREFRAME"}
+        />
 
 
-        {/* Sect helper graphic */}
+        <ModMaxContainerGraphic 
+            img={sitemap} 
+            citation={"SITEMAP"} 
+        />
+
+        <ModuleFiftyGRight 
+            img={productDetailR2} 
+            title={"Pages Managed"} 
+            p1={"The main requirements of the product details page were to highlight the product. Our research showed enthusiasts enjoy mechanical keyboards for the customization factor and the ability to choose components."} 
+            p2={"The objective was to improve the buying experience through providing a more detailed and artisanal shopping experience. Changes in the new design incorporated larger sections for the main components, while including images."}
+        />
+
         <SectionHelperGraphic 
             graphic={cmatrixBG} title={"Development"} 
             sectionChapterCurrent={"03"} 
             sectionChapterTotal={total} 
-            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
+            text={"Product details | Guides "}
         />
 
-
-        {/* Pattern Library */}
         <ModMaxCol 
             img={patternLib} 
-            title={"Sections I managed"} 
-            citation={"test"} 
-            p1={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."} 
-            p2={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse explicabo illo est labore, eveniet enim laboriosam. Quia soluta nobis tempora et sequi architecto impedit, qui molestias facilis, excepturi repudiandae."}
+            title={"Pattern Library"} 
+            citation={"CLIQ PATTERN LIBRARY"} 
+            p1={"How it was developed. How I contributed"} 
+            p2={"Sections I managed - and add hyperlink to pattern library"}
         />
-        
-        {/* Center module */}
-        <CenterMod title={"Working in a team"} href={"https://danielxshi.github.io/IAT-339-Ecommerce-Website/"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
-        {/* Next project */}
-        <NextProject link={"/bosstep"} img={nextProj}/>
+
+        <ModMaxContainerGraphic 
+            img={img2x1} 
+            citation={"PRODUCT DETAILS PAGES | GUIDES PAGE"} 
+        />
+
+
+        <ModuleFiftyGRight 
+            img={imgProf} 
+            title={"Design Challenge"} 
+            p1={"The main requirements of the product details page were to highlight the product. Our research showed enthusiasts enjoy mechanical keyboards for the customization factor and the ability to choose components."} 
+            p2={"The objective was to improve the buying experience through providing a more detailed and artisanal shopping experience. Changes in the new design incorporated larger sections for the main components, while including images."}
+        />
+
+        <SectionDivider/>
+        
+        <CenterMod 
+            href={"https://danielxshi.github.io/IAT-339-Ecommerce-Website/"} 
+            btnTitle={"View Website"} 
+            text={"The teams prior experience with front-end development, Github, and Figma was advantageous and allowed us to work cohesively. Potential steps are to convert the website to a more modern framework such as REACT and perform usability testing."}
+        />
+
+        <SectionDivider/>
+        
+        <Credits
+            ch1={"Professor | Teaching Assistant"}
+            cp1={"Paul Brokenshire | Breanne Lewis"}
+            ch2={"School"}
+            cp2={"Simon Fraser University"}
+            cp21={"School of Interactive Arts and Technology"}
+            ch3={"Recognition"}
+            cp3={"Highest grade received for design"}
+            cp31={"Presenter in 2021 SIAT Showcase"}
+            ch4={"Role"}
+            cp41={"UX/UI Design"}
+            cp42={"Website Development"}
+            ch5={"Date"}
+            cp5={projectMessages.cliq.date}
+            ch6={"Team"}
+            cp6={"Marina Cameron"}
+            cp61={"Jason Xu"}
+        />
+
+        <NextProject 
+            link={"/bosstep"} 
+            img={nextProj}
+        />
         </main>
     );
 }

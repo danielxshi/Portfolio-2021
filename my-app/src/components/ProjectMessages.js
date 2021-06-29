@@ -17,7 +17,7 @@ const bosstepMessages = {
     role: "Website Development, Mobile Application UX/UI design, User Research, Field testing",
     date: "Fall 2020",
     cta: "VIEW WEBSITE",
-    team: "Yuanyu Zhou, Anne Duong, Laura Reyerse, Sung Bong Kim, Seon Jeong"
+    team: "Anne Duong, Laura Reyerese, Sean Jeong, Sungbong Kim, Yuanyu Zhou"
 };
 
 const cliqMessages = {
@@ -27,7 +27,7 @@ const cliqMessages = {
     role: "Website Development, UX/UI design",
     date: "Spring 2021",
     cta: "VIEW WEBSITE",
-    team: ""
+    team: "Marina Cameron, Jason Xu"
 };
 
 const trackMessages = {
