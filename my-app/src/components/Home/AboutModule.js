@@ -22,7 +22,9 @@ function AboutModule() {
                 </div>
                 <div className="max-bleed about-achievements">
                     <div className="sub-container">
-                        <h3 className="rel-margin-bot">Noteable Achievements</h3>
+                    <div className="title-wrapper">
+                        <h3>Noteable Achievements</h3>
+                    </div>
                         <div className="about-wrapper">
                             <div className="anchor-80-left rel-margin-bot">
                                 <div className="title-wrapper">

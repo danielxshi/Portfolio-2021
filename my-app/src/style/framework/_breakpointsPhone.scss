@@ -68,6 +68,10 @@ p{
     .anchor-80-left{
         display: grid;
     }
+    .title-wrapper{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
 }
 .about-achievements h3{
     grid-column-start: 1;
