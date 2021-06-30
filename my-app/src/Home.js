@@ -75,7 +75,7 @@ const Home = () => {
             smGraphic={smallCliq} 
             alt={"CLIQ graphic"} 
             title={projectMessages.cliq.title} 
-            overview={projectMessages.cliq.description} 
+            overview={projectMessages.cliq.overview} 
             role={projectMessages.cliq.role}
             color={'color-stripe-green'} 
             linkTo={'/cliq'}
@@ -88,7 +88,7 @@ const Home = () => {
             smGraphic={smallTrack} 
             alt={"Moment Track graphic"} 
             title={projectMessages.track.title} 
-            overview={projectMessages.track.description} 
+            overview={projectMessages.track.overview} 
             role={projectMessages.track.role}
             color={'color-stripe-blue'} 
             linkTo={'/track'}
@@ -104,7 +104,6 @@ const Home = () => {
             role={projectMessages.bosstep.role}
             linkTo={'/bosstep'}
             date={projectMessages.bosstep.date}
-            description={projectMessages.bosstep.role}
         />
         
         <ProjectCard 
@@ -114,7 +113,6 @@ const Home = () => {
             title={projectMessages.cliq.title} 
             role={projectMessages.cliq.role} 
             linkTo={'/cliq'}
-            role={projectMessages.cliq.role}
             date={projectMessages.cliq.date}
         />
         
@@ -125,7 +123,6 @@ const Home = () => {
             title={projectMessages.track.title} 
             role={projectMessages.track.role}
             linkTo={'/track'}
-            role={projectMessages.track.role}
             date={projectMessages.track.date}
         />
     </section>

@@ -126,8 +126,8 @@ function Cliq(props) {
         <ModuleFiftyGRight 
             img={productDetailR2} 
             title={"Pages Managed"} 
-            p1={"The main requirements of the product details page were to highlight the product. Our research showed enthusiasts enjoy mechanical keyboards for the customization factor and the ability to choose components."} 
-            p2={"The objective was to improve the buying experience through providing a more detailed and artisanal shopping experience. Changes in the new design incorporated larger sections for the main components, while including images."}
+            p1={"I managed the checkout pages, guides page and product details page. This entailed the design and grey box wireframe. The design of the product details page was challenged by the content necessary to showcase the product. The products are artisinal and many of the product components needed space for showcasing which prompted dividing the page into sections allocating to the core components of the keyboard (case, switches, keycaps)."} 
+            citation={"PRODUCT DETAILS"}
         />
 
         <SectionHelperGraphic 
@@ -141,22 +141,8 @@ function Cliq(props) {
             img={patternLib} 
             title={"Pattern Library"} 
             citation={"CLIQ PATTERN LIBRARY"} 
-            p1={"How it was developed. How I contributed"} 
-            p2={"Sections I managed - and add hyperlink to pattern library"}
-        />
-
-
-        <ModMaxContainerGraphic 
-            img={img2x1} 
-            citation={"PRODUCT DETAILS PAGES | GUIDES PAGE"} 
-        />
-
-
-        <ModuleFiftyGRight 
-            img={imgProf} 
-            title={"Design Challenge"} 
-            p1={"The main requirements of the product details page were to highlight the product. Our research showed enthusiasts enjoy mechanical keyboards for the customization factor and the ability to choose components."} 
-            p2={"The objective was to improve the buying experience through providing a more detailed and artisanal shopping experience. Changes in the new design incorporated larger sections for the main components, while including images."}
+            p1={"The responsibilities in the design and development stage differed slightly. Some pages required more time to develop than others. While the main challenge of the development stage was maintaining code organization with my team. The development stage was heavily supported by the pattern library. The pages I developed included the product details page and the guides page. Additionally, managing some components from the pattern library."} 
+            p2={"The pattern library did attribute to much of the organization although, each member had previously built their own pattern library for the site as an individual class exercise. In the end we combined elements from our own libraries to form one final pattern library for the website."}
         />
 
         <SectionDivider/>
@@ -164,7 +150,7 @@ function Cliq(props) {
         <CenterMod 
             href={"https://danielxshi.github.io/IAT-339-Ecommerce-Website/"} 
             btnTitle={"View Website"} 
-            text={"The teams prior experience with front-end development, Github, and Figma was advantageous and allowed us to work cohesively. Potential steps are to convert the website to a more modern framework such as REACT and perform usability testing."}
+            text={"The teams prior experience with front-end development, Github, and Figma was advantageous and allowed us to work cohesively. Potential steps are to convert the website to a more modern framework such as REACT and perform usability testing for the current design."}
         />
 
         <SectionDivider/>

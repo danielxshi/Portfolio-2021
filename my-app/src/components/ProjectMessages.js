@@ -23,7 +23,8 @@ const bosstepMessages = {
 const cliqMessages = {
     title: "CLIQ",
     category: "E-Commerce",
-    description: "An e-commerce website curated for mechanical keyboard newcomers and enthusiasts",
+    overview: "An e-commerce website curated for mechanical keyboard newcomers and enthusiasts",
+    description: "An e-commerce website curated for mechanical keyboard newcomers and enthusiasts. Designed and developed over 5 weeks in a team of three for an upper year web development course at Simon Fraser University.",
     role: "Website Development, UX/UI design",
     date: "Spring 2021",
     cta: "VIEW WEBSITE",
