@@ -4,6 +4,30 @@
 /* Project details pg 
 ========================================================================== */ 
 
+.two-column-graphic{
+    .content-group-wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        .cg-sect-1, .cg-sect-2{
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+        .directional-icon{
+            height: 100%; 
+            display: flex;
+            justify-self: center;
+            p{
+                margin: auto;
+                padding-bottom: $rel-margin;
+            }
+        }
+    }
+}
+
 // ProjectCard
 .project-title{
     margin-bottom: 10vh;

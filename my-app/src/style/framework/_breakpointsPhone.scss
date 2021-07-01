@@ -131,13 +131,12 @@ p{
 }
 .mod-50{
     .span-50{
-        grid-column-start: 1;
+        grid-row-start: 2;
         grid-column-end: 13;
         margin-bottom: $sect-spacer;
-        grid-row-start: inherit;
     }
     .gcs-8-5{
-        grid-row-start: inherit;
+        grid-column-start: 1;
         grid-column-start: 1;
         grid-column-end: 13;
     }

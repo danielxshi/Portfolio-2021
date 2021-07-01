@@ -97,6 +97,15 @@ function Bosstep(props) {
             text={"The research took a halt. BOSSTEP's demographic was difficult to reach because they belong to a vulnerable research group and there would need to be signed consent from their parent/guardian and approval from the University. This process would take time that we did not have."}
         />
 
+        <ThreeColNotes 
+            img1={i1mMG1} 
+            img2={i1MG2} 
+            img3={i1FriendList} 
+            citation={"PROTOTYPE"} 
+            title={"title"} 
+            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
+        />
+
         <ModuleFiftyGRight 
             title={"Field Testing"} 
             p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
@@ -109,27 +118,91 @@ function Bosstep(props) {
             img={img2x1}
         />
 
-        <ThreeColNotes 
-            img1={i1mMG1} 
-            img2={i1MG2} 
-            img3={i1FriendList} 
-            citation={"PROTOTYPE"} 
-            title={"title"} 
-            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
-        />
-
-        <SectionHelperGraphic 
-            graphic={blob} 
-            title={"DESIGN CHANGES"} 
-            sectionChapterCurrent={"03"} 
-            sectionChapterTotal={total} 
-            text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}
-        />
-
-        <section className="sect-last sect-1">
+        <section className="sect-last sect-1 two-column-graphic">
             <div className="grid-container">
-                <div className="proj-col-contain test-slide">
-                    <Slider img1={img2x1} img2={img2x1}/>
+                <div className="max-bleed">
+                    <div className="title-group">
+                        <div className="title-wrapper">
+                            <h4>Before</h4>
+                        </div>
+                        <div className="title-wrapper">
+                            <h4>After</h4>
+                        </div>
+                    </div>
+                    <div className="content-group-wrapper">
+                        <div className="cg-sect-1">
+                            <div className="content-group">
+                                <img src={imgProf} alt="" />
+                                <p className="citation">test</p>
+                            </div>
+                        </div>
+                        <div className="directional-icon">
+                            <p>>>></p>
+                        </div>
+                        <div className="cg-sect-2">
+                            <div className="content-group">
+                                <img src={imgProf} alt="" />
+                                <p className="citation">test</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="max-bleed">
+                    <div className="content-group-wrapper">
+                        <div className="cg-sect-1">
+                            <div className="content-group">
+                                <img src={imgProf} alt="" />
+                                <p className="citation">test</p>
+                            </div>
+                        </div>
+                        <div className="directional-icon">
+                            <p>>>></p>
+                        </div>
+                        <div className="cg-sect-2">
+                            <div className="content-group">
+                                <img src={imgProf} alt="" />
+                                <p className="citation">test</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="max-bleed">
+                    <div className="content-group-wrapper">
+                        <div className="cg-sect-1">
+                            <div className="content-group">
+                                <img src={imgProf} alt="" />
+                                <p className="citation">test</p>
+                            </div>
+                        </div>
+                        <div className="directional-icon">
+                            <p>>>></p>
+                        </div>
+                        <div className="cg-sect-2">
+                            <div className="content-group">
+                                <img src={imgProf} alt="" />
+                                <p className="citation">test</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="max-bleed">
+                    <div className="content-group-wrapper">
+                        <div className="cg-sect-1">
+                            <div className="content-group">
+                                <img src={imgProf} alt="" />
+                                <p className="citation">test</p>
+                            </div>
+                        </div>
+                        <div className="directional-icon">
+                            <p>>>></p>
+                        </div>
+                        <div className="cg-sect-2">
+                            <div className="content-group">
+                                <img src={imgProf} alt="" />
+                                <p className="citation">test</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,6 +212,14 @@ function Bosstep(props) {
             p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
             img={imgProf} 
             citation={"CRITIQUE"}
+        />
+
+        <SectionHelperGraphic 
+            graphic={blob} 
+            title={"DESIGN CHANGES"} 
+            sectionChapterCurrent={"03"} 
+            sectionChapterTotal={total} 
+            text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}
         />
 
         <ModMaxContainerGraphic 
