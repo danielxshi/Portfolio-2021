@@ -96,26 +96,12 @@ function Bosstep(props) {
             sectionChapterTotal={total} 
             text={"The research took a halt. BOSSTEP's demographic was difficult to reach because they belong to a vulnerable research group and there would need to be signed consent from their parent/guardian and approval from the University. This process would take time that we did not have."}
         />
-
-        <ThreeColNotes 
-            img1={i1mMG1} 
-            img2={i1MG2} 
-            img3={i1FriendList} 
-            citation={"PROTOTYPE"} 
-            title={"title"} 
-            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
-        />
-
+        
         <ModuleFiftyGRight 
             title={"Field Testing"} 
             p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
             img={pie} 
             citation={"FIELD TEST"}
-        />
-
-        <ModMaxContainerGraphic 
-            citation={"FIELD TEST"} 
-            img={img2x1}
         />
 
         <section className="sect-last sect-1 two-column-graphic">

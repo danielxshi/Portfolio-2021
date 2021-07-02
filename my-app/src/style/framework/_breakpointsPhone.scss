@@ -1,5 +1,17 @@
 // Imports
 @import '../base/variables.scss';
+.rel-margin-bot{
+    margin-bottom: $rel-margin-bot;
+}
+
+.sect-1{
+    padding-top: $sect-spacer-mobile;
+}
+
+.sect-last{
+    margin-bottom: $sect-spacer-mobile;
+}
+
 
 .credits-section{
     .title-wrapper{
@@ -19,9 +31,13 @@
             margin-bottom: $rel-margin;
             width: 100%;
         }
+        > :last-child{
+            margin-bottom: 0;
+        }
     }
     .content-wrap-1{
         grid-row-start: 2;
+        margin-bottom: 0;
     }
     .content-wrap-2{
         grid-row-start: 3;

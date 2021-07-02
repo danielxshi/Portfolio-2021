@@ -1,6 +1,17 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+    .rel-margin-bot{
+        margin-bottom: $rel-margin-bot;
+    }
+    
+    .sect-1{
+        padding-top: $sect-spacer;
+    }
+    
+    .sect-last{
+        margin-bottom: $sect-spacer;
+    }    
     .credits-section{
         .title-wrapper{
             grid-column-start: 4;
