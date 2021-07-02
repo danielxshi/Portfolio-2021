@@ -5,24 +5,44 @@
 ========================================================================== */ 
 
 .two-column-graphic{
+    .title-group{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .title-wrapper{
+            margin-bottom: $rel-margin;
+            width: 40%;
+        }
+    }
+
+    .rel-margin-bot{
+        margin-bottom: 7.5vh;
+    }
     .content-group-wrapper{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 100%;
+        height: fit-content;
         .cg-sect-1, .cg-sect-2{
+            height: fit-content;
             width: 40%;
             img{
                 width: 100%;
+            }
+            .content-group{
+                flex-direction: column;
+                display: flex;
+                height: fit-content;
             }
         }
         .directional-icon{
             height: 100%; 
             display: flex;
             justify-self: center;
+            margin: auto;
             p{
-                margin: auto;
                 padding-bottom: $rel-margin;
+                margin: auto;
             }
         }
     }

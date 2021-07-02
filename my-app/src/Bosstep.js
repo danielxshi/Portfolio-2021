@@ -129,11 +129,12 @@ function Bosstep(props) {
                             <h4>After</h4>
                         </div>
                     </div>
-                    <div className="content-group-wrapper">
+                    {/* Group 1 */}
+                    <div className="content-group-wrapper rel-margin-bot">
                         <div className="cg-sect-1">
                             <div className="content-group">
                                 <img src={imgProf} alt="" />
-                                <p className="citation">test</p>
+                                <p className="citation">Text</p>
                             </div>
                         </div>
                         <div className="directional-icon">
@@ -142,17 +143,16 @@ function Bosstep(props) {
                         <div className="cg-sect-2">
                             <div className="content-group">
                                 <img src={imgProf} alt="" />
-                                <p className="citation">test</p>
+                                <p className="citation">Text</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="max-bleed">
-                    <div className="content-group-wrapper">
+                    {/* Group 2 */}
+                    <div className="content-group-wrapper rel-margin-bot">
                         <div className="cg-sect-1">
                             <div className="content-group">
                                 <img src={imgProf} alt="" />
-                                <p className="citation">test</p>
+                                <p className="citation">Text</p>
                             </div>
                         </div>
                         <div className="directional-icon">
@@ -161,17 +161,16 @@ function Bosstep(props) {
                         <div className="cg-sect-2">
                             <div className="content-group">
                                 <img src={imgProf} alt="" />
-                                <p className="citation">test</p>
+                                <p className="citation">Text</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="max-bleed">
+                    {/* Group 3 */}
                     <div className="content-group-wrapper">
                         <div className="cg-sect-1">
                             <div className="content-group">
                                 <img src={imgProf} alt="" />
-                                <p className="citation">test</p>
+                                <p className="citation">Text</p>
                             </div>
                         </div>
                         <div className="directional-icon">
@@ -180,26 +179,7 @@ function Bosstep(props) {
                         <div className="cg-sect-2">
                             <div className="content-group">
                                 <img src={imgProf} alt="" />
-                                <p className="citation">test</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="max-bleed">
-                    <div className="content-group-wrapper">
-                        <div className="cg-sect-1">
-                            <div className="content-group">
-                                <img src={imgProf} alt="" />
-                                <p className="citation">test</p>
-                            </div>
-                        </div>
-                        <div className="directional-icon">
-                            <p>>>></p>
-                        </div>
-                        <div className="cg-sect-2">
-                            <div className="content-group">
-                                <img src={imgProf} alt="" />
-                                <p className="citation">test</p>
+                                <p className="citation">Text</p>
                             </div>
                         </div>
                     </div>
