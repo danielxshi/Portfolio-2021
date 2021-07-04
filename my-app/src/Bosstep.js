@@ -23,7 +23,7 @@ import ThreeColNotes from "./components/ProjectDetails/ThreeColNotes"
 import SectionDivider from "./components/SectionDivider"
 import Credits from "./components/ProjectDetails/Credits"
 import Slider from "./components/ProjectDetails/Slider"
-
+import ModuleThirtyGRight from './components/ProjectDetails/Module30GRight'
 
 // Import Messages
 import projectMessages from './components/ProjectMessages.js'
@@ -31,23 +31,21 @@ import projectMessages from './components/ProjectMessages.js'
 // Import images
 import sketchMinigameMLrg from './images/bosstep/sketch-minigame-m-lrg.jpg'
 import sketchNb from './images/bosstep/sketch-overview-2500x.png'
-
-// Prototype
 import i1mMG1 from './images/bosstep/i1-friend-list.webp'
 import i1MG2 from './images/bosstep/i1-mg1.webp'
 import i1FriendList from './images/bosstep/i1-mg2.webp'
-
-// Wireframe
 import bosstepOverview from './images/bosstep/wireframe-overview.webp'
-// Persona
 import persona from './images/bosstep/persona-bstep.webp'
-
-// Graphics
 import pie from './images/bosstep/pie-graph-graphic.png'
 import blob from './images/bosstep/blob-neu.png'
 import personaGraphic from './images/bosstep/persona-graphic.png'
-
-// Next project
+import minigameBefore from './images/bosstep/bstep-mg1-b.jpg'
+import minigameAfter from './images/bosstep/bstep-mg1-a.jpg'
+import minigame2Before from './images/bosstep/bstep-mg2-b.jpg'
+import minigame2After from './images/bosstep/bstep-mg2-a.jpg'
+import homeB from './images/bosstep/bstep-h-b.jpg'
+import homeA from './images/bosstep/bstep-h-a.jpg'
+import fieldtestMCU from './images/bosstep/field-test-mcu.jpg'
 import nextProj from './images/cliq-1000x600.webp'
 
 const total = "03";
@@ -97,88 +95,117 @@ function Bosstep(props) {
             text={"The research took a halt. BOSSTEP's demographic was difficult to reach because they belong to a vulnerable research group and there would need to be signed consent from their parent/guardian and approval from the University. This process would take time that we did not have."}
         />
         
-        <ModuleFiftyGRight 
+        <ModuleThirtyGRight 
             title={"Field Testing"} 
             p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
-            img={pie} 
+            img={fieldtestMCU} 
             citation={"FIELD TEST"}
         />
 
         <section className="sect-last sect-1 two-column-graphic">
             <div className="grid-container">
                 <div className="max-bleed">
-                    <div className="title-group">
-                        <div className="title-wrapper">
+                    {/* <div className="sub-container">
+                        <div className="title-wrapper title-1">
                             <h4>Before</h4>
                         </div>
-                        <div className="title-wrapper">
+                        <div className="title-wrapper title-2">
                             <h4>After</h4>
                         </div>
-                    </div>
+                    </div> */}
                     {/* Group 1 */}
-                    <div className="content-group-wrapper rel-margin-bot">
-                        <div className="cg-sect-1">
-                            <div className="content-group">
-                                <img src={imgProf} alt="" />
-                                <p className="citation">Text</p>
+                    <div className="sub-container">
+                        <div className="title-wrapper title-1">
+                            <h4>Before</h4>
+                        </div>
+                        <div className="title-wrapper title-2">
+                            <h4>After</h4>
+                        </div>
+                        <div className="content-container">
+                            <div className="content-group-wrapper rel-margin-bot">
+                                <div className="cg-sect-1">
+                                    <div className="content-group">
+                                        <img src={minigameBefore} alt="" />
+                                        <p className="citation">Text</p>
+                                    </div>
+                                </div>
+                                <div className="directional-icon">
+                                    <p>>>></p>
+                                </div>
+                                <div className="cg-sect-2">
+                                    <div className="content-group">
+                                        <img src={minigameAfter} alt="" />
+                                        <p className="citation">Text</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="directional-icon">
-                            <p>>>></p>
-                        </div>
-                        <div className="cg-sect-2">
-                            <div className="content-group">
-                                <img src={imgProf} alt="" />
-                                <p className="citation">Text</p>
+                        <div className="note-wrapper">
+                            <div className="title-wrapper">
+                                <h4>Title</h4>
                             </div>
+                            <p>test</p>
                         </div>
                     </div>
                     {/* Group 2 */}
-                    <div className="content-group-wrapper rel-margin-bot">
-                        <div className="cg-sect-1">
-                            <div className="content-group">
-                                <img src={imgProf} alt="" />
-                                <p className="citation">Text</p>
+                    <div className="sub-container">
+                        <div className="content-container">
+                            <div className="content-group-wrapper rel-margin-bot">
+                                <div className="cg-sect-1">
+                                    <div className="content-group">
+                                        <img src={minigame2Before} alt="" />
+                                        <p className="citation">Text</p>
+                                    </div>
+                                </div>
+                                <div className="directional-icon">
+                                    <p>>>></p>
+                                </div>
+                                <div className="cg-sect-2">
+                                    <div className="content-group">
+                                        <img src={minigame2After} alt="" />
+                                        <p className="citation">Text</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="directional-icon">
-                            <p>>>></p>
-                        </div>
-                        <div className="cg-sect-2">
-                            <div className="content-group">
-                                <img src={imgProf} alt="" />
-                                <p className="citation">Text</p>
+                        <div className="note-wrapper">
+                            <div className="title-wrapper">
+                                <h4>Title</h4>
                             </div>
+                            <p>test</p>
                         </div>
                     </div>
                     {/* Group 3 */}
-                    <div className="content-group-wrapper">
-                        <div className="cg-sect-1">
-                            <div className="content-group">
-                                <img src={imgProf} alt="" />
-                                <p className="citation">Text</p>
+                    <div className="sub-container">
+                        <div className="content-container">
+                            <div className="content-group-wrapper">
+                                <div className="cg-sect-1">
+                                    <div className="content-group">
+                                        <img src={homeB} alt="" />
+                                        <p className="citation">Text</p>
+                                    </div>
+                                </div>
+                                <div className="directional-icon">
+                                    <p>>>></p>
+                                </div>
+                                <div className="cg-sect-2">
+                                    <div className="content-group">
+                                        <img src={homeA} alt="" />
+                                        <p className="citation">Text</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="directional-icon">
-                            <p>>>></p>
-                        </div>
-                        <div className="cg-sect-2">
-                            <div className="content-group">
-                                <img src={imgProf} alt="" />
-                                <p className="citation">Text</p>
+                        <div className="note-wrapper">
+                            <div className="title-wrapper">
+                                <h4>Title</h4>
                             </div>
+                            <p>test</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <ModuleFiftyGRight 
-            title={"Design Critique"} 
-            p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
-            img={imgProf} 
-            citation={"CRITIQUE"}
-        />
 
         <SectionHelperGraphic 
             graphic={blob} 

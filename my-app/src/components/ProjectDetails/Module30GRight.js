@@ -1,19 +1,19 @@
 import React from 'react';
 
-function ModuleFiftySplit(props) {
+function ModuleFiftyGRight(props) {
     return (
         <section className="mod-50 sect-1 sect-last">
             <div className="grid-row-space grid-container">
-                <div className="max-col">
+                <div className="proj-col-contain">
                     <div className="sub-container grid-col-space">
-                        <div className="img-fit span-50">
-                            <img src={props.img} alt={props.alt}/>
-                            <p className="citation">{props.citation}</p>
-                        </div>
-                        <div className="gcs-8-5">
-                            <h3>{props.title}<strong className="highlight-text">_</strong></h3>
+                        <div className="span-7">
+                            <h3 className="rel-margin-bot">{props.title}</h3>
                             <p className="text-grid-left rel-margin-bot">{props.p1}</p>
                             <p className="text-grid-left">{props.p2}</p>
+                        </div>
+                        <div className="img-fit gcs-9-5">
+                            <img loading="lazy" src={props.img} alt={props.alt}/>
+                            <p className="citation">{props.citation}</p>
                         </div>
                     </div>
                 </div>
@@ -22,4 +22,4 @@ function ModuleFiftySplit(props) {
     );
 }
 
-export default ModuleFiftySplit;
+export default ModuleFiftyGRight;

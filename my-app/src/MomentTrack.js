@@ -9,8 +9,7 @@ import './style/pages/_projects.scss';
 import SectionHelperText from "./components/ProjectDetails/SectionHelperText";
 import SectionHelperGraphic from "./components/ProjectDetails/SectionHelperGraphic";
 import CenterMod from "./components/ProjectDetails/CenterModule";
-import NextProject from "./components/ProjectDetails/NextProj";
-import FiftyModule from "./components/ProjectDetails/ModuleFiftySplit"
+import NextProject from "./components/ProjectDetails/NextProj"
 import AnchorEightyModule from "./components/ProjectDetails/AnchorEighty"
 
 // Import placeholders
@@ -31,7 +30,6 @@ function MomentTrack(props) {
             <AnchorEightyModule title={"Title"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} img={img34} citation={"citation"}/>
 
             {/* Fifty Module */}
-            <FiftyModule img={img34} title={"lorem"} p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} p2={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>
 
             {/* Center module */}
             <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}/>

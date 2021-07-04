@@ -166,9 +166,17 @@
             grid-column: span 6;
             margin-bottom: $sect-spacer;
         }
+        .span-7{
+            grid-column: span 7;
+            margin-bottom: $sect-spacer;
+        }
         .gcs-8-5{
             grid-column-start: 8;
             grid-column-end: span 5;
+        }
+        .gcs-9-5{
+            grid-column-start: 9;
+            grid-column-end: -1;
         }
     }
     .next-proj{

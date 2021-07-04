@@ -71,12 +71,18 @@ function AboutModule() {
                         </div>
                         <div className="about-wrapper">
                             <div className="content-group rel-margin-bot">
-                                <h4 className="achievement-title"><strong>UPhoto</strong></h4>
+                                <div className="title-wrapper">
+                                    <h4 className="achievement-title"><strong>UPhoto</strong></h4>
+                                    <p>SEPT 2020 | PRESENT</p>
+                                </div>
                                 <p>Graphic Designer</p>
                             </div>
                             <div className="content-group">
-                                <h4 className="achievement-title"><strong>CaseIT</strong></h4>
-                                <p>Director of Web Development</p>
+                                <div className="title-wrapper">
+                                    <h4 className="achievement-title"><strong>CaseIT</strong></h4>
+                                    <p>JUNE 2021 | PRESENT</p>
+                                </div>
+                                <p>Director of Web Development | Director of Media</p>
                             </div>
                         </div>
                     </div>
