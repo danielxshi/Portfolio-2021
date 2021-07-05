@@ -76,7 +76,7 @@ function Project(props) {
                     <div className="proj-info-wrapper">
                         <div className="grid-container">
                             <div className="proj-col-contain">
-                                <h2 className="rel-margin-bot">Project Details<strong className="highlight-text">_</strong></h2>
+                                <h2 className="rel-margin-bot">Project Details</h2>
                                 <div className="rel-margin-bot">
                                     <h3>Role</h3>
                                     <p>{props.messages.role}</p>

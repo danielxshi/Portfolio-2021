@@ -60,6 +60,13 @@ function Bosstep(props) {
             citation={"PERSONA"}
         />
 
+        <SectionHelperText 
+            title={"Sketches"} 
+            sectionChapterCurrent={"01"} 
+            sectionChapterTotal={total} 
+            text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}
+        />
+
         <ModMaxCol 
             img={sketchNb} 
             citation={"SKETCHES"} 
@@ -75,11 +82,13 @@ function Bosstep(props) {
             p2={"Introducing the minigame BossWalk. The user is prompted to take a step in a certain direction. The aim is to keep the radius of movement minimal and the path traveled to be short to be wary of surrounding environments."}
         />
 
-        <SectionHelperText 
-            title={"DESIGN"} 
+
+        <SectionHelperGraphic 
+            graphic={blob} 
+            title={"DESIGN CHANGES"} 
             sectionChapterCurrent={"01"} 
             sectionChapterTotal={total} 
-            text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, temporibus odit! Saepe dolor exercitationem eos, illum fugiat dicta culpa reiciendis cupiditate quo est nostrum, sed velit iusto mollitia suscipit accusamus."}
+            text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}
         />
 
         <ModMaxContainerGraphic 
@@ -89,8 +98,8 @@ function Bosstep(props) {
 
         <SectionHelperGraphic 
             graphic={personaGraphic} 
-            title={"User Research"} 
-            sectionChapterCurrent={"02"} 
+            title={"Prototype"} 
+            sectionChapterCurrent={"03"} 
             sectionChapterTotal={total} 
             text={"The research took a halt. BOSSTEP's demographic was difficult to reach because they belong to a vulnerable research group and there would need to be signed consent from their parent/guardian and approval from the University. This process would take time that we did not have."}
         />
@@ -144,6 +153,9 @@ function Bosstep(props) {
                             <div className="title-wrapper">
                                 <h4>Title</h4>
                             </div>
+                            <div className="underline-container">
+                                <div className="underline"></div>
+                            </div>
                             <p>test</p>
                         </div>
                     </div>
@@ -171,6 +183,10 @@ function Bosstep(props) {
                         <div className="note-wrapper">
                             <div className="title-wrapper">
                                 <h4>Title</h4>
+                            </div>
+
+                            <div className="underline-container">
+                                <div className="underline"></div>
                             </div>
                             <p>test</p>
                         </div>
@@ -200,25 +216,16 @@ function Bosstep(props) {
                             <div className="title-wrapper">
                                 <h4>Title</h4>
                             </div>
+
+                            <div className="underline-container">
+                                <div className="underline"></div>
+                            </div>
                             <p>test</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <SectionHelperGraphic 
-            graphic={blob} 
-            title={"DESIGN CHANGES"} 
-            sectionChapterCurrent={"03"} 
-            sectionChapterTotal={total} 
-            text={"Our MVP included core features of achievements and a minigame unlocked after a certain amount of steps reached. Friends were added to share progress and incorporate a community to inspire and challenge one another."}
-        />
-
-        <ModMaxContainerGraphic 
-            citation={"WIREFRAME"} 
-            img={img2x1}
-        />
 
         <SectionDivider/>
 
