@@ -68,6 +68,7 @@ const Home = () => {
             linkTo={'/bosstep'}
             tabColor={"red-tab"} 
             projectNumber={"01"}
+            cta={"VIEW PROCESS"}
         />
         
         <DesktopProjectCard 
@@ -81,6 +82,7 @@ const Home = () => {
             linkTo={'/cliq'}
             tabColor={"green-tab"}
             projectNumber={"02"}
+            cta={"VIEW PROCESS"}
         />
         
         <DesktopProjectCard 
@@ -91,9 +93,11 @@ const Home = () => {
             overview={projectMessages.track.overview} 
             role={projectMessages.track.role}
             color={'color-stripe-blue'} 
-            linkTo={'/track'}
+            // linkTo={'/track'}
             tabColor={"blue-tab"} 
             projectNumber={"03"}
+            ctaClass={"disable-btn"}
+            cta={"COMING SOON"}
         />
             
         <ProjectCard 
@@ -104,6 +108,7 @@ const Home = () => {
             role={projectMessages.bosstep.role}
             linkTo={'/bosstep'}
             date={projectMessages.bosstep.date}
+            cta={"VIEW PROCESS"}
         />
         
         <ProjectCard 
@@ -114,6 +119,7 @@ const Home = () => {
             role={projectMessages.cliq.role} 
             linkTo={'/cliq'}
             date={projectMessages.cliq.date}
+            cta={"VIEW PROCESS"}
         />
         
         <ProjectCard 
@@ -122,7 +128,9 @@ const Home = () => {
             alt={"Moment Track graphic"} 
             title={projectMessages.track.title} 
             role={projectMessages.track.role}
-            linkTo={'/track'}
+            // linkTo={'/track'}
+            ctaClass={"disable-btn"}
+            cta={"COMING SOON"}
             date={projectMessages.track.date}
         />
     </section>

@@ -67,7 +67,7 @@ function Project(props) {
                             className="sect-last rel-margin-bot black-border-btn primary-btn" 
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            href={props.demo}>{props.messages.cta}
+                            href={props.demo}>{props.cta}
                         </a>
                     </div>
                 </div>

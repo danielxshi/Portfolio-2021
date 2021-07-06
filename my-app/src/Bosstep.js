@@ -98,15 +98,16 @@ function Bosstep(props) {
 
         <SectionHelperGraphic 
             graphic={personaGraphic} 
-            title={"Prototype"} 
+            title={"Field Test"} 
             sectionChapterCurrent={"03"} 
             sectionChapterTotal={total} 
-            text={"The research took a halt. BOSSTEP's demographic was difficult to reach because they belong to a vulnerable research group and there would need to be signed consent from their parent/guardian and approval from the University. This process would take time that we did not have."}
+            text={"Think aloud test with 11 participants"}
         />
         
         <ModuleThirtyGRight 
             title={"Field Testing"} 
-            p1={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."} 
+            p1={"The test implemented was a think-aloud test and it was conducted with 11 users 10 parents and 1 athlete. Each user were instructed solely based off of screen print-outs of the application screens."}
+            p2={"Although these users were not our end users the information we gathered was taken in as considerations of how users may interpret the application. Our end users were not in reach as they belonged to a vulnerable group due to their age. Therefore, limitations from University, requiring waivers would prompt a time-sacrifice the project time-line did not have."} 
             img={fieldtestMCU} 
             citation={"FIELD TEST"}
         />
@@ -134,8 +135,8 @@ function Bosstep(props) {
                             <div className="content-group-wrapper rel-margin-bot">
                                 <div className="cg-sect-1">
                                     <div className="content-group">
-                                        <img src={minigameBefore} alt="" />
-                                        <p className="citation">Text</p>
+                                        <img src={minigameBefore} alt="BOSSTEP Minigame" />
+                                        <p className="citation">Boss Tag (Before)</p>
                                     </div>
                                 </div>
                                 <div className="directional-icon">
@@ -143,20 +144,30 @@ function Bosstep(props) {
                                 </div>
                                 <div className="cg-sect-2">
                                     <div className="content-group">
-                                        <img src={minigameAfter} alt="" />
-                                        <p className="citation">Text</p>
+                                        <img src={minigameAfter} alt="BOSSTEP Minigame" />
+                                        <p className="citation">Boss Tag (After)</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="note-wrapper">
                             <div className="title-wrapper">
-                                <h4>Title</h4>
+                                <h4>Minigame - Boss Tag</h4>
                             </div>
-                            <div className="underline-container">
+
+                            <div className="rel-margin-bot underline-container">
                                 <div className="underline"></div>
                             </div>
-                            <p>test</p>
+                            <div className="notes-sect-1 rel-margin-bot">
+                                <h4>Findings</h4>
+                                <ul>
+                                    <li>1) <strong>4/11</strong> participants perceived the number count as the timer for 1 step only</li>
+                                </ul>
+                            </div>
+                            <div className="notes-sect-2">
+                                <h4>Changes</h4>
+                                <p>Changed the element to differentiate the color from the arrow to avoid confusion</p>
+                            </div>
                         </div>
                     </div>
                     {/* Group 2 */}
@@ -166,7 +177,7 @@ function Bosstep(props) {
                                 <div className="cg-sect-1">
                                     <div className="content-group">
                                         <img src={minigame2Before} alt="" />
-                                        <p className="citation">Text</p>
+                                        <p className="citation">Planet Dodger (Before)</p>
                                     </div>
                                 </div>
                                 <div className="directional-icon">
@@ -175,20 +186,29 @@ function Bosstep(props) {
                                 <div className="cg-sect-2">
                                     <div className="content-group">
                                         <img src={minigame2After} alt="" />
-                                        <p className="citation">Text</p>
+                                        <p className="citation">Planet Dodger (After)</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="note-wrapper">
                             <div className="title-wrapper">
-                                <h4>Title</h4>
+                                <h4>Minigame - Planet Dodger</h4>
                             </div>
 
-                            <div className="underline-container">
+                            <div className="rel-margin-bot underline-container">
                                 <div className="underline"></div>
                             </div>
-                            <p>test</p>
+                            <div className="notes-sect-1 rel-margin-bot">
+                                <h4>Findings</h4>
+                                <ul>
+                                    <li>1) <strong>7/11</strong> participants presumed the objective was to hit the projectiles</li>
+                                </ul>
+                            </div>
+                            <div className="notes-sect-2">
+                                <h4>Changes</h4>
+                                <p>The design is similar to games like Tap Tap Revenge. People who are familiar with these games tend to hit the obstacle as opposed to avoid it. Therefore a more visual based tutorial was implemented to be more informative.</p>
+                            </div>
                         </div>
                     </div>
                     {/* Group 3 */}
@@ -198,7 +218,7 @@ function Bosstep(props) {
                                 <div className="cg-sect-1">
                                     <div className="content-group">
                                         <img src={homeB} alt="" />
-                                        <p className="citation">Text</p>
+                                        <p className="citation">Home Screen (Before)</p>
                                     </div>
                                 </div>
                                 <div className="directional-icon">
@@ -207,20 +227,30 @@ function Bosstep(props) {
                                 <div className="cg-sect-2">
                                     <div className="content-group">
                                         <img src={homeA} alt="" />
-                                        <p className="citation">Text</p>
+                                        <p className="citation">Home Screen (After)</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="note-wrapper">
                             <div className="title-wrapper">
-                                <h4>Title</h4>
+                                <h4>Home Screen</h4>
                             </div>
 
-                            <div className="underline-container">
+                            <div className="rel-margin-bot underline-container">
                                 <div className="underline"></div>
                             </div>
-                            <p>test</p>
+                            <div className="notes-sect-1 rel-margin-bot">
+                                <h4>Findings</h4>
+                                <ul>
+                                    <li>1) Participants did not understand the step counter</li>
+                                    <li>2) Participants believed it was for buddies experience points</li>
+                                </ul>
+                            </div>
+                            <div className="notes-sect-2">
+                                <h4>Changes</h4>
+                                <p>To make the step counter easier to identify we changed the buddy face to a shoe to make it more intuitive</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,7 +261,7 @@ function Bosstep(props) {
 
         <CenterMod 
             btnTitle={"View Website"} 
-            text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi id earum deleniti expedita, placeat, optio, esse nihil eius sequi non provident quas neque sapiente tempore dolor voluptatibus consectetur itaque debitis."}
+            text={"The project taught me to ultimately place safety at the forefront. In addition to working with a younger audience for our end user the implmentation of physical exercise and the potential harm it can create based on interactions shifting focus towards the screen and off of their surroundings. If this project moves forward, I hope to create a safe and responsible research plan and bring in our target audience to conduct a play-test."}
         />
 
         <SectionDivider/>

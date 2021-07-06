@@ -47,7 +47,7 @@ function DesktopProjectCard(props) {
                                     <h4>Role:</h4>
                                     <p>{props.role}</p>
                                 </div>
-                                <Link className="white-border-btn home-border-btn primary-btn" to={props.linkTo}> View Process</Link>
+                                <Link className={props.ctaClass + "white-border-btn home-border-btn primary-btn"} to={props.linkTo}>{props.cta}</Link>
                             </div>
                         </div>
                     </div>

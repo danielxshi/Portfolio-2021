@@ -2,10 +2,12 @@
 /* Larger than desktop */
 @media (min-width: 1000px) {
     .two-column-graphic{
+        li{
+            line-height: 2rem;
+        }
         .note-wrapper{
             grid-column-start: 9;
             grid-column-end: -1;
-            margin-bottom: 0;
         }
         .title-1{
             grid-column-start: 1;
@@ -15,15 +17,12 @@
             grid-column-start: 5;
             grid-column-end: 8;
         }
-
-        .rel-margin-bot{
-            margin-bottom: 7.5vh;
-        }
         .content-container{
             grid-column-start: 1;
             grid-column-end: 8;
         }
         .content-group-wrapper{
+            margin-bottom: 7.5vh;
             display: flex;
             justify-content: space-between;
             height: fit-content;
