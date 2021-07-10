@@ -161,7 +161,7 @@
     color: $white;
 }
 
-.img-fit img{
+.img-fit img, .img-fit iframe{
     object-fit: contain;
     width: 100%;
     transition-duration: .4s;

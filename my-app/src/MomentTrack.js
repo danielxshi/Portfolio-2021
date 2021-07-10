@@ -32,7 +32,7 @@ import protoFinance1 from "./images/track/moment-finance-proto.png"
 import protoFinance2 from "./images/track/moment-finance-proto-2.png"
 import protoFinance3 from "./images/track/moment-finance-proto-3.png"
 import journey from "./images/track/moment-journey.png"
-import wireframe from "./images/track/moment-wireframe.png"
+import wireframe from "./images/track/moment-wire-flatlay.jpg"
 import workshop from "./images/track/moment-workshop.png"
 import protoReports1 from "./images/track/moment-reports-proto.png"
 import protoReports2 from "./images/track/moment-reports-proto-2.png"
@@ -61,61 +61,73 @@ function MomentTrack(props) {
     return (
         <main>
 
+            <ModMaxContainerGraphic img={persona}/>
 
-            <ModuleFiftyGRight 
-                img={img34} 
+            <ModMaxCol 
+                img={ethnography} 
                 citation={cite} 
                 title={title} 
                 p1={dummy} 
             />
 
             <SectionHelperText 
-                title={title} 
+                title={"Research Methods"} 
                 sectionChapterCurrent={"01"} 
                 sectionChapterTotal={total} 
                 text={dummy}
             />
+            <ModMaxContainerGraphic img={notes}/>
+            <ModMaxContainerGraphic img={journey}/>
 
+            {/* Insert Moment Energy Logo */}
             <ModMaxContainerGraphic img={img2x1}/>
-
-            <ModMaxContainerGraphic img={img2x1}/>
-
-            <SectionHelperText 
-                title={title} 
-                sectionChapterCurrent={"01"} 
-                sectionChapterTotal={total} 
-                text={dummy}
-            />
 
             <ModuleFiftyGRight 
-                img={img34} 
+                img={workshop} 
                 citation={cite} 
                 title={title} 
                 p1={dummy} 
+            />
+
+            <SectionHelperText 
+                title={"Style Guide"} 
+                sectionChapterCurrent={"01"} 
+                sectionChapterTotal={total} 
+                text={dummy}
             />
 
             {/* style guide */}
-            <ModMaxContainerGraphic img={img2x1}/>
+            <ModMaxContainerGraphic img={type}/>
 
-            <ModMaxContainerGraphic img={img2x1}/>
+            <ModMaxContainerGraphic img={color}/>
 
             <SectionHelperText 
-                title={title} 
+                title={"Wireframes"} 
                 sectionChapterCurrent={"01"} 
                 sectionChapterTotal={total} 
                 text={dummy}
             />
 
             {/* Wireframes */}
-            <ModMaxContainerGraphic img={img2x1}/>
+            <ModMaxContainerGraphic img={wireframe}/>
 
-            <ModMaxCol 
-                img={img2x1} 
-                citation={cite} 
-                title={title} 
-                p1={dummy} 
-            />
-            
+            <section className="module-max-col sect-1 sect-last">
+                <div className="grid-row-space grid-container">
+                    <div className="proj-col-contain img-fit">
+                        <iframe height="1000"  src="https://www.youtube.com/embed/mC4rZiGLeyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p className="citation">{props.citation}</p>
+                    </div>
+                    <div className="proj-col-contain">
+                        <div className="sub-container grid-col-space">
+                            <h3 className="anchor-left-subheader">{props.title}</h3>
+                            <div className="anchor-80-right">
+                                <p className="rel-margin-bot">{props.p1}</p>
+                                <p>{props.p2}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <SectionDivider/>
 
             {/* Center module */}
@@ -125,20 +137,22 @@ function MomentTrack(props) {
             
             <Credits
             ch1={"Professor | Teaching Assistant"}
-            cp1={"Paul Brokenshire | Halimat Alabi"}
+            cp1={"Mirjana Prpa | Xiao Zhang"}
             ch2={"School"}
             cp2={"Simon Fraser University"}
             cp21={"School of Interactive Arts and Technology"}
             ch3={"Recognition"}
-            cp3={"First game application to be approved in the history of Interface Design class (IAT334)"}
+            cp3={"School of Interactive Arts Fall 2020 Project Showcase"}
+            cp31={"Simon Fraser University Undergraduate Conference 2021"}
+            cp32={"Received 100% for the final project"}
             ch4={"Role"}
-            cp4={"User Research"}
+            cp4={"Mobile Application"}
             cp41={"UX/UI Design"}
-            cp42={"Website Development"}
+            cp42={"User Research"}
             ch5={"Date"}
-            cp5={projectMessages.bosstep.date}
+            cp5={projectMessages.track.date}
             ch6={"Team"}
-            cp6={projectMessages.bosstep.team}
+            cp6={projectMessages.track.team}
             />
 
             {/* Next project */}

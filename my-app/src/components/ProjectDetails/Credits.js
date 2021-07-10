@@ -17,8 +17,11 @@ function Credits(props) {
                     </div>
                     <div className="content-group">    
                         <h4>{props.ch3}</h4>
-                        <p>{props.cp3}</p>
-                        <p>{props.cp31}</p>
+                        <ol>
+                            <li>{props.cp3}</li>
+                            <li>{props.cp31}</li>
+                            <li>{props.cp32}</li>
+                        </ol>
                     </div>
                 </div>
                 <div className="content-wrapper content-wrap-2">

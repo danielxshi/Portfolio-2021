@@ -99,8 +99,11 @@ function App() {
                   <Project 
                     mobileBannerContainer={"project-details-hero-mobile track-mobile-container"} 
                     bannerBG={"hero-banner-mobile-track hero-banner-mobile"} 
-                    messages={projectMessages.cliq} 
-                    banner={momentBanner} />
+                    messages={projectMessages.track} 
+                    banner={momentBanner} 
+                    
+                    clientCheck={"Client"}
+                    />
                   <MomentTrack/>
                 </Route>
                 <Route path="*">

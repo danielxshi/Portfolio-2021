@@ -29,6 +29,10 @@ function Project(props) {
                             <div className="sub-details-wrapper">
                                 <h3>Role</h3>
                                 <p>{props.messages.role}</p>
+                                <div className="rel-margin-top">
+                                    <h3>{props.clientCheck}</h3>
+                                    <a className="link-cta" arget="_blank" href={props.clientHref}>{props.messages.client}</a>
+                                </div>
                             </div>
                             <div className="sub-details-wrapper">
                                 <h3>Date</h3>
@@ -80,6 +84,10 @@ function Project(props) {
                                 <div className="rel-margin-bot">
                                     <h3>Role</h3>
                                     <p>{props.messages.role}</p>
+                                </div>
+                                <div className="rel-margin-bot">
+                                    <h3>{props.clientCheck}</h3>
+                                    <a className="link-cta" arget="_blank" href={props.clientHref}>{props.messages.client}</a>
                                 </div>
                                 <div className="rel-margin-bot">
                                     <h3>Date</h3>
