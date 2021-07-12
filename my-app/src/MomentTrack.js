@@ -41,6 +41,7 @@ import workshop from "./images/track/moment-workshop.png"
 import protoReports1 from "./images/track/moment-reports-proto.png"
 import protoReports2 from "./images/track/moment-reports-proto-2.png"
 import protoReports3 from "./images/track/moment-reports-proto-3.png"
+import designFocus from "./images/track/design-focus-1000x770.png"
 
 // Import placeholders
 import img34 from './images/placeholder/placeholder-3x4.png';
@@ -65,24 +66,22 @@ function MomentTrack(props) {
     return (
         <main>
 
-            <ModuleFiftyGRight 
-                img={persona} 
-                citation={"PERSONA MODEL"} 
+            <ModuleFiftyGRight
+                img={designFocus} 
                 title={"Ethnography Study"} 
                 p1={"Over project span weekly meetings were held virtually with the General of Operations at Moment Energy, Sumreen Rattan. The first check-point was to conduct an ethnographic study to learn about the company's mission, audience and identify a design focus."}
                 p2={"Although the challenges of Covid-19 presented barriers of physical meetings and with Moment Energy's client residing in another province, conducting a user-study in their day-to-day environment would be out-of-scope. Therefore, our methods of data collection were conducted virtually, resulting in virtual meetings with several of Moment Energy's customers."} 
             />
-
-            {/* <ModMaxContainerGraphic citation={"PERSONA MODEL"} img={persona}/> */}
 
 
             <SectionHelperText 
                 title={"Research Methods"} 
                 sectionChapterCurrent={"01"} 
                 sectionChapterTotal={total} 
-                text={"Affinity Diagram, Interviews, User Journeys, Participatory Workshop"}
+                text={"Affinity Diagram, Interviews, Persona, User Journeys, Participatory Workshop"}
             />
             <ModMaxContainerGraphic citation={"AFFINITY DIAGRAM"} img={notes}/>
+            <ModMaxContainerGraphic citation={"PERSONA MODEL"} img={persona}/>
             <ModMaxContainerGraphic citation={"USER JOURNEY"} img={journey}/>
 
             <section className="mod-50 sect-1 sect-last">
@@ -123,11 +122,15 @@ function MomentTrack(props) {
             />
 
             {/* Wireframes */}
-            <ModMaxContainerGraphic img={wireframe}/>
+            <ModMaxContainerGraphic citation={"WIREFRAMES"} img={wireframe}/>
 
             <section className="module-max-col sect-1 sect-last">
                 <div className="grid-row-space grid-container">
                     <div className="proj-col-contain img-fit">
+                    <h3 className="rel-margin-bot">Moment Track | Video Presentation</h3>
+                    <div className="underline-container">
+                        <div className="underline rel-margin-bot"></div>
+                    </div>
                         <iframe height="1000"  src="https://www.youtube.com/embed/mC4rZiGLeyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p className="citation">{props.citation}</p>
                     </div>
