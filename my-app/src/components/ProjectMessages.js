@@ -33,12 +33,12 @@ const cliqMessages = {
 
 const trackMessages = {
     title: "Moment Track",
-    category: "Mobile App",
+    category: "Mobile Application Design",
     description: "A battery monitoring application designed for users off-grid, researched and designed in Interaction Design Methods a design course at Simon Fraser University. The project lasted throughout the term with a research heavy focus consisting of 9 weeks of research and 3 weeks of design.",
     overview: "A battery monitoring application for users off-grid",
     role: "Mobile Application, UX/UI design, User Research",
     date: "Fall 2021",
-    cta: "DEMO PROTOTYPE",
+    cta: "FIGMA PROTOTYPE",
     client: "Moment Energy",
     team: "Cassandra Graves, Keith Leung, Nisha Perera"
 };

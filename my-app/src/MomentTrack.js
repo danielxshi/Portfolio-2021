@@ -1,3 +1,7 @@
+/* //!TODO Add moment logo, add body copy, add mobile image to project in mobile view, flex demo video, add final phone screens
+*/
+
+
 import React from 'react';
 
 
@@ -55,45 +59,55 @@ const cite = "Citation"
 
 const title = "Title"
 
-const total = "04"
+const total = "03"
 
 function MomentTrack(props) {
     return (
         <main>
 
-            <ModMaxContainerGraphic img={persona}/>
-
-            <ModMaxCol 
-                img={ethnography} 
-                citation={cite} 
-                title={title} 
-                p1={dummy} 
+            <ModuleFiftyGRight 
+                img={persona} 
+                citation={"PERSONA MODEL"} 
+                title={"Ethnography Study"} 
+                p1={"Over project span weekly meetings were held virtually with the General of Operations at Moment Energy, Sumreen Rattan. The first check-point was to conduct an ethnographic study to learn about the company's mission, audience and identify a design focus."}
+                p2={"Although the challenges of Covid-19 presented barriers of physical meetings and with Moment Energy's client residing in another province, conducting a user-study in their day-to-day environment would be out-of-scope. Therefore, our methods of data collection were conducted virtually, resulting in virtual meetings with several of Moment Energy's customers."} 
             />
+
+            {/* <ModMaxContainerGraphic citation={"PERSONA MODEL"} img={persona}/> */}
+
 
             <SectionHelperText 
                 title={"Research Methods"} 
                 sectionChapterCurrent={"01"} 
                 sectionChapterTotal={total} 
-                text={dummy}
+                text={"Affinity Diagram, Interviews, User Journeys, Participatory Workshop"}
             />
-            <ModMaxContainerGraphic img={notes}/>
-            <ModMaxContainerGraphic img={journey}/>
+            <ModMaxContainerGraphic citation={"AFFINITY DIAGRAM"} img={notes}/>
+            <ModMaxContainerGraphic citation={"USER JOURNEY"} img={journey}/>
 
-            {/* Insert Moment Energy Logo */}
-            <ModMaxContainerGraphic img={img2x1}/>
-
-            <ModuleFiftyGRight 
-                img={workshop} 
-                citation={cite} 
-                title={title} 
-                p1={dummy} 
-            />
+            <section className="mod-50 sect-1 sect-last">
+                <div className="grid-row-space grid-container">
+                    <div className="proj-col-contain">
+                        <div className="sub-container grid-col-space">
+                            <div className="span-50">
+                                <h3 className="rel-margin-bot">Workshop | Moment Energy</h3>
+                                <p className="text-grid-left rel-margin-bot">Connecting the design focus created from the user studies with the customer base and Moment Energy's company values through the workshop. Impact Ranking to identify team perspective of cost/difficulty of implementation and H-Form to generate pros and cons and ending with allowing each team member to select features to implement. We were able to conclude with a refined design focus.</p>
+                                <p className="text-grid-left">Create an interactive informational application for direct-to-consumer clients that assures them the product is reliable and sustainable in order to promote lasting relationships.</p>
+                            </div>
+                            <div className="img-fit gcs-8-5">
+                                <img loading="lazy" src={workshop} alt=""/>
+                                <p className="citation">PARTICIPATORY WORKSHOP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <SectionHelperText 
                 title={"Style Guide"} 
-                sectionChapterCurrent={"01"} 
+                sectionChapterCurrent={"02"} 
                 sectionChapterTotal={total} 
-                text={dummy}
+                text={"Typography and color palette"}
             />
 
             {/* style guide */}
@@ -103,9 +117,9 @@ function MomentTrack(props) {
 
             <SectionHelperText 
                 title={"Wireframes"} 
-                sectionChapterCurrent={"01"} 
+                sectionChapterCurrent={"03"} 
                 sectionChapterTotal={total} 
-                text={dummy}
+                text={"Screens Wireframed - Battery Monitoring, Settings, Qualitative Impact Analysis and Quantitative Impact Analysis"}
             />
 
             {/* Wireframes */}
@@ -131,7 +145,7 @@ function MomentTrack(props) {
             <SectionDivider/>
 
             {/* Center module */}
-            <CenterMod title={"Working in a team"} org={"SFU IAT339 Project"} btnTitle={"View Website"} text={dummy}/>
+            <CenterMod href={"https://www.figma.com/file/lVKPTixE6X9AJEHQOGAI6u/MomentTrack_FinalInteractivePrototype?node-id=0%3A1"} org={"SFU IAT339 Project"} btnTitle={"Figma Prototype"} text={"Working with Moment Energy was an honor and their endeavors to make a positive impact on the planet is inspiring. In the future, if the project were to be continued, I would hope to conduct field tests with a prototype and conduct an in-person user study to gain a better understanding of how users interact with Moment's battery systems."}/>
 
             <SectionDivider/>
             

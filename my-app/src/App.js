@@ -79,7 +79,8 @@ function App() {
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/bosstep" >
                   <Project 
-                    demo={"https://danielxshi.github.io/IAT334-Bosstep-r1/"} mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} 
+                    demo={"https://danielxshi.github.io/IAT334-Bosstep-r1/"} 
+                    mobileBannerContainer={"project-details-hero-mobile bosstep-mobile-container"} 
                     bannerBG={"hero-banner-mobile-bosstep hero-banner-mobile"} 
                     messages={projectMessages.bosstep} 
                     mobileBannerDemo={mobileBannerDemo} 
@@ -88,7 +89,8 @@ function App() {
                 </Route>
                 <Route path="/cliq" >
                   <Project 
-                    demo={"https://danielxshi.github.io/IAT-339-Ecommerce-Website/"} mobileBannerContainer={"project-details-hero-mobile cliq-mobile-container"} 
+                    demo={"https://danielxshi.github.io/IAT-339-Ecommerce-Website/"} 
+                    mobileBannerContainer={"project-details-hero-mobile cliq-mobile-container"} 
                     bannerBG={"hero-banner-mobile-cliq hero-banner-mobile"} 
                     messages={projectMessages.cliq} 
                     mobileBannerDemo={mobileCliqBanner} 
@@ -101,7 +103,7 @@ function App() {
                     bannerBG={"hero-banner-mobile-track hero-banner-mobile"} 
                     messages={projectMessages.track} 
                     banner={momentBanner} 
-                    
+                    demo={"https://www.figma.com/file/lVKPTixE6X9AJEHQOGAI6u/MomentTrack_FinalInteractivePrototype?node-id=0%3A1"}
                     clientCheck={"Client"}
                     />
                   <MomentTrack/>

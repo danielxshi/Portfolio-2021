@@ -93,11 +93,10 @@ const Home = () => {
             overview={projectMessages.track.overview} 
             role={projectMessages.track.role}
             color={'color-stripe-blue'} 
-            // linkTo={'/track'}
+            linkTo={'/track'}
             tabColor={"blue-tab"} 
             projectNumber={"03"}
-            ctaClass={"disable-btn"}
-            cta={"COMING SOON"}
+            cta={"VIEW PROCESS"}
         />
             
         <ProjectCard 
@@ -128,9 +127,8 @@ const Home = () => {
             alt={"Moment Track graphic"} 
             title={projectMessages.track.title} 
             role={projectMessages.track.role}
-            // linkTo={'/track'}
-            ctaClass={"disable-btn"}
-            cta={"COMING SOON"}
+            linkTo={'/track'}
+            cta={"VIEW PROCESS"}
             date={projectMessages.track.date}
         />
     </section>
