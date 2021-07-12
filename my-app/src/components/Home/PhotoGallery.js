@@ -1,8 +1,8 @@
-import t1 from '../../images/TestImages/dubai.png';
-import t2 from '../../images/TestImages/announcer.jpg';
-import t4 from '../../images/TestImages/yvr.JPG';
-import t5 from '../../images/TestImages/sfu-night.png';
-import t6 from '../../images/TestImages/sfu-day.jpg';
+import t1 from '../../images/gallery/dubai.webp';
+import t2 from '../../images/gallery/announcer.webp';
+import t4 from '../../images/gallery/yvr.webp';
+import t5 from '../../images/gallery/sfu-night.webp';
+import t6 from '../../images/gallery/sfu-day.webp';
 
 function PhotoGallery(){
     return(
