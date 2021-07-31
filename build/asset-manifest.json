@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.86d3c147.chunk.css",
-    "main.js": "/static/js/main.7a172adc.chunk.js",
-    "main.js.map": "/static/js/main.7a172adc.chunk.js.map",
+    "main.js": "/static/js/main.d1baf680.chunk.js",
+    "main.js.map": "/static/js/main.d1baf680.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.edfbf304.js",
     "runtime-main.js.map": "/static/js/runtime-main.edfbf304.js.map",
-    "static/js/2.b417fe52.chunk.js": "/static/js/2.b417fe52.chunk.js",
-    "static/js/2.b417fe52.chunk.js.map": "/static/js/2.b417fe52.chunk.js.map",
+    "static/js/2.18d9d432.chunk.js": "/static/js/2.18d9d432.chunk.js",
+    "static/js/2.18d9d432.chunk.js.map": "/static/js/2.18d9d432.chunk.js.map",
     "static/js/3.5c9f733b.chunk.js": "/static/js/3.5c9f733b.chunk.js",
     "static/js/3.5c9f733b.chunk.js.map": "/static/js/3.5c9f733b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.86d3c147.chunk.css.map": "/static/css/main.86d3c147.chunk.css.map",
-    "static/js/2.b417fe52.chunk.js.LICENSE.txt": "/static/js/2.b417fe52.chunk.js.LICENSE.txt",
+    "static/js/2.18d9d432.chunk.js.LICENSE.txt": "/static/js/2.18d9d432.chunk.js.LICENSE.txt",
     "static/media/global.scss": "/static/media/test-founders-grotesk-regular.c2b61033.woff",
     "static/media/TTAAnimationCover.28ada238.webp": "/static/media/TTAAnimationCover.28ada238.webp",
-    "static/media/announcer.5d98d1fc.webp": "/static/media/announcer.5d98d1fc.webp",
+    "static/media/announcer.d2361b26.webp": "/static/media/announcer.d2361b26.webp",
     "static/media/blob-neu.1e34bb5b.png": "/static/media/blob-neu.1e34bb5b.png",
     "static/media/boss-1000x600.26283023.webp": "/static/media/boss-1000x600.26283023.webp",
     "static/media/bosstep-banner-2048x768.46e5bf8c.webp": "/static/media/bosstep-banner-2048x768.46e5bf8c.webp",
@@ -31,9 +31,9 @@
     "static/media/cliq-white-text-anim.6c3dd7d8.gif": "/static/media/cliq-white-text-anim.6c3dd7d8.gif",
     "static/media/cliq300w.23469297.jpg": "/static/media/cliq300w.23469297.jpg",
     "static/media/cmatrix-blk-bg.0ca2f075.gif": "/static/media/cmatrix-blk-bg.0ca2f075.gif",
-    "static/media/danielshi-resume.934d259e.pdf": "/static/media/danielshi-resume.934d259e.pdf",
+    "static/media/danielshi-resume.b8080269.pdf": "/static/media/danielshi-resume.b8080269.pdf",
     "static/media/design-focus-1000x770.9d8e5f31.png": "/static/media/design-focus-1000x770.9d8e5f31.png",
-    "static/media/dubai.6c063b7b.webp": "/static/media/dubai.6c063b7b.webp",
+    "static/media/dubai.3c0ea7d5.webp": "/static/media/dubai.3c0ea7d5.webp",
     "static/media/field-test-mcu.e8ee1016.jpg": "/static/media/field-test-mcu.e8ee1016.jpg",
     "static/media/github-brands.e2f07326.svg": "/static/media/github-brands.e2f07326.svg",
     "static/media/github-logo.d1bb13ce.svg": "/static/media/github-logo.d1bb13ce.svg",
@@ -69,9 +69,9 @@
     "static/media/primary-btn-neu-guide.6b9c31c3.png": "/static/media/primary-btn-neu-guide.6b9c31c3.png",
     "static/media/product-detail-r2.3ba448cb.png": "/static/media/product-detail-r2.3ba448cb.png",
     "static/media/secondary-btn-neu-guide.22f82eba.png": "/static/media/secondary-btn-neu-guide.22f82eba.png",
-    "static/media/sfu-day.831d33b7.webp": "/static/media/sfu-day.831d33b7.webp",
-    "static/media/sfu-headshot.c5c4a92b.png": "/static/media/sfu-headshot.c5c4a92b.png",
-    "static/media/sfu-night.5a12c828.webp": "/static/media/sfu-night.5a12c828.webp",
+    "static/media/sfu-day.df3f9015.webp": "/static/media/sfu-day.df3f9015.webp",
+    "static/media/sfu-headshot-500x500.44112a54.webp": "/static/media/sfu-headshot-500x500.44112a54.webp",
+    "static/media/sfu-night.3e103990.webp": "/static/media/sfu-night.3e103990.webp",
     "static/media/sitemap-lite.54c66ccf.png": "/static/media/sitemap-lite.54c66ccf.png",
     "static/media/sketch-build-guide-2.5258b2ce.webp": "/static/media/sketch-build-guide-2.5258b2ce.webp",
     "static/media/sketch-build-guide.77df5955.webp": "/static/media/sketch-build-guide.77df5955.webp",
@@ -85,12 +85,12 @@
     "static/media/type.ec2af3ea.jpg": "/static/media/type.ec2af3ea.jpg",
     "static/media/wireframe-overview.66f7cbf3.webp": "/static/media/wireframe-overview.66f7cbf3.webp",
     "static/media/wireframe-overview.e03c5c24.webp": "/static/media/wireframe-overview.e03c5c24.webp",
-    "static/media/yvr.7b6eb31d.webp": "/static/media/yvr.7b6eb31d.webp"
+    "static/media/yvr.c53dcec6.webp": "/static/media/yvr.c53dcec6.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.edfbf304.js",
-    "static/js/2.b417fe52.chunk.js",
+    "static/js/2.18d9d432.chunk.js",
     "static/css/main.86d3c147.chunk.css",
-    "static/js/main.7a172adc.chunk.js"
+    "static/js/main.d1baf680.chunk.js"
   ]
 }
