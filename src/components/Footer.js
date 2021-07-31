@@ -34,7 +34,7 @@ function Footer() {
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/danielxshi/">
                                         <img height="30" width="30"src={IG}  alt="Instagram Icon"/>
                                     </a>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-shi-0833501a0/">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/daniel-xiang-shi/">
                                         <img height="30" width="30"src={LinkedIn}  alt="Instagram Icon"/>
                                     </a>
                                 </li>
