@@ -39,7 +39,7 @@ class DesktopNav extends Component {
                     <div className="vertical-desktop-nav-container">
                         <div className="vertical-nav-content">
                             <div id="nav-logo" className="overflow-wrap">
-                                <NavLink activeClassName="active" exact to="/">XIANG</NavLink>
+                                <NavLink activeClassName="active" exact to="/">DANIEL</NavLink>
                             </div>
                             <div className="menu-icon" onClick={this.handleClick}>
                                 <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>

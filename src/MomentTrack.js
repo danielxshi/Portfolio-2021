@@ -159,9 +159,7 @@ function MomentTrack(props) {
             cp2={"Simon Fraser University"}
             cp21={"School of Interactive Arts and Technology"}
             ch3={"Recognition"}
-            cp3={"School of Interactive Arts Fall 2020 Project Showcase"}
-            cp31={"Simon Fraser University Undergraduate Conference 2021"}
-            cp32={"Received 100% for the final project"}
+            cp3={"Received 100% for the final project"}
             ch4={"Role"}
             cp4={"Mobile Application"}
             cp41={"UX/UI Design"}

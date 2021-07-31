@@ -17,11 +17,9 @@ function Credits(props) {
                     </div>
                     <div className="content-group">    
                         <h4>{props.ch3}</h4>
-                        <ol>
-                            <li>{props.cp3}</li>
-                            <li>{props.cp31}</li>
-                            <li>{props.cp32}</li>
-                        </ol>
+                        <p className="rel-margin-bot">{props.cp3}</p>
+                        <p className="rel-margin-bot">{props.cp31}</p>
+                        <p>{props.cp32}</p>
                     </div>
                 </div>
                 <div className="content-wrapper content-wrap-2">

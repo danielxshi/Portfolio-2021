@@ -162,8 +162,7 @@ function Cliq(props) {
             cp2={"Simon Fraser University"}
             cp21={"School of Interactive Arts and Technology"}
             ch3={"Recognition"}
-            cp3={"Highest grade received for design"}
-            cp31={"Presenter in 2021 SIAT Showcase"}
+            cp3={"Highest grade received for design - 87.5%"}
             ch4={"Role"}
             cp41={"UX/UI Design"}
             cp42={"Website Development"}

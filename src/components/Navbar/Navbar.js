@@ -17,7 +17,7 @@ class Navbar extends Component {
                 <div className="nav-container mobile-nav">
                     <nav className="grid-container">
                         <div className="nav-logo">
-                            <Link>XIANG</Link>
+                            <Link>DANIEL</Link>
                         </div>
                         <div className="menu-icon" onClick={this.handleClick}>
                             <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>

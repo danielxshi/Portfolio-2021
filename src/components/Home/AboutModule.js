@@ -12,7 +12,7 @@ function AboutModule() {
                             </div>
                         </div>
                         <div className="about-wrapper personal-bio">
-                            <h3 className="rel-margin-bot">XIANG DANIEL SHI</h3>
+                            <h3 className="rel-margin-bot">DANIEL XIANG SHI</h3>
                             <p className="rel-margin-bot">A student from the Science and Interactive Arts and Technology department at Simon Fraser University, in pursuit of a Bachelors of Science with a focus in <strong className="highlight-text">Design</strong>. Presently, learning REACT and Framer Motion through online tutorials and in my freetime I <strong className="highlight-text">freelance </strong> photography and videography.</p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ function AboutModule() {
                             </div>
                             <div className="anchor-80-left rel-margin-bot">
                                 <div className="title-wrapper">
-                                    <h4 className="achievement-title"><strong><a target="_blank" className="secondary-cta-link"href="https://emergesfu.com/courses/web-development/">Web Development Instrutor | EmergeSFU</a></strong></h4>
+                                    <h4 className="achievement-title"><strong>Web Development Instrutor | EmergeSFU</strong></h4>
                                     <p>JAN21|MAR21</p>
                                 </div>
                                 <p>Instructed a multidisciplinary cohort of 15-50 students for EmergeSFU in the basics of HTML and CSS.</p>
