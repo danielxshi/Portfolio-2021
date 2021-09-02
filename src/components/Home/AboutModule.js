@@ -1,4 +1,4 @@
-import profilePicture from '../../images/sfu-headshot-500x500.webp'
+import profilePicture from '../../images/sfu-headshot-800x800.webp'
 
 function AboutModule() {
     return (
